@@ -51,6 +51,7 @@ LRECA 后端继续支持真实预测、残基归因和 KDE 区域计算；SEG �
 
 ## 文档
 
+- [最终 Git 冻结审计](docs/final_git_audit.md) / [GitHub push 与远端安全验证](docs/github_push_report.md)
 - [Module 10 部署准备、验证边界与最终阻塞状态](docs/module10_report.md)
 - [部署](docs/deployment.md) / [运维](docs/operations.md) / [安全](docs/security.md) / [备份恢复](docs/backup_restore.md)
 - [Module 9 完整报告与最终风险](docs/module9_report.md)
