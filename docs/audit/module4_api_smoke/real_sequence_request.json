@@ -1,0 +1,8 @@
+{
+  "fixture_kind": "real_sequence_from_existing_official_human_baseline",
+  "sequence_source": "backend/tests/fixtures/lreca/global_baseline.json / cases[0]",
+  "note": "Local HTTP only; DisMeta must remain unavailable and return no IDR data.",
+  "request_body": {
+    "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT"
+  }
+}

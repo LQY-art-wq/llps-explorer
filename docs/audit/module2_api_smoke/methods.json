@@ -1,0 +1,67 @@
+{
+  "http_status": 200,
+  "body": {
+    "methods": [
+      {
+        "id": "lreca",
+        "name": "LRECA",
+        "category": "prediction",
+        "available": true,
+        "integration_mode": "local_model",
+        "capabilities": [
+          "global_score",
+          "residue_attribution",
+          "critical_regions"
+        ],
+        "manual_import_available": false,
+        "official_site_url": null,
+        "reason": null,
+        "message": null
+      },
+      {
+        "id": "fuzdrop",
+        "name": "FuzDrop",
+        "category": "prediction",
+        "available": false,
+        "integration_mode": "browser_protected",
+        "capabilities": [
+          "global_score",
+          "residue_propensity",
+          "regions"
+        ],
+        "manual_import_available": true,
+        "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+        "reason": "official_service_requires_browser_verification",
+        "message": "The official FuzDrop service requires browser verification. Automatic prediction is unavailable. Official results can be imported manually."
+      },
+      {
+        "id": "seg",
+        "name": "SEG",
+        "category": "annotation",
+        "available": false,
+        "integration_mode": "pending",
+        "capabilities": [
+          "low_complexity_regions"
+        ],
+        "manual_import_available": false,
+        "official_site_url": null,
+        "reason": "module_3_pending",
+        "message": "Implementation is pending Module 3."
+      },
+      {
+        "id": "dismeta",
+        "name": "DisMeta",
+        "category": "annotation",
+        "available": false,
+        "integration_mode": "pending",
+        "capabilities": [
+          "disorder_regions"
+        ],
+        "manual_import_available": false,
+        "official_site_url": null,
+        "reason": "module_4_pending",
+        "message": "Implementation is pending Module 4."
+      }
+    ]
+  }
+}

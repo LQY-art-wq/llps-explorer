@@ -1,0 +1,62 @@
+# Module 8 changes relative to the frozen 435-file Module 7 snapshot.
+# Total 54: added=47, modified=7, deleted=0.
+# Protected prior files checked: 395; unchanged=true.
+# Scope: frontend, README/architecture, Module 8 docs/evidence; no backend changes.
+# Existing backend/science/tests/dependency locks, external manifests, old reports/audits and prior scripts are protected.
+# Model weights, upstream checkout, local binaries/environments/dependencies and private audit are excluded.
+# A = added; M = modified since Module 7; D = deleted. Counts include this list and its scope report.
+
+M	README.md
+M	docs/architecture.md
+A	docs/audit/module8_browser/api/case_a_lreca_only.json
+A	docs/audit/module8_browser/api/case_b_lreca_seg.json
+A	docs/audit/module8_browser/api/case_c_seg_only.json
+A	docs/audit/module8_browser/api/case_d_fuzdrop_full.json
+A	docs/audit/module8_browser/api/case_e_fuzdrop_global_only.json
+A	docs/audit/module8_browser/api/final_display_combined.json
+A	docs/audit/module8_browser/api/final_display_verification.json
+A	docs/audit/module8_browser/api/health.json
+A	docs/audit/module8_browser/api/regression_lreca_only.json
+A	docs/audit/module8_browser/api/regression_seg_only.json
+A	docs/audit/module8_browser/api/regression_verification.json
+A	docs/audit/module8_browser/browser_verification.json
+A	docs/audit/module8_browser/client_privacy.json
+A	docs/audit/module8_browser/crosslink_verification.json
+A	docs/audit/module8_browser/fixtures/README.md
+A	docs/audit/module8_browser/fixtures/fixture_manifest.json
+A	docs/audit/module8_browser/fixtures/human_positive_line_1.fasta
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_browser_import_248aa.json
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_042_248aa.json
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_248aa.json
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_import_248aa.json
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv
+A	docs/audit/module8_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv
+A	docs/audit/module8_browser/module7_regression_verification.json
+A	docs/audit/module8_browser/performance.json
+A	docs/audit/module8_browser/responsive.json
+A	docs/audit/module8_browser/route_guards.json
+A	docs/audit/module8_checks/build.log
+A	docs/audit/module8_checks/lint.log
+A	docs/audit/module8_checks/peer_dependencies.log
+A	docs/audit/module8_checks/summary.json
+A	docs/audit/module8_checks/typecheck.log
+A	docs/audit/module8_checks/unit.log
+A	docs/audit/module8_delivery.json
+A	docs/audit/module8_scope_review.json
+A	docs/module8_changed_files.txt
+A	docs/module8_commands.md
+A	docs/module8_report.md
+M	frontend/.env.example
+M	frontend/package.json
+A	frontend/src/app/dev/sequence-viewer/page.tsx
+M	frontend/src/app/globals.css
+M	frontend/src/components/protein-feature-viewer.tsx
+A	frontend/src/components/protein-sequence-viewer.tsx
+M	frontend/src/components/results.tsx
+A	frontend/src/components/sequence-viewer-fixture.tsx
+A	frontend/src/lib/sequence-viewer-layout.ts
+A	frontend/src/lib/sequence-viewer-model.ts
+A	frontend/src/lib/viewer-selection.ts
+A	frontend/tests/sequence-crosslink-contract.test.ts
+A	frontend/tests/sequence-viewer-layout.test.ts
+A	frontend/tests/sequence-viewer-model.test.ts

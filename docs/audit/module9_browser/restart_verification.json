@@ -1,0 +1,57 @@
+{
+  "module": 9,
+  "recorded_at_utc": "2026-09-04T03:41:55Z",
+  "status": "passed",
+  "job_id": "analysis_qRdLh232naWnfD4YndOlZl8WUmDuBn-B",
+  "sequence_length": 248,
+  "selected_methods": [
+    "lreca",
+    "seg"
+  ],
+  "backend_process_restart_observed": true,
+  "same_persistent_database_reopened": true,
+  "job_status_before_restart": "success",
+  "job_status_after_restart": "success",
+  "result_schema_version_before_restart": "1.0",
+  "result_schema_version_after_restart": "1.0",
+  "payload_sha256_before_restart": "9b01fe3587be0d1a601aa5f51d3479cf5d0b15238e8f680d22b3d2841912fa0b",
+  "payload_sha256_after_restart": "9b01fe3587be0d1a601aa5f51d3479cf5d0b15238e8f680d22b3d2841912fa0b",
+  "persisted_payload_exactly_equal_after_restart": true,
+  "scientific_recompute_requested": false,
+  "analysis_post_requests_after_restart": 0,
+  "restored_workspace": {
+    "overview": true,
+    "feature_viewer": true,
+    "feature_track_count": 4,
+    "sequence_viewer": true,
+    "sequence_residue_count": 248,
+    "lreca": true,
+    "annotations": true,
+    "tables": true,
+    "full_residue_rows": 248
+  },
+  "restored_scientific_summary": {
+    "lreca_status": "success",
+    "lreca_score": 0.9999921321868896,
+    "lreca_label": "P",
+    "lreca_attribution_count": 248,
+    "lreca_kde_count": 248,
+    "lreca_critical_region_count": 5,
+    "seg_status": "success",
+    "seg_region_count": 3,
+    "seg_coverage": 0.3911290322580645
+  },
+  "provenance_visible": {
+    "lreca_model_variant": "human_specific",
+    "checkpoint_filename": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "checkpoint_absolute_path_exposed": false,
+    "seg_provenance_present": true
+  },
+  "privacy": {
+    "anonymous_session_token_recorded": false,
+    "owner_hash_recorded": false,
+    "full_sequence_recorded": false,
+    "database_path_recorded": false,
+    "server_absolute_path_recorded": false
+  }
+}

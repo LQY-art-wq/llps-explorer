@@ -1,0 +1,124 @@
+{
+  "measured_at_utc": "2026-09-03T11:15:32.936596+00:00",
+  "implementation": "NCBI segmasker",
+  "version": "2.17.0",
+  "application_version": "1.0.0",
+  "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c",
+  "parameters": {
+    "window": 12,
+    "locut": 2.2,
+    "hicut": 2.5,
+    "input_format": "fasta",
+    "output_format": "interval",
+    "parse_seqids": false
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "device": "CPU",
+  "workload": "artificial low-complexity and mixed-composition blocks; no LLPS claim",
+  "workload_block": "QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGSGS",
+  "timing_scope": "adapter end-to-end including child creation, stdin, parsing and DTO",
+  "startup_probe_and_hash_ms": 58.06049999955576,
+  "results": [
+    {
+      "sequence_length": 100,
+      "sequence_sha256": "9d14ab2e0ca95e12fbe3a73c9834de098e705c193e546bf691487085050d7c18",
+      "warmup_calls": 1,
+      "measured_calls": 5,
+      "end_to_end_ms": [
+        45.15009999886388,
+        41.473599998425925,
+        40.25230000115698,
+        37.71540000161622,
+        36.43210000154795
+      ],
+      "median_ms": 40.25230000115698,
+      "min_ms": 36.43210000154795,
+      "max_ms": 45.15009999886388,
+      "region_count": 1,
+      "longest_region": 40,
+      "coverage": 0.4
+    },
+    {
+      "sequence_length": 500,
+      "sequence_sha256": "580e1a79f8342f8633817f26fdbc9f884ce431d36330591a3e0f54871599a809",
+      "warmup_calls": 1,
+      "measured_calls": 5,
+      "end_to_end_ms": [
+        39.54940000039642,
+        36.66249999878346,
+        36.179300001094816,
+        36.41290000086883,
+        37.75659999882919
+      ],
+      "median_ms": 36.66249999878346,
+      "min_ms": 36.179300001094816,
+      "max_ms": 39.54940000039642,
+      "region_count": 4,
+      "longest_region": 110,
+      "coverage": 0.64
+    },
+    {
+      "sequence_length": 1000,
+      "sequence_sha256": "161317327fef000772b85f084787ba98c62821b17e874f59694a1794ae8e2fc9",
+      "warmup_calls": 1,
+      "measured_calls": 5,
+      "end_to_end_ms": [
+        35.6288000002678,
+        46.07410000244272,
+        47.611699999833945,
+        39.58800000327756,
+        36.421400000108406
+      ],
+      "median_ms": 39.58800000327756,
+      "min_ms": 35.6288000002678,
+      "max_ms": 47.611699999833945,
+      "region_count": 7,
+      "longest_region": 110,
+      "coverage": 0.64
+    },
+    {
+      "sequence_length": 2000,
+      "sequence_sha256": "a81554946a90e64ad2cb5b0dd939008742e934a4d59a53175570519ee48f9cb3",
+      "warmup_calls": 1,
+      "measured_calls": 5,
+      "end_to_end_ms": [
+        37.02490000068792,
+        35.518800003046636,
+        32.64160000253469,
+        37.715800001024036,
+        36.769999998796266
+      ],
+      "median_ms": 36.769999998796266,
+      "min_ms": 32.64160000253469,
+      "max_ms": 37.715800001024036,
+      "region_count": 13,
+      "longest_region": 110,
+      "coverage": 0.64
+    },
+    {
+      "sequence_length": 5000,
+      "sequence_sha256": "d5a7b8220eb727a4b78c553853aab3fe0c681207b871293d999aee08b257639d",
+      "warmup_calls": 1,
+      "measured_calls": 5,
+      "end_to_end_ms": [
+        39.32130000248435,
+        44.117999997979496,
+        43.48500000196509,
+        38.94330000184709,
+        40.03749999901629
+      ],
+      "median_ms": 40.03749999901629,
+      "min_ms": 38.94330000184709,
+      "max_ms": 44.117999997979496,
+      "region_count": 30,
+      "longest_region": 110,
+      "coverage": 0.646
+    }
+  ],
+  "notes": [
+    "Each measured annotation uses a fresh official CLI process; there is no ML model.",
+    "This is a Windows CPU measurement, not a Linux/Docker or biological benchmark.",
+    "No protein sequence is sent to an external service; usage reporting is disabled."
+  ]
+}

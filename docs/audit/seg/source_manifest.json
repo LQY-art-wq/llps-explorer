@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "audit_at_utc": "2026-09-03T11:17:14.811867+00:00",
+  "implementation": "NCBI segmasker",
+  "distribution_release": "2.17.0+",
+  "package_version": "2.17.0",
+  "application_version": "1.0.0",
+  "source_archive": {
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-src.zip",
+    "retrieved_at": "2026-09-03T11:08:41.072533+00:00",
+    "bytes": 34012171,
+    "md5": "2f22ff35cffa5a29a27a1424d4edb1e9",
+    "sha256": "cdcd9e36f2b581eff9bd8364875a466289253b716d3a8014838a8305a9d11880"
+  },
+  "official_source_md5_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-src.zip.md5",
+  "official_md5_verified": true,
+  "source_files": [
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/algo/blast/core/blast_seg.c",
+      "bytes": 168480,
+      "sha256": "00aa39295f0beae1301c262f844f59f6f71d5796e122d7cd1acbc0c10db89b75",
+      "anchors": [
+        {
+          "purpose": "SEG defaults",
+          "lines_1based": [
+            45,
+            47
+          ]
+        },
+        {
+          "purpose": "Closed interval construction",
+          "lines_1based": [
+            2070,
+            2073
+          ]
+        },
+        {
+          "purpose": "Native left/right preservation",
+          "lines_1based": [
+            2170,
+            2171
+          ]
+        },
+        {
+          "purpose": "Complete internal defaults",
+          "lines_1based": [
+            2225,
+            2238
+          ]
+        },
+        {
+          "purpose": "Native parameter coercions",
+          "lines_1based": [
+            2247,
+            2266
+          ]
+        },
+        {
+          "purpose": "Conditional merge, disabled by default",
+          "lines_1based": [
+            2320,
+            2322
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/algo/segmask/segmask.cpp",
+      "bytes": 3327,
+      "sha256": "f6a562bab4284e8b0bd62c59695310c01e86b2f479604a4f3eed824f1fd7d822",
+      "anchors": [
+        {
+          "purpose": "Only three CLI parameters override defaults",
+          "lines_1based": [
+            41,
+            51
+          ]
+        },
+        {
+          "purpose": "Offset zero and native output",
+          "lines_1based": [
+            75,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/app/segmasker/segmasker.cpp",
+      "bytes": 9780,
+      "sha256": "7307e57619767558f49d36b1b771dd538d54c29afd77785aaf04ad9d17358800",
+      "anchors": [
+        {
+          "purpose": "Application version 1.0.0",
+          "lines_1based": [
+            70,
+            73
+          ]
+        },
+        {
+          "purpose": "Standard input/output defaults",
+          "lines_1based": [
+            111,
+            116
+          ]
+        },
+        {
+          "purpose": "Protein FASTA reader",
+          "lines_1based": [
+            159,
+            163
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_writer_int.cpp",
+      "bytes": 2082,
+      "sha256": "c5736cf91fa60ca7362e1533ca20e81a314ec5b93215cc67d0f5adf508855963",
+      "anchors": [
+        {
+          "purpose": "Header and native interval rows",
+          "lines_1based": [
+            40,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_cmdline_args.cpp",
+      "bytes": 2013,
+      "sha256": "f0613575198d3c67bf0c45b64d47b59509e8f088f58c112168457ff4cab7621c",
+      "anchors": [
+        {
+          "purpose": "Default input/output formats",
+          "lines_1based": [
+            40,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_writer.cpp",
+      "bytes": 2440,
+      "sha256": "26b0abc7ea4782e520487a64f0e4765c7b0d8488e172bbd0f050ec2b15f6fc16",
+      "anchors": [
+        {
+          "purpose": "FASTA-style record header",
+          "lines_1based": [
+            54,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "member": "ncbi-blast-2.17.0+-src/c++/scripts/projects/blast/LICENSE",
+      "bytes": 1055,
+      "sha256": "03e41388b1a72f2d0830d9fbce8906183e242cfd381f91f7e5a08bb7be1304ad",
+      "anchors": [
+        {
+          "purpose": "Public-domain notice, disclaimer and attribution",
+          "lines_1based": [
+            1,
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "window": 12,
+    "locut": 2.2,
+    "hicut": 2.5,
+    "input_format": "fasta",
+    "output_format": "interval",
+    "parse_seqids": false
+  },
+  "internal_defaults": {
+    "period": 1,
+    "hilenmin": 0,
+    "overlaps": false,
+    "maxtrim": 50,
+    "maxbogus": 2
+  },
+  "native_coordinate_system": "zero_based_inclusive",
+  "api_coordinate_system": "one_based_inclusive",
+  "coordinate_conversion": "Add one to both native endpoints.",
+  "native_region_policy": "Preserve native order and all records; do not merge adjacent or overlapping regions. Compute coverage using the union separately.",
+  "fixture_index": "backend/tests/fixtures/seg/cases.json",
+  "real_binary_fixture_count": 8,
+  "binary_tested_platform": "Windows x64",
+  "linux_x64": {
+    "archive_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-linux.tar.gz",
+    "official_md5_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-linux.tar.gz.md5",
+    "official_md5": "bdec166721de3b55f90a3badc83538e8",
+    "metadata_observed_at_utc": "2026-09-03T11:08:09.031428+00:00",
+    "archive_downloaded": false,
+    "runtime_tested": false
+  },
+  "limits": [
+    "The current Doxygen blast_seg.c is newer than this release; this audit uses the checksummed release source instead.",
+    "Linux ELF dependencies and runtime behavior were not tested in this Windows session.",
+    "SEG annotates low-complexity regions only; no LLPS classifier output is inferred."
+  ]
+}

@@ -1,0 +1,1031 @@
+{
+  "checks": [
+    {
+      "name": "A real LRECA has three tracks and no IDR",
+      "pass": true
+    },
+    {
+      "name": "LRECA top-residue table focuses position 106/G and preserves attribution",
+      "pass": true,
+      "details": {
+        "aa": "G",
+        "domain": [
+          "81",
+          "131"
+        ],
+        "draws": "3",
+        "position": "106",
+        "tab": "Feature Viewer",
+        "tooltip": "RESIDUE INSPECTORPosition 106GClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGNot selectedIDR — DisMetaUnavailable"
+      }
+    },
+    {
+      "name": "Tabs preserve zoom and selected residue",
+      "pass": true,
+      "details": [
+        "81",
+        "131",
+        "106"
+      ]
+    },
+    {
+      "name": "First and last residue keyboard cursor, AA and fixed marker; native terminal omission kept",
+      "pass": true,
+      "details": {
+        "atFirst": {
+          "aa": "M",
+          "p": "1",
+          "plotLeft": 545.6000366210938,
+          "x": 547.2625122070312
+        },
+        "atLast": {
+          "aa": "T",
+          "critical": "no",
+          "p": "248",
+          "plotRight": 1375.2000732421875,
+          "x": 1373.5250244140625
+        }
+      }
+    },
+    {
+      "name": "B real SEG only; new analysis resets zoom/selection",
+      "pass": true,
+      "details": {
+        "end": "248",
+        "id": "analysis_keiyd8DcHYQHLMXteF20vE8e_yy-i7Hl",
+        "selection": "No fixed selection",
+        "start": "1",
+        "tracks": "seg-regions"
+      }
+    },
+    {
+      "name": "SEG table region 89–119 stays inclusive, length31 and focuses with margin20",
+      "pass": true,
+      "details": {
+        "domain": [
+          "69",
+          "139"
+        ],
+        "region": "Low-complexity regionMethodSEGRegion typeLow-complexity regionStart89End119Length31 aa",
+        "tooltip": "LCR — SEGYesLow-complexity region 89–119 (31 aa)"
+      }
+    },
+    {
+      "name": "C/F real LRECA+SEG, four tracks, DisMeta unavailable outside plot",
+      "pass": true,
+      "details": {
+        "domain": [
+          "1",
+          "248"
+        ],
+        "draws": "2",
+        "id": "analysis_jujjM-DS78dLaK5DzI74VgMXafLjchP9",
+        "noIdrPlot": true,
+        "note": "IDR — DisMeta · Unavailable",
+        "rect": {
+          "height": 330,
+          "width": 829.6000366210938,
+          "x": 545.6000366210938,
+          "y": 543.75
+        },
+        "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+      }
+    },
+    {
+      "name": "Mouse select residue106 uses one shared cursor without static repaint",
+      "pass": true,
+      "details": {
+        "count": 1,
+        "cursor": "106",
+        "draws": "2",
+        "selected": "106",
+        "tooltip": "RESIDUE INSPECTORPosition 106GClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable"
+      }
+    },
+    {
+      "name": "Wheel zoom updates all tracks through one domain with no page horizontal scroll",
+      "pass": true,
+      "details": {
+        "end": 175,
+        "scrollX": 0,
+        "scrollY": 0,
+        "start": 73
+      }
+    },
+    {
+      "name": "Drag pan preserves shared span",
+      "pass": true,
+      "details": {
+        "end": 154,
+        "start": 52
+      }
+    },
+    {
+      "name": "Brush selects inclusive domain near quarter to half sequence",
+      "pass": true,
+      "details": {
+        "end": 124,
+        "start": 63
+      },
+      "note": "Browser drag uses integer screen pixels; quarter/half cell boundaries permit adjacent endpoint 124 or125. Exact round trips are covered by coordinate tests."
+    },
+    {
+      "name": "Track visibility only removes visual tracks; coordinate and selection remain",
+      "pass": true,
+      "details": {
+        "axis": 1,
+        "axisCheckbox": false,
+        "selected": "106",
+        "tracks": "lreca-attribution lreca-critical"
+      }
+    },
+    {
+      "name": "Native primary hotspot mouse click and exact interval focus",
+      "pass": true,
+      "details": {
+        "details": "Primary hotspotMethodLRECARegion typePrimary hotspotStart81End127Length47 aaCumulative KDE score36.160Backend selectionPrimary hotspot",
+        "domain": [
+          "61",
+          "147"
+        ],
+        "selected": "81"
+      }
+    },
+    {
+      "name": "1440/1280/1024 responsive plot, labels and unobscured docked tooltip",
+      "pass": true,
+      "details": [
+        {
+          "canvasCount": 1,
+          "documentWidth": 1425,
+          "labels": [
+            {
+              "clientHeight": 37,
+              "clientWidth": 175,
+              "scrollHeight": 37,
+              "scrollWidth": 175,
+              "text": "Protein coordinate1-based, inclusive"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA Residue AttributionAttribution0 – 1"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+            },
+            {
+              "clientHeight": 49,
+              "clientWidth": 175,
+              "scrollHeight": 49,
+              "scrollWidth": 175,
+              "text": "LRECA Critical RegionsDerived hotspots"
+            },
+            {
+              "clientHeight": 50,
+              "clientWidth": 175,
+              "scrollHeight": 50,
+              "scrollWidth": 175,
+              "text": "Low-complexity Regions — SEGSequence annotation"
+            }
+          ],
+          "plot": {
+            "bottom": 873.75,
+            "left": 545.6000366210938,
+            "right": 1375.2000732421875,
+            "width": 829.6000366210938
+          },
+          "scrollWidth": 1425,
+          "selection": "106",
+          "tooltip": {
+            "left": 368.8000183105469,
+            "right": 1376.000030517578,
+            "top": 1069.050048828125
+          },
+          "width": 1440
+        },
+        {
+          "canvasCount": 1,
+          "documentWidth": 1265,
+          "labels": [
+            {
+              "clientHeight": 37,
+              "clientWidth": 175,
+              "scrollHeight": 37,
+              "scrollWidth": 175,
+              "text": "Protein coordinate1-based, inclusive"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA Residue AttributionAttribution0 – 1"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+            },
+            {
+              "clientHeight": 49,
+              "clientWidth": 175,
+              "scrollHeight": 49,
+              "scrollWidth": 175,
+              "text": "LRECA Critical RegionsDerived hotspots"
+            },
+            {
+              "clientHeight": 50,
+              "clientWidth": 175,
+              "scrollHeight": 50,
+              "scrollWidth": 175,
+              "text": "Low-complexity Regions — SEGSequence annotation"
+            }
+          ],
+          "plot": {
+            "bottom": 873.75,
+            "left": 545.6000366210938,
+            "right": 1215.2000732421875,
+            "width": 669.6000366210938
+          },
+          "scrollWidth": 1265,
+          "selection": "106",
+          "tooltip": {
+            "left": 368.8000183105469,
+            "right": 1216.000030517578,
+            "top": 1069.050048828125
+          },
+          "width": 1280
+        },
+        {
+          "canvasCount": 1,
+          "documentWidth": 1009,
+          "labels": [
+            {
+              "clientHeight": 37,
+              "clientWidth": 175,
+              "scrollHeight": 37,
+              "scrollWidth": 175,
+              "text": "Protein coordinate1-based, inclusive"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA Residue AttributionAttribution0 – 1"
+            },
+            {
+              "clientHeight": 95,
+              "clientWidth": 175,
+              "scrollHeight": 95,
+              "scrollWidth": 175,
+              "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+            },
+            {
+              "clientHeight": 49,
+              "clientWidth": 175,
+              "scrollHeight": 49,
+              "scrollWidth": 175,
+              "text": "LRECA Critical RegionsDerived hotspots"
+            },
+            {
+              "clientHeight": 50,
+              "clientWidth": 175,
+              "scrollHeight": 50,
+              "scrollWidth": 175,
+              "text": "Low-complexity Regions — SEGSequence annotation"
+            }
+          ],
+          "plot": {
+            "bottom": 872.75,
+            "left": 225.6000061035156,
+            "right": 959.2000427246094,
+            "width": 733.6000366210938
+          },
+          "scrollWidth": 1009,
+          "selection": "106",
+          "tooltip": {
+            "left": 48.79999923706055,
+            "right": 960.0000114440918,
+            "top": 1068.050048828125
+          },
+          "width": 1024
+        }
+      ]
+    },
+    {
+      "name": "D explicit synthetic import validated by real backend, pDP and overlapping inclusive regions shown",
+      "pass": true,
+      "details": {
+        "badge": "Synthetic test data · Test environmentThis isolated acceptance environment may include synthetic FuzDrop imports. Test fixtures are not official predictions or biological evidence.",
+        "id": "analysis_cQ2SQYMRzaatdL07PT6bC9I29569cqen",
+        "pdp": "0.1",
+        "regions": "FuzDrop regionsYesDroplet-promoting region 30–45 (16 aa); Droplet-promoting region 45–60 (16 aa)",
+        "tooltip": "RESIDUE INSPECTORPosition 45IClear selectionLRECA Attribution0.630LRECA KDE0.476LRECA hotspotsYesCandidate hotspot 1–80 (80 aa)FuzDrop pDP0.100FuzDrop regionsYesDroplet-promoting region 30–45 (16 aa); Droplet-promoting region 45–60 (16 aa)LCR — SEGNoIDR — DisMetaUnavailable",
+        "tracks": "lreca-attribution lreca-kde lreca-critical fuzdrop-propensity fuzdrop-regions seg-regions"
+      }
+    },
+    {
+      "name": "FuzDrop native region mouse selection preserves method/type/start/end without attribution label",
+      "pass": true,
+      "details": {
+        "domain": [
+          "10",
+          "65"
+        ],
+        "region": "Droplet-promoting regionMethodFUZDROPRegion typeDroplet-promoting regionStart30End45Length16 aa"
+      }
+    },
+    {
+      "name": "E global-only validated import has no FuzDrop residue/region plot; N/A differs from No and Unavailable",
+      "pass": true,
+      "details": {
+        "badge": "Synthetic test data · Test environmentThis isolated acceptance environment may include synthetic FuzDrop imports. Test fixtures are not official predictions or biological evidence.",
+        "fuz": "FuzDrop pDPN/A",
+        "id": "analysis_jqUbiwQkt0jtGjW4DInkt3tkmR9lPv_c",
+        "region": "FuzDrop regionsN/A",
+        "seg": "LCR — SEGNo",
+        "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+      }
+    },
+    {
+      "name": "Five lengths render with one Canvas, bounded DOM and measured application execution; hover does not redraw static tracks",
+      "pass": true,
+      "details": [
+        {
+          "canvasCount": 1,
+          "draws": "4",
+          "firstCanvasDrawMs": 0.9000000022351742,
+          "lastCanvasDrawMs": 0.7000000029802322,
+          "length": 100,
+          "maxCanvasDrawMs": 1.300000000745058,
+          "metrics": [
+            {
+              "count": 1,
+              "kind": "initial_render",
+              "maxMs": 4.899999998509884,
+              "medianMs": 4.899999998509884,
+              "p95Ms": 4.899999998509884
+            },
+            {
+              "count": 3,
+              "kind": "zoom",
+              "maxMs": 2.199999999254942,
+              "medianMs": 1.600000001490116,
+              "p95Ms": 2.199999999254942
+            },
+            {
+              "count": 5,
+              "kind": "hover",
+              "maxMs": 3,
+              "medianMs": 2.300000000745058,
+              "p95Ms": 3
+            }
+          ],
+          "nodes": 225,
+          "staticDrawsBeforeHover": "4"
+        },
+        {
+          "canvasCount": 1,
+          "draws": "4",
+          "firstCanvasDrawMs": 1.5,
+          "lastCanvasDrawMs": 1.2000000029802322,
+          "length": 500,
+          "maxCanvasDrawMs": 1.5,
+          "metrics": [
+            {
+              "count": 1,
+              "kind": "initial_render",
+              "maxMs": 5.800000000745058,
+              "medianMs": 5.800000000745058,
+              "p95Ms": 5.800000000745058
+            },
+            {
+              "count": 3,
+              "kind": "zoom",
+              "maxMs": 2,
+              "medianMs": 1.899999998509884,
+              "p95Ms": 2
+            },
+            {
+              "count": 5,
+              "kind": "hover",
+              "maxMs": 3.400000002235174,
+              "medianMs": 2.600000001490116,
+              "p95Ms": 3.400000002235174
+            }
+          ],
+          "nodes": 225,
+          "staticDrawsBeforeHover": "4"
+        },
+        {
+          "canvasCount": 1,
+          "draws": "4",
+          "firstCanvasDrawMs": 2,
+          "lastCanvasDrawMs": 1.5,
+          "length": 1000,
+          "maxCanvasDrawMs": 2,
+          "metrics": [
+            {
+              "count": 1,
+              "kind": "initial_render",
+              "maxMs": 4.600000001490116,
+              "medianMs": 4.600000001490116,
+              "p95Ms": 4.600000001490116
+            },
+            {
+              "count": 3,
+              "kind": "zoom",
+              "maxMs": 1.7000000029802322,
+              "medianMs": 1.5999999977648258,
+              "p95Ms": 1.7000000029802322
+            },
+            {
+              "count": 5,
+              "kind": "hover",
+              "maxMs": 3.199999999254942,
+              "medianMs": 2.399999998509884,
+              "p95Ms": 3.199999999254942
+            }
+          ],
+          "nodes": 225,
+          "staticDrawsBeforeHover": "4"
+        },
+        {
+          "canvasCount": 1,
+          "draws": "4",
+          "firstCanvasDrawMs": 4.699999999254942,
+          "lastCanvasDrawMs": 2.400000002235174,
+          "length": 2000,
+          "maxCanvasDrawMs": 4.699999999254942,
+          "metrics": [
+            {
+              "count": 1,
+              "kind": "initial_render",
+              "maxMs": 4.399999998509884,
+              "medianMs": 4.399999998509884,
+              "p95Ms": 4.399999998509884
+            },
+            {
+              "count": 3,
+              "kind": "zoom",
+              "maxMs": 3,
+              "medianMs": 1.7000000029802322,
+              "p95Ms": 3
+            },
+            {
+              "count": 5,
+              "kind": "hover",
+              "maxMs": 4,
+              "medianMs": 2.699999999254942,
+              "p95Ms": 4
+            }
+          ],
+          "nodes": 225,
+          "staticDrawsBeforeHover": "4"
+        },
+        {
+          "canvasCount": 1,
+          "draws": "4",
+          "firstCanvasDrawMs": 9.699999999254942,
+          "lastCanvasDrawMs": 3.699999999254942,
+          "length": 5000,
+          "maxCanvasDrawMs": 9.699999999254942,
+          "metrics": [
+            {
+              "count": 1,
+              "kind": "initial_render",
+              "maxMs": 4.199999999254942,
+              "medianMs": 4.199999999254942,
+              "p95Ms": 4.199999999254942
+            },
+            {
+              "count": 3,
+              "kind": "zoom",
+              "maxMs": 2.199999999254942,
+              "medianMs": 2,
+              "p95Ms": 2.199999999254942
+            },
+            {
+              "count": 5,
+              "kind": "hover",
+              "maxMs": 3.099999997764826,
+              "medianMs": 2.399999998509884,
+              "p95Ms": 3.099999997764826
+            }
+          ],
+          "nodes": 225,
+          "staticDrawsBeforeHover": "4"
+        }
+      ]
+    },
+    {
+      "name": "5000 aa first1–1 and last5000–5000 native bars are clickable with clamped margins",
+      "pass": true,
+      "details": {
+        "firstRegion": {
+          "details": "Candidate hotspotMethodLRECARegion typeCandidate hotspotStart1End1Length1 aaCumulative KDE score0.100Backend selectionCandidate hotspot",
+          "domain": [
+            "1",
+            "21"
+          ]
+        },
+        "lastRegion": {
+          "details": "Aggregation hot-spotMethodFUZDROPRegion typeAggregation hot-spotStart5000End5000Length1 aa",
+          "domain": [
+            "4980",
+            "5000"
+          ]
+        }
+      }
+    },
+    {
+      "name": "SEG terminal region mouse click preserves annotation semantics",
+      "pass": true,
+      "details": "Low-complexity regionMethodSEGRegion typeLow-complexity regionStart5000End5000Length1 aa"
+    },
+    {
+      "name": "Malformed optional FuzDrop pDP is isolated; five other tracks remain and new analysis resets state",
+      "pass": true,
+      "details": {
+        "disMeta": "IDR — DisMeta · Unavailable",
+        "domain": [
+          "1",
+          "5000"
+        ],
+        "id": "analysis_synthetic_render_malformed_fuzdrop_residue_5000_7",
+        "issues": "Invalid FuzDrop Residue Propensity track.",
+        "selection": "No fixed selection",
+        "tracks": "lreca-attribution lreca-kde lreca-critical fuzdrop-regions seg-regions"
+      }
+    },
+    {
+      "name": "Single-residue domain1–1 renders and remains keyboard-selectable",
+      "pass": true,
+      "details": {
+        "aa": "A",
+        "end": "1",
+        "selected": "1",
+        "start": "1",
+        "tooltip": "1"
+      }
+    },
+    {
+      "name": "Explicit new analysis resets one-cell zoom and fixed marker",
+      "pass": true,
+      "details": {
+        "end": "5000",
+        "selection": "No fixed selection",
+        "start": "1"
+      }
+    },
+    {
+      "name": "Final build uses commit-timing labels; missing native pDP at97 is N/A",
+      "pass": true,
+      "details": {
+        "canvasMs": "9.800000000745058",
+        "p": "97",
+        "pdp": "FuzDrop pDPN/A",
+        "tableLabel": "Actual feature viewer application timings"
+      }
+    },
+    {
+      "name": "Track menu and visibility toggle work from keyboard",
+      "pass": true,
+      "details": {
+        "coordinate": "Protein coordinate1-based, inclusive",
+        "tracks": "lreca-attribution lreca-critical fuzdrop-propensity fuzdrop-regions seg-regions"
+      }
+    },
+    {
+      "name": "Final normal production build re-runs real LRECA+SEG with no synthetic banner and correct shared106G tooltip",
+      "pass": true,
+      "details": {
+        "id": "analysis_8PzvWYNLRUyP4OpVcFGo8tphnETkXMhe",
+        "selected": "106",
+        "syntheticBanner": false,
+        "tooltip": "RESIDUE INSPECTORPosition 106GClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable",
+        "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+      }
+    },
+    {
+      "name": "Canvas follows dark theme tokens while preserving selected residue",
+      "pass": true,
+      "details": {
+        "color": "#79d49d",
+        "draws": 7,
+        "selection": "106",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "Final normal page console has no application error/warning",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "scenarios": {
+    "A": {
+      "canvas": "1",
+      "id": "analysis_6LqCPXnI-s5aaqfvYWuv508BNPcFbEst",
+      "trackIds": "lreca-attribution lreca-kde lreca-critical",
+      "width": 1440
+    },
+    "B": {
+      "end": "248",
+      "id": "analysis_keiyd8DcHYQHLMXteF20vE8e_yy-i7Hl",
+      "selection": "No fixed selection",
+      "start": "1",
+      "tracks": "seg-regions"
+    },
+    "C": {
+      "domain": [
+        "1",
+        "248"
+      ],
+      "draws": "2",
+      "id": "analysis_jujjM-DS78dLaK5DzI74VgMXafLjchP9",
+      "noIdrPlot": true,
+      "note": "IDR — DisMeta · Unavailable",
+      "rect": {
+        "height": 330,
+        "width": 829.6000366210938,
+        "x": 545.6000366210938,
+        "y": 543.75
+      },
+      "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+    },
+    "D": {
+      "badge": "Synthetic test data · Test environmentThis isolated acceptance environment may include synthetic FuzDrop imports. Test fixtures are not official predictions or biological evidence.",
+      "id": "analysis_cQ2SQYMRzaatdL07PT6bC9I29569cqen",
+      "pdp": "0.1",
+      "regions": "FuzDrop regionsYesDroplet-promoting region 30–45 (16 aa); Droplet-promoting region 45–60 (16 aa)",
+      "tooltip": "RESIDUE INSPECTORPosition 45IClear selectionLRECA Attribution0.630LRECA KDE0.476LRECA hotspotsYesCandidate hotspot 1–80 (80 aa)FuzDrop pDP0.100FuzDrop regionsYesDroplet-promoting region 30–45 (16 aa); Droplet-promoting region 45–60 (16 aa)LCR — SEGNoIDR — DisMetaUnavailable",
+      "tracks": "lreca-attribution lreca-kde lreca-critical fuzdrop-propensity fuzdrop-regions seg-regions"
+    },
+    "E": {
+      "badge": "Synthetic test data · Test environmentThis isolated acceptance environment may include synthetic FuzDrop imports. Test fixtures are not official predictions or biological evidence.",
+      "fuz": "FuzDrop pDPN/A",
+      "id": "analysis_jqUbiwQkt0jtGjW4DInkt3tkmR9lPv_c",
+      "region": "FuzDrop regionsN/A",
+      "seg": "LCR — SEGNo",
+      "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+    },
+    "C_final": {
+      "id": "analysis_8PzvWYNLRUyP4OpVcFGo8tphnETkXMhe",
+      "selected": "106",
+      "syntheticBanner": false,
+      "tooltip": "RESIDUE INSPECTORPosition 106GClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable",
+      "tracks": "lreca-attribution lreca-kde lreca-critical seg-regions"
+    }
+  },
+  "responsive": [
+    {
+      "canvasCount": 1,
+      "documentWidth": 1425,
+      "labels": [
+        {
+          "clientHeight": 37,
+          "clientWidth": 175,
+          "scrollHeight": 37,
+          "scrollWidth": 175,
+          "text": "Protein coordinate1-based, inclusive"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA Residue AttributionAttribution0 – 1"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+        },
+        {
+          "clientHeight": 49,
+          "clientWidth": 175,
+          "scrollHeight": 49,
+          "scrollWidth": 175,
+          "text": "LRECA Critical RegionsDerived hotspots"
+        },
+        {
+          "clientHeight": 50,
+          "clientWidth": 175,
+          "scrollHeight": 50,
+          "scrollWidth": 175,
+          "text": "Low-complexity Regions — SEGSequence annotation"
+        }
+      ],
+      "plot": {
+        "bottom": 873.75,
+        "left": 545.6000366210938,
+        "right": 1375.2000732421875,
+        "width": 829.6000366210938
+      },
+      "scrollWidth": 1425,
+      "selection": "106",
+      "tooltip": {
+        "left": 368.8000183105469,
+        "right": 1376.000030517578,
+        "top": 1069.050048828125
+      },
+      "width": 1440
+    },
+    {
+      "canvasCount": 1,
+      "documentWidth": 1265,
+      "labels": [
+        {
+          "clientHeight": 37,
+          "clientWidth": 175,
+          "scrollHeight": 37,
+          "scrollWidth": 175,
+          "text": "Protein coordinate1-based, inclusive"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA Residue AttributionAttribution0 – 1"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+        },
+        {
+          "clientHeight": 49,
+          "clientWidth": 175,
+          "scrollHeight": 49,
+          "scrollWidth": 175,
+          "text": "LRECA Critical RegionsDerived hotspots"
+        },
+        {
+          "clientHeight": 50,
+          "clientWidth": 175,
+          "scrollHeight": 50,
+          "scrollWidth": 175,
+          "text": "Low-complexity Regions — SEGSequence annotation"
+        }
+      ],
+      "plot": {
+        "bottom": 873.75,
+        "left": 545.6000366210938,
+        "right": 1215.2000732421875,
+        "width": 669.6000366210938
+      },
+      "scrollWidth": 1265,
+      "selection": "106",
+      "tooltip": {
+        "left": 368.8000183105469,
+        "right": 1216.000030517578,
+        "top": 1069.050048828125
+      },
+      "width": 1280
+    },
+    {
+      "canvasCount": 1,
+      "documentWidth": 1009,
+      "labels": [
+        {
+          "clientHeight": 37,
+          "clientWidth": 175,
+          "scrollHeight": 37,
+          "scrollWidth": 175,
+          "text": "Protein coordinate1-based, inclusive"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA Residue AttributionAttribution0 – 1"
+        },
+        {
+          "clientHeight": 95,
+          "clientWidth": 175,
+          "scrollHeight": 95,
+          "scrollWidth": 175,
+          "text": "LRECA KDE Contribution DensityContribution density0 – 1.56"
+        },
+        {
+          "clientHeight": 49,
+          "clientWidth": 175,
+          "scrollHeight": 49,
+          "scrollWidth": 175,
+          "text": "LRECA Critical RegionsDerived hotspots"
+        },
+        {
+          "clientHeight": 50,
+          "clientWidth": 175,
+          "scrollHeight": 50,
+          "scrollWidth": 175,
+          "text": "Low-complexity Regions — SEGSequence annotation"
+        }
+      ],
+      "plot": {
+        "bottom": 872.75,
+        "left": 225.6000061035156,
+        "right": 959.2000427246094,
+        "width": 733.6000366210938
+      },
+      "scrollWidth": 1009,
+      "selection": "106",
+      "tooltip": {
+        "left": 48.79999923706055,
+        "right": 960.0000114440918,
+        "top": 1068.050048828125
+      },
+      "width": 1024
+    }
+  ],
+  "performance": [
+    {
+      "canvasCount": 1,
+      "draws": "4",
+      "firstCanvasDrawMs": 0.9000000022351742,
+      "lastCanvasDrawMs": 0.7000000029802322,
+      "length": 100,
+      "maxCanvasDrawMs": 1.300000000745058,
+      "metrics": [
+        {
+          "count": 1,
+          "kind": "initial_render",
+          "maxMs": 4.899999998509884,
+          "medianMs": 4.899999998509884,
+          "p95Ms": 4.899999998509884
+        },
+        {
+          "count": 3,
+          "kind": "zoom",
+          "maxMs": 2.199999999254942,
+          "medianMs": 1.600000001490116,
+          "p95Ms": 2.199999999254942
+        },
+        {
+          "count": 5,
+          "kind": "hover",
+          "maxMs": 3,
+          "medianMs": 2.300000000745058,
+          "p95Ms": 3
+        }
+      ],
+      "nodes": 225,
+      "staticDrawsBeforeHover": "4"
+    },
+    {
+      "canvasCount": 1,
+      "draws": "4",
+      "firstCanvasDrawMs": 1.5,
+      "lastCanvasDrawMs": 1.2000000029802322,
+      "length": 500,
+      "maxCanvasDrawMs": 1.5,
+      "metrics": [
+        {
+          "count": 1,
+          "kind": "initial_render",
+          "maxMs": 5.800000000745058,
+          "medianMs": 5.800000000745058,
+          "p95Ms": 5.800000000745058
+        },
+        {
+          "count": 3,
+          "kind": "zoom",
+          "maxMs": 2,
+          "medianMs": 1.899999998509884,
+          "p95Ms": 2
+        },
+        {
+          "count": 5,
+          "kind": "hover",
+          "maxMs": 3.400000002235174,
+          "medianMs": 2.600000001490116,
+          "p95Ms": 3.400000002235174
+        }
+      ],
+      "nodes": 225,
+      "staticDrawsBeforeHover": "4"
+    },
+    {
+      "canvasCount": 1,
+      "draws": "4",
+      "firstCanvasDrawMs": 2,
+      "lastCanvasDrawMs": 1.5,
+      "length": 1000,
+      "maxCanvasDrawMs": 2,
+      "metrics": [
+        {
+          "count": 1,
+          "kind": "initial_render",
+          "maxMs": 4.600000001490116,
+          "medianMs": 4.600000001490116,
+          "p95Ms": 4.600000001490116
+        },
+        {
+          "count": 3,
+          "kind": "zoom",
+          "maxMs": 1.7000000029802322,
+          "medianMs": 1.5999999977648258,
+          "p95Ms": 1.7000000029802322
+        },
+        {
+          "count": 5,
+          "kind": "hover",
+          "maxMs": 3.199999999254942,
+          "medianMs": 2.399999998509884,
+          "p95Ms": 3.199999999254942
+        }
+      ],
+      "nodes": 225,
+      "staticDrawsBeforeHover": "4"
+    },
+    {
+      "canvasCount": 1,
+      "draws": "4",
+      "firstCanvasDrawMs": 4.699999999254942,
+      "lastCanvasDrawMs": 2.400000002235174,
+      "length": 2000,
+      "maxCanvasDrawMs": 4.699999999254942,
+      "metrics": [
+        {
+          "count": 1,
+          "kind": "initial_render",
+          "maxMs": 4.399999998509884,
+          "medianMs": 4.399999998509884,
+          "p95Ms": 4.399999998509884
+        },
+        {
+          "count": 3,
+          "kind": "zoom",
+          "maxMs": 3,
+          "medianMs": 1.7000000029802322,
+          "p95Ms": 3
+        },
+        {
+          "count": 5,
+          "kind": "hover",
+          "maxMs": 4,
+          "medianMs": 2.699999999254942,
+          "p95Ms": 4
+        }
+      ],
+      "nodes": 225,
+      "staticDrawsBeforeHover": "4"
+    },
+    {
+      "canvasCount": 1,
+      "draws": "4",
+      "firstCanvasDrawMs": 9.699999999254942,
+      "lastCanvasDrawMs": 3.699999999254942,
+      "length": 5000,
+      "maxCanvasDrawMs": 9.699999999254942,
+      "metrics": [
+        {
+          "count": 1,
+          "kind": "initial_render",
+          "maxMs": 4.199999999254942,
+          "medianMs": 4.199999999254942,
+          "p95Ms": 4.199999999254942
+        },
+        {
+          "count": 3,
+          "kind": "zoom",
+          "maxMs": 2.199999999254942,
+          "medianMs": 2,
+          "p95Ms": 2.199999999254942
+        },
+        {
+          "count": 5,
+          "kind": "hover",
+          "maxMs": 3.099999997764826,
+          "medianMs": 2.399999998509884,
+          "p95Ms": 3.099999997764826
+        }
+      ],
+      "nodes": 225,
+      "staticDrawsBeforeHover": "4"
+    }
+  ],
+  "cold5000": {
+    "firstDrawMs": 13.799999997019768,
+    "mountCommitMs": 10.299999997019768
+  },
+  "finalConsole": [],
+  "completedAt": "2026-09-03T14:39:26.268Z"
+}

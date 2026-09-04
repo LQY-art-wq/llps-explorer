@@ -1,0 +1,8 @@
+{
+  "status": "verified",
+  "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "checkpoints_verified": 7,
+  "vocabulary_source_files_verified": 2,
+  "selected_checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+  "inference_executed": false
+}

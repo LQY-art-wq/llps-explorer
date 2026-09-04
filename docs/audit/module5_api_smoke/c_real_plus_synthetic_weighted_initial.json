@@ -1,0 +1,59 @@
+{
+  "http_status": 202,
+  "body": {
+    "job_id": "analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU",
+    "created_at": "2026-09-03T12:36:06.616868Z",
+    "updated_at": "2026-09-03T12:36:06.616868Z",
+    "expires_at": "2026-09-03T13:36:06.616868Z",
+    "status": "queued",
+    "sequence": {
+      "name": null,
+      "length": 248,
+      "sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf"
+    },
+    "selected_methods": [
+      "lreca",
+      "fuzdrop",
+      "seg"
+    ],
+    "prediction_mode": "weighted",
+    "weights": {
+      "lreca": 0.6,
+      "fuzdrop": 0.4
+    },
+    "methods": {
+      "lreca": {
+        "method": "lreca",
+        "status": "queued",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "fuzdrop": {
+        "method": "fuzdrop",
+        "status": "queued",
+        "integration_mode": "manual_import",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "seg": {
+        "method": "seg",
+        "status": "queued",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": null,
+        "warnings": []
+      }
+    },
+    "ensemble": null,
+    "warnings": []
+  }
+}

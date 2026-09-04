@@ -1,0 +1,49 @@
+{
+  "started_at_utc": "2026-09-03T11:55:13.150392+00:00",
+  "finished_at_utc": "2026-09-03T11:56:05.862813+00:00",
+  "command": "python -m pytest backend/tests -q --junitxml=.audit/module4_full_tests.junit.xml",
+  "exit_code": 0,
+  "raw_log": ".audit/module4_full_tests.log",
+  "portable_log": "docs/audit/module4_full_tests.log",
+  "real_fuzdrop_submission_requests": 0,
+  "real_dismeta_submission_requests": 0,
+  "note": "DisMeta tests cover only the blocked boundary and synthetic normalized DTOs, not prediction. FuzDrop tests deny external HTTP transports and use synthetic format data; existing LRECA tests run local real inference; SEG integration tests execute the official local binary.",
+  "passed": 471,
+  "warnings": 2,
+  "pytest_duration_seconds": 51.48,
+  "tests": 471,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_groups": {
+    "test_dismeta_api": 35,
+    "test_dismeta_contract": 48,
+    "test_fuzdrop_api": 30,
+    "test_fuzdrop_import": 87,
+    "test_lreca_api": 56,
+    "test_lreca_integration": 20,
+    "test_lreca_portability": 7,
+    "test_lreca_process": 24,
+    "test_module0": 15,
+    "test_seg_api": 49,
+    "test_seg_integration": 13,
+    "test_seg_parser": 67,
+    "test_seg_process": 20
+  },
+  "evidence_sha256": {
+    ".audit/module4_full_tests.log": "74672310acb7799179af33202697e6c221c7c5be8fccf7d4809e8f721dda5af2",
+    ".audit/module4_full_tests.junit.xml": "fb24be59313f1949b61fc5674550cebc4512676bc0249c97c86d29249b1832af",
+    "docs/audit/module4_full_tests.log": "1cb3634a0f7422bb295a0a12ff4971cbc7219dd73d87302ee95b622f1c0a9289",
+    "docs/audit/module4_full_tests.junit.xml": "e27263c8136c76b7336f588a6dd90a0612c33ba3ef233609e5dbc913b20a0440"
+  },
+  "portable_export_redactions": [
+    "internal absolute paths",
+    "hostname",
+    "synthetic Windows path ids in unchanged older LRECA tests"
+  ],
+  "lint": {
+    "command": "python -m ruff check --config backend/pyproject.toml backend scripts",
+    "status": "passed"
+  },
+  "compile_import_check": "passed"
+}

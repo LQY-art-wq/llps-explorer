@@ -1,0 +1,85 @@
+# Module 5 changes relative to the completed 226-file Module 4 snapshot.
+# Total 77: added=61, modified=16, deleted=0.
+# 210 protected prior files remain SHA256-identical; 16 existing integration/docs files changed.
+# Seven prior test functions only update directory semantics, version/module and route assertions.
+# Checkpoints, upstream checkout, binaries, environments, private audit and local .env excluded.
+# Native scientific implementations, fixtures, dependency locks, frontend and prior reports preserved.
+# A = added; M = modified since Module 4; D = deleted.
+
+M	README.md
+M	backend/.env.example
+M	backend/app/__init__.py
+A	backend/app/api/analysis.py
+M	backend/app/api/fuzdrop.py
+M	backend/app/api/health.py
+M	backend/app/api/methods.py
+M	backend/app/core/config.py
+M	backend/app/main.py
+A	backend/app/schemas/imported_results.py
+M	backend/app/schemas/methods.py
+A	backend/app/schemas/orchestration.py
+A	backend/app/services/analysis_jobs.py
+A	backend/app/services/ensemble.py
+A	backend/app/services/imported_results.py
+A	backend/app/services/method_registry.py
+M	backend/app/services/orchestrator.py
+M	backend/pyproject.toml
+A	backend/tests/test_analysis_api.py
+A	backend/tests/test_analysis_jobs.py
+A	backend/tests/test_analysis_request.py
+M	backend/tests/test_dismeta_api.py
+A	backend/tests/test_ensemble.py
+M	backend/tests/test_fuzdrop_api.py
+A	backend/tests/test_imported_results.py
+A	backend/tests/test_method_registry.py
+M	backend/tests/test_module0.py
+A	backend/tests/test_orchestrator.py
+M	backend/tests/test_seg_api.py
+M	docs/architecture.md
+A	docs/audit/module5_api_smoke/a_real_lreca_seg_final.json
+A	docs/audit/module5_api_smoke/a_real_lreca_seg_initial.json
+A	docs/audit/module5_api_smoke/a_real_lreca_seg_progress.json
+A	docs/audit/module5_api_smoke/a_real_lreca_seg_request.json
+A	docs/audit/module5_api_smoke/all_four_with_import_final.json
+A	docs/audit/module5_api_smoke/all_four_with_import_initial.json
+A	docs/audit/module5_api_smoke/all_four_with_import_progress.json
+A	docs/audit/module5_api_smoke/all_four_with_import_request.json
+A	docs/audit/module5_api_smoke/all_four_without_import_final.json
+A	docs/audit/module5_api_smoke/all_four_without_import_initial.json
+A	docs/audit/module5_api_smoke/all_four_without_import_progress.json
+A	docs/audit/module5_api_smoke/all_four_without_import_request.json
+A	docs/audit/module5_api_smoke/b_weighted_without_import_final.json
+A	docs/audit/module5_api_smoke/b_weighted_without_import_initial.json
+A	docs/audit/module5_api_smoke/b_weighted_without_import_progress.json
+A	docs/audit/module5_api_smoke/b_weighted_without_import_request.json
+A	docs/audit/module5_api_smoke/c_real_plus_synthetic_weighted_final.json
+A	docs/audit/module5_api_smoke/c_real_plus_synthetic_weighted_initial.json
+A	docs/audit/module5_api_smoke/c_real_plus_synthetic_weighted_progress.json
+A	docs/audit/module5_api_smoke/c_real_plus_synthetic_weighted_request.json
+A	docs/audit/module5_api_smoke/d_dismeta_only_final.json
+A	docs/audit/module5_api_smoke/d_dismeta_only_initial.json
+A	docs/audit/module5_api_smoke/d_dismeta_only_progress.json
+A	docs/audit/module5_api_smoke/d_dismeta_only_request.json
+A	docs/audit/module5_api_smoke/health.json
+A	docs/audit/module5_api_smoke/import_reused_independent_final.json
+A	docs/audit/module5_api_smoke/import_reused_independent_initial.json
+A	docs/audit/module5_api_smoke/import_reused_independent_progress.json
+A	docs/audit/module5_api_smoke/import_reused_independent_request.json
+A	docs/audit/module5_api_smoke/input_provenance.json
+A	docs/audit/module5_api_smoke/methods.json
+A	docs/audit/module5_api_smoke/missing_import.json
+A	docs/audit/module5_api_smoke/sequence_mismatch.json
+A	docs/audit/module5_api_smoke/server.log
+A	docs/audit/module5_api_smoke/summary.json
+A	docs/audit/module5_api_smoke/synthetic_fuzdrop_import_request.json
+A	docs/audit/module5_api_smoke/synthetic_fuzdrop_import_response.json
+A	docs/audit/module5_checks.json
+A	docs/audit/module5_full_tests.junit.xml
+A	docs/audit/module5_full_tests.log
+A	docs/audit/module5_scope_review.json
+A	docs/audit/module5_test_verification_summary.json
+A	docs/module5_changed_files.txt
+A	docs/module5_commands.md
+A	docs/module5_report.md
+A	docs/orchestrator.md
+A	scripts/smoke_module5.py

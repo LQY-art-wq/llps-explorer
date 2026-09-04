@@ -1,0 +1,20 @@
+{
+  "same_production_build": true,
+  "normal_profile": {
+    "url": "/dev/sequence-viewer",
+    "FEATURE_VIEWER_TEST_MODE": "0 or unset",
+    "http_status": 404,
+    "synthetic_test_marker_present": false
+  },
+  "explicit_test_profile": {
+    "url": "/dev/sequence-viewer",
+    "FEATURE_VIEWER_TEST_MODE": "1",
+    "http_status": 200,
+    "synthetic_test_marker_present": true,
+    "visible_heading": "Synthetic test data — Sequence Viewer harness"
+  },
+  "production_workspace_prefilled_with_synthetic_data": false,
+  "status": "passed",
+  "recorded_local_date": "2026-09-04",
+  "timezone": "Asia/Shanghai"
+}

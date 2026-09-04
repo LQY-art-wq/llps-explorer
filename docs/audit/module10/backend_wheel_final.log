@@ -1,0 +1,16 @@
+Processing c:\users\lqy\documents\chatgpt\�������ҳ��\backend
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: llps-explorer-backend
+  Building wheel for llps-explorer-backend (pyproject.toml): started
+  Building wheel for llps-explorer-backend (pyproject.toml): finished with status 'done'
+  Created wheel for llps-explorer-backend: filename=llps_explorer_backend-0.10.0-py3-none-any.whl size=124052 sha256=7428122c0de7c47daff91c8bfde1733a64a739b9dde835544dfc27cfd45ec001
+  Stored in directory: C:\Users\lqy\AppData\Local\Temp\pip-ephem-wheel-cache-ka4azphf\wheels\2d\99\00\35eb51140b204a24a45010f79386d93db5d27b2e88c04c6484
+Successfully built llps-explorer-backend
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Scripts\python.exe -m pip install --upgrade pip

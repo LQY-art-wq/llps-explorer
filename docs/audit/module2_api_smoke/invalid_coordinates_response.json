@@ -1,0 +1,11 @@
+{
+  "http_status": 422,
+  "body": {
+    "detail": {
+      "code": "FUZDROP_INVALID_COORDINATE",
+      "message": "Coordinates must be positive integers.",
+      "field": "position",
+      "row": 2
+    }
+  }
+}

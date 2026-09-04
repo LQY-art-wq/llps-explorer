@@ -1,0 +1,4 @@
+# Sanitized exported log: actual targeted portability retest after the Git NUL-input correction.
+# Original bytes retained privately: .audit/module1_private_evidence/.audit/module1_portability_retest.log
+.......                                                                  [100%]
+7 passed in 0.38s

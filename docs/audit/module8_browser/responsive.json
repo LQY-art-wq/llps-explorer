@@ -1,0 +1,40 @@
+{
+  "browser": "Chrome through Computer Use",
+  "cases": [
+    {
+      "viewport": "1440x900",
+      "document_scroll_width": 1425,
+      "panel_width": 1048.8,
+      "toolbar_client_width": 1007,
+      "toolbar_scroll_width": 1007,
+      "grid_client_width": 1007,
+      "grid_scroll_width": 1006,
+      "page_horizontal_overflow": false,
+      "observation": "All 50 residues and controls fit without internal horizontal scrolling."
+    },
+    {
+      "viewport": "1280x900",
+      "document_scroll_width": 1265,
+      "panel_width": 888.8,
+      "grid_client_width": 846,
+      "grid_scroll_width": 909,
+      "page_horizontal_overflow": false,
+      "observation": "The fixed 50-residue grid uses its contained horizontal overflow; the page does not overflow."
+    },
+    {
+      "viewport": "1024x900",
+      "document_scroll_width": 1009,
+      "panel_width": 952.8,
+      "grid_client_width": 910,
+      "grid_scroll_width": 910,
+      "sidebar_left": -320,
+      "page_horizontal_overflow": false,
+      "observation": "The analysis sidebar collapses, controls wrap, and all 50 residues fit."
+    }
+  ],
+  "coordinate_rule": "Presentation width never changes native 1-based residue positions; rows remain fixed at 50 residues.",
+  "visual_review": "Tick labels did not overlap amino-acid letters, selected outlines remained visible, and the sequence did not resemble a grid of crowded boxes.",
+  "status": "passed",
+  "recorded_local_date": "2026-09-04",
+  "timezone": "Asia/Shanghai"
+}

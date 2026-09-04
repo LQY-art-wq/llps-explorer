@@ -1,0 +1,50 @@
+# Module 2 changes relative to the completed 114-file Module 1 snapshot.
+# Total 44: added=32, modified=12, deleted=0.
+# Source checkout, weights, environments, private raw audit and Git index are excluded.
+# LRECA scientific implementation, regression fixtures/tests, frontend, SEG, DisMeta and orchestrator unchanged.
+# A = added; M = modified since Module 1; D = deleted.
+
+M	README.md
+M	backend/.env.example
+M	backend/app/__init__.py
+M	backend/app/adapters/fuzdrop_remote.py
+A	backend/app/api/fuzdrop.py
+M	backend/app/api/health.py
+A	backend/app/api/methods.py
+M	backend/app/core/config.py
+M	backend/app/main.py
+M	backend/app/schemas/analysis.py
+A	backend/app/schemas/fuzdrop.py
+A	backend/app/schemas/methods.py
+A	backend/app/services/fuzdrop_import.py
+M	backend/pyproject.toml
+A	backend/tests/fixtures/fuzdrop/README.md
+A	backend/tests/fixtures/fuzdrop/synthetic_format_fixture_regions.tsv
+A	backend/tests/fixtures/fuzdrop/synthetic_format_fixture_scores.tsv
+A	backend/tests/test_fuzdrop_api.py
+A	backend/tests/test_fuzdrop_import.py
+M	backend/tests/test_module0.py
+M	docs/architecture.md
+A	docs/audit/fuzdrop/export_format_evidence.json
+A	docs/audit/fuzdrop/http_observations.jsonl
+A	docs/audit/fuzdrop/service_audit.json
+A	docs/audit/module2_api_smoke/fuzdrop_analyze.json
+A	docs/audit/module2_api_smoke/fuzdrop_health.json
+A	docs/audit/module2_api_smoke/health.json
+A	docs/audit/module2_api_smoke/invalid_coordinates_response.json
+A	docs/audit/module2_api_smoke/lreca_regression_response.json
+A	docs/audit/module2_api_smoke/methods.json
+A	docs/audit/module2_api_smoke/server.log
+A	docs/audit/module2_api_smoke/summary.json
+A	docs/audit/module2_api_smoke/synthetic_import_request.json
+A	docs/audit/module2_api_smoke/synthetic_import_response.json
+A	docs/audit/module2_full_tests.junit.xml
+A	docs/audit/module2_full_tests.log
+A	docs/audit/module2_scope_review.json
+A	docs/audit/module2_test_verification_summary.json
+M	docs/external_services.md
+A	docs/fuzdrop_integration.md
+A	docs/module2_changed_files.txt
+A	docs/module2_commands.md
+A	docs/module2_report.md
+A	scripts/smoke_module2.py

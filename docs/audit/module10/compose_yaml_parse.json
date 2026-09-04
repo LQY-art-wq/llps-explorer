@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "parser": "PyYAML 6.0.3",
+  "scope": "YAML syntax and selected topology invariants only; not Docker Compose schema/daemon validation.",
+  "checks": {
+    "yaml_parsed": true,
+    "services_exact": true,
+    "only_reverse_proxy_has_ports": true,
+    "internal_network_flag": true,
+    "named_volumes_exact": true,
+    "migration_one_shot": true,
+    "all_long_running_have_healthcheck": true
+  },
+  "services": [
+    "backend",
+    "frontend",
+    "lreca",
+    "migrate",
+    "postgres",
+    "redis",
+    "reverse-proxy",
+    "worker"
+  ]
+}

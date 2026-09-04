@@ -1,0 +1,7 @@
+Fresh SQLite upgrade: passed
+Alembic revision: 20260904_0002 (head)
+Required tables: analysis_jobs, imported_results, analysis_job_imports, analysis_job_methods
+Required tables present: true
+PostgreSQL offline DDL generation: passed
+PostgreSQL revisions rendered: 2
+PostgreSQL runtime acceptance: not performed in Module 9

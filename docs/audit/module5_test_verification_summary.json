@@ -1,0 +1,56 @@
+{
+  "started_at_utc": "2026-09-03T12:32:45.683621+00:00",
+  "finished_at_utc": "2026-09-03T12:33:36.551111+00:00",
+  "command": "python -m pytest backend/tests -q --junitxml=.audit/module5_full_tests.junit.xml",
+  "exit_code": 0,
+  "raw_log": ".audit/module5_full_tests.log",
+  "portable_log": "docs/audit/module5_full_tests.log",
+  "real_fuzdrop_submission_requests": 0,
+  "real_dismeta_submission_requests": 0,
+  "note": "DisMeta remains blocked; orchestration and ensemble tests use explicit synthetic fixtures. The legacy DisMeta contract tests do not imply an implemented predictor. FuzDrop tests deny external HTTP transports and use synthetic format data; existing LRECA tests run local real inference; SEG integration tests execute the official local binary.",
+  "passed": 726,
+  "warnings": 2,
+  "pytest_duration_seconds": 49.88,
+  "tests": 726,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_groups": {
+    "test_analysis_api": 46,
+    "test_analysis_jobs": 8,
+    "test_analysis_request": 66,
+    "test_dismeta_api": 35,
+    "test_dismeta_contract": 48,
+    "test_ensemble": 34,
+    "test_fuzdrop_api": 30,
+    "test_fuzdrop_import": 87,
+    "test_imported_results": 65,
+    "test_lreca_api": 56,
+    "test_lreca_integration": 20,
+    "test_lreca_portability": 7,
+    "test_lreca_process": 24,
+    "test_method_registry": 12,
+    "test_module0": 15,
+    "test_orchestrator": 24,
+    "test_seg_api": 49,
+    "test_seg_integration": 13,
+    "test_seg_parser": 67,
+    "test_seg_process": 20
+  },
+  "evidence_sha256": {
+    ".audit/module5_full_tests.log": "8ad46b711db92539ae6b80f430127098a9210af00ab4a1cfd4b8f9494b5aee8e",
+    ".audit/module5_full_tests.junit.xml": "5f141a0b3e454e8ca4d831c54e37044587aed973177a7d357330423b1f04d7b0",
+    "docs/audit/module5_full_tests.log": "b858086daa00de094a941989807284106fd379db15fbbede897c57253b205148",
+    "docs/audit/module5_full_tests.junit.xml": "a5ab5f9839b4720c2db4098403ed4e957ea37c0964d6f462ae0a7d8e9083fb85"
+  },
+  "portable_export_redactions": [
+    "internal absolute paths",
+    "hostname",
+    "synthetic Windows path ids in unchanged older LRECA tests"
+  ],
+  "lint": {
+    "command": "python -m ruff check --config backend/pyproject.toml backend scripts",
+    "status": "passed"
+  },
+  "compile_import_check": "passed"
+}

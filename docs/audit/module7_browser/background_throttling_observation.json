@@ -1,0 +1,23 @@
+{
+  "note": "Initial attempt ran with the in-app browser panel hidden (visibility capability false). Its ~2s double-rAF timings are background throttling; excluded from foreground acceptance. Foreground retest follows.",
+  "metrics": [
+    {
+      "count": "1",
+      "kind": "initial_render",
+      "maxMs": "8.800000000745058",
+      "medianMs": "8.800000000745058"
+    },
+    {
+      "count": "3",
+      "kind": "zoom",
+      "maxMs": "2001.6000000014901",
+      "medianMs": "1998.800000000745"
+    },
+    {
+      "count": "80",
+      "kind": "hover",
+      "maxMs": "1995.199999999255",
+      "medianMs": "7.150000002235174"
+    }
+  ]
+}

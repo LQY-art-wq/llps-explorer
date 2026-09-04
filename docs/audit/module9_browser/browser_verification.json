@@ -1,0 +1,140 @@
+{
+  "module": 9,
+  "recorded_at_utc": "2026-09-04T03:41:55Z",
+  "status": "passed",
+  "surface": "production Next.js workspace connected to a real FastAPI backend",
+  "synthetic_default_job_present": false,
+  "privacy": {
+    "anonymous_session_token_recorded": false,
+    "owner_hash_recorded": false,
+    "full_sequence_recorded": false,
+    "server_absolute_path_recorded": false,
+    "internal_service_url_recorded": false
+  },
+  "primary_job": {
+    "job_id": "analysis_qRdLh232naWnfD4YndOlZl8WUmDuBn-B",
+    "sequence_length": 248,
+    "selected_methods": [
+      "lreca",
+      "seg"
+    ],
+    "prediction_mode": "independent",
+    "status": "success",
+    "result_schema_version": "1.0",
+    "lreca": {
+      "status": "success",
+      "score": 0.9999921321868896,
+      "label": "P",
+      "critical_region_count": 5,
+      "provenance_visible": true,
+      "model_variant": "human_specific",
+      "checkpoint_filename": "human_1_RCNN_ECA_parallel_089-0.9802.pt"
+    },
+    "seg": {
+      "status": "success",
+      "region_count": 3,
+      "coverage": 0.3911290322580645,
+      "longest_region_length": 52
+    }
+  },
+  "scenarios": {
+    "A_real_lreca_seg_analysis": {
+      "status": "passed",
+      "observation": "A real LRECA and SEG job reached success in the production workspace."
+    },
+    "B_history": {
+      "status": "passed",
+      "observation": "History listed the current anonymous session's persisted jobs newest first; status and method filtering worked, and the LRECA filter returned the primary job only."
+    },
+    "C_open_job": {
+      "status": "passed",
+      "observation": "Open loaded the saved result through the detail endpoint and restored the result workspace."
+    },
+    "D_feature_viewer_restore": {
+      "status": "passed",
+      "track_count": 4,
+      "observation": "The persisted LRECA and SEG tracks rendered without rerunning analysis."
+    },
+    "E_sequence_viewer_restore": {
+      "status": "passed",
+      "residue_count": 248,
+      "observation": "Canonical residues, regions, evidence and default selection state were restored from the saved snapshot."
+    },
+    "F_download_json": {
+      "status": "passed",
+      "button_request_http_status": 200,
+      "observation": "The Result JSON button reached the persisted export endpoint. Exact payload equivalence is independently checked by the live backend hard gate."
+    },
+    "G_download_csv": {
+      "status": "passed",
+      "format_clicked": "residues.csv",
+      "button_request_http_status": 200,
+      "observation": "The CSV button reached the persisted export endpoint. Row, coordinate, amino-acid and precision checks are independently covered by the live backend hard gate."
+    },
+    "H_download_fasta": {
+      "status": "passed",
+      "button_request_http_status": 200,
+      "observation": "The FASTA button reached the persisted export endpoint. Wrapping and sequence identity are independently covered by the live backend hard gate."
+    },
+    "I_delete_job": {
+      "status": "passed",
+      "browser_confirmation_rendered": true,
+      "browser_confirmation_text_describes_permanent_delete": true,
+      "browser_confirmation_accepted": true,
+      "browser_delete_http_status": 204,
+      "observation": "The browser confirmed permanent deletion of the primary job, and the same browser action reached the delete endpoint with HTTP 204."
+    },
+    "J_refresh_history_after_delete": {
+      "status": "passed",
+      "same_session_filtered_history_http_status": 200,
+      "deleted_primary_job_absent": true,
+      "additional_long_job_removed_by_acceptance_teardown": true,
+      "default_status_filter": "all",
+      "default_method_filter": "all",
+      "empty_state_observed": true,
+      "saved_analysis_count_observed": 0,
+      "empty_state_text": "No saved analyses yet.",
+      "observation": "The same browser session refreshed History after the primary delete. The separate 5000-aa acceptance job was then removed as test teardown, not through the frontend Delete action; after reload, default filters showed zero saved analyses and the required empty state."
+    },
+    "K_restart_then_reopen": {
+      "status": "passed",
+      "backend_process_restarted": true,
+      "analysis_post_requests_after_restart": 0,
+      "persisted_payload_exactly_equal": true,
+      "payload_sha256_before_restart": "9b01fe3587be0d1a601aa5f51d3479cf5d0b15238e8f680d22b3d2841912fa0b",
+      "payload_sha256_after_restart": "9b01fe3587be0d1a601aa5f51d3479cf5d0b15238e8f680d22b3d2841912fa0b",
+      "observation": "History reopened the same job after a backend process restart and restored the saved workspace without scientific recomputation."
+    }
+  },
+  "tables": {
+    "prediction_summary_present": true,
+    "lreca_top_residue_rows": 10,
+    "lreca_region_rows": 5,
+    "seg_region_rows": 3,
+    "dismeta_shown_as_unavailable": true,
+    "full_residue_rows": 248,
+    "full_residue_page_size": 50,
+    "table_to_sequence_link_passed": true,
+    "sequence_to_feature_link_passed": true,
+    "linked_focus_position": 106,
+    "coordinates": "one_based_inclusive"
+  },
+  "history": {
+    "retention_days_displayed": 7,
+    "anonymous_scope_displayed": true,
+    "empty_state_contract": "No saved analyses yet.",
+    "empty_state_observed": true,
+    "saved_analysis_count_observed": 0,
+    "empty_state_observed_after_acceptance_teardown": true
+  },
+  "browser_console": {
+    "warning_count": 0,
+    "error_count": 0
+  },
+  "related_evidence": [
+    "docs/audit/module9_browser/restart_verification.json",
+    "docs/audit/module9_browser/long_export.json",
+    "docs/audit/module9_backend_restart/summary.json",
+    "docs/audit/module9_backend_restart/exports.json"
+  ]
+}

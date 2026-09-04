@@ -1,0 +1,37 @@
+[
+  {
+    "path": "Demo/saliency_model/mydata_1507_RCNN_ECA_089-0.9930.pt",
+    "size_bytes": 2393227,
+    "sha256": "700f11d557da5a739b704564cf5c5d9dcfabca5c401ee169cc383c5a11fe9988"
+  },
+  {
+    "path": "Demo/trained_model/human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "size_bytes": 2395318,
+    "sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc"
+  },
+  {
+    "path": "Demo/trained_model/model_high_2.pt",
+    "size_bytes": 5491418,
+    "sha256": "0171db33c1ba8c2a7f6a585c02b1c5d2704e94d21f9483f2100a710e22b04499"
+  },
+  {
+    "path": "Demo/trained_model/model_LLPS_0.pt",
+    "size_bytes": 8209934,
+    "sha256": "0f8149444ae9438ee74f481e9b1e3b4355aa67354408a47dba78a5c6a2167a69"
+  },
+  {
+    "path": "Demo/trained_model/model_mydata_1.pt",
+    "size_bytes": 4339162,
+    "sha256": "675bb1c9ea374d161c210c2f5b9fe69e49bd5afb59ea355662d107f4332a456c"
+  },
+  {
+    "path": "Demo/trained_model/model_R_3.pt",
+    "size_bytes": 4339162,
+    "sha256": "ceb4035d5248d2e0b1e3dbd3764ac18455f44cdbba07a6607dc64f8c29e1c5bc"
+  },
+  {
+    "path": "Demo/trained_model/mydata_1507_RCNN_ECA_089-0.9930.pt",
+    "size_bytes": 2393227,
+    "sha256": "700f11d557da5a739b704564cf5c5d9dcfabca5c401ee169cc383c5a11fe9988"
+  }
+]

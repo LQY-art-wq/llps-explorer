@@ -1,0 +1,91 @@
+{
+  "environment": "Real production frontend and real local backend in Chrome through Computer Use",
+  "cases": {
+    "1_feature_to_sequence_residue": {
+      "source_action": "Clicked the Feature Viewer continuous track at native position 243",
+      "selection_before_explicit_jump": "243 (R)",
+      "source_tab_remained_active": true,
+      "explicit_action": "View in Sequence",
+      "destination_selected_residue": 243,
+      "destination_amino_acid": "R",
+      "destination_row_start": 201,
+      "passed": true
+    },
+    "2_sequence_to_feature_residue": {
+      "source_action": "Clicked sequence residue 106 (G)",
+      "source_tab_remained_active": true,
+      "explicit_action": "View in Feature Viewer",
+      "destination_selected_residue": 106,
+      "destination_visible_range": "81–131",
+      "passed": true
+    },
+    "3_feature_to_sequence_region": {
+      "source_action": "Selected SEG region 89–119 in the Feature Viewer native region table",
+      "source_tab_remained_active": true,
+      "explicit_action": "View in Sequence",
+      "destination_selected_region": "89–119",
+      "highlighted_residue_count": 31,
+      "passed": true
+    },
+    "4_sequence_to_feature_region": {
+      "source_action": "Selected SEG region 196–247 from Jump to region",
+      "source_tab_remained_active": true,
+      "explicit_action": "View in Feature Viewer",
+      "destination_selected_region": "196–247",
+      "destination_visible_range": "176–248",
+      "focus_implementation": "Existing Module 7 focusRegion with 20-residue margin and boundary clamp",
+      "passed": true
+    },
+    "5_top_residue_to_both_viewers": {
+      "table": "LRECA Top Residues",
+      "row": "Rank 1, position 106, G, attribution 1.0000",
+      "sequence_destination": "selected residue 106",
+      "feature_destination": "selected residue 106, visible 81–131",
+      "passed": true
+    },
+    "6_region_tables_to_both_viewers": {
+      "lreca": "Region 1–80 highlighted 80 residues; Feature Viewer focused 1–100",
+      "seg": "Region 89–119 highlighted 31 residues; Feature Viewer focused 69–139",
+      "fuzdrop": "Imported native region 30–45 highlighted 16 residues; Feature Viewer focused 10–65",
+      "passed": true,
+      "fuzdrop_final_marked_test": {
+        "job_id": "analysis_fyX6SCedyUcspcfOWKSixl4WHeW0PFR5",
+        "profile": "test",
+        "synthetic_badge_visible": true,
+        "model_inference_methods_run": [],
+        "source_table": "FuzDrop Regions",
+        "native_region": "30–45",
+        "feature_destination": {
+          "selected_region": "30–45",
+          "visible_range": "10–65",
+          "track_ids": [
+            "fuzdrop-propensity",
+            "fuzdrop-regions"
+          ]
+        },
+        "sequence_destination": {
+          "selected_region": "30–45",
+          "highlighted_residue_count": 16
+        },
+        "console_warning_or_error_count": 0,
+        "passed": true
+      }
+    },
+    "7_new_analysis_reset": {
+      "before": "selected residue 1 from the prior LRECA+SEG analysis",
+      "new_analysis": "SEG-only",
+      "after_selected_residue": null,
+      "after_selected_region": null,
+      "after_active_tab": "Overview",
+      "after_default_color_mode": "seg-regions",
+      "passed": true
+    }
+  },
+  "ordinary_selection_forces_tab_switch": false,
+  "explicit_view_actions_switch_tabs": true,
+  "single_parent_selection_source": true,
+  "status": "passed",
+  "recorded_local_date": "2026-09-04",
+  "timezone": "Asia/Shanghai",
+  "final_fuzdrop_table_recheck_at_utc": "2026-09-03T17:13:53.670971+00:00"
+}

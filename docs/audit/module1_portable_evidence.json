@@ -1,0 +1,330 @@
+{
+  "status": "verified",
+  "scientific_validation_rerun": false,
+  "original_bytes_archived": true,
+  "api_smoke_directory": "Earlier raw HTTP evidence archived; current API files were independently replaced by the successful actual TCP run after public-metadata correction and are not modified by this export.",
+  "files": [
+    {
+      "source": "backend/tests/fixtures/lreca/attribution_baseline.json",
+      "original_sha256": "668575c91eb2a38efc0e83970b6d2361a201b59fd444b02face99a6657355b20",
+      "original_size_bytes": 139724,
+      "private_archive": ".audit/module1_private_evidence/backend/tests/fixtures/lreca/attribution_baseline.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "public_sha256_at_export": "eed48fe3139df63ab567c0070f9e61fbaba71ca489f548cded2a0fe55f85d1ef"
+    },
+    {
+      "source": "backend/tests/fixtures/lreca/global_baseline.json",
+      "original_sha256": "2510e38c16cb0835623fa7c35e3640e2f4e9bcd91796559aa01ae8533ef24a31",
+      "original_size_bytes": 7617,
+      "private_archive": ".audit/module1_private_evidence/backend/tests/fixtures/lreca/global_baseline.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "public_sha256_at_export": "59b1cb559ce0d4a3f9e9b0f1a8ac8fb7dd48809fb0f3bdc4da6a1c395c4010eb"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/demo_stderr.log",
+      "original_sha256": "cbe04863fb253c03b9d938811d29221fea24f952c3df4a2fcf62ed100db6b813",
+      "original_size_bytes": 434,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/demo_stderr.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "5ecbb1c19a2751745eee95cea389f149e5ee81deefd0676041a3a663e3a94ead"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/demo_stdout.log",
+      "original_sha256": "1b8710db8ee4fa81db6199f0d9011d01c211370cb1033fecd159fcfc03e55ef6",
+      "original_size_bytes": 437,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/demo_stdout.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "4a0793b4e1642ccd4180955b833f8d86dee453d9436dd0f94c605362b88d8939"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/run_metadata.json",
+      "original_sha256": "a520e1fb433fb5c23bb3eb11b0c071d774c4360840338a6c606392b6b50d704f",
+      "original_size_bytes": 3257,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/run_metadata.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "public_sha256_at_export": "427a051ef59797eb8e1f1fa03d12e1e2380a86f258b330e388a1fd8cc9dc1a3c"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/supplement_stderr.log",
+      "original_sha256": "cbe04863fb253c03b9d938811d29221fea24f952c3df4a2fcf62ed100db6b813",
+      "original_size_bytes": 434,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/supplement_stderr.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "a131f7f428295415eb4b257a1225c31c2a0e9375b13fb726fbd3f12366794589"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/supplement_stdout.log",
+      "original_sha256": "af058eae8cef998b01dab52c7767bc8f1ec3dd1e68dba8c04477f99975f6bee4",
+      "original_size_bytes": 94,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/supplement_stdout.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "e032bc0874133b54f7bb03d6988506c6ecd60ae8b08457373a9ab49efe9118fe"
+    },
+    {
+      "source": "docs/audit/lreca_baseline_cpu/supplemental_predictions.json",
+      "original_sha256": "a6791ec95f0745e324a7e6fcba334befd45780fc6a5283066f807435cb7ef6af",
+      "original_size_bytes": 7165,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/supplemental_predictions.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "public_sha256_at_export": "cc6b8383c9e982fcc4ad537c53a937231ba607cb3d400147050248453c1aa229"
+    },
+    {
+      "source": "docs/audit/lreca_benchmark_failed_harness.log",
+      "original_sha256": "675bbd7ee655374ad7e8c5637b78f9fbc88d0aa0e746b1b77da96045ef20b837",
+      "original_size_bytes": 1992,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_benchmark_failed_harness.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "7c01db72f91a1dc3f843d493156fae147fee479ce58a0c741dfaf85f6e62be29"
+    },
+    {
+      "source": "docs/audit/lreca_benchmark_stdout.log",
+      "original_sha256": "ea9bc3ca9feefef71bbc0ae5331754dd6c545200026c19581ddec1fbca317cf7",
+      "original_size_bytes": 1348,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_benchmark_stdout.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "df5b01dd7d5d2d36edffb9d672efb1fc57faf550a12b6662a8c373cab4fbb903"
+    },
+    {
+      "source": "docs/audit/lreca_integration_stdout.log",
+      "original_sha256": "79c1b9f4e1b26fd6194468ea66ff1454c2f7512b3608b1a06bc14482e504e8fb",
+      "original_size_bytes": 2980,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_integration_stdout.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "86cef436ea97ee65cd2ecfe9db6cdf70b5fa34c033827add5a7a016a7c5b8a66"
+    },
+    {
+      "source": "docs/audit/lreca_performance.json",
+      "original_sha256": "0fe5ecfea2fdd0cac1c50d241ddac731ffda95e17d77d1db2da7be6c138408a9",
+      "original_size_bytes": 115546,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_performance.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "actual_device_labels": [
+        {
+          "section": "cases",
+          "index": 10,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 11,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 12,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 13,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 14,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 15,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 16,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 17,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 18,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "cases",
+          "index": 19,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        },
+        {
+          "section": "lifecycle",
+          "index": 1,
+          "requested": "cuda",
+          "actual": "cuda:0"
+        }
+      ],
+      "public_sha256_at_export": "8255bfc0f595e72cd490950b420a1e1deb5d890bdbbd959f087608e22f0c2ed8"
+    },
+    {
+      "source": "docs/audit/lreca_performance_failed_harness.json",
+      "original_sha256": "1f8057c5a3b7eeb407fe9b3a9abfe5cc5fd7813fb5eca968674694e70888679b",
+      "original_size_bytes": 42784,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_performance_failed_harness.json",
+      "verification": "All numerical leaves and sequence/version/time/device observations preserved; requested device aliases updated only from existing actual worker diagnostics.",
+      "public_sha256_at_export": "61b975b7946e1e527acbfe7fa068756b8696fa73c708fdf51c48e9437c80ab2e"
+    },
+    {
+      "source": "docs/audit/module1_full_tests.log",
+      "original_sha256": "9f7d1c576d70d6b3ca8e9cc5fd225bb04ef9eeb4231679775777a0c07b6a8e0d",
+      "original_size_bytes": 1049,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/module1_full_tests.log",
+      "verification": "Only workstation path references and an explicit sanitized-export header changed; original payload retained byte-for-byte in private archive.",
+      "public_sha256_at_export": "e68e482c209fd08b8ed6f88b318f7c4a04cb410e6d41c6e90d01913aee0b0156"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/global_only_response.json",
+      "original_sha256": "abc7791a8f2475369545738f67166341157e63d274278322072926ee69cd1774",
+      "original_size_bytes": 3880,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/global_only_response.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": true,
+      "public_sha256_at_export": "4e33825fcec2ccf6bd8e13c4f73dfa70326b4f4a62fcfa446ac7f1467f15880e"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/health.json",
+      "original_sha256": "6ce775ea504ad596500f4750ee63b5ecd18aafd9e92adb276799bbd3fdc1fcf8",
+      "original_size_bytes": 2704,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/health.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": true,
+      "public_sha256_at_export": "e4b8ffd7e8011f0f6b4aaaf667d5bf7e68d26cf9522cdbd55f8ea02591240c14"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/request.json",
+      "original_sha256": "3584f7ed56fa54207328085996cb3f7854382a2bd6b1e4ae3bf79c8fb9c2daaf",
+      "original_size_bytes": 272,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/request.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": false,
+      "public_sha256_at_export": "3584f7ed56fa54207328085996cb3f7854382a2bd6b1e4ae3bf79c8fb9c2daaf"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/response.json",
+      "original_sha256": "25ea61daa303e001260caed2601a306ee6fffbf6a1f5671cdbb292189cab06c7",
+      "original_size_bytes": 48687,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/response.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": true,
+      "public_sha256_at_export": "a107a161a2db045a3c3b035707aff44ee36348d72871ce7eecc198a81630a59c"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/server_stdout.log",
+      "original_sha256": "5b6ee73e0a901d05eb54c9e4a647f956d09e4817b5c9128a24739d6d4c7942a1",
+      "original_size_bytes": 1252,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/server_stdout.log",
+      "verification": "Original server startup log retained privately byte-for-byte; public copy explicitly marked sanitized exported log.",
+      "public_changed": true,
+      "public_sha256_at_export": "6057d5ed3771831d3560b11e4200779b45faf64e494f11bcbedb0f00ab01f410"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/summary.json",
+      "original_sha256": "67e7735cfe8e402a7d48ef3a86dbf3e8d80ba81628b670e6da9a541d71e52233",
+      "original_size_bytes": 810,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/summary.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": false,
+      "public_sha256_at_export": "67e7735cfe8e402a7d48ef3a86dbf3e8d80ba81628b670e6da9a541d71e52233"
+    },
+    {
+      "source": "docs/audit/lreca_api_smoke/validation_response.json",
+      "original_sha256": "87b794fd472c471dd9aef0b6c02b4752b67286a40c63566f692d34e9c42434d8",
+      "original_size_bytes": 158,
+      "private_archive": ".audit/module1_private_evidence/docs/audit/lreca_api_smoke/validation_response.json",
+      "verification": "Historical HTTP response preserved with its original schema and all numerical values; only path references exported. This is not the forthcoming fresh HTTP run.",
+      "public_changed": false,
+      "public_sha256_at_export": "87b794fd472c471dd9aef0b6c02b4752b67286a40c63566f692d34e9c42434d8"
+    },
+    {
+      "source": ".audit/module1_production_tests.log",
+      "original_sha256": "3aab704389032bd4cd138c8d7cb79f35db07029e824869df67db5774407a6711",
+      "original_size_bytes": 2546,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_production_tests.log",
+      "public_path": "docs/audit/module1_production_tests_initial.log",
+      "public_sha256_at_export": "7dba1c0b20b531a7ac3dd1a13fe2f212d353432d3d9f3f1c10f4f8d7517500ec",
+      "verification": "Initial full test run retained exactly, including 124 passes and 1 Windows stdin CRLF test-harness failure. Numerical/XML outcomes and timing unchanged; no success invented."
+    },
+    {
+      "source": ".audit/module1_production_tests.junit.xml",
+      "original_sha256": "013a44448ae74cfbb18fae4632ca058871ded945c7cddf6c1057fa2d5d4ef744",
+      "original_size_bytes": 18942,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_production_tests.junit.xml",
+      "public_path": "docs/audit/module1_production_tests_initial.junit.xml",
+      "public_sha256_at_export": "d6c5663472e6a9c46310458b7723ff542f01e22af28e85ffb0003547bfa43cbf",
+      "verification": "Initial full test run retained exactly, including 124 passes and 1 Windows stdin CRLF test-harness failure. Numerical/XML outcomes and timing unchanged; no success invented."
+    },
+    {
+      "source": ".audit/module1_portability_retest.log",
+      "original_sha256": "09cd1af57a6049005364fa2bb68a04445d0200d5dfe85eb024829d9f69316bb4",
+      "original_size_bytes": 100,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_portability_retest.log",
+      "public_path": "docs/audit/module1_portability_retest.log",
+      "public_sha256_at_export": "c0a09a40055bfdbafd52d2d378136175d21f2da4c859e92fc049e3b21fe75a31",
+      "verification": "Actual targeted retest preserved: 7 passed; no scientific inference or baseline/benchmark was rerun by this export."
+    },
+    {
+      "source": ".audit/module1_portability_retest.junit.xml",
+      "original_sha256": "0739871bc566e84352947a0697bf97d311f116b74226546f0cd9154e25b11794",
+      "original_size_bytes": 1196,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_portability_retest.junit.xml",
+      "public_path": "docs/audit/module1_portability_retest.junit.xml",
+      "public_sha256_at_export": "a0d3f7cb41453c52d4d43d6b196a7dcae71aa9040f73b53efb0465b72e37591c",
+      "verification": "Actual targeted retest preserved: 7 passed; no scientific inference or baseline/benchmark was rerun by this export."
+    },
+    {
+      "source": ".audit/module1_production_final_tests.log",
+      "original_sha256": "871e82e8315c2ea0e0abc308716dfdad06b29fa73a586b27073fbec6859b5322",
+      "original_size_bytes": 1050,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_production_final_tests.log",
+      "public_path": "docs/audit/module1_production_final_tests.log",
+      "public_sha256_at_export": "01ea4b5e1e1990633ea94409c390e8a898fe63f166018ec7e5cd448874305485",
+      "verification": "Actual final full backend run preserved: 125 passed, 0 failed, 0 skipped, 2 warnings, pytest-reported 40.04 seconds. All XML outcomes and timing attributes unchanged."
+    },
+    {
+      "source": ".audit/module1_production_final_tests.junit.xml",
+      "original_sha256": "9652af7fa83acba70793ed2b6136bdae1b560077b78e95732eb265c3af2b915c",
+      "original_size_bytes": 17321,
+      "private_archive": ".audit/module1_private_evidence/.audit/module1_production_final_tests.junit.xml",
+      "public_path": "docs/audit/module1_production_final_tests.junit.xml",
+      "public_sha256_at_export": "c4d573d38dfc1eee33d34953e31f1c006500093103f3d9e41d2a8d60e669021d",
+      "verification": "Actual final full backend run preserved: 125 passed, 0 failed, 0 skipped, 2 warnings, pytest-reported 40.04 seconds. All XML outcomes and timing attributes unchanged."
+    }
+  ],
+  "evidence_scope": "Historical export ledger. Hashes describe the original bytes and public bytes at export time; later actual HTTP or test runs may replace the current file with newly measured evidence.",
+  "rendering_normalization": [
+    {
+      "source": "docs/audit/module1_production_tests_initial.log",
+      "exported_copy_backup": {
+        "source": "docs/audit/module1_production_tests_initial.log",
+        "original_sha256": "7dba1c0b20b531a7ac3dd1a13fe2f212d353432d3d9f3f1c10f4f8d7517500ec",
+        "original_size_bytes": 2671,
+        "private_archive": ".audit/module1_private_evidence/docs/audit/module1_production_tests_initial.log"
+      },
+      "public_sha256_after_rendering_normalization": "69fec9904bd288758dd9b723407f78633868e757e450cda4c95611f54d6482f2",
+      "change": "Only trailing diagnostic line whitespace and exported LF formatting; failed assertion, counts, durations and numeric evidence preserved."
+    },
+    {
+      "source": "docs/audit/module1_production_tests_initial.junit.xml",
+      "exported_copy_backup": {
+        "source": "docs/audit/module1_production_tests_initial.junit.xml",
+        "original_sha256": "d6c5663472e6a9c46310458b7723ff542f01e22af28e85ffb0003547bfa43cbf",
+        "original_size_bytes": 19110,
+        "private_archive": ".audit/module1_private_evidence/docs/audit/module1_production_tests_initial.junit.xml"
+      },
+      "public_sha256_after_rendering_normalization": "52ab08a2c4335b53c00d73dd78661761c1e163a8d689d06757838d90f2dcbe07",
+      "change": "Only trailing diagnostic line whitespace and exported LF formatting; failed assertion, counts, durations and numeric evidence preserved."
+    }
+  ]
+}

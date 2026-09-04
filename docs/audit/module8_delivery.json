@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-09-03T17:14:38.426913+00:00",
+  "module": 8,
+  "status": "passed",
+  "checks": {
+    "normal_frontend_root_200": true,
+    "normal_sequence_fixture_route_404": true,
+    "normal_feature_fixture_route_404": true,
+    "normal_root_has_no_synthetic_marker": true,
+    "normal_api_health_200": true,
+    "backend_returns_healthy_status": true,
+    "temporary_test_frontend_stopped": true
+  },
+  "normal_profile": {
+    "FEATURE_VIEWER_TEST_MODE": "0",
+    "production_build": true
+  },
+  "test_profile": {
+    "temporary_frontend_stopped": true
+  },
+  "backend": {
+    "kept_running": true,
+    "model_process_restarted_for_this_check": false
+  },
+  "scope": "Read-only local endpoint and socket checks after the final build. No new analysis or import was submitted."
+}

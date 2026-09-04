@@ -1,0 +1,20 @@
+{
+  "fixture_kind": "synthetic_official_format_only",
+  "scientific_prediction": false,
+  "official_origin_verified": false,
+  "notice": "All FuzDrop pLLPS, pDP, Sbind and regions are deliberately synthetic. Only the sequence and the supported export syntax are real. These fixtures are not official predictions, model validation, or calibration data.",
+  "sequence_source": "backend/tests/fixtures/lreca/global_baseline.json#cases[id=human_positive_line_1]",
+  "sequence_length": 248,
+  "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+  "synthetic_pLLPS": 0.68,
+  "synthetic_residue_rows": 248,
+  "synthetic_region_rows": 3,
+  "coordinates": "one_based_inclusive test declaration; no new official-coordinate evidence",
+  "verification": "Parsed locally with the existing FuzDropImportRequest and import_fuzdrop_result; no remote requests, model inference, or server started.",
+  "file_sha256": {
+    "human_positive_line_1.fasta": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575",
+    "synthetic_fuzdrop_scores_248aa.tsv": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+    "synthetic_fuzdrop_regions_248aa.tsv": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964",
+    "synthetic_fuzdrop_import_248aa.json": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "http_status": 202,
+  "body": {
+    "job_id": "analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur",
+    "created_at": "2026-09-03T12:36:04.349693Z",
+    "updated_at": "2026-09-03T12:36:04.349693Z",
+    "expires_at": "2026-09-03T13:36:04.349693Z",
+    "status": "queued",
+    "sequence": {
+      "name": null,
+      "length": 248,
+      "sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf"
+    },
+    "selected_methods": [
+      "lreca",
+      "seg"
+    ],
+    "prediction_mode": "independent",
+    "weights": null,
+    "methods": {
+      "lreca": {
+        "method": "lreca",
+        "status": "queued",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "seg": {
+        "method": "seg",
+        "status": "queued",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": null,
+        "warnings": []
+      }
+    },
+    "ensemble": null,
+    "warnings": []
+  }
+}

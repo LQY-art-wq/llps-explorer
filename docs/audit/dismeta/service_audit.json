@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "method_id": "dismeta",
+  "audit_date": "2026-09-03",
+  "audit_timezone": "Asia/Shanghai",
+  "mode": "F",
+  "integration_mode": "unknown",
+  "final_decision": "INTEGRATION_BLOCKED",
+  "reason": "integration_contract_unverified",
+  "automatic_available": false,
+  "manual_import_supported": false,
+  "scientific_role": {
+    "display_name": "Intrinsically Disordered Regions (IDR)",
+    "method_name": "DisMeta",
+    "category": "annotation",
+    "semantic_type": "region_annotation",
+    "llps_probability": false,
+    "pn_label": false,
+    "ensemble_weight": false,
+    "substitute_predictor_used": false
+  },
+  "sources": [
+    {
+      "id": "official_form",
+      "url": "https://montelionelab.chem.rpi.edu/dismeta/",
+      "access": "web_tool_parsed_text; direct_HTTPS_GET_ConnectTimeout; browser_tool_timeouts",
+      "anchors": ["predictor list", "default setup", "email/name/sequence/SignalP organism labels"],
+      "original_response_sha256": null,
+      "job_execution_verified": false
+    },
+    {
+      "id": "official_software",
+      "url": "https://montelionelab.chem.rpi.edu/index.php/our-software-2/",
+      "access": "web_tool_parsed_text; direct_HTTPS_GET_ConnectTimeout",
+      "anchors": ["Dismeta - Disorder prediction meta-server", "individual results and per-residue consensus plot"],
+      "original_response_sha256": null
+    },
+    {
+      "id": "official_references",
+      "url": "https://montelionelab.chem.rpi.edu/dismeta/references.html",
+      "access": "web_tool_parsed_text; direct_HTTPS_GET_ConnectTimeout",
+      "anchors": ["Huang / Acton / Montelione Methods Mol Biol 1091:3-16 (2014)"],
+      "original_response_sha256": null
+    },
+    {
+      "id": "official_contact",
+      "url": "https://montelionelab.chem.rpi.edu/index.php/contact/",
+      "access": "web_tool_parsed_text",
+      "anchors": ["general laboratory contact information"],
+      "email": "montelionelab@rpi.edu",
+      "dedicated_api_or_batch_access_procedure_confirmed": false,
+      "contacted": false,
+      "original_response_sha256": null
+    },
+    {
+      "id": "original_manuscript",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4115584/",
+      "doi": "10.1007/978-1-62703-691-7_1",
+      "access": "web_search_indexed_full_text; direct_open_browser_verification_not_interacted_with",
+      "anchors": ["Introduction", "Materials 2.1", "Figure 1", "Methods 3.1-3.5", "Conclusion"],
+      "evidence_manifest": "scientific_source_evidence.json",
+      "original_response_sha256": null
+    }
+  ],
+  "current_access_observations": {
+    "http_observations": "http_observations.jsonl",
+    "main_audit_https_get_attempt_count": 3,
+    "main_audit_successful_http_response_count": 0,
+    "main_audit_error_types": ["ConnectTimeout"],
+    "main_audit_elapsed_ms": [15279.632599998877, 15105.831600001693, 15060.005700001057],
+    "response_status_codes": null,
+    "tls_verification": true,
+    "audit_client_initialization_issue": {
+      "description": "Unused ALL_PROXY=socks5 caused missing-socksio initialization failure before HTTP requests.",
+      "scope": "audit_helper_only",
+      "resolution": "Explicit existing HTTP(S) scheme proxy routing with trust_env=False; unused SOCKS configuration not initialized.",
+      "packages_installed": false,
+      "global_environment_modified": false,
+      "tls_verification_disabled": false,
+      "counted_as_http_request": false
+    },
+    "browser": {
+      "surface": "Chrome",
+      "create_tab_tool_elapsed_seconds_approx": 36.7,
+      "create_tab_outcome": "tool_timeout",
+      "later_state_confirmed_audit_tab_exists": true,
+      "get_tab_accessibility_tool_elapsed_seconds_approx": 34.7,
+      "get_tab_outcome": "tool_timeout",
+      "http_status_observed": false,
+      "dom_obtained": false,
+      "error_page_observed": false
+    },
+    "separate_scientific_author_publications_get": {
+      "included_in_main_audit_three_gets": false,
+      "evidence_manifest": "scientific_source_evidence.json",
+      "outcome": "TLS_handshake_timeout"
+    },
+    "current_service_job_success_verified": false,
+    "global_service_shutdown_proven": false,
+    "connection_timeout_is_service_latency": false
+  },
+  "audit_items": [
+    {"number": 1, "topic": "official_page", "conclusion": "Official page text retrievable; current job completion unknown.", "source_ids": ["official_form"]},
+    {"number": 2, "topic": "original_paper", "conclusion": "Original manuscript indexed full text read; historical reports are not current execution fixtures.", "source_ids": ["original_manuscript"]},
+    {"number": 3, "topic": "documentation", "conclusion": "Identity and historical-method documentation found; no verified current invocation/result contract.", "source_ids": ["official_form", "official_software", "official_references", "original_manuscript"]},
+    {"number": 4, "topic": "form_action", "value": null, "conclusion": "Original form HTML not obtained; no endpoint guessed."},
+    {"number": 5, "topic": "request_method", "value": null, "conclusion": "Submission method unverified."},
+    {"number": 6, "topic": "session", "value": null, "conclusion": "Session requirements unverified."},
+    {"number": 7, "topic": "cookie", "value": null, "conclusion": "Cookie requirements and response Set-Cookie unverified."},
+    {"number": 8, "topic": "javascript", "value": null, "conclusion": "Whether JavaScript is required for submission is unverified."},
+    {"number": 9, "topic": "captcha", "value": null, "conclusion": "DisMeta CAPTCHA requirements unverified; PMC verification is a separate site observation."},
+    {"number": 10, "topic": "api", "confirmed": false, "conclusion": "No documented DisMeta API or explicit ordinary programmatic HTTP support found in reviewed official sources; this is not proof of universal absence or prohibition."},
+    {"number": 11, "topic": "cli", "confirmed": false, "conclusion": "No official DisMeta CLI contract obtained."},
+    {"number": 12, "topic": "downloadable_local_implementation", "confirmed": false, "license": null, "conclusion": "No reproducible DisMeta distribution/version/dependency/model/license contract obtained; server-side component installation is not a distributable DisMeta release."},
+    {"number": 13, "topic": "batch", "value": null, "conclusion": "Batch format, support, quotas and rate limits unverified."},
+    {"number": 14, "topic": "input_format", "conclusion": "Page labels: email, name/NESG target ID no longer than 10 characters, letters-only sequence, SignalP organism option; server-side validation unverified.", "source_ids": ["official_form"]},
+    {"number": 15, "topic": "output_format", "export_schema": null, "verified_current_export_count": 0, "conclusion": "Individual predictor results and per-residue consensus plot described; no current machine export obtained.", "source_ids": ["official_software"]},
+    {"number": 16, "topic": "idr_region_definition", "value": null, "conclusion": "Disorder consensus purpose confirmed; exact current native region definition unverified.", "evidence_manifest": "scientific_source_evidence.json"},
+    {"number": 17, "topic": "residue_disorder_scores", "numeric_export_verified": false, "range": null, "conclusion": "Per-residue plotting described; no verified numeric values, scale or probability semantics."},
+    {"number": 18, "topic": "component_predictors", "current_page_list": ["DISEMBL", "DISOPRED2", "GlobPlot2", "VSL2"], "historical_paper_count": 8, "current_runtime_components_verified": false, "source_ids": ["official_form", "original_manuscript"]},
+    {"number": 19, "topic": "threshold_consensus", "formula": null, "threshold": null, "operator": null, "denominator": null, "failed_component_handling": null, "minimum_region_length": null, "merge_rule": null, "conclusion": "Do not invent a numerical threshold or reconstruct native regions."},
+    {"number": 20, "topic": "terms_programmatic_access", "software_license": null, "programmatic_access_permission": null, "programmatic_access_prohibition": null, "conclusion": "No explicit applicable automation/redeployment/redistribution terms obtained; general free online availability does not establish programmatic authorization."}
+  ],
+  "mode_assessment": {
+    "A_LOCAL": "Not established: no reproducible official local implementation/license contract.",
+    "B_DOCUMENTED_API": "Not established: no documented DisMeta API obtained.",
+    "C_SUPPORTED_HTTP_SERVICE": "Not established: no explicit support for ordinary third-party programmatic HTTP submission obtained.",
+    "D_BROWSER_ONLY": "Not established: a visible form does not prove exclusive browser access or anti-automation requirements.",
+    "E_UNAVAILABLE": "Not established globally: local connection/tool timeouts do not prove shutdown or universal job failure.",
+    "F_UNKNOWN": "Selected: invocation support, job availability and native result contract remain unverified."
+  },
+  "current_implementation": {
+    "adapter": "DisMetaAdapter",
+    "transport": "none",
+    "remote_http_client": false,
+    "retry": false,
+    "cache": false,
+    "local_predictor": false,
+    "native_parser": false,
+    "manual_import_route_registered": false,
+    "real_prediction_fixtures": false,
+    "normalization_tests": "contract_only_not_native_DisMeta_parser_or_scientific_regression",
+    "health": {"path": "/api/v1/methods/dismeta/health", "http_status": 503, "outbound_request": false},
+    "analyze": {"path": "/api/v1/methods/dismeta/analyze", "valid_request_http_status": 503, "error_code": "DISMETA_UNAVAILABLE", "malformed_request_http_status": 422, "malformed_request_error_code": "DISMETA_INVALID_REQUEST", "sequence_validation": "shared_project_validator", "outbound_request": false},
+    "unavailable_numeric_fields": "null_not_zero_or_empty_regions",
+    "configuration": {
+      "name": "DISMETA_OFFICIAL_SITE_URL",
+      "accepted_values": ["https://montelionelab.chem.rpi.edu/dismeta/", "https://montelionelab.chem.rpi.edu/dismeta"],
+      "purpose": "official_source_display_only",
+      "can_enable_automatic_or_manual_ready": false
+    },
+    "failure_isolation_required": true,
+    "full_sequence_logged_or_returned": false,
+    "new_runtime_dependencies": [],
+    "linux_docker_deployed": false
+  },
+  "required_answers": [
+    {"number": 1, "question": "current_usable", "answer": "Current job usability unknown; official text retrievable, no successful execution verified."},
+    {"number": 2, "question": "local_or_remote", "answer": "Officially described remote meta-server; this project implements only a local unavailable boundary."},
+    {"number": 3, "question": "programmatic_permission", "answer": "No explicit supported invocation contract or permission verified."},
+    {"number": 4, "question": "integration_mode", "answer": "F / UNKNOWN; INTEGRATION_BLOCKED."},
+    {"number": 5, "question": "manual_import", "answer": "Disabled because verified native output and sequence/coordinate contract are missing."},
+    {"number": 6, "question": "idr_definition", "answer": "Disorder consensus; exact current native segmentation rules unknown."},
+    {"number": 7, "question": "residue_score", "answer": "Per-residue plots documented; current numeric export/scale not verified."},
+    {"number": 8, "question": "coordinates", "answer": "Native machine coordinates unknown; 1-based inclusive is only the project normalized DTO contract."},
+    {"number": 9, "question": "parameters_threshold", "answer": "Page says default setup; exact versions, consensus threshold and denominator unknown."},
+    {"number": 10, "question": "performance", "answer": "No prediction benchmark or service latency measured; connection timeout is not compute time."},
+    {"number": 11, "question": "linux_docker", "answer": "Boundary adds no runtime dependencies or hardcoded user path; no Linux/Docker deployment or native DisMeta validation."},
+    {"number": 12, "question": "privacy", "answer": "Zero sequence submissions and emails now; future remote use would send sequences to a third party and requires disclosure."},
+    {"number": 13, "question": "unresolved_risks", "answer": "Job availability, supported access/terms, versions, native outputs and exact scientific rules remain unknown."},
+    {"number": 14, "question": "recommendation", "answer": "Keep the isolated unavailable boundary until supported access and real results are verified; alternative predictors require a separate user decision."}
+  ],
+  "non_actions": {
+    "sequence_submission_count": 0,
+    "email_sent_count": 0,
+    "prediction_post_count": 0,
+    "captcha_interaction": false,
+    "hidden_endpoint_probe": false,
+    "program_download_or_install": false,
+    "third_party_predictor_substitution": false,
+    "fuzdrop_reaudit": false
+  },
+  "future_conditions": [
+    "Official supported invocation, usage terms and service availability must be established before automatic integration.",
+    "Verify real native result bytes, sequence identity, coordinates, regions, scores and consensus rules before implementing a parser or import.",
+    "If B/C is established, add backend HTTP client, bounded retries/rate-limit handling, response validation and provenance cache; default tests stay offline.",
+    "If A is established, pin official DisMeta implementation/license/dependencies/model data and validate Linux deployment.",
+    "If D and verifiable native exports are established, design manual import without automating protected browser interactions.",
+    "Do not enter Module 5 or replace DisMeta without a separate instruction."
+  ]
+}

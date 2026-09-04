@@ -1,0 +1,25 @@
+{
+  "http_status": 503,
+  "body": {
+    "method_id": "fuzdrop",
+    "status": "unavailable",
+    "message": "The official FuzDrop service requires browser verification. Automatic prediction is unavailable.",
+    "method": "fuzdrop",
+    "available": false,
+    "mode": "C",
+    "integration_mode": "browser_protected",
+    "reason": "official_service_requires_browser_verification",
+    "manual_import_available": true,
+    "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+    "error": {
+      "code": "FUZDROP_PROGRAMMATIC_ACCESS_UNAVAILABLE",
+      "message": "The official FuzDrop service requires browser verification. Automatic prediction is unavailable."
+    },
+    "raw_score": null,
+    "calibrated_score": null,
+    "label": null,
+    "threshold": null,
+    "residue_propensity": null,
+    "regions": null
+  }
+}

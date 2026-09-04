@@ -1,0 +1,105 @@
+{
+  "job_id": "analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur",
+  "observation_type": "actual HTTP snapshots",
+  "observations": [
+    {
+      "elapsed_ms": 52.068299999518786,
+      "http_status": 202,
+      "job_status": "queued",
+      "methods": {
+        "lreca": "queued",
+        "seg": "queued"
+      }
+    },
+    {
+      "elapsed_ms": 68.67789999887464,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "running"
+      }
+    },
+    {
+      "elapsed_ms": 129.49049999951967,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 193.53959999716608,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 253.56149999788613,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 314.5425999973668,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 375.00249999720836,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 437.27579999904265,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 498.87870000020484,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 560.3636999985611,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "seg": "success"
+      }
+    },
+    {
+      "elapsed_ms": 771.212599996943,
+      "http_status": 200,
+      "job_status": "success",
+      "methods": {
+        "lreca": "success",
+        "seg": "success"
+      }
+    }
+  ]
+}

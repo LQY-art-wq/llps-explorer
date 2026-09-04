@@ -1,0 +1,15 @@
+{
+  "snapshot_files": 114,
+  "changed_files": 44,
+  "counts": {
+    "A": 32,
+    "M": 12,
+    "D": 0
+  },
+  "lreca_scientific_files_unchanged": true,
+  "frontend_seg_dismeta_orchestrator_unchanged": true,
+  "protected_files_checked": 58,
+  "git_index_modified": false,
+  "whitespace_check": "passed",
+  "exact_diff": ".audit/module2_exact.diff"
+}

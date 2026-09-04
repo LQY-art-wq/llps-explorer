@@ -1,0 +1,72 @@
+{
+  "job_id": "analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX",
+  "observation_type": "actual HTTP snapshots",
+  "observations": [
+    {
+      "elapsed_ms": 45.66939999858732,
+      "http_status": 202,
+      "job_status": "queued",
+      "methods": {
+        "lreca": "queued",
+        "fuzdrop": "queued",
+        "seg": "queued",
+        "dismeta": "queued"
+      }
+    },
+    {
+      "elapsed_ms": 57.9924999983632,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "fuzdrop": "external_result_required",
+        "seg": "running",
+        "dismeta": "unavailable"
+      }
+    },
+    {
+      "elapsed_ms": 130.80319999789936,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "fuzdrop": "external_result_required",
+        "seg": "success",
+        "dismeta": "unavailable"
+      }
+    },
+    {
+      "elapsed_ms": 196.1233000001812,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "fuzdrop": "external_result_required",
+        "seg": "success",
+        "dismeta": "unavailable"
+      }
+    },
+    {
+      "elapsed_ms": 263.32259999981034,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "fuzdrop": "external_result_required",
+        "seg": "success",
+        "dismeta": "unavailable"
+      }
+    },
+    {
+      "elapsed_ms": 488.2281999998668,
+      "http_status": 200,
+      "job_status": "partial_success",
+      "methods": {
+        "lreca": "success",
+        "fuzdrop": "external_result_required",
+        "seg": "success",
+        "dismeta": "unavailable"
+      }
+    }
+  ]
+}

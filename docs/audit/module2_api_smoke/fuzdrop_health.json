@@ -1,0 +1,14 @@
+{
+  "http_status": 503,
+  "body": {
+    "method_id": "fuzdrop",
+    "status": "unavailable",
+    "message": "The official FuzDrop service requires browser verification. Automatic prediction is unavailable. Official results can be imported manually.",
+    "available": false,
+    "mode": "C",
+    "integration_mode": "browser_protected",
+    "reason": "official_service_requires_browser_verification",
+    "manual_import_available": true,
+    "official_site_url": "https://fuzdrop.bio.unipd.it/predictor"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "json": {
+    "http_status": 200,
+    "content_type": "application/json",
+    "content_disposition_safe": true,
+    "bytes": 33336,
+    "sha256": "f49e54c79002c73143934ea9d026563ae664126a72c482e5c546ea2fee3e03fc",
+    "persisted_payload_exact": true
+  },
+  "summary_csv": {
+    "http_status": 200,
+    "content_type": "text/csv; charset=utf-8",
+    "content_disposition_safe": true,
+    "bytes": 802,
+    "sha256": "452a7a59ba4aa00fc5413a08eb9d9b90685a6a5737699e618f5e3d39f1a58c24",
+    "data_rows": 1
+  },
+  "residues_csv": {
+    "http_status": 200,
+    "content_type": "text/csv; charset=utf-8",
+    "content_disposition_safe": true,
+    "bytes": 18752,
+    "sha256": "77e52e12eb8adad36a73624f5af6ef1398fac57b6a876e046d80bbecc1be874d",
+    "data_rows": 248,
+    "coordinates": "one_based_contiguous",
+    "amino_acids_match_input": true,
+    "lreca_attribution_values": 248,
+    "lreca_kde_values": 248,
+    "seg_lcr_residues": 97
+  },
+  "regions_csv": {
+    "http_status": 200,
+    "content_type": "text/csv; charset=utf-8",
+    "content_disposition_safe": true,
+    "bytes": 523,
+    "sha256": "f3722d30413702a02bda16ff16b8706207840055514d0136dfcd7f30b4caad6f",
+    "data_rows": 8,
+    "coordinates": "one_based_inclusive",
+    "lengths_match_boundaries": true
+  },
+  "fasta": {
+    "http_status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "content_disposition_safe": true,
+    "bytes": 317,
+    "sha256": "da10c592263983013472a905aa210942d4733baf5bc050fd26ff3e92d97025f4",
+    "sequence_length": 248,
+    "wrap_width": 60,
+    "sequence_matches_input": true
+  }
+}

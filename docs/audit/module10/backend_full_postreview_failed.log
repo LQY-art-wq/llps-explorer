@@ -1,0 +1,99 @@
+........................................................................ [  8%]
+................................................................F....... [ 17%]
+........................................................................ [ 26%]
+........................................................................ [ 35%]
+........................................................................ [ 44%]
+........................................................................ [ 52%]
+........................................................................ [ 61%]
+........................................................................ [ 70%]
+......F................................................................. [ 79%]
+........................................................................ [ 88%]
+........................................................................ [ 97%]
+........................                                                 [100%]
+================================== FAILURES ===================================
+_____________ test_general_health_still_uses_only_lreca_readiness _____________
+
+    def test_general_health_still_uses_only_lreca_readiness():
+        with TestClient(application(lreca=LRECAStub(ready=False))) as client:
+            health = client.get("/api/v1/health").json()
+            assert health["analysis_enabled"] is False
+>           assert health["module"] == 9
+E           assert 10 == 9
+
+backend\tests\test_dismeta_api.py:175: AssertionError
+------------------------------ Captured log call ------------------------------
+INFO     alembic.runtime.migration:migration.py:211 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:214 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:622 Running upgrade  -> 20260904_0001, Create persistent analysis, import, and ownership tables.
+INFO     alembic.runtime.migration:migration.py:622 Running upgrade 20260904_0001 -> 20260904_0002, Add lightweight history summary fields and relational method filtering.
+INFO     llps.http:observability.py:129 HTTP request completed
+INFO     httpx:_client.py:1025 HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+__ test_health_is_liveness_only_and_only_authorized_analysis_endpoints_exist __
+
+    def test_health_is_liveness_only_and_only_authorized_analysis_endpoints_exist():
+        class UnavailableAdapter:
+            async def load(self):
+                pass
+    
+            async def close(self):
+                pass
+    
+            async def healthcheck(self):
+                return LRECAHealth(status="unavailable", message="API boundary test only.")
+    
+        class UnavailableSEG:
+            async def load(self):
+                pass
+    
+            async def close(self):
+                pass
+    
+            async def healthcheck(self):
+                return SEGHealth()
+    
+        with TestClient(
+            create_app(lreca_adapter=UnavailableAdapter(), seg_adapter=UnavailableSEG())
+        ) as client:
+            response = client.get("/api/v1/health")
+            assert response.status_code == 200
+>           assert response.json() == {
+                "status": "ok",
+                "version": "0.10.0",
+                "module": 9,
+                "analysis_enabled": False,
+            }
+E           AssertionError: assert {'status': 'o...abled': False} == {'status': 'o...abled': False}
+E             
+E             Omitting 3 identical items, use -vv to show
+E             Differing items:
+E             {'module': 10} != {'module': 9}
+E             Use -v to get more diff
+
+backend\tests\test_module0.py:127: AssertionError
+------------------------------ Captured log call ------------------------------
+INFO     alembic.runtime.migration:migration.py:211 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:214 Will assume non-transactional DDL.
+INFO     llps.http:observability.py:129 HTTP request completed
+INFO     httpx:_client.py:1025 HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\starlette\testclient.py:53
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\Users\lqy\Documents\ChatGPT\�������ҳ��\backend\.pytest_cache\v\cache\nodeids: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\backend\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:423
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\_pytest\cacheprovider.py:423: PytestCacheWarning: could not create cache path C:\Users\lqy\Documents\ChatGPT\�������ҳ��\backend\.pytest_cache\v\cache\lastfailed: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\backend\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED backend\tests\test_dismeta_api.py::test_general_health_still_uses_only_lreca_readiness
+FAILED backend\tests\test_module0.py::test_health_is_liveness_only_and_only_authorized_analysis_endpoints_exist
+2 failed, 814 passed, 4 warnings in 75.47s (0:01:15)

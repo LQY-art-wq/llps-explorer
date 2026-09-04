@@ -1,0 +1,1025 @@
+{
+  "verified_at_utc": "2026-09-03T14:27:08.452627+00:00",
+  "transport": "Read-only GET of five existing browser-created analysis jobs through the frontend proxy; HTTP 200 for all five.",
+  "submitted_new_jobs": 0,
+  "official_remote_requests": 0,
+  "scope": "Module 7 A/B/C real local outputs and D/E explicitly synthetic test-only FuzDrop imports. All local LRECA and SEG result fields match Module 6 references; no new jobs were submitted.",
+  "reference_files": [
+    "docs/audit/module7_browser/browser_verification.json",
+    "backend/tests/fixtures/lreca/global_baseline.json",
+    "backend/tests/fixtures/seg/cases.json",
+    "docs/audit/module6_browser/api/A_job.json",
+    "docs/audit/module6_browser/api/B_job.json",
+    "docs/audit/module6_browser/api/C_job.json",
+    "docs/audit/module6_browser/api/F_job.json",
+    "docs/audit/module6_browser/fixtures/synthetic_fuzdrop_import_248aa.json"
+  ],
+  "scientific_comparison": "A/B/C and local D/E native outputs: exact deep equality against Module 6 after excluding only runtime_ms and timings_ms. D imported FuzDrop: additionally exclude imported_at. E uses the same synthetic pLLPS fixture with omitted residue/region arrays and empty TSV hashes. Saved response bytes are unchanged.",
+  "checks": {
+    "A_GET_response_saved": true,
+    "A_job_id_matches_browser": true,
+    "A_success": true,
+    "A_selected_methods_only": true,
+    "A_normalized_248_sequence_identity": true,
+    "A_independent_no_ensemble": true,
+    "A_browser_tracks_match_native_outputs": true,
+    "A_no_private_paths_or_internal_urls": true,
+    "A_no_fuzdrop_or_dismeta_results": true,
+    "A_lreca_execution_success": true,
+    "A_lreca_full_scientific_object_exactly_matches_module6": true,
+    "A_lreca_identity_matches_pinned_human_baseline": true,
+    "A_lreca_safe_seven_field_metadata": true,
+    "A_lreca_canonical_sequence": true,
+    "A_lreca_raw_score_matches_baseline": true,
+    "A_lreca_uncalibrated_identity_mapping": true,
+    "A_lreca_positive_class_mapping": true,
+    "A_lreca_raw_score_matches_positive_logit_softmax": true,
+    "A_lreca_attribution_248_aligned_values": true,
+    "A_lreca_attribution_matches_module6_exactly": true,
+    "A_lreca_attribution_target": true,
+    "A_lreca_KDE_248_finite_native_values": true,
+    "A_lreca_KDE_matches_module6_exactly": true,
+    "A_lreca_native_regions_and_primary_flags": true,
+    "A_lreca_terminal_residue_omission_preserved": true,
+    "A_lreca_device_safe": true,
+    "B_GET_response_saved": true,
+    "B_job_id_matches_browser": true,
+    "B_success": true,
+    "B_selected_methods_only": true,
+    "B_normalized_248_sequence_identity": true,
+    "B_independent_no_ensemble": true,
+    "B_browser_tracks_match_native_outputs": true,
+    "B_no_private_paths_or_internal_urls": true,
+    "B_no_fuzdrop_or_dismeta_results": true,
+    "B_seg_execution_success": true,
+    "B_seg_full_scientific_object_exactly_matches_module6": true,
+    "B_SEG_native_boundaries": true,
+    "B_SEG_identity_and_parameters": true,
+    "B_SEG_annotation_only": true,
+    "B_SEG_statistics": true,
+    "B_SEG_sequence_identity": true,
+    "C_GET_response_saved": true,
+    "C_job_id_matches_browser": true,
+    "C_success": true,
+    "C_selected_methods_only": true,
+    "C_normalized_248_sequence_identity": true,
+    "C_independent_no_ensemble": true,
+    "C_browser_tracks_match_native_outputs": true,
+    "C_no_private_paths_or_internal_urls": true,
+    "C_no_fuzdrop_or_dismeta_results": true,
+    "C_lreca_execution_success": true,
+    "C_lreca_full_scientific_object_exactly_matches_module6": true,
+    "C_lreca_identity_matches_pinned_human_baseline": true,
+    "C_lreca_safe_seven_field_metadata": true,
+    "C_lreca_canonical_sequence": true,
+    "C_lreca_raw_score_matches_baseline": true,
+    "C_lreca_uncalibrated_identity_mapping": true,
+    "C_lreca_positive_class_mapping": true,
+    "C_lreca_raw_score_matches_positive_logit_softmax": true,
+    "C_lreca_attribution_248_aligned_values": true,
+    "C_lreca_attribution_matches_module6_exactly": true,
+    "C_lreca_attribution_target": true,
+    "C_lreca_KDE_248_finite_native_values": true,
+    "C_lreca_KDE_matches_module6_exactly": true,
+    "C_lreca_native_regions_and_primary_flags": true,
+    "C_lreca_terminal_residue_omission_preserved": true,
+    "C_lreca_device_safe": true,
+    "C_seg_execution_success": true,
+    "C_seg_full_scientific_object_exactly_matches_module6": true,
+    "C_SEG_native_boundaries": true,
+    "C_SEG_identity_and_parameters": true,
+    "C_SEG_annotation_only": true,
+    "C_SEG_statistics": true,
+    "C_SEG_sequence_identity": true,
+    "verification_no_private_paths_or_internal_urls": true,
+    "A_mapper_exact_expected_tracks": true,
+    "A_mapper_no_validation_issues": true,
+    "A_mapper_248_canonical_sequence": true,
+    "A_mapper_no_IDR_track": true,
+    "A_mapper_all_continuous_arrays_length_248": true,
+    "B_mapper_exact_expected_tracks": true,
+    "B_mapper_no_validation_issues": true,
+    "B_mapper_248_canonical_sequence": true,
+    "B_mapper_no_IDR_track": true,
+    "B_mapper_all_continuous_arrays_length_248": true,
+    "C_mapper_exact_expected_tracks": true,
+    "C_mapper_no_validation_issues": true,
+    "C_mapper_248_canonical_sequence": true,
+    "C_mapper_no_IDR_track": true,
+    "C_mapper_all_continuous_arrays_length_248": true,
+    "D_mapper_exact_expected_tracks": true,
+    "D_mapper_no_validation_issues": true,
+    "D_mapper_248_canonical_sequence": true,
+    "D_mapper_no_IDR_track": true,
+    "D_mapper_all_continuous_arrays_length_248": true,
+    "D_mapper_tooltip_45_native_pDP": true,
+    "D_mapper_tooltip_45_two_inclusive_overlapping_regions": true,
+    "E_mapper_exact_expected_tracks": true,
+    "E_mapper_no_validation_issues": true,
+    "E_mapper_248_canonical_sequence": true,
+    "E_mapper_no_IDR_track": true,
+    "E_mapper_all_continuous_arrays_length_248": true,
+    "E_mapper_global_only_no_FuzDrop_tracks": true,
+    "E_mapper_global_only_NA_not_falsezero": true,
+    "E_mapper_SEG_No_remains_distinct": true,
+    "path_detector_accepts_official_HTTPS_and_rejects_local_paths": true,
+    "D_GET_response_saved": true,
+    "D_job_id_matches_browser": true,
+    "D_success": true,
+    "D_selected_methods_only": true,
+    "D_248_sequence_identity": true,
+    "D_independent_no_ensemble": true,
+    "D_no_private_paths_or_internal_urls": true,
+    "D_explicit_browser_synthetic_test_badge": true,
+    "D_validated_manual_import_semantics": true,
+    "D_synthetic_pLLPS_068_uncalibrated": true,
+    "D_FuzDrop_method_success": true,
+    "D_lreca_full_scientific_object_exactly_matches_module6_C": true,
+    "D_seg_full_scientific_object_exactly_matches_module6_C": true,
+    "D_browser_tracks_match_mapper": true,
+    "D_248_native_pDP_rows": true,
+    "D_residue_and_region_arrays_match_Module6_synthetic_fixture": true,
+    "D_raw_import_hashes_match_frozen_fixture": true,
+    "D_full_FuzDrop_science_matches_Module6_synthetic_import": true,
+    "D_native_position45_pDP_01": true,
+    "D_native_position45_two_overlapping_regions": true,
+    "E_GET_response_saved": true,
+    "E_job_id_matches_browser": true,
+    "E_success": true,
+    "E_selected_methods_only": true,
+    "E_248_sequence_identity": true,
+    "E_independent_no_ensemble": true,
+    "E_no_private_paths_or_internal_urls": true,
+    "E_explicit_browser_synthetic_test_badge": true,
+    "E_validated_manual_import_semantics": true,
+    "E_synthetic_pLLPS_068_uncalibrated": true,
+    "E_FuzDrop_method_success": true,
+    "E_lreca_full_scientific_object_exactly_matches_module6_C": true,
+    "E_seg_full_scientific_object_exactly_matches_module6_C": true,
+    "E_browser_tracks_match_mapper": true,
+    "E_global_only_no_residue_or_region_arrays": true,
+    "E_global_only_no_TSV_hashes": true,
+    "E_full_FuzDrop_science_matches_global_only_fixture": true
+  },
+  "cases": {
+    "A": {
+      "job_id": "analysis_6LqCPXnI-s5aaqfvYWuv508BNPcFbEst",
+      "http_status": 200,
+      "status": "success",
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "selected_methods": [
+        "lreca"
+      ],
+      "browser_record_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical"
+      ],
+      "module6_reference": "docs/audit/module6_browser/api/A_job.json",
+      "lreca": {
+        "raw_score": 0.9999921321868896,
+        "calibrated_score": 0.9999921321868896,
+        "calibration_status": "not_calibrated",
+        "label": "P",
+        "positive_class_index": 1,
+        "device": "cuda:0",
+        "metadata": {
+          "repository": "https://github.com/ai-phasepro/LRECA",
+          "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+          "model_variant": "human_specific",
+          "dataset5_mapping_status": "unconfirmed",
+          "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+          "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+          "checkpoint_size_bytes": 2395318
+        },
+        "attribution_length": 248,
+        "kde_length": 248,
+        "kde_max": 1.5558930042329748,
+        "critical_regions": [
+          {
+            "start": 1,
+            "end": 80,
+            "score": 31.911564381413704,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 80
+          },
+          {
+            "start": 81,
+            "end": 127,
+            "score": 36.15997596307393,
+            "is_primary": true,
+            "semantic_type": "derived_hotspot",
+            "length": 47
+          },
+          {
+            "start": 128,
+            "end": 188,
+            "score": 22.08480717853207,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 61
+          },
+          {
+            "start": 189,
+            "end": 233,
+            "score": 29.261237309529022,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 45
+          },
+          {
+            "start": 234,
+            "end": 247,
+            "score": 11.470340751448779,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 14
+          }
+        ],
+        "unexpected_scientific_differences": []
+      }
+    },
+    "B": {
+      "job_id": "analysis_keiyd8DcHYQHLMXteF20vE8e_yy-i7Hl",
+      "http_status": 200,
+      "status": "success",
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "selected_methods": [
+        "seg"
+      ],
+      "browser_record_track_ids": [
+        "seg-regions"
+      ],
+      "module6_reference": "docs/audit/module6_browser/api/B_job.json",
+      "seg": {
+        "implementation": "NCBI segmasker",
+        "version": "2.17.0",
+        "application_version": "1.0.0",
+        "parameters": {
+          "window": 12,
+          "locut": 2.2,
+          "hicut": 2.5,
+          "input_format": "fasta",
+          "output_format": "interval",
+          "parse_seqids": false
+        },
+        "region_count": 3,
+        "regions": [
+          {
+            "start": 72,
+            "end": 85,
+            "semantic_type": "region_annotation",
+            "length": 14
+          },
+          {
+            "start": 89,
+            "end": 119,
+            "semantic_type": "region_annotation",
+            "length": 31
+          },
+          {
+            "start": 196,
+            "end": 247,
+            "semantic_type": "region_annotation",
+            "length": 52
+          }
+        ],
+        "coverage": 0.3911290322580645,
+        "longest_region": 52,
+        "unexpected_scientific_differences": []
+      }
+    },
+    "C": {
+      "job_id": "analysis_jujjM-DS78dLaK5DzI74VgMXafLjchP9",
+      "http_status": 200,
+      "status": "success",
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "browser_record_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "seg-regions"
+      ],
+      "module6_reference": "docs/audit/module6_browser/api/C_job.json",
+      "lreca": {
+        "raw_score": 0.9999921321868896,
+        "calibrated_score": 0.9999921321868896,
+        "calibration_status": "not_calibrated",
+        "label": "P",
+        "positive_class_index": 1,
+        "device": "cuda:0",
+        "metadata": {
+          "repository": "https://github.com/ai-phasepro/LRECA",
+          "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+          "model_variant": "human_specific",
+          "dataset5_mapping_status": "unconfirmed",
+          "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+          "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+          "checkpoint_size_bytes": 2395318
+        },
+        "attribution_length": 248,
+        "kde_length": 248,
+        "kde_max": 1.5558930042329748,
+        "critical_regions": [
+          {
+            "start": 1,
+            "end": 80,
+            "score": 31.911564381413704,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 80
+          },
+          {
+            "start": 81,
+            "end": 127,
+            "score": 36.15997596307393,
+            "is_primary": true,
+            "semantic_type": "derived_hotspot",
+            "length": 47
+          },
+          {
+            "start": 128,
+            "end": 188,
+            "score": 22.08480717853207,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 61
+          },
+          {
+            "start": 189,
+            "end": 233,
+            "score": 29.261237309529022,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 45
+          },
+          {
+            "start": 234,
+            "end": 247,
+            "score": 11.470340751448779,
+            "is_primary": false,
+            "semantic_type": "derived_hotspot",
+            "length": 14
+          }
+        ],
+        "unexpected_scientific_differences": []
+      },
+      "seg": {
+        "implementation": "NCBI segmasker",
+        "version": "2.17.0",
+        "application_version": "1.0.0",
+        "parameters": {
+          "window": 12,
+          "locut": 2.2,
+          "hicut": 2.5,
+          "input_format": "fasta",
+          "output_format": "interval",
+          "parse_seqids": false
+        },
+        "region_count": 3,
+        "regions": [
+          {
+            "start": 72,
+            "end": 85,
+            "semantic_type": "region_annotation",
+            "length": 14
+          },
+          {
+            "start": 89,
+            "end": 119,
+            "semantic_type": "region_annotation",
+            "length": 31
+          },
+          {
+            "start": 196,
+            "end": 247,
+            "semantic_type": "region_annotation",
+            "length": 52
+          }
+        ],
+        "coverage": 0.3911290322580645,
+        "longest_region": 52,
+        "unexpected_scientific_differences": []
+      }
+    },
+    "D": {
+      "job_id": "analysis_cQ2SQYMRzaatdL07PT6bC9I29569cqen",
+      "http_status": 200,
+      "status": "success",
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "selected_methods": [
+        "lreca",
+        "seg",
+        "fuzdrop"
+      ],
+      "browser_record_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "fuzdrop-propensity",
+        "fuzdrop-regions",
+        "seg-regions"
+      ],
+      "test_only_synthetic_FuzDrop": true,
+      "scientific_prediction": false,
+      "notice": "FuzDrop values were supplied by an explicitly marked synthetic test import. They are not official service predictions or biological evidence. The local LRECA and SEG outputs remain real.",
+      "fuzdrop": {
+        "raw_score": 0.68,
+        "calibrated_score": 0.68,
+        "calibration_status": "not_calibrated",
+        "source": "manual_import_of_official_result",
+        "origin_verification": "user_declared_not_independently_verified",
+        "residue_rows": 248,
+        "regions": [
+          {
+            "start": 30,
+            "end": 45,
+            "type": "droplet_promoting_region",
+            "official_type": "Droplet-promoting region",
+            "semantic_type": "region_prediction",
+            "length": 16
+          },
+          {
+            "start": 45,
+            "end": 60,
+            "type": "droplet_promoting_region",
+            "official_type": "Droplet-promoting region",
+            "semantic_type": "region_prediction",
+            "length": 16
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "type": "aggregation_hotspot",
+            "official_type": "Aggregation hot-spot",
+            "semantic_type": "region_prediction",
+            "length": 3
+          }
+        ],
+        "raw_tsv_sha256": {
+          "scores_tsv": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+          "regions_tsv": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964"
+        }
+      },
+      "lreca_and_SEG_match_Module6_C": true
+    },
+    "E": {
+      "job_id": "analysis_jqUbiwQkt0jtGjW4DInkt3tkmR9lPv_c",
+      "http_status": 200,
+      "status": "success",
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "selected_methods": [
+        "lreca",
+        "seg",
+        "fuzdrop"
+      ],
+      "browser_record_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "seg-regions"
+      ],
+      "test_only_synthetic_FuzDrop": true,
+      "scientific_prediction": false,
+      "notice": "FuzDrop values were supplied by an explicitly marked synthetic test import. They are not official service predictions or biological evidence. The local LRECA and SEG outputs remain real.",
+      "fuzdrop": {
+        "raw_score": 0.68,
+        "calibrated_score": 0.68,
+        "calibration_status": "not_calibrated",
+        "source": "manual_import_of_official_result",
+        "origin_verification": "user_declared_not_independently_verified",
+        "residue_rows": null,
+        "regions": null,
+        "raw_tsv_sha256": {}
+      },
+      "lreca_and_SEG_match_Module6_C": true
+    }
+  },
+  "files": {
+    "A_job.json": {
+      "size_bytes": 31844,
+      "sha256": "1133f15c7b7f91a32bd0a4fe7b5583cf6a2fbba0c4869517043a8a5ef5e446a9",
+      "source": "Original bytes from the existing browser-created job GET response."
+    },
+    "B_job.json": {
+      "size_bytes": 1461,
+      "sha256": "a07cae1a4298731c2123f6c16d7ca1cdf2f739e9c102da9195a9eb5157da264c",
+      "source": "Original bytes from the existing browser-created job GET response."
+    },
+    "C_job.json": {
+      "size_bytes": 32862,
+      "sha256": "b84f80d6bee84ce9b6e601d16080d845aa47a65f62ea6aff6af81ae9a69b145f",
+      "source": "Original bytes from the existing browser-created job GET response."
+    },
+    "D_job.json": {
+      "size_bytes": 71500,
+      "sha256": "f5d1ca81a3792ba0e52354a0cb483d9825f7e7a77a681308b6d72fc28d5dff7a",
+      "source": "Original bytes from the existing browser-created job GET response."
+    },
+    "E_job.json": {
+      "size_bytes": 34687,
+      "sha256": "edbe604ad3a28104da2b0f7ca44041c61ab1e16b90a5cd4c19669a7fbfbe271f",
+      "source": "Original bytes from the existing browser-created job GET response."
+    }
+  },
+  "status": "passed",
+  "check_count": 144,
+  "passed_count": 144,
+  "failed_checks": [],
+  "mapper_verification": {
+    "implementation": "frontend/src/lib/feature-viewer-model.ts",
+    "input": "Existing GET response plus paired baseline canonical sequence; no draft data or unvalidated import text.",
+    "cases": {
+      "A": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        }
+      },
+      "B": {
+        "track_ids": [
+          "seg-regions"
+        ],
+        "continuous_lengths": {},
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        }
+      },
+      "C": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        }
+      },
+      "D": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "fuzdrop-propensity",
+          "fuzdrop-regions",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248,
+          "fuzdrop-propensity": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": 0.1,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "fuzdrop-regions:0:30-45",
+                  "method": "fuzdrop",
+                  "start": 30,
+                  "end": 45,
+                  "length": 16,
+                  "semanticType": "region_prediction",
+                  "type": "droplet_promoting_region",
+                  "label": "Droplet-promoting region"
+                },
+                {
+                  "id": "fuzdrop-regions:1:45-60",
+                  "method": "fuzdrop",
+                  "start": 45,
+                  "end": 60,
+                  "length": 16,
+                  "semanticType": "region_prediction",
+                  "type": "droplet_promoting_region",
+                  "label": "Droplet-promoting region"
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        }
+      },
+      "E": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_provided",
+              "text": "N/A"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_provided",
+              "text": "N/A"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "last_extended_at_utc": "2026-09-03T14:28:58.197219+00:00"
+}

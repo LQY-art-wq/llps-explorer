@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-09-03T14:40:19.177905+00:00",
+  "checks": {
+    "normal_harness_disabled": {
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    "normal_workspace": {
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "no_synthetic_fixture_html": true
+    },
+    "real_backend_health": {
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    "test_preview_stopped": {
+      "passed": true
+    },
+    "final_real_job": {
+      "passed": true,
+      "job_id": "analysis_8PzvWYNLRUyP4OpVcFGo8tphnETkXMhe",
+      "sha256": "f5f2795053a7bdabb2bd4459a54930c59b58ec8c422fcf5ba538c68b0c584403"
+    }
+  },
+  "passed": true,
+  "normal_preview_retained": true,
+  "test_tab_closed": true,
+  "viewport_restored": true,
+  "theme_restored": "light"
+}

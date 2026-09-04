@@ -1,0 +1,31 @@
+{
+  "http_status": 503,
+  "body": {
+    "method_id": "dismeta",
+    "status": "unavailable",
+    "message": "DisMeta integration is blocked until a supported invocation and result contract is verified.",
+    "method": "dismeta",
+    "annotation_type": "IDR",
+    "semantic_type": "region_annotation",
+    "implementation": "DisMeta",
+    "error": {
+      "code": "DISMETA_UNAVAILABLE",
+      "message": "DisMeta integration is blocked until a supported invocation and result contract is verified."
+    },
+    "available": false,
+    "automatic_status": "unavailable",
+    "manual_import_supported": false,
+    "integration_mode": "unknown",
+    "audit_mode": "F",
+    "decision": "INTEGRATION_BLOCKED",
+    "reason": "integration_contract_unverified",
+    "official_site_url": "https://montelionelab.chem.rpi.edu/dismeta/",
+    "version": null,
+    "sequence_length": 248,
+    "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+    "regions": null,
+    "coverage": null,
+    "region_count": null,
+    "longest_region": null
+  }
+}

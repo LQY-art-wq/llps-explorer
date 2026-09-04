@@ -1,0 +1,43 @@
+{
+  "observed_at": "2026-09-03T08:13:51.875489+00:00",
+  "frontend": "http://127.0.0.1:3000",
+  "backend": "http://127.0.0.1:8000",
+  "checks": [
+    {
+      "name": "backend_health",
+      "passed": true,
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "version": "0.0.0",
+        "module": 0,
+        "analysis_enabled": false
+      }
+    },
+    {
+      "name": "frontend_proxy_health",
+      "passed": true,
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "version": "0.0.0",
+        "module": 0,
+        "analysis_enabled": false
+      }
+    },
+    {
+      "name": "frontend_page",
+      "passed": true,
+      "http_status": 200
+    },
+    {
+      "name": "health_only_api_contract",
+      "passed": true,
+      "paths": [
+        "/api/v1/health"
+      ]
+    }
+  ],
+  "all_passed": true,
+  "scientific_jobs_submitted": 0
+}

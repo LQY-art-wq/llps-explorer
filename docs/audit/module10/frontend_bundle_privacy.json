@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "browser JavaScript assets from final host production build",
+  "asset_count": 14,
+  "total_bytes": 840196,
+  "standalone_server_exists": true,
+  "forbidden_findings": [],
+  "known_framework_literals": [
+    {
+      "file": "chunks/turbopack-2bixtsoa9fuhs.js",
+      "token": "x:/",
+      "classification": "Turbopack URL parser base, not a filesystem disclosure"
+    }
+  ]
+}

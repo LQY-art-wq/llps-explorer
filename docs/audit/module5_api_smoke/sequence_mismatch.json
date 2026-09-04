@@ -1,0 +1,9 @@
+{
+  "http_status": 422,
+  "body": {
+    "detail": {
+      "code": "EXTERNAL_RESULT_SEQUENCE_MISMATCH",
+      "message": "The imported result does not match this sequence."
+    }
+  }
+}

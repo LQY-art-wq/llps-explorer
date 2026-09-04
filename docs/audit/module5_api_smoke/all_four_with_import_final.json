@@ -1,0 +1,4372 @@
+{
+  "http_status": 200,
+  "body": {
+    "job_id": "analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f",
+    "created_at": "2026-09-03T12:36:08.826799Z",
+    "updated_at": "2026-09-03T12:36:09.156731Z",
+    "expires_at": "2026-09-03T13:36:09.162849Z",
+    "status": "partial_success",
+    "sequence": {
+      "name": null,
+      "length": 248,
+      "sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf"
+    },
+    "selected_methods": [
+      "lreca",
+      "fuzdrop",
+      "seg",
+      "dismeta"
+    ],
+    "prediction_mode": "independent",
+    "weights": null,
+    "methods": {
+      "lreca": {
+        "method": "lreca",
+        "status": "success",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 309.84410000019125,
+        "result": {
+          "method_id": "lreca",
+          "status": "success",
+          "message": null,
+          "method": "lreca",
+          "semantic_type": "model_prediction",
+          "model_variant": "human_specific",
+          "dataset5_mapping_status": "unconfirmed",
+          "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+          "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+          "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+          "metadata": {
+            "repository": "https://github.com/ai-phasepro/LRECA",
+            "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+            "model_variant": "human_specific",
+            "dataset5_mapping_status": "unconfirmed",
+            "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+            "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+            "checkpoint_size_bytes": 2395318
+          },
+          "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+          "sequence_length": 248,
+          "raw_score": 0.9999921321868896,
+          "calibrated_score": 0.9999921321868896,
+          "calibration_status": "not_calibrated",
+          "score_semantics": "uncalibrated_positive_class_softmax",
+          "positive_class_index": 1,
+          "threshold": 0.5,
+          "threshold_operator": ">",
+          "logits": [
+            -7.07127571105957,
+            4.683431148529053
+          ],
+          "label": "P",
+          "device": "cuda:0",
+          "runtime_ms": 209.74769999884302,
+          "attribution_status": "success",
+          "attribution_reason": null,
+          "attribution_semantic_type": "model_attribution",
+          "attribution_normalization": "official_absolute_maximum_diverging_scale",
+          "attribution_target_class_index": 1,
+          "attribution_target_label": "P",
+          "residue_attribution": [
+            {
+              "position": 1,
+              "aa": "M",
+              "score": 0.534704502671957,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 2,
+              "aa": "S",
+              "score": 0.5501660741865635,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 3,
+              "aa": "G",
+              "score": 0.4959776531904936,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 4,
+              "aa": "G",
+              "score": 0.49274540040642023,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 5,
+              "aa": "G",
+              "score": 0.5057830535806715,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 6,
+              "aa": "V",
+              "score": 0.4825077224522829,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 7,
+              "aa": "I",
+              "score": 0.5482870303094387,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 8,
+              "aa": "R",
+              "score": 0.4814257975667715,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 9,
+              "aa": "G",
+              "score": 0.49719301611185074,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 10,
+              "aa": "P",
+              "score": 0.43919117748737335,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 11,
+              "aa": "A",
+              "score": 0.4492655396461487,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 12,
+              "aa": "G",
+              "score": 0.5473901703953743,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 13,
+              "aa": "N",
+              "score": 0.5325539857149124,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 14,
+              "aa": "N",
+              "score": 0.5034904438070953,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 15,
+              "aa": "D",
+              "score": 0.49367654882371426,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 16,
+              "aa": "C",
+              "score": 0.4056739881634712,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 17,
+              "aa": "R",
+              "score": 0.48542873095721006,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 18,
+              "aa": "I",
+              "score": 0.5545532144606113,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 19,
+              "aa": "Y",
+              "score": 0.4526185691356659,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 20,
+              "aa": "V",
+              "score": 0.4833059012889862,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 21,
+              "aa": "G",
+              "score": 0.4900820814073086,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 22,
+              "aa": "N",
+              "score": 0.4949668268673122,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 23,
+              "aa": "L",
+              "score": 0.538363017141819,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 24,
+              "aa": "P",
+              "score": 0.4297359958291054,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 25,
+              "aa": "P",
+              "score": 0.4323941692709923,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 26,
+              "aa": "D",
+              "score": 0.47245639003813267,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 27,
+              "aa": "I",
+              "score": 0.5488702617585659,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 28,
+              "aa": "R",
+              "score": 0.47188546881079674,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 29,
+              "aa": "T",
+              "score": 0.5081925466656685,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 30,
+              "aa": "K",
+              "score": 0.42938049137592316,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 31,
+              "aa": "D",
+              "score": 0.5242256373167038,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 32,
+              "aa": "I",
+              "score": 0.6089248284697533,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 33,
+              "aa": "E",
+              "score": 0.5646692216396332,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 34,
+              "aa": "D",
+              "score": 0.547155100852251,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 35,
+              "aa": "V",
+              "score": 0.550212450325489,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 36,
+              "aa": "F",
+              "score": 0.603452131152153,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 37,
+              "aa": "Y",
+              "score": 0.4761709813028574,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 38,
+              "aa": "K",
+              "score": 0.401641845703125,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 39,
+              "aa": "Y",
+              "score": 0.45143020153045654,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 40,
+              "aa": "G",
+              "score": 0.5096156038343906,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 41,
+              "aa": "A",
+              "score": 0.4332997351884842,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 42,
+              "aa": "I",
+              "score": 0.5489132143557072,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 43,
+              "aa": "R",
+              "score": 0.47342837043106556,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 44,
+              "aa": "D",
+              "score": 0.5148934861645103,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 45,
+              "aa": "I",
+              "score": 0.6299945116043091,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 46,
+              "aa": "D",
+              "score": 0.5300462413579226,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 47,
+              "aa": "L",
+              "score": 0.5864587053656578,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 48,
+              "aa": "K",
+              "score": 0.4465598501265049,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 49,
+              "aa": "N",
+              "score": 0.5425065010786057,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 50,
+              "aa": "R",
+              "score": 0.5128160966560245,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 51,
+              "aa": "R",
+              "score": 0.5123667195439339,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 52,
+              "aa": "G",
+              "score": 0.6084616109728813,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 53,
+              "aa": "G",
+              "score": 0.5868600904941559,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 54,
+              "aa": "P",
+              "score": 0.43265657126903534,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 55,
+              "aa": "P",
+              "score": 0.43946048989892006,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 56,
+              "aa": "F",
+              "score": 0.6363529115915298,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 57,
+              "aa": "A",
+              "score": 0.5669450089335442,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 58,
+              "aa": "F",
+              "score": 0.6304753720760345,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 59,
+              "aa": "V",
+              "score": 0.5592195726931095,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 60,
+              "aa": "E",
+              "score": 0.6994507759809494,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 61,
+              "aa": "F",
+              "score": 0.6924594938755035,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 62,
+              "aa": "E",
+              "score": 0.771022379398346,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 63,
+              "aa": "D",
+              "score": 0.5773636102676392,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 64,
+              "aa": "P",
+              "score": 0.4562174491584301,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 65,
+              "aa": "R",
+              "score": 0.5174767803400755,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 66,
+              "aa": "D",
+              "score": 0.6296108067035675,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 67,
+              "aa": "A",
+              "score": 0.5799440145492554,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 68,
+              "aa": "E",
+              "score": 0.6566523015499115,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 69,
+              "aa": "D",
+              "score": 0.5446052588522434,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 70,
+              "aa": "A",
+              "score": 0.5887577012181282,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 71,
+              "aa": "V",
+              "score": 0.6072816774249077,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 72,
+              "aa": "Y",
+              "score": 0.48887200374156237,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 73,
+              "aa": "G",
+              "score": 0.5377587005496025,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 74,
+              "aa": "R",
+              "score": 0.5007425003568642,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 75,
+              "aa": "D",
+              "score": 0.5665762647986412,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 76,
+              "aa": "G",
+              "score": 0.5249365400522947,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 77,
+              "aa": "Y",
+              "score": 0.4997279846284073,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 78,
+              "aa": "D",
+              "score": 0.5494428649544716,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 79,
+              "aa": "Y",
+              "score": 0.4865768803283572,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 80,
+              "aa": "D",
+              "score": 0.5532988160848618,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 81,
+              "aa": "G",
+              "score": 0.5084618171676993,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 82,
+              "aa": "Y",
+              "score": 0.47570517659187317,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 83,
+              "aa": "R",
+              "score": 0.4997700316744158,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 84,
+              "aa": "L",
+              "score": 0.5531382821500301,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 85,
+              "aa": "R",
+              "score": 0.49606328597292304,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 86,
+              "aa": "V",
+              "score": 0.5447637513279915,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 87,
+              "aa": "E",
+              "score": 0.6202680394053459,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 88,
+              "aa": "F",
+              "score": 0.6987816095352173,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 89,
+              "aa": "P",
+              "score": 0.47059221006929874,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 90,
+              "aa": "R",
+              "score": 0.5065305228345096,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 91,
+              "aa": "S",
+              "score": 0.5393883511424065,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 92,
+              "aa": "G",
+              "score": 0.5304899737238884,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 93,
+              "aa": "R",
+              "score": 0.4999200517486315,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 94,
+              "aa": "G",
+              "score": 0.5565052442252636,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 95,
+              "aa": "T",
+              "score": 0.5663734897971153,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 96,
+              "aa": "G",
+              "score": 0.4849155368283391,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 97,
+              "aa": "R",
+              "score": 0.5295340809971094,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 98,
+              "aa": "G",
+              "score": 0.5350860878825188,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 99,
+              "aa": "G",
+              "score": 0.5415762886404991,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 100,
+              "aa": "G",
+              "score": 0.6039094105362892,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 101,
+              "aa": "G",
+              "score": 0.7340720444917679,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 102,
+              "aa": "G",
+              "score": 0.8015121817588806,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 103,
+              "aa": "G",
+              "score": 0.8506871163845062,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 104,
+              "aa": "G",
+              "score": 0.9183154106140137,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 105,
+              "aa": "G",
+              "score": 0.9684339165687561,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 106,
+              "aa": "G",
+              "score": 1.0,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 107,
+              "aa": "A",
+              "score": 0.7023834735155106,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 108,
+              "aa": "P",
+              "score": 0.6698127090930939,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 109,
+              "aa": "R",
+              "score": 0.5798086300492287,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 110,
+              "aa": "G",
+              "score": 0.7609188258647919,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 111,
+              "aa": "R",
+              "score": 0.5751459524035454,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 112,
+              "aa": "Y",
+              "score": 0.5587211959064007,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 113,
+              "aa": "G",
+              "score": 0.8093213438987732,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 114,
+              "aa": "P",
+              "score": 0.6560340523719788,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 115,
+              "aa": "P",
+              "score": 0.6719320565462112,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 116,
+              "aa": "S",
+              "score": 0.6465035378932953,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 117,
+              "aa": "R",
+              "score": 0.5275179781019688,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 118,
+              "aa": "R",
+              "score": 0.5335326083004475,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 119,
+              "aa": "S",
+              "score": 0.5560943707823753,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 120,
+              "aa": "E",
+              "score": 0.6277880668640137,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 121,
+              "aa": "N",
+              "score": 0.5308739207684994,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 122,
+              "aa": "R",
+              "score": 0.5500521622598171,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 123,
+              "aa": "V",
+              "score": 0.5178686492145061,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 124,
+              "aa": "V",
+              "score": 0.512585855089128,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 125,
+              "aa": "V",
+              "score": 0.5124624660238624,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 126,
+              "aa": "S",
+              "score": 0.5164007227867842,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 127,
+              "aa": "G",
+              "score": 0.5608319826424122,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 128,
+              "aa": "L",
+              "score": 0.5347622856497765,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 129,
+              "aa": "P",
+              "score": 0.4352905675768852,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 130,
+              "aa": "P",
+              "score": 0.4399424232542515,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 131,
+              "aa": "S",
+              "score": 0.5768229812383652,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 132,
+              "aa": "G",
+              "score": 0.5272443499416113,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 133,
+              "aa": "S",
+              "score": 0.5175398420542479,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 134,
+              "aa": "W",
+              "score": 0.4609833136200905,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 135,
+              "aa": "Q",
+              "score": 0.5031357519328594,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 136,
+              "aa": "D",
+              "score": 0.5026814937591553,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 137,
+              "aa": "L",
+              "score": 0.5492996647953987,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 138,
+              "aa": "K",
+              "score": 0.4201718494296074,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 139,
+              "aa": "D",
+              "score": 0.47922958619892597,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 140,
+              "aa": "H",
+              "score": 0.5347463749349117,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 141,
+              "aa": "M",
+              "score": 0.5694013088941574,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 142,
+              "aa": "R",
+              "score": 0.48868043068796396,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 143,
+              "aa": "E",
+              "score": 0.5836647003889084,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 144,
+              "aa": "A",
+              "score": 0.4602936692535877,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 145,
+              "aa": "G",
+              "score": 0.5098687605932355,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 146,
+              "aa": "D",
+              "score": 0.47824385203421116,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 147,
+              "aa": "V",
+              "score": 0.4791452828794718,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 148,
+              "aa": "C",
+              "score": 0.3750382512807846,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 149,
+              "aa": "Y",
+              "score": 0.45472048223018646,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 150,
+              "aa": "A",
+              "score": 0.4431186690926552,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 151,
+              "aa": "D",
+              "score": 0.47308663465082645,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 152,
+              "aa": "V",
+              "score": 0.4779777228832245,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 153,
+              "aa": "Y",
+              "score": 0.43891309574246407,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 154,
+              "aa": "R",
+              "score": 0.45008255541324615,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 155,
+              "aa": "D",
+              "score": 0.4965230745729059,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 156,
+              "aa": "G",
+              "score": 0.49038019869476557,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 157,
+              "aa": "T",
+              "score": 0.4764332678169012,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 158,
+              "aa": "G",
+              "score": 0.45649299398064613,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 159,
+              "aa": "V",
+              "score": 0.47044236585497856,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 160,
+              "aa": "V",
+              "score": 0.47134323976933956,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 161,
+              "aa": "E",
+              "score": 0.5084604863077402,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 162,
+              "aa": "F",
+              "score": 0.5517777316272259,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 163,
+              "aa": "V",
+              "score": 0.4779202528297901,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 164,
+              "aa": "R",
+              "score": 0.47297056019306183,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 165,
+              "aa": "K",
+              "score": 0.41173063963651657,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 166,
+              "aa": "E",
+              "score": 0.5456707030534744,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 167,
+              "aa": "D",
+              "score": 0.4822324514389038,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 168,
+              "aa": "M",
+              "score": 0.5079214526340365,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 169,
+              "aa": "T",
+              "score": 0.48597011901438236,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 170,
+              "aa": "Y",
+              "score": 0.44996926933526993,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 171,
+              "aa": "A",
+              "score": 0.42956532537937164,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 172,
+              "aa": "V",
+              "score": 0.4733676891773939,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 173,
+              "aa": "R",
+              "score": 0.45997354388237,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 174,
+              "aa": "K",
+              "score": 0.41283871978521347,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 175,
+              "aa": "L",
+              "score": 0.534846093505621,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 176,
+              "aa": "D",
+              "score": 0.4694574512541294,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 177,
+              "aa": "N",
+              "score": 0.48511768225580454,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 178,
+              "aa": "T",
+              "score": 0.48549260664731264,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 179,
+              "aa": "K",
+              "score": 0.4157186672091484,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 180,
+              "aa": "F",
+              "score": 0.5511035732924938,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 181,
+              "aa": "R",
+              "score": 0.4663138948380947,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 182,
+              "aa": "S",
+              "score": 0.5204608626663685,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 183,
+              "aa": "H",
+              "score": 0.5052360016852617,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 184,
+              "aa": "E",
+              "score": 0.5531622283160686,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 185,
+              "aa": "G",
+              "score": 0.4884176682680845,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 186,
+              "aa": "E",
+              "score": 0.5818028151988983,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 187,
+              "aa": "T",
+              "score": 0.4924000878818333,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 188,
+              "aa": "A",
+              "score": 0.4971261622849852,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 189,
+              "aa": "Y",
+              "score": 0.4492841549217701,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 190,
+              "aa": "I",
+              "score": 0.5432842373847961,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 191,
+              "aa": "R",
+              "score": 0.4734393581748009,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 192,
+              "aa": "V",
+              "score": 0.49743096763268113,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 193,
+              "aa": "K",
+              "score": 0.41848309338092804,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 194,
+              "aa": "V",
+              "score": 0.5403360612690449,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 195,
+              "aa": "D",
+              "score": 0.5941045880317688,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 196,
+              "aa": "G",
+              "score": 0.529284194111824,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 197,
+              "aa": "P",
+              "score": 0.468446996062994,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 198,
+              "aa": "R",
+              "score": 0.5228600632399321,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 199,
+              "aa": "S",
+              "score": 0.5773909166455269,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 200,
+              "aa": "P",
+              "score": 0.4662167765200138,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 201,
+              "aa": "S",
+              "score": 0.5992036461830139,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 202,
+              "aa": "Y",
+              "score": 0.5296546015888453,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 203,
+              "aa": "G",
+              "score": 0.607097327709198,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 204,
+              "aa": "R",
+              "score": 0.5458175353705883,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 205,
+              "aa": "S",
+              "score": 0.6265915334224701,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 206,
+              "aa": "R",
+              "score": 0.6217071488499641,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 207,
+              "aa": "S",
+              "score": 0.6286480873823166,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 208,
+              "aa": "R",
+              "score": 0.6953914016485214,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 209,
+              "aa": "S",
+              "score": 0.6216472908854485,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 210,
+              "aa": "R",
+              "score": 0.7001147121191025,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 211,
+              "aa": "S",
+              "score": 0.6228077039122581,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 212,
+              "aa": "R",
+              "score": 0.6938452273607254,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 213,
+              "aa": "S",
+              "score": 0.6291439086198807,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 214,
+              "aa": "R",
+              "score": 0.6812702417373657,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 215,
+              "aa": "S",
+              "score": 0.6248581483960152,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 216,
+              "aa": "R",
+              "score": 0.6633692234754562,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 217,
+              "aa": "S",
+              "score": 0.6200275346636772,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 218,
+              "aa": "R",
+              "score": 0.6449741274118423,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 219,
+              "aa": "S",
+              "score": 0.6018581241369247,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 220,
+              "aa": "N",
+              "score": 0.6395184844732285,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 221,
+              "aa": "S",
+              "score": 0.649119958281517,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 222,
+              "aa": "R",
+              "score": 0.679631382226944,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 223,
+              "aa": "S",
+              "score": 0.6204283386468887,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 224,
+              "aa": "R",
+              "score": 0.6499709635972977,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 225,
+              "aa": "S",
+              "score": 0.5973809733986855,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 226,
+              "aa": "Y",
+              "score": 0.631333976984024,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 227,
+              "aa": "S",
+              "score": 0.6038244441151619,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 228,
+              "aa": "P",
+              "score": 0.5248052347451448,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 229,
+              "aa": "R",
+              "score": 0.6362963616847992,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 230,
+              "aa": "R",
+              "score": 0.6724601089954376,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 231,
+              "aa": "S",
+              "score": 0.57168348133564,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 232,
+              "aa": "R",
+              "score": 0.681098535656929,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 233,
+              "aa": "G",
+              "score": 0.6610259562730789,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 234,
+              "aa": "S",
+              "score": 0.5402248725295067,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 235,
+              "aa": "P",
+              "score": 0.48385652527213097,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 236,
+              "aa": "R",
+              "score": 0.6195527389645576,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 237,
+              "aa": "Y",
+              "score": 0.6168029084801674,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 238,
+              "aa": "S",
+              "score": 0.5507802404463291,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 239,
+              "aa": "P",
+              "score": 0.5167946927249432,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 240,
+              "aa": "R",
+              "score": 0.6260039061307907,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 241,
+              "aa": "H",
+              "score": 0.6349329054355621,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 242,
+              "aa": "S",
+              "score": 0.6557924598455429,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 243,
+              "aa": "R",
+              "score": 0.6613670140504837,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 244,
+              "aa": "S",
+              "score": 0.639752596616745,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 245,
+              "aa": "R",
+              "score": 0.661495104432106,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 246,
+              "aa": "S",
+              "score": 0.6477648019790649,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 247,
+              "aa": "R",
+              "score": 0.6675693988800049,
+              "semantic_type": "model_attribution"
+            },
+            {
+              "position": 248,
+              "aa": "T",
+              "score": 0.7122310847043991,
+              "semantic_type": "model_attribution"
+            }
+          ],
+          "top_residues": [
+            {
+              "position": 106,
+              "aa": "G",
+              "score": 1.0,
+              "semantic_type": "model_attribution",
+              "rank": 1
+            },
+            {
+              "position": 105,
+              "aa": "G",
+              "score": 0.9684339165687561,
+              "semantic_type": "model_attribution",
+              "rank": 2
+            },
+            {
+              "position": 104,
+              "aa": "G",
+              "score": 0.9183154106140137,
+              "semantic_type": "model_attribution",
+              "rank": 3
+            },
+            {
+              "position": 103,
+              "aa": "G",
+              "score": 0.8506871163845062,
+              "semantic_type": "model_attribution",
+              "rank": 4
+            },
+            {
+              "position": 113,
+              "aa": "G",
+              "score": 0.8093213438987732,
+              "semantic_type": "model_attribution",
+              "rank": 5
+            },
+            {
+              "position": 102,
+              "aa": "G",
+              "score": 0.8015121817588806,
+              "semantic_type": "model_attribution",
+              "rank": 6
+            },
+            {
+              "position": 62,
+              "aa": "E",
+              "score": 0.771022379398346,
+              "semantic_type": "model_attribution",
+              "rank": 7
+            },
+            {
+              "position": 110,
+              "aa": "G",
+              "score": 0.7609188258647919,
+              "semantic_type": "model_attribution",
+              "rank": 8
+            },
+            {
+              "position": 101,
+              "aa": "G",
+              "score": 0.7340720444917679,
+              "semantic_type": "model_attribution",
+              "rank": 9
+            },
+            {
+              "position": 248,
+              "aa": "T",
+              "score": 0.7122310847043991,
+              "semantic_type": "model_attribution",
+              "rank": 10
+            }
+          ],
+          "kde": {
+            "status": "success",
+            "semantic_type": "derived_hotspot",
+            "values": [
+              0.10222749892012395,
+              0.1244740261624262,
+              0.1458917731090903,
+              0.16648327633157312,
+              0.18625107240133154,
+              0.2051976978898229,
+              0.2233256893685045,
+              0.24063758340883323,
+              0.257135916582266,
+              0.2728232254602605,
+              0.28770204661427323,
+              0.3017749166157615,
+              0.3150443720361831,
+              0.32751294944699394,
+              0.33918318541965187,
+              0.3500576165256142,
+              0.36013877933633776,
+              0.3694292104232795,
+              0.37793144635789666,
+              0.3856480237116462,
+              0.39258147905598584,
+              0.39873434896237203,
+              0.4041091700022621,
+              0.40870847874711336,
+              0.4125348117683827,
+              0.41941611708298465,
+              0.4103138141650051,
+              0.409685712672863,
+              0.3923980104175171,
+              0.37722557721836614,
+              0.3665311330228209,
+              0.3703732223785692,
+              0.360792986991874,
+              0.3670380661541981,
+              0.34822595532541056,
+              0.3370622616512069,
+              0.29212895989810184,
+              0.315602155101411,
+              0.32810114665341583,
+              0.3544267862147059,
+              0.3942334069428308,
+              0.4200735361326191,
+              0.4135768307500305,
+              0.4548802549224491,
+              0.4756930935595931,
+              0.48704801770576855,
+              0.503296665573183,
+              0.5163559028317577,
+              0.5509806845988265,
+              0.58454777910632,
+              0.6041333138368943,
+              0.6079212652545896,
+              0.6197090118244697,
+              0.6146931323422975,
+              0.6383460582607872,
+              0.6328209961273439,
+              0.6319800098317594,
+              0.6235204755323673,
+              0.6105604602298702,
+              0.5911533262589845,
+              0.5838539995410796,
+              0.5537387852200584,
+              0.530819581927902,
+              0.531217377990731,
+              0.5224382782441821,
+              0.5373368203355344,
+              0.5257425152163977,
+              0.5167827415351836,
+              0.49727886579222735,
+              0.4957846721338113,
+              0.4675971856449803,
+              0.4503640026870208,
+              0.4433213528322759,
+              0.4144599919366718,
+              0.37089463385312627,
+              0.28178147867480785,
+              0.20011551850840537,
+              0.1184522015826186,
+              0.06523789137176417,
+              0.02396176515574666,
+              -0.0,
+              0.0037197635908059468,
+              0.042833323389827704,
+              0.0924115339816205,
+              0.13085820321720387,
+              0.24007903318718515,
+              0.3818891668757112,
+              0.3879101703320882,
+              0.4567014841990189,
+              0.5046157405202365,
+              0.5848833386231025,
+              0.6750024767049436,
+              0.7874763647611469,
+              0.8613129333498937,
+              0.918264606714251,
+              0.9984341425406198,
+              1.062928968815278,
+              1.1150471251958536,
+              1.161780156715652,
+              1.2016057471528443,
+              1.2312218035252211,
+              1.2547422380736857,
+              1.2708116376384682,
+              1.2625806819218512,
+              1.2488582867180154,
+              1.2473551148839244,
+              1.2516428948647984,
+              1.242341452494732,
+              1.2114518613838487,
+              1.1883278491900764,
+              1.1543389609428645,
+              1.134020488030155,
+              1.1157811649696598,
+              1.0838320054334196,
+              1.0450286077560138,
+              0.99321155785058,
+              0.9324014929351954,
+              0.866358261647405,
+              0.7860785550578071,
+              0.7138714772363994,
+              0.6316748177266742,
+              0.5373475279082229,
+              0.39633092372659684,
+              0.28957795921765017,
+              0.18688475113447378,
+              0.14592608298398524,
+              0.13022322795492514,
+              0.11781306513612488,
+              0.12807276408668145,
+              0.16719394853670577,
+              0.21812433940871845,
+              0.23540381119489195,
+              0.2391568297443265,
+              0.21774142328513513,
+              0.26466971442309006,
+              0.25976128647723984,
+              0.24876409529359877,
+              0.31270230649761555,
+              0.33702722607987035,
+              0.3500786665776663,
+              0.39422149079040514,
+              0.4031574364401451,
+              0.4146588859297249,
+              0.4206357311771107,
+              0.4353233585803702,
+              0.4227853371456187,
+              0.4283268056389091,
+              0.4275381340067508,
+              0.4077970745278625,
+              0.42222795956661097,
+              0.4222604186036829,
+              0.42609062691402366,
+              0.4248380181675402,
+              0.4227118272581163,
+              0.45459457760566924,
+              0.4579367097731373,
+              0.4650474255009671,
+              0.4668822908523751,
+              0.4802679006295416,
+              0.4758264682979685,
+              0.46772984682353025,
+              0.4569320326785733,
+              0.4772448177396029,
+              0.4610784207455061,
+              0.4535272946976243,
+              0.437414658992346,
+              0.42705919839013395,
+              0.3900791038619955,
+              0.39309696735912647,
+              0.3717889726448176,
+              0.36457274309446985,
+              0.3440969654144319,
+              0.3817663853672917,
+              0.3816644056180656,
+              0.3811847546313132,
+              0.3716509433552484,
+              0.37105450567585807,
+              0.37179231773008015,
+              0.3830604436905807,
+              0.3600687979246202,
+              0.34135123337916884,
+              0.32540619127635306,
+              0.29528241174895653,
+              0.2944242392000951,
+              0.2670576461157932,
+              0.26492068731686125,
+              0.23635825217897422,
+              0.243504986732463,
+              0.2343548254454526,
+              0.27842136738944934,
+              0.27619693727571715,
+              0.29810310726959877,
+              0.3047730928427126,
+              0.3305288903836612,
+              0.3549784004457859,
+              0.3884100619787749,
+              0.3969686592848194,
+              0.43567376329141405,
+              0.4867536083943058,
+              0.5235371359632155,
+              0.557400359699074,
+              0.5952187219608476,
+              0.6416199455108029,
+              0.6906425705996622,
+              0.6960179115943541,
+              0.7463548001969715,
+              0.7457890527493483,
+              0.7559153959345646,
+              0.796059828546849,
+              0.8280619329571945,
+              0.8457581675666046,
+              0.859761466733719,
+              0.8842824775258622,
+              0.918931021969386,
+              0.9120541012547454,
+              0.9091060556205521,
+              0.8909471342712578,
+              0.9016010020178018,
+              0.8903967130925445,
+              0.8791549799171934,
+              0.8627111623630226,
+              0.848853961064028,
+              0.8083200652910665,
+              0.7896724295458037,
+              0.7526462517622292,
+              0.7165540734984881,
+              0.6820861442476756,
+              0.6499327135028796,
+              0.6207840307571959,
+              0.5953303455037151,
+              0.5742619072355288,
+              0.5582689654457327,
+              0.5480417696274138,
+              0.5442705692736687,
+              0.547645613877588,
+              0.5588571529322626,
+              0.5785954359307879,
+              0.6075507123662542,
+              0.6464132317317541,
+              0.6958732435203783,
+              0.7566209972252218,
+              0.8293467423393754,
+              0.9147407283559308,
+              1.0134932047679803,
+              1.1262944210686174,
+              1.2538346267509346,
+              1.3968040713080239,
+              1.5558930042329748
+            ],
+            "values_semantics": "maximum_smoothed_score_density_minus_smoothed_score_density",
+            "prominence": 0.1,
+            "regions": [
+              {
+                "start": 1,
+                "end": 80,
+                "score": 31.911564381413704,
+                "is_primary": false,
+                "semantic_type": "derived_hotspot",
+                "length": 80
+              },
+              {
+                "start": 81,
+                "end": 127,
+                "score": 36.15997596307393,
+                "is_primary": true,
+                "semantic_type": "derived_hotspot",
+                "length": 47
+              },
+              {
+                "start": 128,
+                "end": 188,
+                "score": 22.08480717853207,
+                "is_primary": false,
+                "semantic_type": "derived_hotspot",
+                "length": 61
+              },
+              {
+                "start": 189,
+                "end": 233,
+                "score": 29.261237309529022,
+                "is_primary": false,
+                "semantic_type": "derived_hotspot",
+                "length": 45
+              },
+              {
+                "start": 234,
+                "end": 247,
+                "score": 11.470340751448779,
+                "is_primary": false,
+                "semantic_type": "derived_hotspot",
+                "length": 14
+              }
+            ],
+            "bandwidth": 0.1,
+            "reason": null,
+            "warnings": [
+              "UPSTREAM_TERMINAL_RESIDUE_OMITTED: preserved official half-open segmentation with terminal boundary N-1; the last residue is outside all candidate regions."
+            ],
+            "input_precision": "official_csv_4_decimal_places",
+            "runtime_ms": 130.34809999953723
+          },
+          "critical_regions": [
+            {
+              "start": 1,
+              "end": 80,
+              "score": 31.911564381413704,
+              "is_primary": false,
+              "semantic_type": "derived_hotspot",
+              "length": 80
+            },
+            {
+              "start": 81,
+              "end": 127,
+              "score": 36.15997596307393,
+              "is_primary": true,
+              "semantic_type": "derived_hotspot",
+              "length": 47
+            },
+            {
+              "start": 128,
+              "end": 188,
+              "score": 22.08480717853207,
+              "is_primary": false,
+              "semantic_type": "derived_hotspot",
+              "length": 61
+            },
+            {
+              "start": 189,
+              "end": 233,
+              "score": 29.261237309529022,
+              "is_primary": false,
+              "semantic_type": "derived_hotspot",
+              "length": 45
+            },
+            {
+              "start": 234,
+              "end": 247,
+              "score": 11.470340751448779,
+              "is_primary": false,
+              "semantic_type": "derived_hotspot",
+              "length": 14
+            }
+          ],
+          "warnings": [
+            "UPSTREAM_TERMINAL_RESIDUE_OMITTED: preserved official half-open segmentation with terminal boundary N-1; the last residue is outside all candidate regions."
+          ],
+          "timings_ms": {
+            "global_ms": 11.242099997616606,
+            "attribution_ms": 63.83740000092075,
+            "kde_ms": 130.34809999953723
+          }
+        },
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "fuzdrop": {
+        "method": "fuzdrop",
+        "status": "success",
+        "integration_mode": "manual_import",
+        "runtime_ms": 0.0,
+        "result": {
+          "method_id": "fuzdrop",
+          "status": "success",
+          "message": null,
+          "method": "fuzdrop",
+          "mode": "C",
+          "integration_mode": "browser_protected",
+          "semantic_type": "model_prediction",
+          "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+          "sequence_length": 248,
+          "raw_score": 0.68,
+          "calibrated_score": 0.68,
+          "calibration_status": "not_calibrated",
+          "score_semantics": "official_pLLPS",
+          "label": "P",
+          "label_semantics": "P meets the official droplet-driver threshold; N is below that threshold and does not establish absence of condensation.",
+          "threshold": 0.6,
+          "threshold_operator": ">=",
+          "residue_propensity": [
+            {
+              "position": 1,
+              "aa": "M",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 2,
+              "aa": "S",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 3,
+              "aa": "G",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 4,
+              "aa": "G",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 5,
+              "aa": "G",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 6,
+              "aa": "V",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 7,
+              "aa": "I",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 8,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 9,
+              "aa": "G",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 10,
+              "aa": "P",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 11,
+              "aa": "A",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 12,
+              "aa": "G",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 13,
+              "aa": "N",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 14,
+              "aa": "N",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 15,
+              "aa": "D",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 16,
+              "aa": "C",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 17,
+              "aa": "R",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 18,
+              "aa": "I",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 19,
+              "aa": "Y",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 20,
+              "aa": "V",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 21,
+              "aa": "G",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 22,
+              "aa": "N",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 23,
+              "aa": "L",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 24,
+              "aa": "P",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 25,
+              "aa": "P",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 26,
+              "aa": "D",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 27,
+              "aa": "I",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 28,
+              "aa": "R",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 29,
+              "aa": "T",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 30,
+              "aa": "K",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 31,
+              "aa": "D",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 32,
+              "aa": "I",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 33,
+              "aa": "E",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 34,
+              "aa": "D",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 35,
+              "aa": "V",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 36,
+              "aa": "F",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 37,
+              "aa": "Y",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 38,
+              "aa": "K",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 39,
+              "aa": "Y",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 40,
+              "aa": "G",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 41,
+              "aa": "A",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 42,
+              "aa": "I",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 43,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 44,
+              "aa": "D",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 45,
+              "aa": "I",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 46,
+              "aa": "D",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 47,
+              "aa": "L",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 48,
+              "aa": "K",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 49,
+              "aa": "N",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 50,
+              "aa": "R",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 51,
+              "aa": "R",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 52,
+              "aa": "G",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 53,
+              "aa": "G",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 54,
+              "aa": "P",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 55,
+              "aa": "P",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 56,
+              "aa": "F",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 57,
+              "aa": "A",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 58,
+              "aa": "F",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 59,
+              "aa": "V",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 60,
+              "aa": "E",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 61,
+              "aa": "F",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 62,
+              "aa": "E",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 63,
+              "aa": "D",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 64,
+              "aa": "P",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 65,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 66,
+              "aa": "D",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 67,
+              "aa": "A",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 68,
+              "aa": "E",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 69,
+              "aa": "D",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 70,
+              "aa": "A",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 71,
+              "aa": "V",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 72,
+              "aa": "Y",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 73,
+              "aa": "G",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 74,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 75,
+              "aa": "D",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 76,
+              "aa": "G",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 77,
+              "aa": "Y",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 78,
+              "aa": "D",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 79,
+              "aa": "Y",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 80,
+              "aa": "D",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 81,
+              "aa": "G",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 82,
+              "aa": "Y",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 83,
+              "aa": "R",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 84,
+              "aa": "L",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 85,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 86,
+              "aa": "V",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 87,
+              "aa": "E",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 88,
+              "aa": "F",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 89,
+              "aa": "P",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 90,
+              "aa": "R",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 91,
+              "aa": "S",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 92,
+              "aa": "G",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 93,
+              "aa": "R",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 94,
+              "aa": "G",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 95,
+              "aa": "T",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 96,
+              "aa": "G",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 97,
+              "aa": "R",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 98,
+              "aa": "G",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 99,
+              "aa": "G",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 100,
+              "aa": "G",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 101,
+              "aa": "G",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 102,
+              "aa": "G",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 103,
+              "aa": "G",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 104,
+              "aa": "G",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 105,
+              "aa": "G",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 106,
+              "aa": "G",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 107,
+              "aa": "A",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 108,
+              "aa": "P",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 109,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 110,
+              "aa": "G",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 111,
+              "aa": "R",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 112,
+              "aa": "Y",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 113,
+              "aa": "G",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 114,
+              "aa": "P",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 115,
+              "aa": "P",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 116,
+              "aa": "S",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 117,
+              "aa": "R",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 118,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 119,
+              "aa": "S",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 120,
+              "aa": "E",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 121,
+              "aa": "N",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 122,
+              "aa": "R",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 123,
+              "aa": "V",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 124,
+              "aa": "V",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 125,
+              "aa": "V",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 126,
+              "aa": "S",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 127,
+              "aa": "G",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 128,
+              "aa": "L",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 129,
+              "aa": "P",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 130,
+              "aa": "P",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 131,
+              "aa": "S",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 132,
+              "aa": "G",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 133,
+              "aa": "S",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 134,
+              "aa": "W",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 135,
+              "aa": "Q",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 136,
+              "aa": "D",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 137,
+              "aa": "L",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 138,
+              "aa": "K",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 139,
+              "aa": "D",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 140,
+              "aa": "H",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 141,
+              "aa": "M",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 142,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 143,
+              "aa": "E",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 144,
+              "aa": "A",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 145,
+              "aa": "G",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 146,
+              "aa": "D",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 147,
+              "aa": "V",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 148,
+              "aa": "C",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 149,
+              "aa": "Y",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 150,
+              "aa": "A",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 151,
+              "aa": "D",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 152,
+              "aa": "V",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 153,
+              "aa": "Y",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 154,
+              "aa": "R",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 155,
+              "aa": "D",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 156,
+              "aa": "G",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 157,
+              "aa": "T",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 158,
+              "aa": "G",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 159,
+              "aa": "V",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 160,
+              "aa": "V",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 161,
+              "aa": "E",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 162,
+              "aa": "F",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 163,
+              "aa": "V",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 164,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 165,
+              "aa": "K",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 166,
+              "aa": "E",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 167,
+              "aa": "D",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 168,
+              "aa": "M",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 169,
+              "aa": "T",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 170,
+              "aa": "Y",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 171,
+              "aa": "A",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 172,
+              "aa": "V",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 173,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 174,
+              "aa": "K",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 175,
+              "aa": "L",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 176,
+              "aa": "D",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 177,
+              "aa": "N",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 178,
+              "aa": "T",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 179,
+              "aa": "K",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 180,
+              "aa": "F",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 181,
+              "aa": "R",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 182,
+              "aa": "S",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 183,
+              "aa": "H",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 184,
+              "aa": "E",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 185,
+              "aa": "G",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 186,
+              "aa": "E",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 187,
+              "aa": "T",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 188,
+              "aa": "A",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 189,
+              "aa": "Y",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 190,
+              "aa": "I",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 191,
+              "aa": "R",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 192,
+              "aa": "V",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 193,
+              "aa": "K",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 194,
+              "aa": "V",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 195,
+              "aa": "D",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 196,
+              "aa": "G",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 197,
+              "aa": "P",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 198,
+              "aa": "R",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 199,
+              "aa": "S",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 200,
+              "aa": "P",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 201,
+              "aa": "S",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 202,
+              "aa": "Y",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 203,
+              "aa": "G",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 204,
+              "aa": "R",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 205,
+              "aa": "S",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 206,
+              "aa": "R",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 207,
+              "aa": "S",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 208,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 209,
+              "aa": "S",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 210,
+              "aa": "R",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 211,
+              "aa": "S",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 212,
+              "aa": "R",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 213,
+              "aa": "S",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 214,
+              "aa": "R",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 215,
+              "aa": "S",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 216,
+              "aa": "R",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 217,
+              "aa": "S",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 218,
+              "aa": "R",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 219,
+              "aa": "S",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 220,
+              "aa": "N",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 221,
+              "aa": "S",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 222,
+              "aa": "R",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 223,
+              "aa": "S",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 224,
+              "aa": "R",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 225,
+              "aa": "S",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 226,
+              "aa": "Y",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 227,
+              "aa": "S",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 228,
+              "aa": "P",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 229,
+              "aa": "R",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 230,
+              "aa": "R",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 231,
+              "aa": "S",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 232,
+              "aa": "R",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 233,
+              "aa": "G",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 234,
+              "aa": "S",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 235,
+              "aa": "P",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 236,
+              "aa": "R",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 237,
+              "aa": "Y",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 238,
+              "aa": "S",
+              "score": 0.7,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 239,
+              "aa": "P",
+              "score": 0.8,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 240,
+              "aa": "R",
+              "score": 0.9,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 241,
+              "aa": "H",
+              "score": 1.0,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 242,
+              "aa": "S",
+              "score": 0.0,
+              "score_name": "pDP",
+              "Sbind": 1.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 243,
+              "aa": "R",
+              "score": 0.1,
+              "score_name": "pDP",
+              "Sbind": 1.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 244,
+              "aa": "S",
+              "score": 0.2,
+              "score_name": "pDP",
+              "Sbind": 1.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 245,
+              "aa": "R",
+              "score": 0.3,
+              "score_name": "pDP",
+              "Sbind": 0.0,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 246,
+              "aa": "S",
+              "score": 0.4,
+              "score_name": "pDP",
+              "Sbind": 0.25,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 247,
+              "aa": "R",
+              "score": 0.5,
+              "score_name": "pDP",
+              "Sbind": 0.5,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            },
+            {
+              "position": 248,
+              "aa": "T",
+              "score": 0.6,
+              "score_name": "pDP",
+              "Sbind": 0.75,
+              "semantic_type": "residue_propensity",
+              "Sbind_semantics": "binding_mode_entropy"
+            }
+          ],
+          "regions": [
+            {
+              "start": 30,
+              "end": 45,
+              "type": "droplet_promoting_region",
+              "official_type": "Droplet-promoting region",
+              "semantic_type": "region_prediction",
+              "length": 16
+            },
+            {
+              "start": 45,
+              "end": 60,
+              "type": "droplet_promoting_region",
+              "official_type": "Droplet-promoting region",
+              "semantic_type": "region_prediction",
+              "length": 16
+            },
+            {
+              "start": 40,
+              "end": 42,
+              "type": "aggregation_hotspot",
+              "official_type": "Aggregation hot-spot",
+              "semantic_type": "region_prediction",
+              "length": 3
+            }
+          ],
+          "source": "manual_import_of_official_result",
+          "source_declaration": "official_fuzdrop_export",
+          "origin_verification": "user_declared_not_independently_verified",
+          "coordinate_system": "one_based_inclusive",
+          "coordinate_verification": "user_declared_not_independently_verified",
+          "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+          "service_version": null,
+          "retrieved_at": null,
+          "imported_at": "2026-09-03T12:36:06.140323Z",
+          "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+          "raw_tsv_sha256": {
+            "scores_tsv": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+            "regions_tsv": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964"
+          },
+          "raw_response_sha256": null,
+          "runtime_ms": 1.5325999993365258,
+          "runtime_scope": "local_import_parsing",
+          "warnings": [
+            "The imported data origin is user-declared and has not been independently verified.",
+            "The coordinate convention is user-declared; no genuine official export was available to independently verify native indexing or endpoint inclusivity."
+          ]
+        },
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "seg": {
+        "method": "seg",
+        "status": "success",
+        "integration_mode": "local_automatic",
+        "runtime_ms": 234.1804999996384,
+        "result": {
+          "method_id": "seg",
+          "status": "success",
+          "message": null,
+          "method": "seg",
+          "annotation_type": "LCR",
+          "semantic_type": "region_annotation",
+          "implementation": "NCBI segmasker",
+          "version": "2.17.0",
+          "application_version": "1.0.0",
+          "sequence_length": 248,
+          "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+          "regions": [
+            {
+              "start": 72,
+              "end": 85,
+              "semantic_type": "region_annotation",
+              "length": 14
+            },
+            {
+              "start": 89,
+              "end": 119,
+              "semantic_type": "region_annotation",
+              "length": 31
+            },
+            {
+              "start": 196,
+              "end": 247,
+              "semantic_type": "region_annotation",
+              "length": 52
+            }
+          ],
+          "parameters": {
+            "window": 12,
+            "locut": 2.2,
+            "hicut": 2.5,
+            "input_format": "fasta",
+            "output_format": "interval",
+            "parse_seqids": false
+          },
+          "runtime_ms": 201.63440000033006,
+          "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c",
+          "coverage": 0.3911290322580645,
+          "region_count": 3,
+          "longest_region": 52
+        },
+        "error": null,
+        "reason": null,
+        "warnings": []
+      },
+      "dismeta": {
+        "method": "dismeta",
+        "status": "unavailable",
+        "integration_mode": "integration_blocked",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": "integration_contract_unverified",
+        "warnings": [
+          "The selected method's integration is blocked."
+        ]
+      }
+    },
+    "ensemble": null,
+    "warnings": []
+  }
+}

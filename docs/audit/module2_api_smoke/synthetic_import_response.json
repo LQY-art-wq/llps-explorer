@@ -1,0 +1,476 @@
+{
+  "http_status": 200,
+  "body": {
+    "method_id": "fuzdrop",
+    "status": "success",
+    "message": null,
+    "method": "fuzdrop",
+    "mode": "C",
+    "integration_mode": "browser_protected",
+    "semantic_type": "model_prediction",
+    "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF",
+    "sequence_length": 45,
+    "raw_score": null,
+    "calibrated_score": null,
+    "calibration_status": "not_calibrated",
+    "score_semantics": "official_pLLPS",
+    "label": null,
+    "label_semantics": null,
+    "threshold": null,
+    "threshold_operator": null,
+    "residue_propensity": [
+      {
+        "position": 1,
+        "aa": "A",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 2,
+        "aa": "C",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 3,
+        "aa": "D",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 4,
+        "aa": "E",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 5,
+        "aa": "F",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 6,
+        "aa": "G",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 7,
+        "aa": "H",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 8,
+        "aa": "I",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 9,
+        "aa": "K",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 10,
+        "aa": "L",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 11,
+        "aa": "M",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 12,
+        "aa": "N",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 13,
+        "aa": "P",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 14,
+        "aa": "Q",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 15,
+        "aa": "R",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 16,
+        "aa": "S",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 17,
+        "aa": "T",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 18,
+        "aa": "V",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 19,
+        "aa": "W",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 20,
+        "aa": "Y",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 21,
+        "aa": "A",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 22,
+        "aa": "C",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 23,
+        "aa": "D",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 24,
+        "aa": "E",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 25,
+        "aa": "F",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 26,
+        "aa": "G",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 27,
+        "aa": "H",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 28,
+        "aa": "I",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 29,
+        "aa": "K",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 30,
+        "aa": "L",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 31,
+        "aa": "M",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 32,
+        "aa": "N",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 33,
+        "aa": "P",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 34,
+        "aa": "Q",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 35,
+        "aa": "R",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 36,
+        "aa": "S",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 37,
+        "aa": "T",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 38,
+        "aa": "V",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 39,
+        "aa": "W",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 40,
+        "aa": "Y",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 41,
+        "aa": "A",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 42,
+        "aa": "C",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 43,
+        "aa": "D",
+        "score": 0.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 44,
+        "aa": "E",
+        "score": 0.6,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      },
+      {
+        "position": 45,
+        "aa": "F",
+        "score": 1.0,
+        "score_name": "pDP",
+        "Sbind": 2.5,
+        "semantic_type": "residue_propensity",
+        "Sbind_semantics": "binding_mode_entropy"
+      }
+    ],
+    "regions": [
+      {
+        "start": 1,
+        "end": 1,
+        "type": "droplet_promoting_region",
+        "official_type": "Droplet-promoting region",
+        "semantic_type": "region_prediction",
+        "length": 1
+      },
+      {
+        "start": 1,
+        "end": 1,
+        "type": "droplet_promoting_region",
+        "official_type": "Droplet-promoting region",
+        "semantic_type": "region_prediction",
+        "length": 1
+      },
+      {
+        "start": 45,
+        "end": 45,
+        "type": "aggregation_hotspot",
+        "official_type": "Aggregation hot-spot",
+        "semantic_type": "region_prediction",
+        "length": 1
+      }
+    ],
+    "source": "manual_import_of_official_result",
+    "source_declaration": "official_fuzdrop_export",
+    "origin_verification": "user_declared_not_independently_verified",
+    "coordinate_system": "one_based_inclusive",
+    "coordinate_verification": "user_declared_not_independently_verified",
+    "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+    "service_version": null,
+    "retrieved_at": null,
+    "imported_at": "2026-09-03T10:53:10.990168Z",
+    "sequence_sha256": "dd71eebae203d43dc5d93d2bb68ad03200e40d5ad227ebb0dde32d9bf913ea48",
+    "raw_tsv_sha256": {
+      "scores_tsv": "2af7184a5df25868dafc5468d01870e470d8f6181233df5232a7fb23dc8372c9",
+      "regions_tsv": "4dfa85ca6920181ace69aaa5c83832bfd2a9b3e7976caee8b5749d1f1c7298eb"
+    },
+    "raw_response_sha256": null,
+    "runtime_ms": 0.5048999992141034,
+    "runtime_scope": "local_import_parsing",
+    "warnings": [
+      "The imported data origin is user-declared and has not been independently verified.",
+      "The coordinate convention is user-declared; no genuine official export was available to independently verify native indexing or endpoint inclusivity."
+    ]
+  }
+}

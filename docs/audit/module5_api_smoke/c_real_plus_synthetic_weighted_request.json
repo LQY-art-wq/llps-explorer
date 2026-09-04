@@ -1,0 +1,20 @@
+{
+  "request_body": {
+    "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+    "prediction_mode": "weighted",
+    "weights": {
+      "lreca": 0.6,
+      "fuzdrop": 0.4
+    },
+    "selected_methods": [
+      "lreca",
+      "fuzdrop",
+      "seg"
+    ],
+    "external_results": {
+      "fuzdrop": {
+        "result_id": "fuzdrop_result_3259bec9adcb490c81e89753a88e78bb"
+      }
+    }
+  }
+}

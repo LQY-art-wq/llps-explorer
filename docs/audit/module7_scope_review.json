@@ -1,0 +1,402 @@
+{
+  "module": 7,
+  "status": "passed",
+  "reviewed_at": "2026-09-03T14:42:09.652221+00:00",
+  "review_mode": "final_write",
+  "snapshot_files": 373,
+  "snapshot_manifest_sha256": "0a3c0ba5847e7fbf502e1eba120bd8ab2fa994c9feb6cbc4a0ad635ec5f0d38c",
+  "snapshot_archive_sha256": "60b0c24f54c105b72998feba40ec3548b13db8a98e75b1d2db5fc9a490b2c44d",
+  "snapshot_zip_matches_manifest": true,
+  "changed_files": 72,
+  "counts": {
+    "A": 62,
+    "M": 10,
+    "D": 0
+  },
+  "protected_prior_files_checked": 342,
+  "protected_prior_files_sha256_unchanged": true,
+  "protected_groups": {
+    "backend_production": {
+      "files_checked": 45,
+      "sha256_unchanged": true
+    },
+    "all_prior_backend_tests_and_fixtures": {
+      "files_checked": 38,
+      "sha256_unchanged": true
+    },
+    "backend_dependency_and_config_files": {
+      "files_checked": 5,
+      "sha256_unchanged": true
+    },
+    "external_manifests_and_readme": {
+      "files_checked": 3,
+      "sha256_unchanged": true
+    },
+    "prior_reports_audits_and_scientific_docs": {
+      "files_checked": 226,
+      "sha256_unchanged": true
+    },
+    "prior_scripts": {
+      "files_checked": 15,
+      "sha256_unchanged": true
+    }
+  },
+  "allowed_scope": [
+    "frontend/",
+    "README.md",
+    "docs/architecture.md",
+    "new docs/module7_*",
+    "new docs/audit/module7_* or module7/"
+  ],
+  "checkpoint_weights_tracked": false,
+  "private_runtime_artifacts_in_first_party_inventory": false,
+  "lreca_upstream": {
+    "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+    "matches_pinned_manifest": true,
+    "tracked_worktree_clean": true,
+    "untracked_upstream_files_in_scope": false
+  },
+  "git_index_modified_by_finalizer": false,
+  "git_index_before_sha256": "76be06532c2622472a35598295ac616a24fbe230e152eeef8ae35666a38338ff",
+  "git_index_after_sha256": "76be06532c2622472a35598295ac616a24fbe230e152eeef8ae35666a38338ff",
+  "public_text_files_checked": 53,
+  "changed_public_text_has_no_local_absolute_paths": true,
+  "binary_image_evidence": [
+    "docs/audit/module7_browser/A_lreca_1440.jpg",
+    "docs/audit/module7_browser/B_seg_1440.jpg",
+    "docs/audit/module7_browser/C_combined_1024.jpg",
+    "docs/audit/module7_browser/C_combined_1280.jpg",
+    "docs/audit/module7_browser/C_combined_1440.jpg",
+    "docs/audit/module7_browser/C_dark_1440.jpg",
+    "docs/audit/module7_browser/C_final_build_1440.jpg",
+    "docs/audit/module7_browser/D_import_badge.jpg",
+    "docs/audit/module7_browser/D_synthetic_six_tracks_1440.jpg",
+    "docs/audit/module7_browser/E_global_only_no_fuzdrop_tracks.jpg",
+    "docs/audit/module7_browser/J_5000_last_region.jpg",
+    "docs/audit/module7_browser/malformed_track_isolation.jpg",
+    "docs/audit/module7_browser/performance_100.jpg",
+    "docs/audit/module7_browser/performance_1000.jpg",
+    "docs/audit/module7_browser/performance_2000.jpg",
+    "docs/audit/module7_browser/performance_500.jpg",
+    "docs/audit/module7_browser/performance_5000.jpg"
+  ],
+  "image_pixel_privacy_review": "Manual browser evidence review is required; this finalizer does not infer text from image pixels.",
+  "crlf_public_text_files_preserved": [
+    "docs/audit/module7_browser/api/health.json",
+    "docs/audit/module7_browser/api/real_result_verification.json",
+    "docs/audit/module7_browser/route_guards.json"
+  ],
+  "new_or_modified_line_whitespace_check": "passed",
+  "whitespace_policy": "Added/replaced source and documentation lines are checked. Original Module 7 machine .log bytes are preserved; their whitespace is a non-blocking observation, never silently trimmed.",
+  "raw_machine_log_whitespace_observations": [
+    {
+      "code": "ADDED_BLANK_LINE_AT_EOF",
+      "path": "docs/audit/module7_checks/build.log",
+      "line": 24
+    },
+    {
+      "code": "ADDED_LINE_TRAILING_WHITESPACE",
+      "path": "docs/audit/module7_checks/unit.log",
+      "line": 221
+    },
+    {
+      "code": "ADDED_LINE_TRAILING_WHITESPACE",
+      "path": "docs/audit/module7_checks/unit.log",
+      "line": 225
+    }
+  ],
+  "git_diff_check": "passed",
+  "generated_artifacts": [
+    "docs/module7_changed_files.txt",
+    "docs/audit/module7_scope_review.json"
+  ],
+  "generated_artifact_hashes_omitted": "The generated scope report and change list are included in counts but omitted from delta hashes to avoid self-reference.",
+  "delta_sha256": {
+    "README.md": {
+      "before_sha256": "37d49083e20f85e67d6b5d26cfa8417bb5e3b1eca3daa719176c089c40b702de",
+      "after_sha256": "86b3ac927541423ea118e8ede4a1ced32cbfbd22eee276b212e39df29d01cc77"
+    },
+    "docs/architecture.md": {
+      "before_sha256": "0c51faca7c1181177f00f7db43d4338fe4a97a641be830289ad8a6cecfb42513",
+      "after_sha256": "d58fef3a1963d1552802a445a0be5ad09123fa60f0c7fdc345eb8165438c1725"
+    },
+    "docs/audit/module7_browser/A_lreca_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "1b80c7323e0208b41d1228241deb7b94b24b910885f92f447ba69637b6ed2363"
+    },
+    "docs/audit/module7_browser/B_seg_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "80974f3e1bc4d1a8fe828fbc4fce876249ce7b27bc5cb5ba6d5ba9e6060ee584"
+    },
+    "docs/audit/module7_browser/C_combined_1024.jpg": {
+      "before_sha256": null,
+      "after_sha256": "d7d145fe85bba70a13c836d0d334e20221818805a498f481438ac4cba11dfefe"
+    },
+    "docs/audit/module7_browser/C_combined_1280.jpg": {
+      "before_sha256": null,
+      "after_sha256": "e9bc1737cfefdfe819f7bf0b80363e1c8f4ca3f292251f32776319c585162ea0"
+    },
+    "docs/audit/module7_browser/C_combined_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "f3311753d7675bd8ec87d7054174086ff4f1767599d71c03c91227feb1cb01ec"
+    },
+    "docs/audit/module7_browser/C_dark_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "c406c3335381e1d2c15e7cd54dd1641e8c1c11f0253bfd4082e809b027f90a7a"
+    },
+    "docs/audit/module7_browser/C_final_build_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "ca11a0c2444ae4bedc5c59dae2afbef1b14089937b8b5ff407f17cbcbd0efa3f"
+    },
+    "docs/audit/module7_browser/D_import_badge.jpg": {
+      "before_sha256": null,
+      "after_sha256": "0bc4cd0e42ab478f3175fcafdf8478ffe38a4968628dc99458b876ec95ad5249"
+    },
+    "docs/audit/module7_browser/D_synthetic_six_tracks_1440.jpg": {
+      "before_sha256": null,
+      "after_sha256": "a76877355010040a1a3fc680417ee5f04d5fd1dda9a10d98ea4c050882a80361"
+    },
+    "docs/audit/module7_browser/E_global_only_no_fuzdrop_tracks.jpg": {
+      "before_sha256": null,
+      "after_sha256": "2c0c288ab3d405a653fdf77ce9c7867d28b7757f52d92904b6f79aa83ed6d257"
+    },
+    "docs/audit/module7_browser/J_5000_last_region.jpg": {
+      "before_sha256": null,
+      "after_sha256": "74bde2f96abc5b4a8521c2b04e4809da25bcac1d00ae7937dedffef75467ad50"
+    },
+    "docs/audit/module7_browser/api/A_job.json": {
+      "before_sha256": null,
+      "after_sha256": "1133f15c7b7f91a32bd0a4fe7b5583cf6a2fbba0c4869517043a8a5ef5e446a9"
+    },
+    "docs/audit/module7_browser/api/B_job.json": {
+      "before_sha256": null,
+      "after_sha256": "a07cae1a4298731c2123f6c16d7ca1cdf2f739e9c102da9195a9eb5157da264c"
+    },
+    "docs/audit/module7_browser/api/C_final_job.json": {
+      "before_sha256": null,
+      "after_sha256": "ff5d90527040f59c854d91443fb0e64f167b8bf944b17029604170977ae8a544"
+    },
+    "docs/audit/module7_browser/api/C_job.json": {
+      "before_sha256": null,
+      "after_sha256": "b84f80d6bee84ce9b6e601d16080d845aa47a65f62ea6aff6af81ae9a69b145f"
+    },
+    "docs/audit/module7_browser/api/D_job.json": {
+      "before_sha256": null,
+      "after_sha256": "f5d1ca81a3792ba0e52354a0cb483d9825f7e7a77a681308b6d72fc28d5dff7a"
+    },
+    "docs/audit/module7_browser/api/E_job.json": {
+      "before_sha256": null,
+      "after_sha256": "edbe604ad3a28104da2b0f7ca44041c61ab1e16b90a5cd4c19669a7fbfbe271f"
+    },
+    "docs/audit/module7_browser/api/final_health.json": {
+      "before_sha256": null,
+      "after_sha256": "3b059c56bf5833f6f61e54021b6ac3c1a82e714e49fbdc420f1b3c032ffab4d7"
+    },
+    "docs/audit/module7_browser/api/health.json": {
+      "before_sha256": null,
+      "after_sha256": "5541522cce963e1832f9368f6b3ec0552471aad01ad2f886483424db6a3b4a3d"
+    },
+    "docs/audit/module7_browser/api/real_result_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "190f6b488bb19fc77262950ccb354d6617b0b0f8a3b27e507a117b5b67308fb6"
+    },
+    "docs/audit/module7_browser/background_throttling_observation.json": {
+      "before_sha256": null,
+      "after_sha256": "dbeaf24da6b77de0b20f5cb2f9fa8b03a1db3431ba5340b35c001c7853d562a1"
+    },
+    "docs/audit/module7_browser/browser_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "207028539abbadd3b6684094a1b31d4db823bf8c7f4eaf384dff4ddb8789bf24"
+    },
+    "docs/audit/module7_browser/client_privacy.json": {
+      "before_sha256": null,
+      "after_sha256": "f66c3e08d39def88f626fd56ea388c031d1722f2da51285eef623172667175fe"
+    },
+    "docs/audit/module7_browser/final_readiness.json": {
+      "before_sha256": null,
+      "after_sha256": "0f801ff1df27c3349f10bd02d4ba7aac9dacb6c14b6710219a17a8b017b9662d"
+    },
+    "docs/audit/module7_browser/fixtures/README.md": {
+      "before_sha256": null,
+      "after_sha256": "d53216a1046f1af8308204cf91ecc95653ca9adab5eefa076d6767c552aba02d"
+    },
+    "docs/audit/module7_browser/fixtures/fixture_manifest.json": {
+      "before_sha256": null,
+      "after_sha256": "5a34fe9c733552bc1956ab70ea207c3a2e88309da4149c65fb1ba8e30e2221ba"
+    },
+    "docs/audit/module7_browser/fixtures/human_positive_line_1.fasta": {
+      "before_sha256": null,
+      "after_sha256": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575"
+    },
+    "docs/audit/module7_browser/fixtures/synthetic_fuzdrop_global_only_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "18e79fba0e1b0d4765a1775be3f42ea8b53e8dd8464e6be34f975b96478905ac"
+    },
+    "docs/audit/module7_browser/fixtures/synthetic_fuzdrop_import_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492"
+    },
+    "docs/audit/module7_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv": {
+      "before_sha256": null,
+      "after_sha256": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964"
+    },
+    "docs/audit/module7_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv": {
+      "before_sha256": null,
+      "after_sha256": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8"
+    },
+    "docs/audit/module7_browser/malformed_track_isolation.jpg": {
+      "before_sha256": null,
+      "after_sha256": "a19808404d6f76e3ab19bcc443d7fa91f918d9feed7c8008448f38551a7bb1b9"
+    },
+    "docs/audit/module7_browser/performance_100.jpg": {
+      "before_sha256": null,
+      "after_sha256": "005a69bc4b50e1de6fe59ff489eca5763ca944d419a33bdf114d6b0734983162"
+    },
+    "docs/audit/module7_browser/performance_1000.jpg": {
+      "before_sha256": null,
+      "after_sha256": "0de1a453c8b2b1dd40c68dc9569d5df979ce23a1847f86b91d9ca9d1d996285e"
+    },
+    "docs/audit/module7_browser/performance_2000.jpg": {
+      "before_sha256": null,
+      "after_sha256": "0a444426926b4a1b52c94e5e2be104dafd62c755f87757afb5707f21be0191c8"
+    },
+    "docs/audit/module7_browser/performance_500.jpg": {
+      "before_sha256": null,
+      "after_sha256": "49bc8c09fa54680ad16a3419e0510ad6bed3449188d28c25e86adc0e5ff813d7"
+    },
+    "docs/audit/module7_browser/performance_5000.jpg": {
+      "before_sha256": null,
+      "after_sha256": "9e37a571ccc5731b57667fd3e0929b2683388d957eb33345c50830d199ea935c"
+    },
+    "docs/audit/module7_browser/route_guards.json": {
+      "before_sha256": null,
+      "after_sha256": "a4ce15d8c59447564fd301739cd485b5af60368d56fde0412071fd0d1cddb79c"
+    },
+    "docs/audit/module7_checks/build.log": {
+      "before_sha256": null,
+      "after_sha256": "0ac7a1610454f1acef5a5b52c5daf0a91bca9c30ae8e4c7b5029042ccb4fd4c2"
+    },
+    "docs/audit/module7_checks/lint.log": {
+      "before_sha256": null,
+      "after_sha256": "960f1eb37ac4d28430af9bef2c98f32333254854ffde619330f53d373ce0f632"
+    },
+    "docs/audit/module7_checks/peer_dependencies.log": {
+      "before_sha256": null,
+      "after_sha256": "5ecf82a3fc1f9007eeea79ce3bf0d9c587150219ef245bb5a5a23609cdb562fb"
+    },
+    "docs/audit/module7_checks/summary.json": {
+      "before_sha256": null,
+      "after_sha256": "ca35769f5f300d845b11b17f65e379a3fe78f30570d39587ad16120a3bf4f5b8"
+    },
+    "docs/audit/module7_checks/typecheck.log": {
+      "before_sha256": null,
+      "after_sha256": "99d7c2179cdd316467c51f37901025a0753453664d741214ba56fc631fa6c0bc"
+    },
+    "docs/audit/module7_checks/unit.log": {
+      "before_sha256": null,
+      "after_sha256": "a0482debb963b0e79d8bba8f94114fdffc208e0b8af1db88f4579ef47a6a872b"
+    },
+    "docs/module7_commands.md": {
+      "before_sha256": null,
+      "after_sha256": "af969c23d064f92e43de8ecf0c63f9a2920bab15a9c882c0fbbba5df8f938924"
+    },
+    "docs/module7_report.md": {
+      "before_sha256": null,
+      "after_sha256": "a68c7d3755ba32a3eb7d5bc6a6cdaae6918205fcb8617378eac7976a73bdfcd9"
+    },
+    "frontend/.env.example": {
+      "before_sha256": "792956b62fe957f6c100345abeb953a32b13fb4a7680cdbc595809dbe6374e1b",
+      "after_sha256": "4ebc8e0797dd644542872a1761cfa401315ea39aff15aed82cf008449ec0d098"
+    },
+    "frontend/package.json": {
+      "before_sha256": "a52c467f9f52246c6dc3982ff61c3417dac8a3b509113049c9827c0e8b9561ea",
+      "after_sha256": "eaed3b1976dd708a25f0ceffc9a7d7b2de42d3c80557b931a5219d9ae6ce07a6"
+    },
+    "frontend/src/app/dev/feature-viewer/page.tsx": {
+      "before_sha256": null,
+      "after_sha256": "bfe8b10e0e701c0a50d75591476769e5f117fd69462ab782cc3e672e1380a482"
+    },
+    "frontend/src/app/globals.css": {
+      "before_sha256": "cc63cac6bf6090de01f235441648e3c81a6b8d9f408a4fe78b00d9b1faeba017",
+      "after_sha256": "08511f14e783c369e96063482eb3e3cd2b0524777ec2e9f84d1b4e1ccbeda485"
+    },
+    "frontend/src/app/page.tsx": {
+      "before_sha256": "d53b621bce9c44d6b2b49ad142c2625b3679e53c77742b85eb5e202f901c1647",
+      "after_sha256": "dfcd1a02e956509466a6ca237db35c771893da444cd78ddc60c3bfae89b4bf77"
+    },
+    "frontend/src/components/feature-plot.tsx": {
+      "before_sha256": null,
+      "after_sha256": "a15653391680317be7798d2ab77c6f721978c52c7d9e9d0f750ed647c3b807f5"
+    },
+    "frontend/src/components/feature-viewer-fixture.tsx": {
+      "before_sha256": null,
+      "after_sha256": "a44d31381605fb2782e606dd3464bdd15d1e4f5b0a6f01e8130372356f6a80f9"
+    },
+    "frontend/src/components/fuzdrop-import-dialog.tsx": {
+      "before_sha256": "01bc172ce5ecb8c6059eeea5277d20a1f13eb6ce82d5b17154b05f5b45866723",
+      "after_sha256": "b85217c2175363487c60b6744444dd9e7d159149d2f962b0d7246e8a19721e54"
+    },
+    "frontend/src/components/protein-feature-viewer.tsx": {
+      "before_sha256": null,
+      "after_sha256": "6586a14a33a6e0ea2aa91abce214ddc6494e573996d608cd7793381cc019a31c"
+    },
+    "frontend/src/components/results.tsx": {
+      "before_sha256": "da5fd8403a55a0efbd367b9c912aa162e44ffcdef0d74c4f134ad70d970c2d51",
+      "after_sha256": "9a95296c9deb91b626d78b9936dcb4654504726430a3548fe9ca3a93f8da5387"
+    },
+    "frontend/src/components/workspace.tsx": {
+      "before_sha256": "5b3a6aaeb4a4a6c7a77eb3bb1431978fe462fdfe331b576e6b182879a5e7c1af",
+      "after_sha256": "9f5297f28bd24713e6ca62bd23c1a671c9e9b0f8bfa247d3d6102e8c48bc3aa8"
+    },
+    "frontend/src/lib/feature-coordinates.ts": {
+      "before_sha256": null,
+      "after_sha256": "261caf0dbdf2029ff048588ae601229f5aa9c6f8403740e07e13550bb778e1af"
+    },
+    "frontend/src/lib/feature-plot-renderer.ts": {
+      "before_sha256": null,
+      "after_sha256": "74fc7c2bfaf51cf72501a02576162b3fb9e1c953b4bf7133f474bf19859f20f4"
+    },
+    "frontend/src/lib/feature-test-fixtures.ts": {
+      "before_sha256": null,
+      "after_sha256": "b2570357367dad6536221f6bbb4b92d3b8923392d717bcbf273489585a64cf98"
+    },
+    "frontend/src/lib/feature-view-state.ts": {
+      "before_sha256": null,
+      "after_sha256": "cfad9ac5456a5f8eec668c696ce8d787f3684ec830daf2cd92b94b669b82e95c"
+    },
+    "frontend/src/lib/feature-viewer-model.ts": {
+      "before_sha256": null,
+      "after_sha256": "12c77a4f206167685ec4a7aebf142e0d8707299e0a5bba57ee3cac958e560ff2"
+    },
+    "frontend/src/lib/viewer-data.ts": {
+      "before_sha256": "4d8fd358ecf1956bd1e80df259ac309f1e5321dee4c36a45f7aa462b2fd66d9a",
+      "after_sha256": "044281bc343c75ff57085de206695344ad42ca9e38f92bf073265be554c7339d"
+    },
+    "frontend/tests/feature-coordinates.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "b86d7070e044b69e30227d45a24b539b5ec78316ca5936c7ee0a31a16e912d9f"
+    },
+    "frontend/tests/feature-harness.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "4dcc99fb5924d77304f47856c73e24fbeea0a48db9340fa4cce2a71e8c0dfa50"
+    },
+    "frontend/tests/feature-integration-contract.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "bccb0f7b1cacfc2b59e35f1ff81cf353e6b510c76d147309fbd5cfc708175c6f"
+    },
+    "frontend/tests/feature-view-state.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "3d61f7b581905b75a8a39548d5c8b40f7f7a7547136009ba0141a15e0db0fb95"
+    },
+    "frontend/tests/feature-viewer-model.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "3a566fd26cc4d12688c5ed931dc0e6a1fff8aea2f2e170fa8d14d12734b33b68"
+    }
+  },
+  "violations": [],
+  "limitations": [
+    "No model execution, scientific recalculation, dependency install, snapshot refresh, file deletion, staging or commit is performed.",
+    "Ignored local runtimes, checkpoints, dependencies, caches and private audit are outside the first-party delta.",
+    "A read-only preliminary review is provisional while other workers are still writing files; rerun --write after final freeze."
+  ]
+}

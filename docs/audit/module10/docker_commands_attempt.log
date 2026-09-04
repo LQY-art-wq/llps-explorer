@@ -1,0 +1,13 @@
+observed_at_utc=2026-09-04T05:26:41.1930780Z
+COMMAND: docker --version
+ERROR_TYPE: CommandNotFoundException
+RESULT: docker command is unavailable
+EXIT_CODE: not_started
+COMMAND: docker compose version
+ERROR_TYPE: CommandNotFoundException
+RESULT: docker command is unavailable
+EXIT_CODE: not_started
+COMMAND: docker info
+ERROR_TYPE: CommandNotFoundException
+RESULT: docker command is unavailable
+EXIT_CODE: not_started

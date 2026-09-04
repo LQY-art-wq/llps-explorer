@@ -1,0 +1,56 @@
+{
+  "module": 9,
+  "status": "passed",
+  "reviewed_at_utc": "2026-09-04T04:00:17.121627+00:00",
+  "baseline": "frozen Module 8 first-party inventory",
+  "baseline_files": 482,
+  "current_files": 532,
+  "changed_files": 92,
+  "counts": {
+    "A": 50,
+    "M": 42,
+    "D": 0
+  },
+  "protected_scientific_or_prior_evidence_changes": [],
+  "approved_compatibility_only_changes": [
+    "frontend/src/lib/viewer-data.ts"
+  ],
+  "tracked_or_unignored_model_weights": [],
+  "changed_text_windows_absolute_paths": [],
+  "git_index_unchanged": true,
+  "checks": {
+    "scope_policy": true,
+    "frozen_scientific_algorithms": true,
+    "pinned_upstream_source": true,
+    "prior_module_evidence": true,
+    "checkpoint_exclusion": true,
+    "windows_absolute_path_exclusion": true,
+    "git_index_preservation": true
+  },
+  "quality_gates": {
+    "backend_pytest": "775 passed",
+    "frontend_tests": "321 passed",
+    "module8_api_regression": "263/263 passed",
+    "ruff_backend_app_and_tests": "passed",
+    "compileall": "passed",
+    "pip_check": "passed",
+    "frontend_lint": "passed",
+    "frontend_typecheck": "passed",
+    "frontend_production_build": "passed",
+    "frontend_peer_dependencies": "passed",
+    "fresh_sqlite_migration": "20260904_0002 head",
+    "postgresql_offline_ddl": "passed",
+    "final_client_bundle_privacy_scan": "passed"
+  },
+  "generated_artifacts": [
+    "docs/module9_changed_files.txt",
+    "docs/audit/module9_scope_review.json"
+  ],
+  "generated_artifact_hashes_omitted": "The generated files are included in path and count checks; their hashes are omitted to avoid self-reference.",
+  "deployment_boundaries_not_counted_as_scope_failures": [
+    "PostgreSQL runtime acceptance is deferred to Module 10.",
+    "Linux and Docker runtime acceptance is deferred to Module 10.",
+    "Trusted-edge abuse controls and shared multi-worker job execution are deferred to Module 10."
+  ],
+  "violations": []
+}

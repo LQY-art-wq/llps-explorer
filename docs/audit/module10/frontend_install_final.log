@@ -1,0 +1,79 @@
+Recreating C:\Users\lqy\Documents\ChatGPT\相分离网页端\frontend\node_modules
+? Verifying lockfile against supply-chain policies (433 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +353
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 353, reused 0, downloaded 0, added 0
+Progress: resolved 353, reused 0, downloaded 3, added 2
+Progress: resolved 353, reused 0, downloaded 41, added 40
+[WARN] Tarball download average speed 18 KiB/s (size 21 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.4.1.tgz (GET)
+Progress: resolved 353, reused 0, downloaded 53, added 51
+Progress: resolved 353, reused 0, downloaded 58, added 55
+[WARN] Tarball download average speed 25 KiB/s (size 31 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz (GET)
+Progress: resolved 353, reused 0, downloaded 72, added 66
+Progress: resolved 353, reused 0, downloaded 88, added 88
+Progress: resolved 353, reused 0, downloaded 119, added 118
+Progress: resolved 353, reused 0, downloaded 134, added 133
+[WARN] Tarball download average speed 45 KiB/s (size 78 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.1.tgz (GET)
+Progress: resolved 353, reused 0, downloaded 153, added 151
+Progress: resolved 353, reused 0, downloaded 173, added 170
+[WARN] Tarball download average speed 14 KiB/s (size 17 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/template/-/template-7.29.7.tgz (GET)
+[WARN] Request took 11062ms: https://registry.npmjs.org/@tailwindcss%2Foxide-linux-arm-gnueabihf
+Progress: resolved 353, reused 0, downloaded 188, added 181
+Progress: resolved 353, reused 0, downloaded 205, added 192
+[WARN] Tarball download average speed 7 KiB/s (size 9 KiB) is below 50 KiB/s: https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz (GET)
+Progress: resolved 353, reused 0, downloaded 215, added 202
+Progress: resolved 353, reused 0, downloaded 231, added 208
+Progress: resolved 353, reused 0, downloaded 244, added 214
+[WARN] Request took 17531ms: https://registry.npmjs.org/@next%2Feslint-plugin-next
+[WARN] Request took 10518ms: https://registry.npmjs.org/caniuse-lite
+Progress: resolved 353, reused 0, downloaded 281, added 256
+[WARN] Request took 18059ms: https://registry.npmjs.org/@next%2Fenv
+[WARN] Request took 17170ms: https://registry.npmjs.org/@typescript-eslint%2Fvisitor-keys
+[WARN] Request took 17524ms: https://registry.npmjs.org/@typescript-eslint%2Ftype-utils
+Progress: resolved 353, reused 0, downloaded 322, added 289
+[WARN] Request took 10829ms: https://registry.npmjs.org/electron-to-chromium
+[WARN] Request took 18009ms: https://registry.npmjs.org/@typescript-eslint%2Ftypes
+[WARN] Request took 12847ms: https://registry.npmjs.org/axe-core
+[WARN] Request took 18076ms: https://registry.npmjs.org/@typescript-eslint%2Futils
+[WARN] Request took 18581ms: https://registry.npmjs.org/@typescript-eslint%2Fscope-manager
+[WARN] Request took 18843ms: https://registry.npmjs.org/@typescript-eslint%2Fparser
+[WARN] Request took 18648ms: https://registry.npmjs.org/@typescript-eslint%2Ftypescript-estree
+Progress: resolved 353, reused 0, downloaded 344, added 341
+Progress: resolved 353, reused 0, downloaded 347, added 347
+Progress: resolved 353, reused 0, downloaded 348, added 347
+[WARN] Tarball download average speed 15 KiB/s (size 40 KiB) is below 50 KiB/s: https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.20.tgz (GET)
+Progress: resolved 353, reused 0, downloaded 349, added 349
+Progress: resolved 353, reused 0, downloaded 350, added 349
+Progress: resolved 353, reused 0, downloaded 350, added 350
+[WARN] Request took 12870ms: https://registry.npmjs.org/eslint-plugin-react-hooks
+Progress: resolved 353, reused 0, downloaded 351, added 350
+Progress: resolved 353, reused 0, downloaded 351, added 351
+Progress: resolved 353, reused 0, downloaded 352, added 351
+Progress: resolved 353, reused 0, downloaded 352, added 352
+[WARN] Request took 17186ms: https://registry.npmjs.org/scheduler
+[WARN] Request took 13116ms: https://registry.npmjs.org/react-is
+[WARN] Request took 13903ms: https://registry.npmjs.org/typescript
+✓ Lockfile passes supply-chain policies (433 entries in 45.6s)
+Progress: resolved 353, reused 0, downloaded 353, added 352
+Progress: resolved 353, reused 0, downloaded 353, added 353
+Progress: resolved 353, reused 0, downloaded 353, added 353, done
+
+dependencies:
++ next 16.3.4
++ react 19.2.8
++ react-dom 19.2.8
+
+devDependencies:
++ @tailwindcss/postcss 4.3.3
++ @types/node 24.10.0
++ @types/react 19.2.18
++ @types/react-dom 19.2.5
++ eslint 9.39.5
++ eslint-config-next 16.3.4
++ postcss 8.5.26
++ tailwindcss 4.3.3
++ typescript 5.9.3
+
+Done in 1m 6.3s using pnpm v11.19.0

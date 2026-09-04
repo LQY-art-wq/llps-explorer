@@ -1,0 +1,42 @@
+{
+  "numpy_audit_runtime": "2.3.5",
+  "mapping": {
+    "m": 1,
+    "v": 2,
+    "k": 3,
+    "e": 4,
+    "t": 5,
+    "y": 6,
+    "d": 7,
+    "l": 8,
+    "g": 9,
+    "p": 10,
+    "n": 11,
+    "a": 12,
+    "q": 13,
+    "r": 14,
+    "h": 15,
+    "f": 16,
+    "i": 17,
+    "s": 18,
+    "c": 19,
+    "w": 20
+  },
+  "padding_index": 0,
+  "shuffle_seeds": [
+    0,
+    1
+  ],
+  "files": [
+    {
+      "path": "Data/pos_dataset/pos_word_list_human.txt",
+      "sha256": "1e3beca27c80a5fc59c41bbb5cc40f429a0619bd3dcc6172a42dbe85cd90ad32",
+      "sequences": 980
+    },
+    {
+      "path": "Data/neg_dataset/neg_word_list_human.txt",
+      "sha256": "e793a6eaa512e42ab72dd236cdaf13d20e14c3971def800b3aabc261193da1ea",
+      "sequences": 980
+    }
+  ]
+}

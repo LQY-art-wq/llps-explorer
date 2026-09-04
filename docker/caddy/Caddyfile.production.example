@@ -1,0 +1,38 @@
+# Future Ubuntu/domain example only. This file is not loaded by compose.yaml.
+# Set PUBLIC_DOMAIN after DNS points at the server and expose ports 80 and 443.
+# Caddy will then obtain and renew certificates automatically.
+{
+	admin off
+}
+
+{$PUBLIC_DOMAIN} {
+	encode zstd gzip
+	log {
+		output stdout
+		format json
+	}
+
+	request_body {
+		max_size 6MB
+	}
+
+	header {
+		-Server
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		X-Frame-Options "DENY"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'"
+	}
+
+	@api path /api/*
+	handle @api {
+		header Cache-Control "private, no-store, max-age=0"
+		reverse_proxy backend:8000
+	}
+
+	handle {
+		reverse_proxy frontend:3000
+	}
+}

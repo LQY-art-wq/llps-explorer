@@ -1,0 +1,68 @@
+# Module 3 changes relative to the completed 146-file Module 2 snapshot.
+# Total 61: added=46, modified=15, deleted=0.
+# Source checkout, binaries, weights, environments, local .env, private audit and Git index excluded.
+# All prior files outside the 15 allowed SEG wiring/docs files are SHA256-identical.
+# LRECA, FuzDrop, scientific locks/fixtures/tests, frontend, DisMeta, orchestrator and old reports preserved.
+# A = added; M = modified since Module 2; D = deleted.
+
+M	.gitattributes
+M	README.md
+M	backend/.env.example
+M	backend/app/__init__.py
+M	backend/app/adapters/seg.py
+M	backend/app/api/health.py
+M	backend/app/api/methods.py
+A	backend/app/api/seg.py
+M	backend/app/core/config.py
+M	backend/app/main.py
+M	backend/app/schemas/methods.py
+A	backend/app/schemas/seg.py
+A	backend/app/services/seg_parser.py
+A	backend/app/services/seg_process.py
+M	backend/pyproject.toml
+A	backend/tests/fixtures/seg/README.md
+A	backend/tests/fixtures/seg/all_low_complexity.interval.txt
+A	backend/tests/fixtures/seg/c_terminal.interval.txt
+A	backend/tests/fixtures/seg/cases.json
+A	backend/tests/fixtures/seg/help.txt
+A	backend/tests/fixtures/seg/human_positive_real_sequence.interval.txt
+A	backend/tests/fixtures/seg/mixed_high_complexity.interval.txt
+A	backend/tests/fixtures/seg/multiple_regions.interval.txt
+A	backend/tests/fixtures/seg/n_terminal.interval.txt
+A	backend/tests/fixtures/seg/short_homopolymer.interval.txt
+A	backend/tests/fixtures/seg/version.txt
+A	backend/tests/fixtures/seg/window_homopolymer.interval.txt
+M	backend/tests/test_module0.py
+A	backend/tests/test_seg_api.py
+A	backend/tests/test_seg_integration.py
+A	backend/tests/test_seg_parser.py
+A	backend/tests/test_seg_process.py
+M	docs/architecture.md
+A	docs/audit/module3_api_smoke/fuzdrop_health.json
+A	docs/audit/module3_api_smoke/health.json
+A	docs/audit/module3_api_smoke/invalid_sequence_response.json
+A	docs/audit/module3_api_smoke/lreca_regression_response.json
+A	docs/audit/module3_api_smoke/methods.json
+A	docs/audit/module3_api_smoke/no_lcr_response.json
+A	docs/audit/module3_api_smoke/real_seg_response.json
+A	docs/audit/module3_api_smoke/real_sequence_request.json
+A	docs/audit/module3_api_smoke/seg_health.json
+A	docs/audit/module3_api_smoke/server.log
+A	docs/audit/module3_api_smoke/summary.json
+A	docs/audit/module3_full_tests.junit.xml
+A	docs/audit/module3_full_tests.log
+A	docs/audit/module3_scope_review.json
+A	docs/audit/module3_test_verification_summary.json
+A	docs/audit/seg/performance.json
+A	docs/audit/seg/source_audit.md
+A	docs/audit/seg/source_manifest.json
+M	docs/model_sources.md
+A	docs/module3_changed_files.txt
+A	docs/module3_commands.md
+A	docs/module3_report.md
+A	docs/seg_runtime.md
+M	external/README.md
+A	external/seg-source.json
+A	scripts/benchmark_seg.py
+A	scripts/setup_seg.py
+A	scripts/smoke_module3.py

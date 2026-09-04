@@ -1,0 +1,25 @@
+{
+  "liveness": {
+    "status": "ok",
+    "version": "0.1.0",
+    "module": 1,
+    "analysis_enabled": true
+  },
+  "model": {
+    "method_id": "lreca",
+    "status": "ready",
+    "message": "Human-specific LRECA is loaded and ready.",
+    "model_variant": "human_specific",
+    "device": "cuda:0",
+    "loaded": true,
+    "metadata": {
+      "repository": "https://github.com/ai-phasepro/LRECA",
+      "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+      "model_variant": "human_specific",
+      "dataset5_mapping_status": "unconfirmed",
+      "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+      "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+      "checkpoint_size_bytes": 2395318
+    }
+  }
+}

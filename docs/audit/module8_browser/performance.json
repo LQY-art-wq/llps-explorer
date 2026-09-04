@@ -1,0 +1,74 @@
+{
+  "environment": {
+    "frontend": "Next.js production start with FEATURE_VIEWER_TEST_MODE=1",
+    "browser": "Chrome through Computer Use",
+    "fixture_notice": "Synthetic rendering data only; no model inference or biological validation",
+    "measurement_scope": "Production ProteinSequenceViewer handler-to-React-commit application timings. Scroll is the Computer Use action round trip. These are not inference or screen-paint benchmarks."
+  },
+  "initial_render_ms": [
+    {
+      "sequence_length": 100,
+      "rows": 2,
+      "residue_spans": 100,
+      "duration_ms": 2.7
+    },
+    {
+      "sequence_length": 500,
+      "rows": 10,
+      "residue_spans": 500,
+      "duration_ms": 5.2
+    },
+    {
+      "sequence_length": 1000,
+      "rows": 20,
+      "residue_spans": 1000,
+      "duration_ms": 11.7
+    },
+    {
+      "sequence_length": 2000,
+      "rows": 40,
+      "residue_spans": 2000,
+      "duration_ms": 27.5
+    },
+    {
+      "sequence_length": 5000,
+      "rows": 100,
+      "residue_spans": 5000,
+      "duration_ms": 42.7
+    }
+  ],
+  "independent_5000_aa_cold_observation_ms": 68.4,
+  "interaction_5000_aa": {
+    "scroll_action_ms": 35.2608,
+    "scroll_top_before": 0,
+    "scroll_top_after": 5040,
+    "hover": {
+      "samples": 2,
+      "median_ms": 2.2,
+      "p95_ms": 2.9,
+      "maximum_ms": 2.9
+    },
+    "residue_selection": {
+      "samples": 2,
+      "median_ms": 2.55,
+      "p95_ms": 3.1,
+      "maximum_ms": 3.1
+    },
+    "color_mode_switch": {
+      "samples": 3,
+      "median_ms": 21.2,
+      "p95_ms": 35.0,
+      "maximum_ms": 35.0
+    }
+  },
+  "implementation_observation": {
+    "virtualization_required": false,
+    "row_based_rendering": true,
+    "single_delegated_pointer_controller": true,
+    "per_residue_tooltip_components": false,
+    "result": "No visibly unusable delay was observed at 5000 aa."
+  },
+  "status": "passed",
+  "recorded_local_date": "2026-09-04",
+  "timezone": "Asia/Shanghai"
+}

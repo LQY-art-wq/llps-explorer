@@ -1,0 +1,11 @@
+{
+  "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+  "sequence_kind": "real sequence reused from the official LRECA human baseline",
+  "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+  "sequence_length": 248,
+  "sequence_fixture": "backend/tests/fixtures/seg/cases.json#human_positive_real_sequence",
+  "lreca_and_seg": "real local model and official executable inference",
+  "fuzdrop": "FuzDrop pLLPS, pDP, Sbind and regions in this smoke run are synthetic official-format inputs only, not official predictions, biological validation or calibration data.",
+  "dismeta": "blocked boundary; no prediction or substitute",
+  "fuzdrop_notice": "FuzDrop pLLPS, pDP, Sbind and regions in this smoke run are synthetic official-format inputs only, not official predictions, biological validation or calibration data."
+}

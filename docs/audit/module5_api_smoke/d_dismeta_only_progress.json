@@ -1,0 +1,22 @@
+{
+  "job_id": "analysis_d06iI9iZWV3EfXcHlBfLp7CYR0_JPFIF",
+  "observation_type": "actual HTTP snapshots",
+  "observations": [
+    {
+      "elapsed_ms": 10.58779999948456,
+      "http_status": 202,
+      "job_status": "queued",
+      "methods": {
+        "dismeta": "queued"
+      }
+    },
+    {
+      "elapsed_ms": 16.215899999224348,
+      "http_status": 200,
+      "job_status": "unavailable",
+      "methods": {
+        "dismeta": "unavailable"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "normal_preview_retained": true,
+  "processes": [
+    {
+      "role": "partial-test-frontend",
+      "stopped": true
+    },
+    {
+      "role": "partial-test-backend-and-scientific-worker",
+      "stopped": true
+    }
+  ],
+  "completed_at": "2026-09-03T13:54:16.4978261Z",
+  "normal_preview_http_status_after_cleanup": 200,
+  "normal_preview_returns_valid_backend_json": true,
+  "normal_preview_verified_at": "2026-09-03T13:58:24.398053+00:00"
+}

@@ -1,0 +1,1 @@
+Run all migrations from the backend directory with `alembic upgrade head`.

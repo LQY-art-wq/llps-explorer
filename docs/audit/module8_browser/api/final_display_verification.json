@@ -1,0 +1,225 @@
+{
+  "verified_at_utc": "2026-09-03T17:14:39.028698+00:00",
+  "status": "passed_with_recorded_fresh_GET_404",
+  "snapshot_science_verified": true,
+  "check_count": 50,
+  "passed_count": 50,
+  "failed_count": 0,
+  "failed_checks": [],
+  "checks": {
+    "regression_lreca_only_snapshot_hash_matches_capture": true,
+    "regression_lreca_only_exact_job_identity": true,
+    "regression_lreca_only_successful_saved_result": true,
+    "regression_lreca_only_exact_methods_and_no_FuzDrop_or_DisMeta": true,
+    "regression_lreca_only_canonical_248_sequence_identity": true,
+    "regression_lreca_only_independent_without_ensemble": true,
+    "regression_lreca_only_GET_path_matches_job": true,
+    "regression_lreca_only_earlier_snapshot_bytes_and_exact_ID_preserved": true,
+    "regression_lreca_only_fresh_404_transparently_recorded": true,
+    "regression_lreca_only_lreca_exact_scientific_object": true,
+    "regression_lreca_only_lreca_successful_native_identity": true,
+    "regression_lreca_only_lreca_native_sequence_identity": true,
+    "regression_lreca_only_lreca_one_based_inclusive_regions": true,
+    "regression_lreca_only_LRECA_248_aligned_one_based_residues": true,
+    "regression_lreca_only_LRECA_248_native_KDE_values": true,
+    "regression_lreca_only_snapshot_privacy": true,
+    "regression_seg_only_snapshot_hash_matches_capture": true,
+    "regression_seg_only_exact_job_identity": true,
+    "regression_seg_only_successful_saved_result": true,
+    "regression_seg_only_exact_methods_and_no_FuzDrop_or_DisMeta": true,
+    "regression_seg_only_canonical_248_sequence_identity": true,
+    "regression_seg_only_independent_without_ensemble": true,
+    "regression_seg_only_GET_path_matches_job": true,
+    "regression_seg_only_fresh_GET_200_and_original_response_preserved": true,
+    "regression_seg_only_seg_exact_scientific_object": true,
+    "regression_seg_only_seg_successful_native_identity": true,
+    "regression_seg_only_seg_native_sequence_identity": true,
+    "regression_seg_only_seg_one_based_inclusive_regions": true,
+    "regression_seg_only_snapshot_privacy": true,
+    "final_display_combined_snapshot_hash_matches_capture": true,
+    "final_display_combined_exact_job_identity": true,
+    "final_display_combined_successful_saved_result": true,
+    "final_display_combined_exact_methods_and_no_FuzDrop_or_DisMeta": true,
+    "final_display_combined_canonical_248_sequence_identity": true,
+    "final_display_combined_independent_without_ensemble": true,
+    "final_display_combined_GET_path_matches_job": true,
+    "final_display_combined_fresh_GET_200_and_original_response_preserved": true,
+    "final_display_combined_lreca_exact_scientific_object": true,
+    "final_display_combined_lreca_successful_native_identity": true,
+    "final_display_combined_lreca_native_sequence_identity": true,
+    "final_display_combined_lreca_one_based_inclusive_regions": true,
+    "final_display_combined_LRECA_248_aligned_one_based_residues": true,
+    "final_display_combined_LRECA_248_native_KDE_values": true,
+    "final_display_combined_seg_exact_scientific_object": true,
+    "final_display_combined_seg_successful_native_identity": true,
+    "final_display_combined_seg_native_sequence_identity": true,
+    "final_display_combined_seg_one_based_inclusive_regions": true,
+    "final_display_combined_snapshot_privacy": true,
+    "final_display_position_243_is_R": true,
+    "A_to_E_and_main_263_report_bytes_unchanged_by_this_followup": true
+  },
+  "scope": "Three supplementary IAB regression/final-display result traces. Separate from the main 263-check report; A-E and the main report were not changed.",
+  "fresh_response_availability": {
+    "distinct_job_count": 3,
+    "GET_200_count": 2,
+    "GET_404_count": 1,
+    "all_currently_available": false,
+    "unavailable_job": "analysis_jw0X0JFvXAwaIeswtIBee2qTj7wRYXKI",
+    "cause_inferred": false
+  },
+  "capture_operations": {
+    "initial_availability_GETs": 3,
+    "additional_GETs_to_save_available_response_bytes": 2,
+    "total_GETs": 5,
+    "POST_requests": 0,
+    "submitted_jobs": 0,
+    "model_inference_runs": 0
+  },
+  "comparison": {
+    "scope": "Complete native LRECA/SEG result objects; job IDs and envelope timestamps identify separate runs and are recorded rather than compared.",
+    "excluded_native_field_names": [
+      "runtime_ms",
+      "timings_ms"
+    ],
+    "numeric_tolerance": 0,
+    "coordinate_system": "one_based_inclusive"
+  },
+  "cases": {
+    "regression_lreca_only": {
+      "job_id": "analysis_jw0X0JFvXAwaIeswtIBee2qTj7wRYXKI",
+      "snapshot_status": "success",
+      "snapshot_file": "docs/audit/module8_browser/api/regression_lreca_only.json",
+      "snapshot_sha256": "15e4f72980dee553e3c2bfe72cec2f59f38339345d292f476a67661125b0c5f3",
+      "snapshot_source_kind": "earlier_saved_API_snapshot_current_IAB_retained_result",
+      "fresh_response_availability": {
+        "request_method": "GET",
+        "request_path": "/api/v1/analysis/analysis_jw0X0JFvXAwaIeswtIBee2qTj7wRYXKI",
+        "http_status": 404,
+        "available": false
+      },
+      "reference_file": "docs/audit/module8_browser/api/case_a_lreca_only.json",
+      "reference_sha256": "91e841be4be454e0f27aaaa7677c96d6080890766e42316091a061d7f44c57b5",
+      "selected_methods": [
+        "lreca"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      },
+      "source_snapshot_file": ".audit/module8_api_previous/case_a_lreca_only.json",
+      "source_snapshot_sha256": "15e4f72980dee553e3c2bfe72cec2f59f38339345d292f476a67661125b0c5f3",
+      "availability_note": "The current GET returned 404. No cause is inferred. The published successful snapshot is the earlier saved response for this exact job ID, not a current GET 200 response."
+    },
+    "regression_seg_only": {
+      "job_id": "analysis_JRTO0NEQ2aKg37IzBP22gRrsrIHt5qr5",
+      "snapshot_status": "success",
+      "snapshot_file": "docs/audit/module8_browser/api/regression_seg_only.json",
+      "snapshot_sha256": "c4dbefb625b8f8bc6cae03e73c9cda786d02f9523ce19f4ecb057739600f81bf",
+      "snapshot_source_kind": "current_GET_200_response",
+      "fresh_response_availability": {
+        "request_method": "GET",
+        "request_path": "/api/v1/analysis/analysis_JRTO0NEQ2aKg37IzBP22gRrsrIHt5qr5",
+        "http_status": 200,
+        "available": true
+      },
+      "reference_file": "docs/audit/module8_browser/api/case_c_seg_only.json",
+      "reference_sha256": "ff8f3e0ada6350db5f22b876ad2efc74fbb2fc8a90ba6f9c7c851c0d583499b3",
+      "selected_methods": [
+        "seg"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "seg": {
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      },
+      "raw_response_sha256": "a3d0bcaeba9c839be004b313ed83525ff82ea80cf52045efbe5348d4b2800b37",
+      "captured_at_utc": "2026-09-03T17:04:50.761537+00:00"
+    },
+    "final_display_combined": {
+      "job_id": "analysis_sxzzqxs-dUcQiz-umFLpbTD1MvYrrFhU",
+      "snapshot_status": "success",
+      "snapshot_file": "docs/audit/module8_browser/api/final_display_combined.json",
+      "snapshot_sha256": "5868c9f2d95f1cabc0567dea6a76cf0485e6a9545e2958af35ac7ce1d6ac7320",
+      "snapshot_source_kind": "current_GET_200_response",
+      "fresh_response_availability": {
+        "request_method": "GET",
+        "request_path": "/api/v1/analysis/analysis_sxzzqxs-dUcQiz-umFLpbTD1MvYrrFhU",
+        "http_status": 200,
+        "available": true
+      },
+      "reference_file": "docs/audit/module8_browser/api/case_b_lreca_seg.json",
+      "reference_sha256": "1b4762fc959db158305eca883fddc2e673185b04707ef04f6f5952c2a2597ef2",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        },
+        "seg": {
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      },
+      "raw_response_sha256": "eebe8f53c43621367eae4682f10a9bc1e9d76e52693ab4a412993164ae92053c",
+      "captured_at_utc": "2026-09-03T17:04:50.777642+00:00"
+    }
+  },
+  "final_display_browser_observation": {
+    "job_id": "analysis_sxzzqxs-dUcQiz-umFLpbTD1MvYrrFhU",
+    "profile": "normal",
+    "synthetic_badge_visible": false,
+    "selected_residue": "R243",
+    "methods": [
+      "lreca",
+      "seg"
+    ],
+    "FuzDrop": "Not imported",
+    "source": "Actual IAB browser observation recorded in the Module 8 regression follow-up."
+  },
+  "request_path_privacy": "Request paths are application-relative API routes, without hostnames, internal target URLs, or filesystem paths. Privacy checks apply independently to every saved response.",
+  "protected_file_sha256": {
+    "docs/audit/module8_browser/api/case_a_lreca_only.json": "91e841be4be454e0f27aaaa7677c96d6080890766e42316091a061d7f44c57b5",
+    "docs/audit/module8_browser/api/case_b_lreca_seg.json": "1b4762fc959db158305eca883fddc2e673185b04707ef04f6f5952c2a2597ef2",
+    "docs/audit/module8_browser/api/case_c_seg_only.json": "ff8f3e0ada6350db5f22b876ad2efc74fbb2fc8a90ba6f9c7c851c0d583499b3",
+    "docs/audit/module8_browser/api/case_d_fuzdrop_full.json": "9bed3455d42b01721de2743463faf32f4e2a56127975d2de4673af820e43556e",
+    "docs/audit/module8_browser/api/case_e_fuzdrop_global_only.json": "caaf6c8c897487931543578a14ab70e03669645240ebc9c4eff35deee3346039",
+    "docs/audit/module8_browser/api/regression_verification.json": "6461361da1370c13b6f84ec79f0fb1be602b82fcf9ea349b9b311e16d0d1be6a"
+  },
+  "verifier": {
+    "path": ".audit/module8_final_display_verify.py",
+    "sha256": "4aef3571bc708001f42edffb68f8c7c8fbdc065d49ed452dcfb2def5220b6565",
+    "command": "python .audit/module8_final_display_verify.py",
+    "offline": true
+  }
+}

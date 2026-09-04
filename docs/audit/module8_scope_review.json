@@ -1,0 +1,311 @@
+{
+  "module": 8,
+  "status": "passed",
+  "reviewed_at": "2026-09-03T17:17:49.480059+00:00",
+  "review_mode": "final_write",
+  "snapshot_files": 435,
+  "snapshot_manifest_sha256": "97cbaf030ad9541651ea77d1ec3f9a807d6c6fabc64f18bf191ad8bce7887431",
+  "snapshot_archive_sha256": "c8f16b8fa51bc9f40f733684e2c5d64fdadbb6cf53d67e6fd4fe7187d32bf50e",
+  "snapshot_zip_matches_manifest": true,
+  "changed_files": 54,
+  "counts": {
+    "A": 47,
+    "M": 7,
+    "D": 0
+  },
+  "protected_prior_files_checked": 395,
+  "protected_prior_files_sha256_unchanged": true,
+  "protected_groups": {
+    "backend_production": {
+      "files_checked": 45,
+      "sha256_unchanged": true
+    },
+    "all_prior_backend_tests_and_fixtures": {
+      "files_checked": 38,
+      "sha256_unchanged": true
+    },
+    "backend_dependency_and_config_files": {
+      "files_checked": 5,
+      "sha256_unchanged": true
+    },
+    "external_manifests_and_readme": {
+      "files_checked": 3,
+      "sha256_unchanged": true
+    },
+    "prior_reports_audits_and_scientific_docs": {
+      "files_checked": 274,
+      "sha256_unchanged": true
+    },
+    "prior_scripts": {
+      "files_checked": 15,
+      "sha256_unchanged": true
+    }
+  },
+  "allowed_scope": [
+    "frontend/",
+    "README.md",
+    "docs/architecture.md",
+    "new docs/module8_*",
+    "new docs/audit/module8_* or module8/"
+  ],
+  "checkpoint_weights_tracked": false,
+  "private_runtime_artifacts_in_first_party_inventory": false,
+  "lreca_upstream": {
+    "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+    "matches_pinned_manifest": true,
+    "tracked_worktree_clean": true,
+    "untracked_upstream_files_in_scope": false
+  },
+  "git_index_modified_by_finalizer": false,
+  "git_index_before_sha256": "76be06532c2622472a35598295ac616a24fbe230e152eeef8ae35666a38338ff",
+  "git_index_after_sha256": "76be06532c2622472a35598295ac616a24fbe230e152eeef8ae35666a38338ff",
+  "public_text_files_checked": 52,
+  "changed_public_text_has_no_local_absolute_paths": true,
+  "binary_image_evidence": [],
+  "image_pixel_privacy_review": "Manual browser evidence review is required; this finalizer does not infer text from image pixels.",
+  "crlf_public_text_files_preserved": [
+    "docs/audit/module8_browser/api/health.json",
+    "docs/audit/module8_browser/api/regression_lreca_only.json"
+  ],
+  "new_or_modified_line_whitespace_check": "passed",
+  "whitespace_policy": "Added/replaced source and documentation lines are checked. Original Module 8 machine .log bytes are preserved; their whitespace is a non-blocking observation, never silently trimmed.",
+  "raw_machine_log_whitespace_observations": [
+    {
+      "code": "ADDED_BLANK_LINE_AT_EOF",
+      "path": "docs/audit/module8_checks/build.log",
+      "line": 25
+    },
+    {
+      "code": "ADDED_LINE_TRAILING_WHITESPACE",
+      "path": "docs/audit/module8_checks/unit.log",
+      "line": 263
+    },
+    {
+      "code": "ADDED_LINE_TRAILING_WHITESPACE",
+      "path": "docs/audit/module8_checks/unit.log",
+      "line": 267
+    }
+  ],
+  "git_diff_check": "passed",
+  "generated_artifacts": [
+    "docs/module8_changed_files.txt",
+    "docs/audit/module8_scope_review.json"
+  ],
+  "generated_artifact_hashes_omitted": "The generated scope report and change list are included in counts but omitted from delta hashes to avoid self-reference.",
+  "delta_sha256": {
+    "README.md": {
+      "before_sha256": "86b3ac927541423ea118e8ede4a1ced32cbfbd22eee276b212e39df29d01cc77",
+      "after_sha256": "eafd787be1e2019576a2aa5093f96d1a8321b79fa4dcb5f4b992e5eb75cdfc4c"
+    },
+    "docs/architecture.md": {
+      "before_sha256": "d58fef3a1963d1552802a445a0be5ad09123fa60f0c7fdc345eb8165438c1725",
+      "after_sha256": "755ff9c68dd01be00c13de592c073289c1bd90530f3d10fe8a6c71cd8d2d1d38"
+    },
+    "docs/audit/module8_browser/api/case_a_lreca_only.json": {
+      "before_sha256": null,
+      "after_sha256": "91e841be4be454e0f27aaaa7677c96d6080890766e42316091a061d7f44c57b5"
+    },
+    "docs/audit/module8_browser/api/case_b_lreca_seg.json": {
+      "before_sha256": null,
+      "after_sha256": "1b4762fc959db158305eca883fddc2e673185b04707ef04f6f5952c2a2597ef2"
+    },
+    "docs/audit/module8_browser/api/case_c_seg_only.json": {
+      "before_sha256": null,
+      "after_sha256": "ff8f3e0ada6350db5f22b876ad2efc74fbb2fc8a90ba6f9c7c851c0d583499b3"
+    },
+    "docs/audit/module8_browser/api/case_d_fuzdrop_full.json": {
+      "before_sha256": null,
+      "after_sha256": "9bed3455d42b01721de2743463faf32f4e2a56127975d2de4673af820e43556e"
+    },
+    "docs/audit/module8_browser/api/case_e_fuzdrop_global_only.json": {
+      "before_sha256": null,
+      "after_sha256": "caaf6c8c897487931543578a14ab70e03669645240ebc9c4eff35deee3346039"
+    },
+    "docs/audit/module8_browser/api/final_display_combined.json": {
+      "before_sha256": null,
+      "after_sha256": "5868c9f2d95f1cabc0567dea6a76cf0485e6a9545e2958af35ac7ce1d6ac7320"
+    },
+    "docs/audit/module8_browser/api/final_display_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "5254e61ff4e3abd659e7fa43f59900ef4ef1293aef64a605e1d91f28e429259f"
+    },
+    "docs/audit/module8_browser/api/health.json": {
+      "before_sha256": null,
+      "after_sha256": "4fd976e0bd0bc476c0d79a85d2dbbdb780d98012e2b4726a74ea7dc211d4a427"
+    },
+    "docs/audit/module8_browser/api/regression_lreca_only.json": {
+      "before_sha256": null,
+      "after_sha256": "15e4f72980dee553e3c2bfe72cec2f59f38339345d292f476a67661125b0c5f3"
+    },
+    "docs/audit/module8_browser/api/regression_seg_only.json": {
+      "before_sha256": null,
+      "after_sha256": "c4dbefb625b8f8bc6cae03e73c9cda786d02f9523ce19f4ecb057739600f81bf"
+    },
+    "docs/audit/module8_browser/api/regression_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "6461361da1370c13b6f84ec79f0fb1be602b82fcf9ea349b9b311e16d0d1be6a"
+    },
+    "docs/audit/module8_browser/browser_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "046a55da1472fbd2df1d9c84776bb5becd733179d66564b4bd52308aa40085fa"
+    },
+    "docs/audit/module8_browser/client_privacy.json": {
+      "before_sha256": null,
+      "after_sha256": "3afcba79fb2fe9b1d33a5cf3916dd368461002f95af64c7af5e37f36665b21a9"
+    },
+    "docs/audit/module8_browser/crosslink_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "894d7025c91e405d0a003046c7736eb46047fa2ffb8524d2e7f5bb6ffba3459b"
+    },
+    "docs/audit/module8_browser/fixtures/README.md": {
+      "before_sha256": null,
+      "after_sha256": "e1bf226147e56ba149e0df3f61d662390d9e11f5874a308541de5cc20069b312"
+    },
+    "docs/audit/module8_browser/fixtures/fixture_manifest.json": {
+      "before_sha256": null,
+      "after_sha256": "b4cce59ce5642ceaef38bac171b9d27f814c15ac307f83a2ee0d0772a8ee51d4"
+    },
+    "docs/audit/module8_browser/fixtures/human_positive_line_1.fasta": {
+      "before_sha256": null,
+      "after_sha256": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_browser_import_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "49fa8c15ff73443504ffbe362c2baee832485169d3d45e96e6de93954c19fa53"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_042_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "07864170fdf4f47f5990b06f7b78999417e54e350013eb64002ac2194fb2e2c7"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "18e79fba0e1b0d4765a1775be3f42ea8b53e8dd8464e6be34f975b96478905ac"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_import_248aa.json": {
+      "before_sha256": null,
+      "after_sha256": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv": {
+      "before_sha256": null,
+      "after_sha256": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964"
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv": {
+      "before_sha256": null,
+      "after_sha256": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8"
+    },
+    "docs/audit/module8_browser/module7_regression_verification.json": {
+      "before_sha256": null,
+      "after_sha256": "74e9cc3a7b460f576b572968d476a66d0a784d916d3e5708d88f4971de6a55ad"
+    },
+    "docs/audit/module8_browser/performance.json": {
+      "before_sha256": null,
+      "after_sha256": "b9dbe51dad26e0f66e02c49ceb5636af786c289668bba59d1251a34d9e3e02a3"
+    },
+    "docs/audit/module8_browser/responsive.json": {
+      "before_sha256": null,
+      "after_sha256": "5158fa6acf3d4a7d52bce876ea93972fa7913ec32ce0041b13c5b4cbeaa451fe"
+    },
+    "docs/audit/module8_browser/route_guards.json": {
+      "before_sha256": null,
+      "after_sha256": "fb6e063415016b9a5535289299897af9d4332ba178d3fc274929a6f34c822ffa"
+    },
+    "docs/audit/module8_checks/build.log": {
+      "before_sha256": null,
+      "after_sha256": "5693bb35362f061f2aab76cd27c534eaa2e4854ff55136566f7311ce6636d80a"
+    },
+    "docs/audit/module8_checks/lint.log": {
+      "before_sha256": null,
+      "after_sha256": "960f1eb37ac4d28430af9bef2c98f32333254854ffde619330f53d373ce0f632"
+    },
+    "docs/audit/module8_checks/peer_dependencies.log": {
+      "before_sha256": null,
+      "after_sha256": "5ecf82a3fc1f9007eeea79ce3bf0d9c587150219ef245bb5a5a23609cdb562fb"
+    },
+    "docs/audit/module8_checks/summary.json": {
+      "before_sha256": null,
+      "after_sha256": "7834dce9a6de90aaa32a0fadc43a314bf8d7294d72a380bf6c6891b38475681d"
+    },
+    "docs/audit/module8_checks/typecheck.log": {
+      "before_sha256": null,
+      "after_sha256": "99d7c2179cdd316467c51f37901025a0753453664d741214ba56fc631fa6c0bc"
+    },
+    "docs/audit/module8_checks/unit.log": {
+      "before_sha256": null,
+      "after_sha256": "241cbd876b4807e43058b9a2af46189eeb0682343abb49ded6b10397354a5a2f"
+    },
+    "docs/audit/module8_delivery.json": {
+      "before_sha256": null,
+      "after_sha256": "5c712e8a1276632eb02b9844ba8d4ef0b668927a52b09cd065de15acda238e94"
+    },
+    "docs/module8_commands.md": {
+      "before_sha256": null,
+      "after_sha256": "b75533b740d1df3df7f2095ab55708fda70476b87f9f7421a61b7aa68cb99279"
+    },
+    "docs/module8_report.md": {
+      "before_sha256": null,
+      "after_sha256": "5979ed756122f817ff7bab9d814af9f28edce3a1c56075098a96b35bf42a76f5"
+    },
+    "frontend/.env.example": {
+      "before_sha256": "4ebc8e0797dd644542872a1761cfa401315ea39aff15aed82cf008449ec0d098",
+      "after_sha256": "cd31abbb48fc896c4003f33857211ebdb8337781126308478c4feeb948efc9fc"
+    },
+    "frontend/package.json": {
+      "before_sha256": "eaed3b1976dd708a25f0ceffc9a7d7b2de42d3c80557b931a5219d9ae6ce07a6",
+      "after_sha256": "43109cdf79d8ed71b4775216f5ae0c70535771e460e77775270b7522b86a465a"
+    },
+    "frontend/src/app/dev/sequence-viewer/page.tsx": {
+      "before_sha256": null,
+      "after_sha256": "75e945e54ddc81d325e2cf7d5c320963888a5b949c37e90cf1c3c4ba91d9a969"
+    },
+    "frontend/src/app/globals.css": {
+      "before_sha256": "08511f14e783c369e96063482eb3e3cd2b0524777ec2e9f84d1b4e1ccbeda485",
+      "after_sha256": "3cfc8f72e845b1f4cb83eefa9199d717ee7ccd922b4cd63d8fda9ea7e14ebd33"
+    },
+    "frontend/src/components/protein-feature-viewer.tsx": {
+      "before_sha256": "6586a14a33a6e0ea2aa91abce214ddc6494e573996d608cd7793381cc019a31c",
+      "after_sha256": "665ceb91bc10fbe359236cd07a0028d389610a9fd5dce9c20334fd906311879b"
+    },
+    "frontend/src/components/protein-sequence-viewer.tsx": {
+      "before_sha256": null,
+      "after_sha256": "09bd45d9483e4b8fa3131f0ec69ed89cb26a1c503a31a2881e7b3c9153480fa1"
+    },
+    "frontend/src/components/results.tsx": {
+      "before_sha256": "9a95296c9deb91b626d78b9936dcb4654504726430a3548fe9ca3a93f8da5387",
+      "after_sha256": "88f617db29b6e6853134b646f0e02a527ad2eae7d6cdf3d9a116defea3faa084"
+    },
+    "frontend/src/components/sequence-viewer-fixture.tsx": {
+      "before_sha256": null,
+      "after_sha256": "45820843575f4b0914fca3ecd4ee34c309ff739ec30af3a0dff975548940eebd"
+    },
+    "frontend/src/lib/sequence-viewer-layout.ts": {
+      "before_sha256": null,
+      "after_sha256": "bde49942637d2e80cc67e9f61b16a052006c23385cb414dbde1bec7f5e37345b"
+    },
+    "frontend/src/lib/sequence-viewer-model.ts": {
+      "before_sha256": null,
+      "after_sha256": "bebd4f057b92a8a4638a7cccfb9216eb861962c3c556220b8fd0b1c075efe695"
+    },
+    "frontend/src/lib/viewer-selection.ts": {
+      "before_sha256": null,
+      "after_sha256": "dcbdae8104f3d9c9f2f7016b1e1545f532e0e3ab7a68ba737c174563bf0a2169"
+    },
+    "frontend/tests/sequence-crosslink-contract.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "e82b8e063586f4ae64b625f71c6198e9a99c7beb81a547c4d91333e45d42ae07"
+    },
+    "frontend/tests/sequence-viewer-layout.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "033f752d0f771ce29db563537a3fd06a44a298386bf711e1696acd8f3ffca63e"
+    },
+    "frontend/tests/sequence-viewer-model.test.ts": {
+      "before_sha256": null,
+      "after_sha256": "9ec55b892712f411545362c5d85d187890cc00100978375d3a84e851a848c1d8"
+    }
+  },
+  "violations": [],
+  "limitations": [
+    "No model execution, scientific recalculation, dependency install, snapshot refresh, file deletion, staging or commit is performed.",
+    "Ignored local runtimes, checkpoints, dependencies, caches and private audit are outside the first-party delta.",
+    "A read-only preliminary review is provisional while other workers are still writing files; rerun --write after final freeze."
+  ]
+}

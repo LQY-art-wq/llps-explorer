@@ -1,0 +1,56 @@
+# Module 4 changes relative to the completed 192-file Module 3 snapshot.
+# Total 48: added=34, modified=14, deleted=0.
+# Source checkout, binaries, weights, environments, local .env, private audit and Git index excluded.
+# All prior files outside the 14 allowed DisMeta wiring/docs files are SHA256-identical.
+# SEG API test changes only the obsolete DisMeta catalog reason assertion; all science preserved.
+# LRECA, FuzDrop, SEG runtime/fixtures, frontend, locks, orchestrator and prior reports preserved.
+# A = added; M = modified since Module 3; D = deleted.
+
+M	README.md
+M	backend/.env.example
+M	backend/app/__init__.py
+M	backend/app/adapters/dismeta.py
+A	backend/app/api/dismeta.py
+M	backend/app/api/health.py
+M	backend/app/api/methods.py
+M	backend/app/core/config.py
+M	backend/app/main.py
+A	backend/app/schemas/dismeta.py
+M	backend/app/schemas/methods.py
+M	backend/pyproject.toml
+A	backend/tests/test_dismeta_api.py
+A	backend/tests/test_dismeta_contract.py
+M	backend/tests/test_module0.py
+M	backend/tests/test_seg_api.py
+M	docs/architecture.md
+A	docs/audit/dismeta/http_observations.jsonl
+A	docs/audit/dismeta/scientific_audit.md
+A	docs/audit/dismeta/scientific_source_evidence.json
+A	docs/audit/dismeta/service_audit.json
+A	docs/audit/module4_api_smoke/dismeta_health.json
+A	docs/audit/module4_api_smoke/dismeta_import_not_enabled.json
+A	docs/audit/module4_api_smoke/dismeta_invalid_sequence.json
+A	docs/audit/module4_api_smoke/dismeta_unavailable_response.json
+A	docs/audit/module4_api_smoke/fuzdrop_health.json
+A	docs/audit/module4_api_smoke/health.json
+A	docs/audit/module4_api_smoke/invalid_sequence_response.json
+A	docs/audit/module4_api_smoke/lreca_regression_response.json
+A	docs/audit/module4_api_smoke/methods.json
+A	docs/audit/module4_api_smoke/no_lcr_response.json
+A	docs/audit/module4_api_smoke/real_seg_response.json
+A	docs/audit/module4_api_smoke/real_sequence_request.json
+A	docs/audit/module4_api_smoke/seg_health.json
+A	docs/audit/module4_api_smoke/server.log
+A	docs/audit/module4_api_smoke/summary.json
+A	docs/audit/module4_api_smoke/synthetic_fuzdrop_import_request.json
+A	docs/audit/module4_api_smoke/synthetic_fuzdrop_import_response.json
+A	docs/audit/module4_full_tests.junit.xml
+A	docs/audit/module4_full_tests.log
+A	docs/audit/module4_scope_review.json
+A	docs/audit/module4_test_verification_summary.json
+A	docs/dismeta_integration.md
+M	docs/external_services.md
+A	docs/module4_changed_files.txt
+A	docs/module4_commands.md
+A	docs/module4_report.md
+A	scripts/smoke_module4.py

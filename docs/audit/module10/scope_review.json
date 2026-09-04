@@ -1,0 +1,1626 @@
+{
+  "module": 10,
+  "audit_date": "2026-09-04",
+  "status": "pass",
+  "baseline": {
+    "source": ".audit/module10_baseline_files.json",
+    "file_count": 532,
+    "comparison_method": "immutable baseline SHA256 manifest versus current bytes; current Git status is not used as the Module 10 baseline"
+  },
+  "summary": {
+    "added": 65,
+    "modified": 25,
+    "deleted": 0,
+    "total_changed": 90,
+    "frozen_science_files_reviewed": 43,
+    "frozen_science_violations": 0,
+    "unexpected_changes": 0
+  },
+  "changes": [
+    {
+      "path": ".dockerignore",
+      "status": "modified",
+      "baseline_sha256": "56260cb419aca22457307fc9123c1cdcc4fa758180b3cf0e1c389e8543cecb67",
+      "current_sha256": "5add4235eecce3d9edb7b9976835e408265b80da86405b9b5ff5b4abc68219e4",
+      "classification": "deployment_adaptation",
+      "reason": "container build context"
+    },
+    {
+      "path": ".env.example",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "6d9d2128dbb5d783c04c9beb4e42ed0087b46cd3a8923affe4b711560216975b",
+      "classification": "deployment_adaptation",
+      "reason": "production environment template"
+    },
+    {
+      "path": ".gitignore",
+      "status": "modified",
+      "baseline_sha256": "b64eaa4ed6105d0912da68a5a3ac5c64dc7744c04a6e80618b9e94961a377d97",
+      "current_sha256": "e330e4d10b5c4c6659f6030ce886135ba57e3abd41d1cfcf7f3047397733b7c6",
+      "classification": "deployment_adaptation",
+      "reason": "runtime secret, data, and checkpoint exclusions"
+    },
+    {
+      "path": "backend/.env.example",
+      "status": "modified",
+      "baseline_sha256": "2e3bd4a9f14651fc292478bddaee011f39a0cead9ecafacf0c0d04813b92ff47",
+      "current_sha256": "6462f36204ef577a9bffdb84640cc234826fbfc20ed9d17581173ae93c9d0266",
+      "classification": "deployment_adaptation",
+      "reason": "backend production configuration template"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "status": "modified",
+      "baseline_sha256": "95f328a21f435c83956a88830520ad6ca2ed441d1f274b6f203b3ca2f7e8c508",
+      "current_sha256": "af6baf478317ff6409f9d0123135aac08f5e54077a414443b02de838b3eb2a7e",
+      "classification": "deployment_adaptation",
+      "reason": "application package metadata"
+    },
+    {
+      "path": "backend/app/adapters/lreca.py",
+      "status": "modified",
+      "baseline_sha256": "ea5d2037b638bb8ef569c03cc0e5d969669d52ad014217d94d582264c5f44d68",
+      "current_sha256": "552da90904fed048c49b5633bbef33b4e07d670d85236b07738474041f9b6413",
+      "classification": "deployment_adaptation",
+      "reason": "checkpoint-path log privacy hardening"
+    },
+    {
+      "path": "backend/app/adapters/lreca_remote.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "0632cacf1e9c4355aaa2ee1dcdbe917e5cb94080ade556f486bda9aa2d679fee",
+      "classification": "deployment_adaptation",
+      "reason": "remote LRECA service adapter"
+    },
+    {
+      "path": "backend/app/adapters/seg_queued.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "c6f4598218274f1d0f9f97ea57ed415ec94fcb7b5296f999a378bcccab46792a",
+      "classification": "deployment_adaptation",
+      "reason": "queued SEG adapter wrapper"
+    },
+    {
+      "path": "backend/app/api/analysis.py",
+      "status": "modified",
+      "baseline_sha256": "fef49e59347a973e6272c6fc46c23d874bc5b6c368ae3c7f3106b8ffc1cf5df6",
+      "current_sha256": "4da9f0432ae4b886cca6002f8c12934932d995888e03ab4d6807548eb1d719ac",
+      "classification": "deployment_adaptation",
+      "reason": "durable analysis submission API"
+    },
+    {
+      "path": "backend/app/api/fuzdrop.py",
+      "status": "modified",
+      "baseline_sha256": "b57b215f9aaf62657674deba3736cc529869e4f10faca146492711ea940688f0",
+      "current_sha256": "249531b748ab1f4ce8eee22ad330301769c1f611c74b5363f2312394de25ad82",
+      "classification": "deployment_adaptation",
+      "reason": "production API policy and rate-limit wiring"
+    },
+    {
+      "path": "backend/app/api/health.py",
+      "status": "modified",
+      "baseline_sha256": "c391d708432164ca8ab4e050ead21a5a6e97f50b922b6b9eef3d6bdfd9d816c3",
+      "current_sha256": "3cf9a56291dd59037c67f847627986842d7dd2d984df823e66bb86895175507f",
+      "classification": "deployment_adaptation",
+      "reason": "liveness and readiness endpoints"
+    },
+    {
+      "path": "backend/app/api/lreca.py",
+      "status": "modified",
+      "baseline_sha256": "cd669a77b7996703c5ec0e243ade3e307bf5d3b5cd0a392ea87c7702f2f682d8",
+      "current_sha256": "04a01f51a6bcb5f1fa9833ec593c05322f83e02dd088648a0e967530685ffafc",
+      "classification": "deployment_adaptation",
+      "reason": "LRECA service-boundary API wiring"
+    },
+    {
+      "path": "backend/app/api/seg.py",
+      "status": "modified",
+      "baseline_sha256": "bc596193aca7aa06ce176c70da703b4756b777a6da95175d41700869e8b2f45d",
+      "current_sha256": "bfcd5e19d8d878f329236656463bb8b3a697a7c1a44131d608b356a01707dda8",
+      "classification": "deployment_adaptation",
+      "reason": "production SEG API wiring"
+    },
+    {
+      "path": "backend/app/api/session.py",
+      "status": "modified",
+      "baseline_sha256": "fabd736d8cf4e567e580e9f22cd290d020b474c7d9bdf3a3036f7bacad5809a1",
+      "current_sha256": "3abccac6a2266f869713847f53e20e09bc15ee7a38406eac89b550f193b0f3ad",
+      "classification": "deployment_adaptation",
+      "reason": "production session security"
+    },
+    {
+      "path": "backend/app/api/system.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b8bde0b5922ccb93f4ed9e0969e29d6056684e94a367b0fce6804385c3a2d276",
+      "classification": "deployment_adaptation",
+      "reason": "runtime capability endpoint"
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "status": "modified",
+      "baseline_sha256": "8f2f9d43aa128f332f7e7cf581984384711cc5d2830c4d9e9b06ddda6fff3d2f",
+      "current_sha256": "2a85037f8ea7b3b0bccbc6224be3ce5a8a9d6d1c808e7af0d55bcf5919400752",
+      "classification": "deployment_adaptation",
+      "reason": "environment-backed production settings"
+    },
+    {
+      "path": "backend/app/core/observability.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "ba8abbd728a3011bc1cb927bc4b633ae79f1d20e2b345a6a2a2bbeb60866dc13",
+      "classification": "deployment_adaptation",
+      "reason": "structured operational logging"
+    },
+    {
+      "path": "backend/app/main.py",
+      "status": "modified",
+      "baseline_sha256": "41e1c478bace0240807e9e9385d9ed2ab05f835be38a17b55a5ccb911aea66fc",
+      "current_sha256": "9e764b6e018ed6e20ca93e2cb83d8f64fecf8154785c8fc232697f8d0017165d",
+      "classification": "deployment_adaptation",
+      "reason": "application lifecycle and dependency wiring"
+    },
+    {
+      "path": "backend/app/services/analysis_jobs.py",
+      "status": "modified",
+      "baseline_sha256": "58c68dd4aebf5802a9b39ab38ff6f35d9a93b0f8ce6d69f99f75bb6cd48b68b4",
+      "current_sha256": "6477827dc86853e3b01e5ae13a2fc910fb955548a5057542174fe2ba4f92d934",
+      "classification": "deployment_adaptation",
+      "reason": "durable job lifecycle"
+    },
+    {
+      "path": "backend/app/services/analysis_queue.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "2989b64c78ff34aa4f5302a9c046b6e5f831a5c721fa609c930c843c9725938f",
+      "classification": "deployment_adaptation",
+      "reason": "Redis-backed queue boundary"
+    },
+    {
+      "path": "backend/app/services/orchestrator.py",
+      "status": "modified",
+      "baseline_sha256": "61f26bec4cc1e4cf5b44e82f99f1835a91e401cefd2498087f11a0d7f9d0b4bb",
+      "current_sha256": "af18df08ad06df822628e1f6c6ea667c001438a3783206c93437a7b2df10e1f6",
+      "classification": "deployment_adaptation",
+      "reason": "atomic job-state publication"
+    },
+    {
+      "path": "backend/app/services/persistent_repositories.py",
+      "status": "modified",
+      "baseline_sha256": "59cf62fe877abc7504daa6506d46be6cc517286678245cb23e923be61ad2ab2a",
+      "current_sha256": "40e6795344e6fb2ba1fe1cdfa1ea20bd62437ea98e07b4a4347cffe02b7fc1ca",
+      "classification": "deployment_adaptation",
+      "reason": "database concurrency guards"
+    },
+    {
+      "path": "backend/app/services/rate_limits.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "6ea39bce5eb88729c97f7125a6f6e5a5a4dd4e606faebdfb9890b5babcb2873e",
+      "classification": "deployment_adaptation",
+      "reason": "production request limits"
+    },
+    {
+      "path": "backend/app/worker.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "90cee51d8a7a558cdd69124af82b0ac31d25c3412630893d3e7c17e1ffd3175d",
+      "classification": "deployment_adaptation",
+      "reason": "independent durable queue worker"
+    },
+    {
+      "path": "backend/lreca_service/__init__.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "f66046cc9221322359311119e2dcb415ca4ea0c80b281142bd60496243578f87",
+      "classification": "deployment_adaptation",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/config.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a4f9039eaf98fcb85cef817873d2dced30b6dfd9282554fa3967ee00e991c694",
+      "classification": "deployment_adaptation",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/main.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "fba5e461d6c9c0d641a743be7b99352bb2bd8902209eee79ac66935768641c17",
+      "classification": "deployment_adaptation",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/schemas.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "5a1e86809606f3d439c05c8eafe35a2b75dfa652f797cb91dbf62e003b4c6013",
+      "classification": "deployment_adaptation",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "status": "modified",
+      "baseline_sha256": "9841a9dc9a03a996f2ba7068afacc1e41bfd85a5d435e3eb1d099a96862ca3aa",
+      "current_sha256": "b9f3fda02ac874b4694b2ae3fc578710ba7037a75295429ba8025aa49d233d60",
+      "classification": "deployment_adaptation",
+      "reason": "production Python dependencies"
+    },
+    {
+      "path": "backend/requirements-lreca-service.lock.txt",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "476eec9439222fa8a94f10e0be679b9112fd29e0396dfe8ec67e7cc4ab8438a1",
+      "classification": "deployment_adaptation",
+      "reason": "pinned LRECA service dependencies"
+    },
+    {
+      "path": "backend/requirements.lock.txt",
+      "status": "modified",
+      "baseline_sha256": "fb5df79dec8e4ab9249304e67e570ca9362f7de0188cc56c9ccaecb4afe559a3",
+      "current_sha256": "620ecff37b46e134e4613eb964c87547c98c9746df5742884ce57ba948af25e8",
+      "classification": "deployment_adaptation",
+      "reason": "pinned backend and worker dependencies"
+    },
+    {
+      "path": "backend/tests/test_dismeta_api.py",
+      "status": "modified",
+      "baseline_sha256": "20f759e383e646b9dc43cd13e785692347387e636e26c5e61ac4bb088e2921ba",
+      "current_sha256": "d6c93fcd512434ae1fd96c0d258ecf30af190d4a5c7de3c71665fc489dedc208",
+      "classification": "deployment_adaptation",
+      "reason": "production-boundary regression coverage"
+    },
+    {
+      "path": "backend/tests/test_lreca_process.py",
+      "status": "modified",
+      "baseline_sha256": "c09acf116553478bdd289f2b8e8cf402bb2d757f6c335d558c6fd5f7c14d97b5",
+      "current_sha256": "e2c5878753577d48200a9cfc8c0e5648ab9efe1d989773a95ac8193e0cb9a825",
+      "classification": "deployment_adaptation",
+      "reason": "service-boundary regression coverage"
+    },
+    {
+      "path": "backend/tests/test_lreca_service.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "be3ee7f81541fdd4aa66ff7e444dd4b49ecb565ef38449bb68625f04f76e9510",
+      "classification": "deployment_adaptation",
+      "reason": "independent LRECA service coverage"
+    },
+    {
+      "path": "backend/tests/test_module0.py",
+      "status": "modified",
+      "baseline_sha256": "6add9f02b45c87be9bbbb3815561b65c3c1f1181c9e33b1a1d3d5820d5dff0c6",
+      "current_sha256": "08fc6f69fff962bd85099e0e31f02335a21c150f3fcd0cb21e624bf9e9007654",
+      "classification": "deployment_adaptation",
+      "reason": "deployment portability regression coverage"
+    },
+    {
+      "path": "backend/tests/test_module10_queue.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "17653c9a9acc725f8ffda72f3813e8c688769ad91d7686138a829e9ae696d710",
+      "classification": "deployment_adaptation",
+      "reason": "durable queue regression coverage"
+    },
+    {
+      "path": "backend/tests/test_module10_security.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "97386bc3fe68976ac3c647a49196569d42d03eff99e2c2cdc9328be4600f8f5b",
+      "classification": "deployment_adaptation",
+      "reason": "production security regression coverage"
+    },
+    {
+      "path": "compose.yaml",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "1dc07dfce53a5081e144defc3e48cd8dfbccc431a523955d330e133d83fbf9d8",
+      "classification": "deployment_adaptation",
+      "reason": "local production-like service topology"
+    },
+    {
+      "path": "docker/backend/Dockerfile",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "c289eb758a12541d17c1fbe8dc8222c829db21a60fb3a5adec6bced8512fffec",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/caddy/Caddyfile",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b10316abddd5d4bc11710127e16f715ac4166da05ea8eaea7c7fb78b64f5b270",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/caddy/Caddyfile.production.example",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a99e3cfabeed9e651895de9378540bfc2ec4c21b2a3786640aec52f68ac7c554",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/frontend/Dockerfile",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "2588c64ee977fa1c23b1691415d0795f623a6144b7278bffc0cfae84e6344e9e",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/lreca/Dockerfile",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "060f774990843502b4955ba1ae80f8954e5f19c265c960211e8cc7663303b716",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/worker/Dockerfile",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b454e59567f8117bb3eadfb9bb41c645956d7c7df5b6c087ffe89e6a589c8f00",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/worker/healthcheck.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b195db35f8fe15c6379e43c4d5dfcd3024313ba67e4053a4d0248e1af0762367",
+      "classification": "deployment_adaptation",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docs/architecture.md",
+      "status": "modified",
+      "baseline_sha256": "044424ba7b9d5eef8cf1501d48af250db7a03f1d9ba827c3eff7b9638cad6aca",
+      "current_sha256": "f99f4f46300c60061868904623af779dd0e36a4f3024840c551eb75652fea0f8",
+      "classification": "deployment_adaptation",
+      "reason": "production topology documentation"
+    },
+    {
+      "path": "docs/audit/module10/backend_full.junit.xml",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "76446ed1b322d753abe1eb4de4fc6bf7fee6c48e115389ef83187374afed96b2",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "40e6de3d32813b79ee13baf4f662efccc6ccfdedc3aa2307cb3ddb525e3be8d7",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_final.junit.xml",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "5f3488b22882ce75b2a76a12b8a6557af140dcfe9b1a58673874d8d0ac7d6636",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "5602c2e3e9e5d4d65d098577cc4a7e0db67856ccb29c469041f11d1506faa7a0",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_postreview_failed.junit.xml",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "f4e8361e73616a64a5e2d280d46de21dafdc69dae1ce886568b7bada9d01acfe",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_postreview_failed.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "71a9e96d9fae73c6bb3452e62faa9f701838deeb4ffb0fc06ebea776c370db96",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_lint_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_module10_final.junit.xml",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "51dcf583502850d74aebefd688f3c2016f83089e43b79008771340eb7eb88de2",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_module10_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "37f67bb15ad21cbd00fdef993e03829725dfe6d68f89de9916020f05c21a41e5",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_wheel_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "42bcfc14ac04f598f15ab80d04e73852708e2e98707470ee637c36eeda5faf9a",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/compileall_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "95b5a9f4512ccd0b64ba888dae7ee3774712c81ed9b63e971da5bdc56bbe26f8",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/compose_yaml_parse.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "d54a37872f43ed8786fb6502878657e2c022678a795bc6819b172c0c29f38ea1",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/deployment_static_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a163d5f00da264a0512747dfe57614677488f4cc4ebaeba804a3c0e6f4ef5380",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/docker_commands_attempt.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "d923b744e66bbaea7f64127643f0f6bcdfa2b14a4af5aef49e6ad4dddb275d3b",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/docker_runtime_audit.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "6a3e0a57368344ec66140f0f3189af8fdedcbef1e2c0692bea4e5c9724efb1a3",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/documentation_validation.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "3ec7581769429dd018d405a62dc0b8aa4c1efccc72dde6f4ba0897efe6849c2d",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_build_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "8a746186a64077d7afbe2b767b89970f93454777f175a85e84a178133e4e327d",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_bundle_privacy.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "e4cd6605a6243077c0f952503a44e408672a8560731d7959e095ffd5109f4b00",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_install_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "f0a175a29b4f08522979030139d70b20bbd63a02f229dc31e848a8e082cee5e4",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_lint_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "9f55fa4f442193f038d9ed374e8109193ef8f404f0e87c8a57c77a8f64a3aa40",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_tests_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "55897c6664cc460fc18a0c89f459494f1d6dc8af29d67208c4e4499ce54e0f8e",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_typecheck_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "3dd115a54d9decc15d9b6f1babec63f20d21966a914759ea6530c5b714007d15",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/lreca_sparse_source_probe.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "206b80c979800362bcb86dc2959f6adc291b37e1cc277fdee1b72eea7e5b7562",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/module8_api_regression.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "56e41d7a2dd6abcad8567336e035e58a4daf8864ccca4e73f7a67d0b2d60e8b7",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/module8_api_regression.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "20bf37994278772cb0a6df6195f403b20f3e7289d90da6b7e147937d4b617089",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/pip_check_final.log",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/scope_review.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": null,
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit output; self-hash intentionally omitted",
+      "generated_output": true
+    },
+    {
+      "path": "docs/audit/module10/verification_summary.json",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "8037e75a088d62d20db6ca609b0d5a65c6f618e839d6c24303765848ba332488",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/backup_restore.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "d4635ca37c840a9d2c2ad418799b2b6e83d725aceb13ea7890673628a8997aaa",
+      "classification": "deployment_adaptation",
+      "reason": "production backup and restore runbook"
+    },
+    {
+      "path": "docs/deployment.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b74ddccd2c272d4126526edd4996eb5d0d1a3dae3d837e43a49a951e5add6518",
+      "classification": "deployment_adaptation",
+      "reason": "production deployment runbook"
+    },
+    {
+      "path": "docs/module10_changed_files.txt",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": null,
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 generated audit output; self-hash intentionally omitted",
+      "generated_output": true
+    },
+    {
+      "path": "docs/module10_commands.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "1798fe14a5981da9c3ff535939f2b33524d1ab4cce348f0e80d036eb10f3a8e6",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 documentation or changed-file inventory"
+    },
+    {
+      "path": "docs/module10_report.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "c5807d925c69baeba08895578e2cf5e37e68418e5528389e7a1f2919bcfce239",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 documentation or changed-file inventory"
+    },
+    {
+      "path": "docs/operations.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "91f26c19fafd5b57c05d5a89c6641978ef006f23c9b11470b29517f064ade4e7",
+      "classification": "deployment_adaptation",
+      "reason": "production operations runbook"
+    },
+    {
+      "path": "docs/security.md",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "1a9249139d169bc1838f93552db5e425d0d90ec5357ebbfbf0980621a45f8bee",
+      "classification": "deployment_adaptation",
+      "reason": "production security runbook"
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "status": "modified",
+      "baseline_sha256": "cb1292b255083ef3cf1283bc6408fda00db178a09d07a822a67ab646a7cea882",
+      "current_sha256": "565a60f2990dd8b0ef1bc9b90e2cae5e1adff7f08376e0038d5e7f6ecd896f44",
+      "classification": "deployment_adaptation",
+      "reason": "container frontend configuration"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "modified",
+      "baseline_sha256": "8e968fed2a5a5a827a33e3ba02fa4da6a194a23f6f47cb71af29a0cafe68e522",
+      "current_sha256": "0c93162a09b5d75e46c2487d16b69892b49d974f1a67e9c9820afbf16529983d",
+      "classification": "deployment_adaptation",
+      "reason": "frontend production scripts and dependencies"
+    },
+    {
+      "path": "frontend/src/components/workspace.tsx",
+      "status": "modified",
+      "baseline_sha256": "919cad3ec54f47507724925ad08ed124a51f552d0aa14e65c8127f53b6962cc3",
+      "current_sha256": "57b2e40e807f0adfd5ac43af226eb4bb0d9baf23ec10ad63b712998cbd49fed9",
+      "classification": "deployment_adaptation",
+      "reason": "production runtime status presentation"
+    },
+    {
+      "path": "frontend/tests/module10-production.test.ts",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a86b11a900bf8529f1c095434b32162d0cc37cef70592efaab62a31e497328c1",
+      "classification": "deployment_adaptation",
+      "reason": "production frontend regression coverage"
+    },
+    {
+      "path": "scripts/audit_docker_runtime.ps1",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "1fbf8c093ca316d15b28f7147d6f1ef86ddb37bdad68f6eea7cad547a5a3755a",
+      "classification": "deployment_adaptation",
+      "reason": "Docker runtime audit harness"
+    },
+    {
+      "path": "scripts/audit_module10_scope.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "aff838c7a03137f28b2981bc82558e266e7e75580f13539bf1723b3c58946d71",
+      "classification": "deployment_adaptation",
+      "reason": "Module 10 scope audit"
+    },
+    {
+      "path": "scripts/backup_db.sh",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "b550526b1625420fdeebbfc5b9e15a2c7118138e283d1be1da39e8bcfaa21ecc",
+      "classification": "deployment_adaptation",
+      "reason": "PostgreSQL backup operation"
+    },
+    {
+      "path": "scripts/restore_db.sh",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "a9d889ca4dc14729023e4a0352a8c7adcc32390436574051de2271277ed72ef0",
+      "classification": "deployment_adaptation",
+      "reason": "PostgreSQL restore operation"
+    },
+    {
+      "path": "scripts/verify_deployment_static.py",
+      "status": "added",
+      "baseline_sha256": null,
+      "current_sha256": "54a64a2ef62cbb6df7bcdeb8e952aff292fdd6cbc206620b7109e13050632a74",
+      "classification": "deployment_adaptation",
+      "reason": "deployment static verification"
+    }
+  ],
+  "deployment_adaptations": [
+    {
+      "path": ".dockerignore",
+      "status": "modified",
+      "reason": "container build context"
+    },
+    {
+      "path": ".env.example",
+      "status": "added",
+      "reason": "production environment template"
+    },
+    {
+      "path": ".gitignore",
+      "status": "modified",
+      "reason": "runtime secret, data, and checkpoint exclusions"
+    },
+    {
+      "path": "backend/.env.example",
+      "status": "modified",
+      "reason": "backend production configuration template"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "status": "modified",
+      "reason": "application package metadata"
+    },
+    {
+      "path": "backend/app/adapters/lreca.py",
+      "status": "modified",
+      "reason": "checkpoint-path log privacy hardening"
+    },
+    {
+      "path": "backend/app/adapters/lreca_remote.py",
+      "status": "added",
+      "reason": "remote LRECA service adapter"
+    },
+    {
+      "path": "backend/app/adapters/seg_queued.py",
+      "status": "added",
+      "reason": "queued SEG adapter wrapper"
+    },
+    {
+      "path": "backend/app/api/analysis.py",
+      "status": "modified",
+      "reason": "durable analysis submission API"
+    },
+    {
+      "path": "backend/app/api/fuzdrop.py",
+      "status": "modified",
+      "reason": "production API policy and rate-limit wiring"
+    },
+    {
+      "path": "backend/app/api/health.py",
+      "status": "modified",
+      "reason": "liveness and readiness endpoints"
+    },
+    {
+      "path": "backend/app/api/lreca.py",
+      "status": "modified",
+      "reason": "LRECA service-boundary API wiring"
+    },
+    {
+      "path": "backend/app/api/seg.py",
+      "status": "modified",
+      "reason": "production SEG API wiring"
+    },
+    {
+      "path": "backend/app/api/session.py",
+      "status": "modified",
+      "reason": "production session security"
+    },
+    {
+      "path": "backend/app/api/system.py",
+      "status": "added",
+      "reason": "runtime capability endpoint"
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "status": "modified",
+      "reason": "environment-backed production settings"
+    },
+    {
+      "path": "backend/app/core/observability.py",
+      "status": "added",
+      "reason": "structured operational logging"
+    },
+    {
+      "path": "backend/app/main.py",
+      "status": "modified",
+      "reason": "application lifecycle and dependency wiring"
+    },
+    {
+      "path": "backend/app/services/analysis_jobs.py",
+      "status": "modified",
+      "reason": "durable job lifecycle"
+    },
+    {
+      "path": "backend/app/services/analysis_queue.py",
+      "status": "added",
+      "reason": "Redis-backed queue boundary"
+    },
+    {
+      "path": "backend/app/services/orchestrator.py",
+      "status": "modified",
+      "reason": "atomic job-state publication"
+    },
+    {
+      "path": "backend/app/services/persistent_repositories.py",
+      "status": "modified",
+      "reason": "database concurrency guards"
+    },
+    {
+      "path": "backend/app/services/rate_limits.py",
+      "status": "added",
+      "reason": "production request limits"
+    },
+    {
+      "path": "backend/app/worker.py",
+      "status": "added",
+      "reason": "independent durable queue worker"
+    },
+    {
+      "path": "backend/lreca_service/__init__.py",
+      "status": "added",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/config.py",
+      "status": "added",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/main.py",
+      "status": "added",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/lreca_service/schemas.py",
+      "status": "added",
+      "reason": "independent LRECA service boundary"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "status": "modified",
+      "reason": "production Python dependencies"
+    },
+    {
+      "path": "backend/requirements-lreca-service.lock.txt",
+      "status": "added",
+      "reason": "pinned LRECA service dependencies"
+    },
+    {
+      "path": "backend/requirements.lock.txt",
+      "status": "modified",
+      "reason": "pinned backend and worker dependencies"
+    },
+    {
+      "path": "backend/tests/test_dismeta_api.py",
+      "status": "modified",
+      "reason": "production-boundary regression coverage"
+    },
+    {
+      "path": "backend/tests/test_lreca_process.py",
+      "status": "modified",
+      "reason": "service-boundary regression coverage"
+    },
+    {
+      "path": "backend/tests/test_lreca_service.py",
+      "status": "added",
+      "reason": "independent LRECA service coverage"
+    },
+    {
+      "path": "backend/tests/test_module0.py",
+      "status": "modified",
+      "reason": "deployment portability regression coverage"
+    },
+    {
+      "path": "backend/tests/test_module10_queue.py",
+      "status": "added",
+      "reason": "durable queue regression coverage"
+    },
+    {
+      "path": "backend/tests/test_module10_security.py",
+      "status": "added",
+      "reason": "production security regression coverage"
+    },
+    {
+      "path": "compose.yaml",
+      "status": "added",
+      "reason": "local production-like service topology"
+    },
+    {
+      "path": "docker/backend/Dockerfile",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/caddy/Caddyfile",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/caddy/Caddyfile.production.example",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/frontend/Dockerfile",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/lreca/Dockerfile",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/worker/Dockerfile",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docker/worker/healthcheck.py",
+      "status": "added",
+      "reason": "container image or reverse-proxy asset"
+    },
+    {
+      "path": "docs/architecture.md",
+      "status": "modified",
+      "reason": "production topology documentation"
+    },
+    {
+      "path": "docs/audit/module10/backend_full.junit.xml",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_final.junit.xml",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_postreview_failed.junit.xml",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_full_postreview_failed.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_lint_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_module10_final.junit.xml",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_module10_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/backend_wheel_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/compileall_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/compose_yaml_parse.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/deployment_static_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/docker_commands_attempt.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/docker_runtime_audit.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/documentation_validation.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_build_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_bundle_privacy.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_install_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_lint_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_tests_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/frontend_typecheck_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/lreca_sparse_source_probe.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/module8_api_regression.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/module8_api_regression.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/pip_check_final.log",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/audit/module10/scope_review.json",
+      "status": "added",
+      "reason": "Module 10 generated audit output; self-hash intentionally omitted"
+    },
+    {
+      "path": "docs/audit/module10/verification_summary.json",
+      "status": "added",
+      "reason": "Module 10 generated audit evidence"
+    },
+    {
+      "path": "docs/backup_restore.md",
+      "status": "added",
+      "reason": "production backup and restore runbook"
+    },
+    {
+      "path": "docs/deployment.md",
+      "status": "added",
+      "reason": "production deployment runbook"
+    },
+    {
+      "path": "docs/module10_changed_files.txt",
+      "status": "added",
+      "reason": "Module 10 generated audit output; self-hash intentionally omitted"
+    },
+    {
+      "path": "docs/module10_commands.md",
+      "status": "added",
+      "reason": "Module 10 documentation or changed-file inventory"
+    },
+    {
+      "path": "docs/module10_report.md",
+      "status": "added",
+      "reason": "Module 10 documentation or changed-file inventory"
+    },
+    {
+      "path": "docs/operations.md",
+      "status": "added",
+      "reason": "production operations runbook"
+    },
+    {
+      "path": "docs/security.md",
+      "status": "added",
+      "reason": "production security runbook"
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "status": "modified",
+      "reason": "container frontend configuration"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "modified",
+      "reason": "frontend production scripts and dependencies"
+    },
+    {
+      "path": "frontend/src/components/workspace.tsx",
+      "status": "modified",
+      "reason": "production runtime status presentation"
+    },
+    {
+      "path": "frontend/tests/module10-production.test.ts",
+      "status": "added",
+      "reason": "production frontend regression coverage"
+    },
+    {
+      "path": "scripts/audit_docker_runtime.ps1",
+      "status": "added",
+      "reason": "Docker runtime audit harness"
+    },
+    {
+      "path": "scripts/audit_module10_scope.py",
+      "status": "added",
+      "reason": "Module 10 scope audit"
+    },
+    {
+      "path": "scripts/backup_db.sh",
+      "status": "added",
+      "reason": "PostgreSQL backup operation"
+    },
+    {
+      "path": "scripts/restore_db.sh",
+      "status": "added",
+      "reason": "PostgreSQL restore operation"
+    },
+    {
+      "path": "scripts/verify_deployment_static.py",
+      "status": "added",
+      "reason": "deployment static verification"
+    }
+  ],
+  "unexpected_changes": [],
+  "frozen_science_review": [
+    {
+      "domain": "lreca",
+      "role": "model inference and attribution engine",
+      "path": "backend/lreca_runtime/engine.py",
+      "baseline_sha256": "b433ca537b36c0ff7c6221813b10b5039d3c72c63b05ea69e920df0e35b44ce6",
+      "current_sha256": "b433ca537b36c0ff7c6221813b10b5039d3c72c63b05ea69e920df0e35b44ce6",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "checkpoint and upstream identity",
+      "path": "backend/lreca_runtime/metadata.py",
+      "baseline_sha256": "dd8d5bb449d6cca49e2e27cdc862dfcf416a20f636adbe038870b595373ae9d2",
+      "current_sha256": "dd8d5bb449d6cca49e2e27cdc862dfcf416a20f636adbe038870b595373ae9d2",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "pinned upstream compatibility loader",
+      "path": "backend/lreca_runtime/upstream.py",
+      "baseline_sha256": "64de388a65e59d29ee0f5228f0891399db8b5758acd563aab61ada61b46742d5",
+      "current_sha256": "64de388a65e59d29ee0f5228f0891399db8b5758acd563aab61ada61b46742d5",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "isolated scientific runtime entrypoint",
+      "path": "backend/lreca_runtime/worker.py",
+      "baseline_sha256": "1ca02dc6c20325fe988d4473e6baaa8df604b6128413ad15ec71d3ffb454c29c",
+      "current_sha256": "1ca02dc6c20325fe988d4473e6baaa8df604b6128413ad15ec71d3ffb454c29c",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "LRECA process boundary",
+      "path": "backend/app/services/lreca_process.py",
+      "baseline_sha256": "384cddc86499613e13323da1e8f35bbd918686148869d835ad352e8a2a5337b5",
+      "current_sha256": "384cddc86499613e13323da1e8f35bbd918686148869d835ad352e8a2a5337b5",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "prediction and explainability contract",
+      "path": "backend/app/schemas/lreca.py",
+      "baseline_sha256": "f3451170fb48db026fd0dadddd4443627bb6eb7f1f40043b5ad3e029626cfc90",
+      "current_sha256": "f3451170fb48db026fd0dadddd4443627bb6eb7f1f40043b5ad3e029626cfc90",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "pinned source and checkpoint manifest",
+      "path": "external/lreca-source.json",
+      "baseline_sha256": "3d409d91c0bcc8c477ce2af4e7e9e8a69d9bf55336f5426cbf19562e9914af59",
+      "current_sha256": "3d409d91c0bcc8c477ce2af4e7e9e8a69d9bf55336f5426cbf19562e9914af59",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parameters and executable contract",
+      "path": "backend/app/adapters/seg.py",
+      "baseline_sha256": "87abf33cd45fba9b48893330f5b8f058b86f0ab2689155f928c8f71abacbd585",
+      "current_sha256": "87abf33cd45fba9b48893330f5b8f058b86f0ab2689155f928c8f71abacbd585",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG interval parser",
+      "path": "backend/app/services/seg_parser.py",
+      "baseline_sha256": "ba1d3477b083c53768ae7c00adb5e5ab260bb5796b9c5b82de65566a3bc25943",
+      "current_sha256": "ba1d3477b083c53768ae7c00adb5e5ab260bb5796b9c5b82de65566a3bc25943",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG subprocess semantics",
+      "path": "backend/app/services/seg_process.py",
+      "baseline_sha256": "6cb649a4c4ce8aa1d3ed94af3a5713a8b36928f470c7e927721a70d726b24c87",
+      "current_sha256": "6cb649a4c4ce8aa1d3ed94af3a5713a8b36928f470c7e927721a70d726b24c87",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parameter and coordinate contract",
+      "path": "backend/app/schemas/seg.py",
+      "baseline_sha256": "5c99f50472db08b3def72068d114389bc43a48ecc593653f8bbd851b9ce05dca",
+      "current_sha256": "5c99f50472db08b3def72068d114389bc43a48ecc593653f8bbd851b9ce05dca",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG source manifest",
+      "path": "external/seg-source.json",
+      "baseline_sha256": "3ac3553b07e9057a90e0c616e41c217a29ff41425ffaed612c29cd8858cd5e78",
+      "current_sha256": "3ac3553b07e9057a90e0c616e41c217a29ff41425ffaed612c29cd8858cd5e78",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official-service no-automation policy",
+      "path": "backend/app/adapters/fuzdrop_remote.py",
+      "baseline_sha256": "da45fbec5bb6ba156c3858b51793d253d9d20127f6c0044488dbfc8baee3e32f",
+      "current_sha256": "da45fbec5bb6ba156c3858b51793d253d9d20127f6c0044488dbfc8baee3e32f",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official export parsing and validation policy",
+      "path": "backend/app/services/fuzdrop_import.py",
+      "baseline_sha256": "2cded0e64b83cb4a6afa3eedc8be94328204ab87792191ff944915c7abdff1a2",
+      "current_sha256": "2cded0e64b83cb4a6afa3eedc8be94328204ab87792191ff944915c7abdff1a2",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official result contract",
+      "path": "backend/app/schemas/fuzdrop.py",
+      "baseline_sha256": "f217afb09fed5aa5fa77a23db961f9617864982d89b9c76dd8afb3194bf48d6c",
+      "current_sha256": "f217afb09fed5aa5fa77a23db961f9617864982d89b9c76dd8afb3194bf48d6c",
+      "status": "unchanged"
+    },
+    {
+      "domain": "dismeta",
+      "role": "audited unavailable boundary",
+      "path": "backend/app/adapters/dismeta.py",
+      "baseline_sha256": "819ac424a8e0041c2c37913fe94d9df6a278b407a977b050e4f442acff12fd26",
+      "current_sha256": "819ac424a8e0041c2c37913fe94d9df6a278b407a977b050e4f442acff12fd26",
+      "status": "unchanged"
+    },
+    {
+      "domain": "dismeta",
+      "role": "unavailable-result contract",
+      "path": "backend/app/schemas/dismeta.py",
+      "baseline_sha256": "4beb25978069b9fb0129d98e8e66f73d40d57815d5fae92363169f9e7255a851",
+      "current_sha256": "4beb25978069b9fb0129d98e8e66f73d40d57815d5fae92363169f9e7255a851",
+      "status": "unchanged"
+    },
+    {
+      "domain": "ensemble",
+      "role": "weighted ensemble formula",
+      "path": "backend/app/services/ensemble.py",
+      "baseline_sha256": "9d77327f9e242b016c07b0a532474fae03f9a145b956f3657c9471eabef15ca6",
+      "current_sha256": "9d77327f9e242b016c07b0a532474fae03f9a145b956f3657c9471eabef15ca6",
+      "status": "unchanged"
+    },
+    {
+      "domain": "ensemble",
+      "role": "ensemble weights and orchestration result contract",
+      "path": "backend/app/schemas/orchestration.py",
+      "baseline_sha256": "024e80127f15c707f1df64dd16b4955c3eb4a13fcc58d93102d221c34ec0aafc",
+      "current_sha256": "024e80127f15c707f1df64dd16b4955c3eb4a13fcc58d93102d221c34ec0aafc",
+      "status": "unchanged"
+    },
+    {
+      "domain": "coordinates",
+      "role": "shared one-based coordinate contract",
+      "path": "backend/app/schemas/coordinates.py",
+      "baseline_sha256": "33d9fb53307dc329f030a5d054bd4b117b1fb363443a0ac6537fe12b77041969",
+      "current_sha256": "33d9fb53307dc329f030a5d054bd4b117b1fb363443a0ac6537fe12b77041969",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "validated scientific runtime dependency lock",
+      "path": "backend/requirements-lreca.lock.txt",
+      "baseline_sha256": "afc5dd1bb0261f1b44d89f78ed7fa6bc90e36166086c515e3aba7320b04ceeec",
+      "current_sha256": "afc5dd1bb0261f1b44d89f78ed7fa6bc90e36166086c515e3aba7320b04ceeec",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "global prediction regression baseline",
+      "path": "backend/tests/fixtures/lreca/global_baseline.json",
+      "baseline_sha256": "59b1cb559ce0d4a3f9e9b0f1a8ac8fb7dd48809fb0f3bdc4da6a1c395c4010eb",
+      "current_sha256": "59b1cb559ce0d4a3f9e9b0f1a8ac8fb7dd48809fb0f3bdc4da6a1c395c4010eb",
+      "status": "unchanged"
+    },
+    {
+      "domain": "lreca",
+      "role": "Grad-CAM and KDE regression baseline",
+      "path": "backend/tests/fixtures/lreca/attribution_baseline.json",
+      "baseline_sha256": "eed48fe3139df63ab567c0070f9e61fbaba71ca489f548cded2a0fe55f85d1ef",
+      "current_sha256": "eed48fe3139df63ab567c0070f9e61fbaba71ca489f548cded2a0fe55f85d1ef",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official export fixture provenance",
+      "path": "backend/tests/fixtures/fuzdrop/README.md",
+      "baseline_sha256": "dc600054d1e11b3206c0add9a5ef07ff7edc83692ecc44fe7d466d0c4819dd18",
+      "current_sha256": "dc600054d1e11b3206c0add9a5ef07ff7edc83692ecc44fe7d466d0c4819dd18",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official region export contract fixture",
+      "path": "backend/tests/fixtures/fuzdrop/synthetic_format_fixture_regions.tsv",
+      "baseline_sha256": "4dfa85ca6920181ace69aaa5c83832bfd2a9b3e7976caee8b5749d1f1c7298eb",
+      "current_sha256": "4dfa85ca6920181ace69aaa5c83832bfd2a9b3e7976caee8b5749d1f1c7298eb",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official residue export contract fixture",
+      "path": "backend/tests/fixtures/fuzdrop/synthetic_format_fixture_scores.tsv",
+      "baseline_sha256": "2af7184a5df25868dafc5468d01870e470d8f6181233df5232a7fb23dc8372c9",
+      "current_sha256": "2af7184a5df25868dafc5468d01870e470d8f6181233df5232a7fb23dc8372c9",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official import policy regression test",
+      "path": "backend/tests/test_fuzdrop_import.py",
+      "baseline_sha256": "3c17dc536b4392c5ae8702b7b16a8893e70bc1906593ee8d5f1bffd8c95cf890",
+      "current_sha256": "3c17dc536b4392c5ae8702b7b16a8893e70bc1906593ee8d5f1bffd8c95cf890",
+      "status": "unchanged"
+    },
+    {
+      "domain": "fuzdrop",
+      "role": "official service boundary regression test",
+      "path": "backend/tests/test_fuzdrop_api.py",
+      "baseline_sha256": "0077957506d1d8164eb15b9a89eca2d5f69a29d43136f934230828eec31e2f66",
+      "current_sha256": "0077957506d1d8164eb15b9a89eca2d5f69a29d43136f934230828eec31e2f66",
+      "status": "unchanged"
+    },
+    {
+      "domain": "dismeta",
+      "role": "unavailable-boundary contract regression test",
+      "path": "backend/tests/test_dismeta_contract.py",
+      "baseline_sha256": "ce0cf69533d032b7e1f5f5b50d966d51d4b9229db0f869109f5f8167252cec00",
+      "current_sha256": "ce0cf69533d032b7e1f5f5b50d966d51d4b9229db0f869109f5f8167252cec00",
+      "status": "unchanged"
+    },
+    {
+      "domain": "dismeta",
+      "role": "scientific source audit evidence",
+      "path": "docs/audit/dismeta/scientific_source_evidence.json",
+      "baseline_sha256": "34246131a13b708f6f2c056109d2e280798195fe15fe213ecb327128e4c1303b",
+      "current_sha256": "34246131a13b708f6f2c056109d2e280798195fe15fe213ecb327128e4c1303b",
+      "status": "unchanged"
+    },
+    {
+      "domain": "ensemble",
+      "role": "weighted formula regression test",
+      "path": "backend/tests/test_ensemble.py",
+      "baseline_sha256": "e6a5aa2dd8caf1e55add771eeae1a87fd2a4af165b0e1b24ad6856c3915fc395",
+      "current_sha256": "e6a5aa2dd8caf1e55add771eeae1a87fd2a4af165b0e1b24ad6856c3915fc395",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/README.md",
+      "baseline_sha256": "32a30575f954b9a7fd842b3b64308c7bd41b49efb017ce98ec9bb5ce1ce2d6f3",
+      "current_sha256": "32a30575f954b9a7fd842b3b64308c7bd41b49efb017ce98ec9bb5ce1ce2d6f3",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/all_low_complexity.interval.txt",
+      "baseline_sha256": "67d836f093b142d62e6f9c2068a4cccccc6100c9edd02ef5cf618533ee25ec7f",
+      "current_sha256": "67d836f093b142d62e6f9c2068a4cccccc6100c9edd02ef5cf618533ee25ec7f",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/c_terminal.interval.txt",
+      "baseline_sha256": "7004391bdf72cf5cb8efadee20a9335fe798ecfc3b0e45e17325f1ebfebc1977",
+      "current_sha256": "7004391bdf72cf5cb8efadee20a9335fe798ecfc3b0e45e17325f1ebfebc1977",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/cases.json",
+      "baseline_sha256": "61462a4a2afc7e86be789ea572e349a1213fe66c0352c343a639982ba42ab158",
+      "current_sha256": "61462a4a2afc7e86be789ea572e349a1213fe66c0352c343a639982ba42ab158",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/help.txt",
+      "baseline_sha256": "2e91b0b40d775d0d7e8239a28a8c2f437fb1d75e0dd61391129d1235a97100a0",
+      "current_sha256": "2e91b0b40d775d0d7e8239a28a8c2f437fb1d75e0dd61391129d1235a97100a0",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/human_positive_real_sequence.interval.txt",
+      "baseline_sha256": "5bcc2494baf2dd7077cb9ce2ea6571e49e914770d22678c2c28cb72e6abc0c5f",
+      "current_sha256": "5bcc2494baf2dd7077cb9ce2ea6571e49e914770d22678c2c28cb72e6abc0c5f",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/mixed_high_complexity.interval.txt",
+      "baseline_sha256": "edba7782c4c4741037dc9139fe2673a9e6fa29f5e406acbf1ecbbd2246e8a008",
+      "current_sha256": "edba7782c4c4741037dc9139fe2673a9e6fa29f5e406acbf1ecbbd2246e8a008",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/multiple_regions.interval.txt",
+      "baseline_sha256": "fab9a9cbea152517e3374eac57acdbb3c085c0b051c12f05b8488f84523bcacc",
+      "current_sha256": "fab9a9cbea152517e3374eac57acdbb3c085c0b051c12f05b8488f84523bcacc",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/n_terminal.interval.txt",
+      "baseline_sha256": "90735ff27a7065fb65548bc8f1e686d49c2b48c0cf0df6e44a2525c836a99b34",
+      "current_sha256": "90735ff27a7065fb65548bc8f1e686d49c2b48c0cf0df6e44a2525c836a99b34",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/short_homopolymer.interval.txt",
+      "baseline_sha256": "edba7782c4c4741037dc9139fe2673a9e6fa29f5e406acbf1ecbbd2246e8a008",
+      "current_sha256": "edba7782c4c4741037dc9139fe2673a9e6fa29f5e406acbf1ecbbd2246e8a008",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/version.txt",
+      "baseline_sha256": "92631534f3faad3e07c04eacf5a91ca3df249bd4252318a7e1d3a09b5caf05cc",
+      "current_sha256": "92631534f3faad3e07c04eacf5a91ca3df249bd4252318a7e1d3a09b5caf05cc",
+      "status": "unchanged"
+    },
+    {
+      "domain": "seg",
+      "role": "SEG parser and coordinate regression fixture",
+      "path": "backend/tests/fixtures/seg/window_homopolymer.interval.txt",
+      "baseline_sha256": "6985c69552a01cf62635f60f11faf61002b0c77eaad419dead0c6b2f5d892bed",
+      "current_sha256": "6985c69552a01cf62635f60f11faf61002b0c77eaad419dead0c6b2f5d892bed",
+      "status": "unchanged"
+    }
+  ],
+  "checks": {
+    "checkpoint_git_tracking": {
+      "status": "pass",
+      "scope": "first-party repository only; external/lreca is an ignored pinned checkout",
+      "checkpoint_filename": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+      "checkpoint_tracked_by_first_party_git": false,
+      "checkpoint_path_ignored_by_first_party_git": true,
+      "first_party_tracked_weight_files": [],
+      "first_party_unignored_weight_files": [],
+      "required_gitignore_rules": [
+        "*.pt",
+        "*.pth",
+        "*.ckpt",
+        "*.safetensors",
+        "external/lreca/"
+      ],
+      "missing_gitignore_rules": []
+    },
+    "external_lreca": {
+      "status": "pass",
+      "checkout": "external/lreca",
+      "expected_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+      "current_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+      "metadata_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+      "metadata_checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+      "working_tree_clean": true,
+      "working_tree_entries": [],
+      "reviewed_source_files": [
+        {
+          "path": "external/lreca/Data/neg_dataset/neg_word_list_human.txt",
+          "expected_sha256": "e793a6eaa512e42ab72dd236cdaf13d20e14c3971def800b3aabc261193da1ea",
+          "current_sha256": "e793a6eaa512e42ab72dd236cdaf13d20e14c3971def800b3aabc261193da1ea",
+          "status": "unchanged"
+        },
+        {
+          "path": "external/lreca/Data/pos_dataset/pos_word_list_human.txt",
+          "expected_sha256": "1e3beca27c80a5fc59c41bbb5cc40f429a0619bd3dcc6172a42dbe85cd90ad32",
+          "current_sha256": "1e3beca27c80a5fc59c41bbb5cc40f429a0619bd3dcc6172a42dbe85cd90ad32",
+          "status": "unchanged"
+        },
+        {
+          "path": "external/lreca/Demo/code_for_model_testing/RCNN_ECA_3_human_test.py",
+          "expected_sha256": "68a5b205d41f26610e08a3b2eccd326d22d74d4083ca7c33f2c64789a7093c4b",
+          "current_sha256": "68a5b205d41f26610e08a3b2eccd326d22d74d4083ca7c33f2c64789a7093c4b",
+          "status": "unchanged"
+        },
+        {
+          "path": "external/lreca/Demo/code_for_model_testing/RCNN_ECA_personal_test.py",
+          "expected_sha256": "abcb72672a69a0758c08c557ca0e886d451a8f9aabf7f5bce92591e526cb7669",
+          "current_sha256": "abcb72672a69a0758c08c557ca0e886d451a8f9aabf7f5bce92591e526cb7669",
+          "status": "unchanged"
+        },
+        {
+          "path": "external/lreca/Demo/code_for_model_testing/RCNN_ECA_saliency/LCRs_process/split_LCRs_segment_forsingle.py",
+          "expected_sha256": "cd51cb2386fc0fbbad5f514788218d0087d3abd39e4dd128050054e98146b090",
+          "current_sha256": "cd51cb2386fc0fbbad5f514788218d0087d3abd39e4dd128050054e98146b090",
+          "status": "unchanged"
+        },
+        {
+          "path": "external/lreca/Demo/code_for_model_testing/RCNN_ECA_saliency/saliency_function/verify/RCNN_ECA_saliency_verify_gradCAM_fortest.py",
+          "expected_sha256": "8645491541fb1cb56382b5b43bb6f704ec42bd0fb41aa32899f39f9fd2993815",
+          "current_sha256": "8645491541fb1cb56382b5b43bb6f704ec42bd0fb41aa32899f39f9fd2993815",
+          "status": "unchanged"
+        }
+      ],
+      "checkpoint": {
+        "filename": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+        "expected_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+        "current_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+        "status": "verified"
+      }
+    },
+    "windows_absolute_paths": {
+      "status": "pass",
+      "scope": "production backend/frontend code, LRECA runtime/service, and deployment assets",
+      "files_scanned": 131,
+      "findings": []
+    }
+  },
+  "generated_outputs": [
+    "docs/audit/module10/scope_review.json",
+    "docs/module10_changed_files.txt"
+  ],
+  "violations": []
+}

@@ -1,0 +1,8 @@
+{
+  "detail": {
+    "code": "INVALID_AMINO_ACID",
+    "message": "Invalid amino acid 'X' at position 4.",
+    "residue": "X",
+    "position": 4
+  }
+}

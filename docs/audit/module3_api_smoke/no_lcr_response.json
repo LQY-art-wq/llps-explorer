@@ -1,0 +1,30 @@
+{
+  "http_status": 200,
+  "body": {
+    "method_id": "seg",
+    "status": "success",
+    "message": null,
+    "method": "seg",
+    "annotation_type": "LCR",
+    "semantic_type": "region_annotation",
+    "implementation": "NCBI segmasker",
+    "version": "2.17.0",
+    "application_version": "1.0.0",
+    "sequence_length": 100,
+    "sequence_sha256": "e137949c134d3d6198328f42cf8b34bcd2fbf7a4c08e2413d9148e82abd30280",
+    "regions": [],
+    "parameters": {
+      "window": 12,
+      "locut": 2.2,
+      "hicut": 2.5,
+      "input_format": "fasta",
+      "output_format": "interval",
+      "parse_seqids": false
+    },
+    "runtime_ms": 40.10259999995469,
+    "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c",
+    "coverage": 0.0,
+    "region_count": 0,
+    "longest_region": 0
+  }
+}

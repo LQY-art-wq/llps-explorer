@@ -1,0 +1,17 @@
+# Portable export; original log: .audit/module2/module2_api_server.log
+INFO:     Started server process [18672]
+INFO:     Waiting for application startup.
+INFO:     LRECA loaded checkpoint=human_1_RCNN_ECA_parallel_089-0.9802.pt configured_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt absolute_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt sha256=aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc size_bytes=2395318 repository_commit=0b4b48ab7870529a34028c6e30dfba42eddbf215 device=cuda:0
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:56684 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56691 - "GET /api/v1/health HTTP/1.1" 200
+INFO:     127.0.0.1:56691 - "GET /api/v1/methods HTTP/1.1" 200
+INFO:     127.0.0.1:56691 - "GET /api/v1/methods/fuzdrop/health HTTP/1.1" 503
+INFO:     127.0.0.1:56691 - "POST /api/v1/methods/fuzdrop/analyze HTTP/1.1" 503
+INFO:     127.0.0.1:56691 - "POST /api/v1/methods/fuzdrop/import HTTP/1.1" 200
+INFO:     127.0.0.1:56691 - "POST /api/v1/methods/fuzdrop/import HTTP/1.1" 422
+INFO:     127.0.0.1:56691 - "POST /api/v1/methods/lreca/analyze HTTP/1.1" 200
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18672]

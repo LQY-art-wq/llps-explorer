@@ -1,0 +1,18 @@
+{
+  "normal_harness_disabled": {
+    "status": 404,
+    "expected": 404,
+    "passed": true,
+    "no_synthetic_fixture_payload": true
+  },
+  "test_harness_enabled": {
+    "status": 200,
+    "expected": 200,
+    "passed": true
+  },
+  "real_backend_health": {
+    "status": 200,
+    "expected": 200,
+    "passed": true
+  }
+}

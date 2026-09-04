@@ -1,0 +1,238 @@
+- link "Skip to analysis results":
+  - /url: "#workspace-main"
+- banner:
+  - link "LLPS Explorer analysis workspace":
+    - /url: "#workspace-main"
+    - strong: LLPS Explorer
+    - generic: Sequence-based Phase Separation Prediction & Interpretation
+  - navigation "Main navigation":
+    - link "Analysis":
+      - /url: "#workspace-main"
+    - button "Examples"
+    - button "Documentation"
+    - button "About"
+  - button "History":
+    - generic: History
+  - button "Switch to dark theme":
+- complementary "Analysis setup":
+  - heading "Analysis setup" [level=2]
+  - region "Input":
+    - heading "Input" [level=3]
+    - generic: Single protein
+    - text: Sequence name
+    - generic: optional
+    - textbox "Sequence name optional":
+      - /placeholder: e.g. Protein of interest
+      - text: human_positive_line_1
+    - text: Protein sequence
+    - generic: FASTA or raw
+    - textbox "Protein sequence FASTA or raw":
+      - /placeholder: ">Protein_name\nPaste your amino-acid sequence here"
+      - text: ">human_positive_line_1 MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT"
+    - button "Paste example":
+      - text: Paste example
+    - button "Clear"
+    - generic "Sequence validation statistics":
+      - text: Length
+      - strong: 248 aa
+      - text: Valid residues
+      - strong: "248"
+      - text: Input type
+      - strong: FASTA
+    - paragraph:
+      - text: Sequence is valid
+  - region "Automatic analysis":
+    - heading "Automatic analysis" [level=3]
+    - button "Refresh method availability":
+    - checkbox "LRECA Human-specific model Automatic" [checked]
+    - generic: LRECA
+    - generic: Human-specific model
+    - generic: Automatic
+    - checkbox "SEG / LCR Low-complexity regions Automatic"
+    - generic: SEG / LCR
+    - generic: Low-complexity regions
+    - generic: Automatic
+  - region "External result":
+    - heading "External result" [level=3]
+    - strong: FuzDrop
+    - generic: Import required
+    - paragraph: Official prediction service
+    - paragraph: Not imported
+    - button "Import FuzDrop result":
+      - text: Import FuzDrop result
+    - link "Open official FuzDrop":
+      - /url: https://fuzdrop.bio.unipd.it/predictor
+      - text: Open official FuzDrop
+  - region "Unavailable":
+    - heading "Unavailable" [level=3]
+    - strong: DisMeta / IDR
+    - generic: Unavailable
+    - paragraph: Intrinsically disordered regions
+    - paragraph: Integration currently unavailable.
+    - button "Analysis unavailable" [disabled]
+  - region "Prediction mode":
+    - heading "Prediction mode" [level=3]
+    - group "Prediction mode":
+      - generic: Prediction mode
+      - radio "Independent" [checked]
+      - text: Independent
+      - radio "Weighted" [disabled]
+      - text: Weighted
+    - paragraph: Import a valid FuzDrop result for this sequence to enable weighted mode.
+  - button "Run analysis":
+    - text: Run analysis
+  - paragraph: Methods run independently. Results retain their provenance.
+- main:
+  - generic: Workspace / Analysis
+  - heading "Analysis workspace" [level=1]
+  - paragraph: Explore sequence-based predictions, evidence, and annotations.
+  - generic: Service connected
+  - generic: RESULTS
+  - strong: human_positive_line_1
+  - generic: Completed
+  - tablist "Analysis result sections":
+    - tab "Overview"
+    - tab "Feature Viewer"
+    - tab "Sequence Viewer"
+    - tab "LRECA" [active] [selected]
+    - tab "FuzDrop"
+    - tab "Annotations"
+    - tab "Tables"
+    - tab "Download"
+  - tabpanel "LRECA":
+    - heading "LRECA" [level=3]
+    - paragraph: Human-specific model
+    - generic: Completed
+    - generic: "1.000"
+    - paragraph: P · Positive
+    - paragraph: Threshold > 0.50
+    - paragraph: Uncalibrated model score
+    - heading "Model & explanation" [level=2]
+    - generic: Human-specific
+    - term: Model variant
+    - definition: human_specific
+    - term: Checkpoint
+    - definition: human_1_RCNN_ECA_parallel_089-0.9802.pt
+    - term: Attribution status
+    - definition: Completed
+    - term: Attribution target
+    - definition: P
+    - paragraph: Grad-CAM attribution explains the model’s selected class. Critical regions are derived from the KDE procedure.
+    - list:
+      - listitem: "UPSTREAM_TERMINAL_RESIDUE_OMITTED: preserved official half-open segmentation with terminal boundary N-1; the last residue is outside all candidate regions."
+    - heading "LRECA Top Residues" [level=3]
+    - generic: 10 rows
+    - table "LRECA Top Residues; positions and region endpoints are 1-based inclusive.":
+      - caption: LRECA Top Residues; positions and region endpoints are 1-based inclusive.
+      - rowgroup:
+        - row "Rank Position Residue Attribution":
+          - columnheader "Rank"
+          - columnheader "Position"
+          - columnheader "Residue"
+          - columnheader "Attribution"
+      - rowgroup:
+        - row "1 Focus residue 106 G 1.0000":
+          - cell "1"
+          - cell "Focus residue 106":
+            - button "Focus residue 106": "106"
+          - cell "G"
+          - cell "1.0000"
+        - row "2 Focus residue 105 G 0.9684":
+          - cell "2"
+          - cell "Focus residue 105":
+            - button "Focus residue 105": "105"
+          - cell "G"
+          - cell "0.9684"
+        - row "3 Focus residue 104 G 0.9183":
+          - cell "3"
+          - cell "Focus residue 104":
+            - button "Focus residue 104": "104"
+          - cell "G"
+          - cell "0.9183"
+        - row "4 Focus residue 103 G 0.8507":
+          - cell "4"
+          - cell "Focus residue 103":
+            - button "Focus residue 103": "103"
+          - cell "G"
+          - cell "0.8507"
+        - row "5 Focus residue 113 G 0.8093":
+          - cell "5"
+          - cell "Focus residue 113":
+            - button "Focus residue 113": "113"
+          - cell "G"
+          - cell "0.8093"
+        - row "6 Focus residue 102 G 0.8015":
+          - cell "6"
+          - cell "Focus residue 102":
+            - button "Focus residue 102": "102"
+          - cell "G"
+          - cell "0.8015"
+        - row "7 Focus residue 62 E 0.7710":
+          - cell "7"
+          - cell "Focus residue 62":
+            - button "Focus residue 62": "62"
+          - cell "E"
+          - cell "0.7710"
+        - row "8 Focus residue 110 G 0.7609":
+          - cell "8"
+          - cell "Focus residue 110":
+            - button "Focus residue 110": "110"
+          - cell "G"
+          - cell "0.7609"
+        - row "9 Focus residue 101 G 0.7341":
+          - cell "9"
+          - cell "Focus residue 101":
+            - button "Focus residue 101": "101"
+          - cell "G"
+          - cell "0.7341"
+        - row "10 Focus residue 248 T 0.7122":
+          - cell "10"
+          - cell "Focus residue 248":
+            - button "Focus residue 248": "248"
+          - cell "T"
+          - cell "0.7122"
+    - heading "LRECA Critical Regions" [level=3]
+    - generic: 5 rows
+    - table "LRECA Critical Regions; positions and region endpoints are 1-based inclusive.":
+      - caption: LRECA Critical Regions; positions and region endpoints are 1-based inclusive.
+      - rowgroup:
+        - row "Region Length (aa) Cumulative KDE score Selection":
+          - columnheader "Region"
+          - columnheader "Length (aa)"
+          - columnheader "Cumulative KDE score"
+          - columnheader "Selection"
+      - rowgroup:
+        - row "1–80 80 31.9116 —":
+          - cell "1–80":
+            - button "1–80"
+          - cell "80"
+          - cell "31.9116"
+          - cell "—"
+        - row "81–127 47 36.1600 Primary":
+          - cell "81–127":
+            - button "81–127"
+          - cell "47"
+          - cell "36.1600"
+          - cell "Primary":
+            - generic: Primary
+        - row "128–188 61 22.0848 —":
+          - cell "128–188":
+            - button "128–188"
+          - cell "61"
+          - cell "22.0848"
+          - cell "—"
+        - row "189–233 45 29.2612 —":
+          - cell "189–233":
+            - button "189–233"
+          - cell "45"
+          - cell "29.2612"
+          - cell "—"
+        - row "234–247 14 11.4703 —":
+          - cell "234–247":
+            - button "234–247"
+          - cell "14"
+          - cell "11.4703"
+          - cell "—"
+  - generic: LLPS Explorer · Sequence-first scientific analysis
+  - generic: "Coordinates: 1-based, inclusive"
+- alert

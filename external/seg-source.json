@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "audited_on": "2026-09-03",
+  "method": "seg",
+  "implementation": "NCBI segmasker",
+  "distribution_version": "2.17.0+",
+  "observed_application_version": "1.0.0",
+  "observed_package_version": "blast 2.17.0",
+  "observed_version_platform": "windows-x64",
+  "official_release_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/",
+  "default_parameters": {
+    "window": 12,
+    "locut": 2.2,
+    "hicut": 2.5
+  },
+  "input_format": "fasta",
+  "output_format": "interval",
+  "stdin_argument": "-",
+  "stdout_argument": "-",
+  "native_coordinates": "zero_based_inclusive",
+  "public_coordinates": "one_based_inclusive",
+  "coordinate_mapping": {
+    "start": "native_start + 1",
+    "end": "native_end + 1",
+    "length": "end - start + 1"
+  },
+  "coordinates_evidence": "Fixed 2.17.0 source ZIP and actual Windows N/C-terminal and whole-sequence interval probes.",
+  "semantic_type": "region_annotation",
+  "llps_prediction": false,
+  "usage_reporting": {
+    "child_environment": {
+      "BLAST_USAGE_REPORT": "false"
+    },
+    "official_documentation": "https://www.ncbi.nlm.nih.gov/books/NBK569851/"
+  },
+  "license": {
+    "notice": "PUBLIC DOMAIN NOTICE / United States Government Work",
+    "preserve_package_notices": true,
+    "files": [
+      "LICENSE",
+      "README",
+      "BLAST_PRIVACY"
+    ],
+    "legal_interpretation": "This records the distributed notice; preserve additional package notices when present."
+  },
+  "platforms": {
+    "windows-x64": {
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-win64.tar.gz",
+      "checksum_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-win64.tar.gz.md5",
+      "archive_filename": "ncbi-blast-2.17.0+-x64-win64.tar.gz",
+      "archive_bytes": 143400333,
+      "official_archive_md5": "dcd973097407a2910061ff4fb51b09fb",
+      "archive_sha256": "ccde8788641e8f4137536aaadedfeac2f3599dbbc6166e701b5d89d19fa79038",
+      "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c",
+      "selected_members": [
+        {
+          "member": "ncbi-blast-2.17.0+/LICENSE",
+          "bytes": 1055,
+          "sha256": "03e41388b1a72f2d0830d9fbce8906183e242cfd381f91f7e5a08bb7be1304ad"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/BLAST_PRIVACY",
+          "bytes": 443,
+          "sha256": "bb428f26dd8ec4f9c463066da5da5ebec2962ca7b400e47f39d20592b67c8bab"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/README",
+          "bytes": 465,
+          "sha256": "93ee79fc880c6908dcb63c90633281d12e26718a4a9a6bbee49b867e9e40bbec"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/doc/README.txt",
+          "bytes": 151,
+          "sha256": "5de9483f4db30c2d1dec839a25d43c2ba977f1a6f2dc7b194a5c05fa12f6f988"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/bin/ncbi-vdb-md.dll",
+          "bytes": 3879936,
+          "sha256": "8aa56408b437224013cad0e48d1f0a5b0bb287bcff32dec0faa295623e31ee5d"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/bin/nghttp2.dll",
+          "bytes": 141312,
+          "sha256": "3b4f8fa83d98cbcf7d74c67cddde615950c85dbea0b937ca425b35dd084d596d"
+        },
+        {
+          "member": "ncbi-blast-2.17.0+/bin/segmasker.exe",
+          "bytes": 10759168,
+          "sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c"
+        }
+      ],
+      "archive_root": "ncbi-blast-2.17.0+",
+      "executable_relative_path": "ncbi-blast-2.17.0+/bin/segmasker.exe",
+      "archive_downloaded": true,
+      "runtime_verified": true,
+      "installation_verified_member_count": 7,
+      "additional_notice_retained_by_setup": "ncbi-blast-2.17.0+/doc/README.txt"
+    },
+    "linux-x64": {
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-linux.tar.gz",
+      "checksum_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-x64-linux.tar.gz.md5",
+      "archive_filename": "ncbi-blast-2.17.0+-x64-linux.tar.gz",
+      "archive_bytes": null,
+      "official_archive_md5": "bdec166721de3b55f90a3badc83538e8",
+      "archive_sha256": null,
+      "executable_sha256": null,
+      "archive_root": "ncbi-blast-2.17.0+",
+      "executable_relative_path": "ncbi-blast-2.17.0+/bin/segmasker",
+      "archive_downloaded": false,
+      "runtime_verified": false,
+      "checksum_observed_at_utc": "2026-09-03T11:08:09.031428+00:00",
+      "checksum_body_sha256": "d0aea78ecb801aab347fb73a2a6d176673a6864c318369a83eb58e5b7a928eb8",
+      "selected_members": null
+    }
+  },
+  "installation": {
+    "helper": "scripts/setup_seg.py",
+    "default_destination": ".tools/seg",
+    "global_path_modified": false,
+    "binary_execution_by_helper": false,
+    "linux_shared_library_dependencies_verified": false
+  },
+  "runtime_documentation": "docs/seg_runtime.md",
+  "fixed_source": {
+    "source_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-src.zip",
+    "archive_bytes": 34012171,
+    "official_archive_md5": "2f22ff35cffa5a29a27a1424d4edb1e9",
+    "archive_sha256": "cdcd9e36f2b581eff9bd8364875a466289253b716d3a8014838a8305a9d11880",
+    "retrieved_at_utc": "2026-09-03T11:08:41.072533+00:00",
+    "selected_files": [
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/algo/blast/core/blast_seg.c",
+        "bytes": 168480,
+        "sha256": "00aa39295f0beae1301c262f844f59f6f71d5796e122d7cd1acbc0c10db89b75"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/algo/segmask/segmask.cpp",
+        "bytes": 3327,
+        "sha256": "f6a562bab4284e8b0bd62c59695310c01e86b2f479604a4f3eed824f1fd7d822"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/app/segmasker/segmasker.cpp",
+        "bytes": 9780,
+        "sha256": "7307e57619767558f49d36b1b771dd538d54c29afd77785aaf04ad9d17358800"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_writer_int.cpp",
+        "bytes": 2082,
+        "sha256": "c5736cf91fa60ca7362e1533ca20e81a314ec5b93215cc67d0f5adf508855963"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_cmdline_args.cpp",
+        "bytes": 2013,
+        "sha256": "f0613575198d3c67bf0c45b64d47b59509e8f088f58c112168457ff4cab7621c"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/src/objtools/seqmasks_io/mask_writer.cpp",
+        "bytes": 2440,
+        "sha256": "26b0abc7ea4782e520487a64f0e4765c7b0d8488e172bbd0f050ec2b15f6fc16"
+      },
+      {
+        "member": "ncbi-blast-2.17.0+-src/c++/scripts/projects/blast/LICENSE",
+        "bytes": 1055,
+        "sha256": "03e41388b1a72f2d0830d9fbce8906183e242cfd381f91f7e5a08bb7be1304ad"
+      }
+    ],
+    "defaults_and_merge_evidence": "blast_seg.c:45-47 defaults; 2236 overlaps=FALSE; 2321-2322 conditional merge",
+    "coordinates_evidence": "segmask.cpp:75-87 offset=0; blast_seg.c:2073 rightend-leftend+1; mask_writer_int.cpp:52 native endpoints",
+    "public_audit": "docs/audit/seg/source_audit.md",
+    "public_manifest": "docs/audit/seg/source_manifest.json"
+  },
+  "distribution": "NCBI BLAST+",
+  "performance_evidence": "docs/audit/seg/performance.json"
+}

@@ -1,0 +1,83 @@
+{
+  "http_status": 200,
+  "body": {
+    "methods": [
+      {
+        "id": "lreca",
+        "name": "LRECA",
+        "display_name": null,
+        "category": "prediction",
+        "available": true,
+        "integration_mode": "local_model",
+        "capabilities": [
+          "global_score",
+          "residue_attribution",
+          "critical_regions"
+        ],
+        "semantic_types": null,
+        "manual_import_available": false,
+        "manual_import_supported": null,
+        "official_site_url": null,
+        "reason": null,
+        "message": null
+      },
+      {
+        "id": "fuzdrop",
+        "name": "FuzDrop",
+        "display_name": null,
+        "category": "prediction",
+        "available": false,
+        "integration_mode": "browser_protected",
+        "capabilities": [
+          "global_score",
+          "residue_propensity",
+          "regions"
+        ],
+        "semantic_types": null,
+        "manual_import_available": true,
+        "manual_import_supported": null,
+        "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+        "reason": "official_service_requires_browser_verification",
+        "message": "The official FuzDrop service requires browser verification. Automatic prediction is unavailable. Official results can be imported manually."
+      },
+      {
+        "id": "seg",
+        "name": "SEG",
+        "display_name": "Low-complexity Regions (LCR)",
+        "category": "annotation",
+        "available": true,
+        "integration_mode": "local_executable",
+        "capabilities": [
+          "regions"
+        ],
+        "semantic_types": [
+          "region_annotation"
+        ],
+        "manual_import_available": false,
+        "manual_import_supported": null,
+        "official_site_url": null,
+        "reason": null,
+        "message": "SEG low-complexity region annotation is available."
+      },
+      {
+        "id": "dismeta",
+        "name": "DisMeta",
+        "display_name": "Intrinsically Disordered Regions (IDR)",
+        "category": "annotation",
+        "available": false,
+        "integration_mode": "unknown",
+        "capabilities": [
+          "regions"
+        ],
+        "semantic_types": [
+          "region_annotation"
+        ],
+        "manual_import_available": false,
+        "manual_import_supported": false,
+        "official_site_url": "https://montelionelab.chem.rpi.edu/dismeta/",
+        "reason": "integration_contract_unverified",
+        "message": "DisMeta integration is blocked until a supported invocation and result contract is verified."
+      }
+    ]
+  }
+}

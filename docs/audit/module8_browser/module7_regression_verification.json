@@ -1,0 +1,780 @@
+{
+  "recorded_at_utc": "2026-09-03T17:03:24.205644+00:00",
+  "module": 8,
+  "status": "passed",
+  "baseline_file": "docs/audit/module7_browser/browser_verification.json",
+  "baseline_sha256": "207028539abbadd3b6684094a1b31d4db823bf8c7f4eaf384dff4ddb8789bf24",
+  "baseline_preserved": true,
+  "historical_assertion_code_reexecuted": false,
+  "method": "Re-executed the 28 browser acceptance behaviors with Computer Use in the current Module 8 production build. This file is a formatted record of observed UI checks, not a browser automation script.",
+  "check_count": 28,
+  "passed_count": 28,
+  "failed_count": 0,
+  "checks": [
+    {
+      "index": 1,
+      "passed": true,
+      "evidence": {
+        "domain": [
+          "1",
+          "248"
+        ],
+        "job_id": "analysis_jw0X0JFvXAwaIeswtIBee2qTj7wRYXKI",
+        "no_idr_track": true,
+        "tracks": "lreca-attribution lreca-kde lreca-critical"
+      },
+      "baseline_name": "A real LRECA has three tracks and no IDR",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 2,
+      "passed": true,
+      "evidence": {
+        "job_id": "analysis_xgzixt4X1YvRaX6FX1GoBGprZjMcHGwE",
+        "domain": [
+          "81",
+          "131"
+        ],
+        "selection": "Selected residue: 106 (G)",
+        "tooltip": "RESIDUE INSPECTORPosition 106GView in SequenceClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable"
+      },
+      "baseline_name": "LRECA top-residue table focuses position 106/G and preserves attribution",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 3,
+      "passed": true,
+      "evidence": {
+        "domain": [
+          "81",
+          "131"
+        ],
+        "selection": "Selected residue: 106 (G)"
+      },
+      "baseline_name": "Tabs preserve zoom and selected residue",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 4,
+      "passed": true,
+      "evidence": {
+        "atFirst": {
+          "aa": "M",
+          "left": 553.6000366210938,
+          "marker": 556.0875244140625,
+          "position": "1"
+        },
+        "atLast": {
+          "aa": "T",
+          "critical": "no",
+          "marker": 1789.9000244140625,
+          "position": "248",
+          "right": 1792.4000854492188
+        }
+      },
+      "baseline_name": "First and last residue keyboard cursor, AA and fixed marker; native terminal omission kept",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 5,
+      "passed": true,
+      "evidence": {
+        "before": {
+          "domain": [
+            "81",
+            "131"
+          ],
+          "residue": 106
+        },
+        "domain": [
+          "1",
+          "248"
+        ],
+        "job_id": "analysis_JRTO0NEQ2aKg37IzBP22gRrsrIHt5qr5",
+        "marker_count": 0,
+        "selection": "No fixed selection",
+        "tracks": "seg-regions"
+      },
+      "baseline_name": "B real SEG only; new analysis resets zoom/selection",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 6,
+      "passed": true,
+      "evidence": {
+        "details": "Low-complexity regionMethodSEGRegion typeLow-complexity regionStart89End119Length31 aaView in Sequence",
+        "domain": [
+          "69",
+          "139"
+        ]
+      },
+      "baseline_name": "SEG table region 89–119 stays inclusive, length31 and focuses with margin20",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 7,
+      "passed": true,
+      "evidence": {
+        "job_id": "analysis_xgzixt4X1YvRaX6FX1GoBGprZjMcHGwE",
+        "tracks": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "dismeta_outside_plot": "Unavailable"
+      },
+      "baseline_name": "C/F real LRECA+SEG, four tracks, DisMeta unavailable outside plot",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 8,
+      "passed": true,
+      "evidence": {
+        "before_draws": "5",
+        "cursor": "106",
+        "cursorCount": 1,
+        "draws": "5",
+        "selection": "Selected residue: 106 (G)",
+        "tooltip": "RESIDUE INSPECTORPosition 106GView in SequenceClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable"
+      },
+      "baseline_name": "Mouse select residue106 uses one shared cursor without static repaint",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 9,
+      "passed": true,
+      "evidence": {
+        "end": 169,
+        "pageScrollWidth": 1425,
+        "plotEnd": "169",
+        "plotStart": "79",
+        "scrollY": 0,
+        "start": 79,
+        "width": 1440
+      },
+      "baseline_name": "Wheel zoom updates all tracks through one domain with no page horizontal scroll",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 10,
+      "passed": true,
+      "evidence": {
+        "before": {
+          "end": 169,
+          "pageScrollWidth": 1425,
+          "plotEnd": "169",
+          "plotStart": "79",
+          "scrollY": 0,
+          "start": 79,
+          "width": 1440
+        },
+        "after": {
+          "end": 158,
+          "selected": "106",
+          "start": 68
+        }
+      },
+      "baseline_name": "Drag pan preserves shared span",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 11,
+      "passed": true,
+      "evidence": {
+        "input_points": [
+          [
+            755,
+            614
+          ],
+          [
+            962,
+            614
+          ]
+        ],
+        "target_residue_centers": [
+          63,
+          125
+        ],
+        "end": 125,
+        "start": 63
+      },
+      "baseline_name": "Brush selects inclusive domain near quarter to half sequence",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 12,
+      "passed": true,
+      "evidence": {
+        "coordinateVisible": true,
+        "end": 124,
+        "selected": "106",
+        "start": 63,
+        "tracks": "lreca-attribution lreca-critical seg-regions",
+        "note": "Visibility was checked after the earlier fractional brush gave 63–124 due to integer pointer pixels; the explicit residue-center brush was separately repeated as check 11."
+      },
+      "baseline_name": "Track visibility only removes visual tracks; coordinate and selection remain",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 13,
+      "passed": true,
+      "evidence": {
+        "physical_mouse": true,
+        "details": "Primary hotspotMethodLRECARegion typePrimary hotspotStart81End127Length47 aaCumulative KDE score36.160Backend selectionPrimary hotspotView in Sequence",
+        "domain": [
+          "61",
+          "147"
+        ]
+      },
+      "baseline_name": "Native primary hotspot mouse click and exact interval focus",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 14,
+      "passed": true,
+      "evidence": {
+        "viewports": [
+          {
+            "domain": [
+              "81",
+              "131"
+            ],
+            "labels": [
+              {
+                "id": "protein-coordinate",
+                "right": 544.8000030517578,
+                "top": 0
+              },
+              {
+                "id": "lreca-attribution",
+                "right": 544.8000030517578,
+                "top": 38
+              },
+              {
+                "id": "lreca-kde",
+                "right": 544.8000030517578,
+                "top": 134
+              },
+              {
+                "id": "lreca-critical",
+                "right": 544.8000030517578,
+                "top": 230
+              },
+              {
+                "id": "seg-regions",
+                "right": 544.8000030517578,
+                "top": 280
+              }
+            ],
+            "pageScrollWidth": 1425,
+            "panelWidth": 1048.800048828125,
+            "plot": {
+              "left": 545.6000366210938,
+              "right": 1375.2000732421875,
+              "width": 829.6000366210938
+            },
+            "tooltipWidth": 1007.2000122070312,
+            "width": 1440
+          },
+          {
+            "domain": [
+              "81",
+              "131"
+            ],
+            "labels": [
+              {
+                "id": "protein-coordinate",
+                "right": 544.8000030517578,
+                "top": 0
+              },
+              {
+                "id": "lreca-attribution",
+                "right": 544.8000030517578,
+                "top": 38
+              },
+              {
+                "id": "lreca-kde",
+                "right": 544.8000030517578,
+                "top": 134
+              },
+              {
+                "id": "lreca-critical",
+                "right": 544.8000030517578,
+                "top": 230
+              },
+              {
+                "id": "seg-regions",
+                "right": 544.8000030517578,
+                "top": 280
+              }
+            ],
+            "pageScrollWidth": 1265,
+            "panelWidth": 888.7999877929688,
+            "plot": {
+              "left": 545.6000366210938,
+              "right": 1215.2000732421875,
+              "width": 669.6000366210938
+            },
+            "tooltipWidth": 847.2000122070312,
+            "width": 1280
+          },
+          {
+            "domain": [
+              "81",
+              "131"
+            ],
+            "labels": [
+              {
+                "id": "protein-coordinate",
+                "right": 224.79999923706055,
+                "top": 0
+              },
+              {
+                "id": "lreca-attribution",
+                "right": 224.79999923706055,
+                "top": 38
+              },
+              {
+                "id": "lreca-kde",
+                "right": 224.79999923706055,
+                "top": 134
+              },
+              {
+                "id": "lreca-critical",
+                "right": 224.79999923706055,
+                "top": 230
+              },
+              {
+                "id": "seg-regions",
+                "right": 224.79999923706055,
+                "top": 280
+              }
+            ],
+            "pageScrollWidth": 1009,
+            "panelWidth": 952.7999877929688,
+            "plot": {
+              "left": 225.6000061035156,
+              "right": 959.2000427246094,
+              "width": 733.6000366210938
+            },
+            "tooltipWidth": 911.2000122070312,
+            "width": 1024
+          }
+        ],
+        "screenshots_inspected": true
+      },
+      "baseline_name": "1440/1280/1024 responsive plot, labels and unobscured docked tooltip",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 15,
+      "passed": true,
+      "evidence": {
+        "job_id": "analysis_-GuUfgG-Fs66lsFqz9r6kt3WJs4StncQ",
+        "synthetic_badge_visible": true,
+        "position": 45,
+        "aa": "I",
+        "pDP": 0.1,
+        "overlap_regions": [
+          "30–45",
+          "45–60"
+        ],
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "fuzdrop-propensity",
+          "fuzdrop-regions",
+          "seg-regions"
+        ]
+      },
+      "baseline_name": "D explicit synthetic import validated by real backend, pDP and overlapping inclusive regions shown",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 16,
+      "passed": true,
+      "evidence": {
+        "physical_mouse": true,
+        "details": "Droplet-promoting region\nMethod\nFUZDROP\nRegion type\nDroplet-promoting region\nStart\n30\nEnd\n45\nLength\n16 aa\nView in Sequence",
+        "domain": [
+          "10",
+          "65"
+        ]
+      },
+      "baseline_name": "FuzDrop native region mouse selection preserves method/type/start/end without attribution label",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 17,
+      "passed": true,
+      "evidence": {
+        "job_id": "analysis_oN1wotSFZlnShUNCgK8mJAZg4fFbTAME",
+        "synthetic_badge_visible": true,
+        "tracks": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "tooltip": "RESIDUE INSPECTOR\nPosition\n45\nI\nView in Sequence\nClear selection\nLRECA Attribution\n0.630\nLRECA KDE\n0.476\nLRECA hotspots\nYes\nCandidate hotspot 1–80 (80 aa)\nFuzDrop pDP\nN/A\nFuzDrop regions\nN/A\nLCR — SEG\nNo\nIDR — DisMeta\nUnavailable",
+        "sequence_fuzdrop_modes": "disabled — N/A"
+      },
+      "baseline_name": "E global-only validated import has no FuzDrop residue/region plot; N/A differs from No and Unavailable",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 18,
+      "passed": true,
+      "evidence": {
+        "timing_scope": "component mount or handler to React commit; canvas execution separate",
+        "measurements": [
+          {
+            "length": 100,
+            "static_draws_before_hover": "3",
+            "canvasCount": 1,
+            "domain": [
+              "1",
+              "100"
+            ],
+            "draws": "3",
+            "firstCanvasMs": "1.5",
+            "lastCanvasMs": "0.4000000059604645",
+            "metrics": [
+              {
+                "profileCount": "1",
+                "profileKind": "initial_render",
+                "profileMaxMs": "2.3000000044703484",
+                "profileMedianMs": "2.3000000044703484",
+                "profileP95Ms": "2.3000000044703484"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "zoom",
+                "profileMaxMs": "1.6000000014901161",
+                "profileMedianMs": "1.199999999254942",
+                "profileP95Ms": "1.6000000014901161"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "hover",
+                "profileMaxMs": "3.399999998509884",
+                "profileMedianMs": "3.099999997764826",
+                "profileP95Ms": "3.399999998509884"
+              }
+            ],
+            "nodes": 226
+          },
+          {
+            "length": 500,
+            "static_draws_before_hover": "3",
+            "canvasCount": 1,
+            "domain": [
+              "1",
+              "500"
+            ],
+            "draws": "3",
+            "firstCanvasMs": "1",
+            "lastCanvasMs": "0.7999999970197678",
+            "metrics": [
+              {
+                "profileCount": "1",
+                "profileKind": "initial_render",
+                "profileMaxMs": "1.4000000059604645",
+                "profileMedianMs": "1.4000000059604645",
+                "profileP95Ms": "1.4000000059604645"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "zoom",
+                "profileMaxMs": "1.5",
+                "profileMedianMs": "1.25",
+                "profileP95Ms": "1.5"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "hover",
+                "profileMaxMs": "2.6999999955296516",
+                "profileMedianMs": "2.599999997764826",
+                "profileP95Ms": "2.6999999955296516"
+              }
+            ],
+            "nodes": 226
+          },
+          {
+            "length": 1000,
+            "static_draws_before_hover": "3",
+            "canvasCount": 1,
+            "domain": [
+              "1",
+              "1000"
+            ],
+            "draws": "3",
+            "firstCanvasMs": "1.1999999955296516",
+            "lastCanvasMs": "1.6999999955296516",
+            "metrics": [
+              {
+                "profileCount": "1",
+                "profileKind": "initial_render",
+                "profileMaxMs": "2.399999998509884",
+                "profileMedianMs": "2.399999998509884",
+                "profileP95Ms": "2.399999998509884"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "zoom",
+                "profileMaxMs": "1.2000000029802322",
+                "profileMedianMs": "1.050000000745058",
+                "profileP95Ms": "1.2000000029802322"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "hover",
+                "profileMaxMs": "3.2000000029802322",
+                "profileMedianMs": "2.800000000745058",
+                "profileP95Ms": "3.2000000029802322"
+              }
+            ],
+            "nodes": 226
+          },
+          {
+            "length": 2000,
+            "static_draws_before_hover": "3",
+            "canvasCount": 1,
+            "domain": [
+              "1",
+              "2000"
+            ],
+            "draws": "3",
+            "firstCanvasMs": "2.2000000029802322",
+            "lastCanvasMs": "1.3999999985098839",
+            "metrics": [
+              {
+                "profileCount": "1",
+                "profileKind": "initial_render",
+                "profileMaxMs": "2.2999999970197678",
+                "profileMedianMs": "2.2999999970197678",
+                "profileP95Ms": "2.2999999970197678"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "zoom",
+                "profileMaxMs": "1.5",
+                "profileMedianMs": "1.2000000029802322",
+                "profileP95Ms": "1.5"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "hover",
+                "profileMaxMs": "3.2999999970197678",
+                "profileMedianMs": "2.949999999254942",
+                "profileP95Ms": "3.2999999970197678"
+              }
+            ],
+            "nodes": 226
+          },
+          {
+            "length": 5000,
+            "static_draws_before_hover": "3",
+            "canvasCount": 1,
+            "domain": [
+              "1",
+              "5000"
+            ],
+            "draws": "3",
+            "firstCanvasMs": "4.100000001490116",
+            "lastCanvasMs": "4.700000002980232",
+            "metrics": [
+              {
+                "profileCount": "1",
+                "profileKind": "initial_render",
+                "profileMaxMs": "2.100000001490116",
+                "profileMedianMs": "2.100000001490116",
+                "profileP95Ms": "2.100000001490116"
+              },
+              {
+                "profileCount": "2",
+                "profileKind": "zoom",
+                "profileMaxMs": "1.1000000014901161",
+                "profileMedianMs": "1.050000000745058",
+                "profileP95Ms": "1.1000000014901161"
+              },
+              {
+                "profileCount": "3",
+                "profileKind": "hover",
+                "profileMaxMs": "3.600000001490116",
+                "profileMedianMs": "2.399999998509884",
+                "profileP95Ms": "3.600000001490116"
+              }
+            ],
+            "nodes": 226
+          }
+        ]
+      },
+      "baseline_name": "Five lengths render with one Canvas, bounded DOM and measured application execution; hover does not redraw static tracks",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 19,
+      "passed": true,
+      "evidence": {
+        "physical_mouse": true,
+        "firstRegion": {
+          "details": "Candidate hotspotMethodLRECARegion typeCandidate hotspotStart1End1Length1 aaCumulative KDE score0.100Backend selectionCandidate hotspot",
+          "domain": [
+            "1",
+            "21"
+          ]
+        },
+        "lastRegion": {
+          "details": "Aggregation hot-spotMethodFUZDROPRegion typeAggregation hot-spotStart5000End5000Length1 aa",
+          "domain": [
+            "4980",
+            "5000"
+          ]
+        }
+      },
+      "baseline_name": "5000 aa first1–1 and last5000–5000 native bars are clickable with clamped margins",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 20,
+      "passed": true,
+      "evidence": {
+        "physical_mouse": true,
+        "details": "Low-complexity region\nMethod\nSEG\nRegion type\nLow-complexity region\nStart\n5000\nEnd\n5000\nLength\n1 aa"
+      },
+      "baseline_name": "SEG terminal region mouse click preserves annotation semantics",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 21,
+      "passed": true,
+      "evidence": {
+        "dismeta": "IDR — DisMeta · Unavailable",
+        "domain": [
+          "1",
+          "5000"
+        ],
+        "id": "analysis_synthetic_render_malformed_fuzdrop_residue_5000_7",
+        "issue": "Invalid FuzDrop Residue Propensity track.",
+        "selection": "No fixed selection",
+        "tracks": "lreca-attribution lreca-kde lreca-critical fuzdrop-regions seg-regions"
+      },
+      "baseline_name": "Malformed optional FuzDrop pDP is isolated; five other tracks remain and new analysis resets state",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 22,
+      "passed": true,
+      "evidence": {
+        "aa": "A",
+        "domain": [
+          "1",
+          "1"
+        ],
+        "position": "1",
+        "selection": "1"
+      },
+      "baseline_name": "Single-residue domain1–1 renders and remains keyboard-selectable",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 23,
+      "passed": true,
+      "evidence": {
+        "previous_id": "analysis_synthetic_render_mixed_5000_8",
+        "domain": [
+          "1",
+          "5000"
+        ],
+        "id": "analysis_synthetic_render_mixed_5000_9",
+        "markerCount": 0,
+        "selection": "No fixed selection"
+      },
+      "baseline_name": "Explicit new analysis resets one-cell zoom and fixed marker",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 24,
+      "passed": true,
+      "evidence": {
+        "applicationTimingTable": true,
+        "canvasMs": "0.6000000014901161",
+        "notes": true,
+        "pdp": "FuzDrop pDPN/A",
+        "pdpStatus": "not_provided",
+        "position": "97"
+      },
+      "baseline_name": "Final build uses commit-timing labels; missing native pDP at97 is N/A",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 25,
+      "passed": true,
+      "evidence": {
+        "checked": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "open": true
+      },
+      "baseline_name": "Track menu and visibility toggle work from keyboard",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 26,
+      "passed": true,
+      "evidence": {
+        "job_id": "analysis_xgzixt4X1YvRaX6FX1GoBGprZjMcHGwE",
+        "normal_profile": true,
+        "synthetic_badge_count": 0,
+        "selected_residue": 106,
+        "aa": "G",
+        "lreca_attribution": 1,
+        "tooltip": "RESIDUE INSPECTORPosition 106GView in SequenceClear selectionLRECA Attribution1.000LRECA KDE1.247LRECA hotspotsYesPrimary hotspot 81–127 (47 aa)FuzDrop pDPNot importedFuzDrop regionsNot importedLCR — SEGYesLow-complexity region 89–119 (31 aa)IDR — DisMetaUnavailable",
+        "screenshot_inspected": true
+      },
+      "baseline_name": "Final normal production build re-runs real LRECA+SEG with no synthetic banner and correct shared106G tooltip",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 27,
+      "passed": true,
+      "evidence": {
+        "background": "#172335",
+        "domain": [
+          "81",
+          "131"
+        ],
+        "draws": "26",
+        "selected": "106",
+        "theme": "dark",
+        "screenshot_inspected": true
+      },
+      "baseline_name": "Canvas follows dark theme tokens while preserving selected residue",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    },
+    {
+      "index": 28,
+      "passed": true,
+      "evidence": {
+        "normal_workspace_warning_errors": [],
+        "synthetic_workspace_warning_errors": [],
+        "feature_harness_warning_errors": []
+      },
+      "baseline_name": "Final normal page console has no application error/warning",
+      "verification": "Current Module 8 browser interaction; observed state and screenshot inspection where noted."
+    }
+  ],
+  "notes": [
+    "Main four-track interactions used the normal-profile real LRECA+SEG case B. D/E and synthetic rendering tests used only the explicit test environment.",
+    "The browser connection ended during test-tab cleanup. Completed observations were preserved. The in-app browser then rechecked LRECA-only and SEG-only session reset and displayed the final real combined result.",
+    "The first/last marker pixel check used the original 1848px content viewport before the prescribed 1440/1280/1024 responsive checks.",
+    "Feature timings use very small samples and measure application commit or synchronous Canvas execution, not screen paint or scientific inference.",
+    "No data were read from private browser internals or injected into application state."
+  ]
+}

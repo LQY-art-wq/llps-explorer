@@ -1,0 +1,41 @@
+{
+  "snapshot_files": 226,
+  "changed_files": 77,
+  "counts": {
+    "A": 61,
+    "M": 16,
+    "D": 0
+  },
+  "protected_prior_files_checked": 210,
+  "protected_prior_files_sha256_unchanged": true,
+  "lreca_scientific_runtime_and_all_tests_unchanged": true,
+  "fuzdrop_native_parser_schema_fixtures_unchanged": true,
+  "seg_adapter_process_parser_schema_fixtures_unchanged": true,
+  "dismeta_adapter_native_schema_contract_tests_unchanged": true,
+  "all_prior_test_functions_retained": true,
+  "only_seven_prior_test_functions_changed": {
+    "backend/tests/test_dismeta_api.py": [
+      "test_general_health_still_uses_only_lreca_readiness",
+      "test_health_analyze_and_methods_preserve_audited_blocked_mode_and_other_lifecycles"
+    ],
+    "backend/tests/test_fuzdrop_api.py": [
+      "test_api_health_analyze_and_catalog_distinguish_automatic_and_manual_availability",
+      "test_fuzdrop_failures_are_isolated_from_lreca_and_do_not_expose_internal_details",
+      "test_methods_remains_available_if_local_lreca_model_is_unavailable"
+    ],
+    "backend/tests/test_module0.py": [
+      "test_health_is_liveness_only_and_only_authorized_analysis_endpoints_exist"
+    ],
+    "backend/tests/test_seg_api.py": [
+      "test_methods_reports_seg_readiness_and_does_not_change_lreca_liveness_semantics"
+    ]
+  },
+  "prior_test_diff_review": "Only catalog availability/mode/support, API version/module and new authorized route assertions changed; native behavior and science assertions preserved.",
+  "dependency_locks_frontend_and_prior_reports_unchanged": true,
+  "checkpoint_weights_tracked": false,
+  "git_index_modified_by_this_module": false,
+  "changed_public_files_have_no_windows_absolute_paths": true,
+  "no_binary_artifacts_in_first_party_delta": true,
+  "whitespace_check": "passed",
+  "exact_diff": ".audit/module5_exact.diff"
+}

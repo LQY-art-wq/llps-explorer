@@ -1,0 +1,80 @@
+# Module 7 changes relative to the frozen 373-file Module 6 snapshot.
+# Total 72: added=62, modified=10, deleted=0.
+# Protected prior files checked: 342; unchanged=true.
+# Scope: frontend, README/architecture, Module 7 docs/evidence; no backend changes.
+# Existing backend/science/tests/dependency locks, external manifests, old reports/audits and prior scripts are protected.
+# Model weights, upstream checkout, local binaries/environments/dependencies and private audit are excluded.
+# A = added; M = modified since Module 6; D = deleted. Counts include this list and its scope report.
+
+M	README.md
+M	docs/architecture.md
+A	docs/audit/module7_browser/A_lreca_1440.jpg
+A	docs/audit/module7_browser/B_seg_1440.jpg
+A	docs/audit/module7_browser/C_combined_1024.jpg
+A	docs/audit/module7_browser/C_combined_1280.jpg
+A	docs/audit/module7_browser/C_combined_1440.jpg
+A	docs/audit/module7_browser/C_dark_1440.jpg
+A	docs/audit/module7_browser/C_final_build_1440.jpg
+A	docs/audit/module7_browser/D_import_badge.jpg
+A	docs/audit/module7_browser/D_synthetic_six_tracks_1440.jpg
+A	docs/audit/module7_browser/E_global_only_no_fuzdrop_tracks.jpg
+A	docs/audit/module7_browser/J_5000_last_region.jpg
+A	docs/audit/module7_browser/api/A_job.json
+A	docs/audit/module7_browser/api/B_job.json
+A	docs/audit/module7_browser/api/C_final_job.json
+A	docs/audit/module7_browser/api/C_job.json
+A	docs/audit/module7_browser/api/D_job.json
+A	docs/audit/module7_browser/api/E_job.json
+A	docs/audit/module7_browser/api/final_health.json
+A	docs/audit/module7_browser/api/health.json
+A	docs/audit/module7_browser/api/real_result_verification.json
+A	docs/audit/module7_browser/background_throttling_observation.json
+A	docs/audit/module7_browser/browser_verification.json
+A	docs/audit/module7_browser/client_privacy.json
+A	docs/audit/module7_browser/final_readiness.json
+A	docs/audit/module7_browser/fixtures/README.md
+A	docs/audit/module7_browser/fixtures/fixture_manifest.json
+A	docs/audit/module7_browser/fixtures/human_positive_line_1.fasta
+A	docs/audit/module7_browser/fixtures/synthetic_fuzdrop_global_only_248aa.json
+A	docs/audit/module7_browser/fixtures/synthetic_fuzdrop_import_248aa.json
+A	docs/audit/module7_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv
+A	docs/audit/module7_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv
+A	docs/audit/module7_browser/malformed_track_isolation.jpg
+A	docs/audit/module7_browser/performance_100.jpg
+A	docs/audit/module7_browser/performance_1000.jpg
+A	docs/audit/module7_browser/performance_2000.jpg
+A	docs/audit/module7_browser/performance_500.jpg
+A	docs/audit/module7_browser/performance_5000.jpg
+A	docs/audit/module7_browser/route_guards.json
+A	docs/audit/module7_checks/build.log
+A	docs/audit/module7_checks/lint.log
+A	docs/audit/module7_checks/peer_dependencies.log
+A	docs/audit/module7_checks/summary.json
+A	docs/audit/module7_checks/typecheck.log
+A	docs/audit/module7_checks/unit.log
+A	docs/audit/module7_scope_review.json
+A	docs/module7_changed_files.txt
+A	docs/module7_commands.md
+A	docs/module7_report.md
+M	frontend/.env.example
+M	frontend/package.json
+A	frontend/src/app/dev/feature-viewer/page.tsx
+M	frontend/src/app/globals.css
+M	frontend/src/app/page.tsx
+A	frontend/src/components/feature-plot.tsx
+A	frontend/src/components/feature-viewer-fixture.tsx
+M	frontend/src/components/fuzdrop-import-dialog.tsx
+A	frontend/src/components/protein-feature-viewer.tsx
+M	frontend/src/components/results.tsx
+M	frontend/src/components/workspace.tsx
+A	frontend/src/lib/feature-coordinates.ts
+A	frontend/src/lib/feature-plot-renderer.ts
+A	frontend/src/lib/feature-test-fixtures.ts
+A	frontend/src/lib/feature-view-state.ts
+A	frontend/src/lib/feature-viewer-model.ts
+M	frontend/src/lib/viewer-data.ts
+A	frontend/tests/feature-coordinates.test.ts
+A	frontend/tests/feature-harness.test.ts
+A	frontend/tests/feature-integration-contract.test.ts
+A	frontend/tests/feature-view-state.test.ts
+A	frontend/tests/feature-viewer-model.test.ts

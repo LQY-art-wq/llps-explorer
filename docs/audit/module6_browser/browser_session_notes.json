@@ -1,0 +1,261 @@
+{
+  "initial_checks": [
+    {
+      "name": "D: FuzDrop without import keeps weighted disabled",
+      "passed": true,
+      "details": "Valid 248-aa input; no use-import toggle exists",
+      "at": "2026-09-03T13:06:59.367Z"
+    },
+    {
+      "name": "G: DisMeta cannot be selected or run",
+      "passed": true,
+      "details": "Visible neutral unavailable card and disabled action",
+      "at": "2026-09-03T13:06:59.398Z"
+    },
+    {
+      "name": "Clear then FASTA repopulates sequence name",
+      "passed": true,
+      "details": "Header extraction remains automatic after Clear",
+      "at": "2026-09-03T13:07:13.538Z"
+    },
+    {
+      "name": "Invalid X is reported at 1-based position 136",
+      "passed": true,
+      "details": "No silent replacement; 247 valid residues out of 248",
+      "at": "2026-09-03T13:07:24.739Z"
+    },
+    {
+      "name": "1024 drawer keyboard wraps focus",
+      "passed": true,
+      "details": "Shift+Tab from drawer close wraps to Run analysis",
+      "at": "2026-09-03T13:11:25.177Z"
+    },
+    {
+      "name": "1024 drawer closes with Escape and restores focus",
+      "passed": true,
+      "details": "Focus returns to setup trigger",
+      "at": "2026-09-03T13:11:25.229Z"
+    },
+    {
+      "name": "A: real LRECA-only analysis completes",
+      "passed": true,
+      "details": {
+        "job_id": "analysis_W8l-lBcO6Z_1ny4fL0Kbp9HNtDPNTUKe",
+        "methods": [
+          "lreca"
+        ],
+        "sequence_length": 248
+      },
+      "at": "2026-09-03T13:17:37.101Z"
+    },
+    {
+      "name": "Table-to-viewer selection interface",
+      "passed": true,
+      "details": "Real LRECA residue 106 reaches the sequence placeholder; no full viewer",
+      "at": "2026-09-03T13:18:03.495Z"
+    },
+    {
+      "name": "No selected runnable methods disables Run",
+      "passed": true,
+      "details": "Neither automatic method selected; FuzDrop absent; DisMeta does not count",
+      "at": "2026-09-03T13:18:06.493Z"
+    },
+    {
+      "name": "B: SEG-only returns annotation without prediction labels",
+      "passed": true,
+      "details": {
+        "job_id": "analysis_EkIcjZMi2a3_0HQUWJUnwBWbJBMlOmJU",
+        "methods": [
+          "seg"
+        ],
+        "regions": 3,
+        "longest_region": 52
+      },
+      "at": "2026-09-03T13:18:45.191Z"
+    },
+    {
+      "name": "SEG native 1-based regions are preserved",
+      "passed": true,
+      "details": "Low-complexity Regions\n\nSEG · sequence annotation\n\nCompleted\nLCR coverage\n39.11%\nRegion count\n3\nLongest region\n52 aa\nSEG LCR Regions\n3 rows\nSEG LCR Regions; positions and region endpoints are 1-based inclusive.\nRegion\tLength (aa)\n72–85\t14\n89–119\t31\n196–247\t52\nIntrinsically Disordered Regions\n\nDisMeta · IDR annotation\n\nUnavailable\n\nDisMeta integration is currently unavailable.",
+      "at": "2026-09-03T13:18:45.486Z"
+    }
+  ],
+  "findings": [
+    {
+      "issue": "Import dialog Shift+Tab escaped the modal",
+      "fix": "Explicit Tab boundary handling for native dialogs",
+      "verified": "Both directions and Escape focus restoration passed on final production build"
+    }
+  ],
+  "final": {
+    "recorded_at": "2026-09-03T13:50:32.612Z",
+    "final_build_job_id": "analysis_tRYo-7oQ700mgapMo14TEjGzMW7F4paU",
+    "viewport_checks": [
+      {
+        "requested_width": 1440,
+        "requested_height": 900,
+        "client_width": 1425,
+        "main_scroll_width": 1105,
+        "main_width": 1105,
+        "scroll_width": 1425,
+        "sidebar_width": 320,
+        "screenshot": "1440_final.jpg",
+        "horizontal_overflow": false
+      },
+      {
+        "requested_width": 1280,
+        "requested_height": 900,
+        "client_width": 1265,
+        "inner_width": 1280,
+        "main_scroll_width": 945,
+        "main_width": 945,
+        "scroll_width": 1265,
+        "sidebar_width": 320,
+        "screenshot": "1280_final.jpg",
+        "horizontal_overflow": false
+      },
+      {
+        "requested_width": 1024,
+        "requested_height": 900,
+        "client_width": 1009,
+        "inner_width": 1024,
+        "main_scroll_width": 1009,
+        "main_width": 1009,
+        "scroll_width": 1009,
+        "sidebar_hidden": true,
+        "screenshot": "1024_final.jpg",
+        "horizontal_overflow": false
+      }
+    ],
+    "final_keyboard_checks": [
+      "Import modal Shift+Tab Close to Cancel",
+      "Import modal Tab Cancel to Close",
+      "Import modal Escape closes and restores original trigger",
+      "Distinct residue-score and region file labels",
+      "Documentation modal Shift+Tab wraps to Done",
+      "Documentation Escape restores focus",
+      "History reopens original SEG-only completed task",
+      "Result tabs ArrowRight, End, Home",
+      "1024 drawer focuses sequence-name and sets main/header inert",
+      "1024 drawer Shift+Tab wraps to Run, Escape restores setup trigger",
+      "1024 History button retains accessible name"
+    ],
+    "notes": [],
+    "theme_check": {
+      "dark_screenshot": "1024_dark.jpg",
+      "returned_to_light": true
+    },
+    "console_warnings_and_errors": [],
+    "acceptance_scenarios": [
+      {
+        "case": "A",
+        "status": "passed",
+        "method": "LRECA only",
+        "job_id": "analysis_W8l-lBcO6Z_1ny4fL0Kbp9HNtDPNTUKe",
+        "evidence": [
+          "A_lreca_final.dom.txt",
+          "api/A_job.json"
+        ]
+      },
+      {
+        "case": "B",
+        "status": "passed",
+        "method": "SEG only",
+        "job_id": "analysis_EkIcjZMi2a3_0HQUWJUnwBWbJBMlOmJU",
+        "evidence": [
+          "B_seg_final.dom.txt",
+          "B_seg_regions.dom.txt",
+          "api/B_job.json"
+        ]
+      },
+      {
+        "case": "C",
+        "status": "passed",
+        "method": "LRECA + SEG",
+        "job_id": "analysis_tRYo-7oQ700mgapMo14TEjGzMW7F4paU",
+        "evidence": [
+          "C_final_build.dom.txt",
+          "api/C_final_build_job.json"
+        ]
+      },
+      {
+        "case": "D",
+        "status": "passed",
+        "method": "No imported FuzDrop",
+        "evidence": [
+          "D_G_no_import.dom.txt"
+        ]
+      },
+      {
+        "case": "E",
+        "status": "passed",
+        "method": "Explicit synthetic FuzDrop format fixture",
+        "evidence": [
+          "E_mismatch_error.dom.txt",
+          "E_import_success.dom.txt",
+          "E_import_not_enabled.dom.txt"
+        ],
+        "source_authenticity": "synthetic test fixture, not official predictions"
+      },
+      {
+        "case": "F",
+        "status": "passed",
+        "method": "LRECA + explicitly enabled imported FuzDrop weighted",
+        "job_id": "analysis_Uodx6jZdPTwux5xqQzibn7JftE95jypS",
+        "backend_combined_score": 0.8719952793121338,
+        "evidence": [
+          "F_weighted_final.dom.txt",
+          "F_fuzdrop_tables.dom.txt",
+          "api/F_job.json",
+          "api/F_download.json"
+        ]
+      },
+      {
+        "case": "G",
+        "status": "passed",
+        "method": "DisMeta blocked",
+        "evidence": [
+          "D_G_no_import.dom.txt"
+        ]
+      },
+      {
+        "case": "H",
+        "status": "passed",
+        "method": "Real LRECA retained when test-only SEG failure occurs",
+        "job_id": "analysis_HEsw-VBCJjw4ssQ-6uxvvdk_22vR5_mW",
+        "evidence": [
+          "H_partial_success.dom.txt",
+          "H_partial_success.jpg",
+          "api/H_job.json"
+        ],
+        "fixture": "scripts/module6_test_backend.py --fail-seg"
+      }
+    ],
+    "additional_flow_checks": [
+      "Unsupported X at position 136 disables Run without substitution",
+      "FASTA name extraction after Clear",
+      "Empty method selection disables Run",
+      "Imported FuzDrop is initially disabled until explicit opt-in",
+      "Weight inputs 0/100, 100/0, 50/50 and 60/40 stay complementary",
+      "FuzDrop rows paginate without changing native data",
+      "Sequence editing invalidates import permanently, including edit-then-revert",
+      "Old displayed result remains tied to its submitted sequence",
+      "Real residue 106 table selection reaches sequence placeholder"
+    ],
+    "download_verification": "Native downloaded file bytes were read after the browser download event timed out; full JSON equals same-job GET. See api/verification.json.",
+    "closed_issue": {
+      "issue": "Import dialog Shift+Tab escaped the modal",
+      "fix": "Explicit Tab boundary handling for native dialogs",
+      "verified": "Both directions and Escape focus restoration passed on final production build"
+    },
+    "test_harness_notes": [
+      "Viewport override targets the selected IAB tab; completed partial-fixture tab was closed before measuring normal-page widths. All recorded viewport dimensions are DOM verified.",
+      "Locator.evaluate geometry timed out; tab.playwright.evaluate read-only DOM geometry succeeded.",
+      "An initial Job ID check was scoped to Download; the check passed after returning to Overview."
+    ],
+    "viewport_override_reset": true,
+    "partial_fixture_tab_closed": true,
+    "normal_tab_marked_deliverable": true,
+    "completed_at": "2026-09-03T13:57:17.535Z"
+  }
+}

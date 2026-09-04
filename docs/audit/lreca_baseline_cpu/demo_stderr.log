@@ -1,0 +1,4 @@
+# Sanitized exported log: workstation paths replaced with environment references.
+# Original bytes retained privately: .audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/demo_stderr.log
+${PROJECT_ROOT}\.lreca-venv\lib\site-packages\torch\_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()

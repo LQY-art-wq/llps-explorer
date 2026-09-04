@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "distinct_cases": 125,
+  "latest_distinct_passed_across_initial_and_retest": 125,
+  "full_initial": {
+    "passed": 124,
+    "failed": 1,
+    "skipped": 0,
+    "reported_duration_seconds": 40.88,
+    "log": "docs/audit/module1_production_tests_initial.log",
+    "junit": "docs/audit/module1_production_tests_initial.junit.xml"
+  },
+  "targeted_portability_retest": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "reported_duration_seconds": 0.38,
+    "log": "docs/audit/module1_portability_retest.log",
+    "junit": "docs/audit/module1_portability_retest.junit.xml"
+  },
+  "failure_reason": "The ignore-rule test sent Windows text-mode stdin to Git, introducing CRLF and quoted paths. It was corrected to use Git -z with NUL-delimited input/output. No model or scientific expected values were changed.",
+  "interpretation": "A final complete backend invocation actually passed all 125 distinct cases. The initial 124-pass/1-failure run and the 7-case targeted correction remain separate historical evidence. Counts across these overlapping runs must not be added.",
+  "final_full_run": {
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 2,
+    "reported_duration_seconds": 40.04,
+    "log": "docs/audit/module1_production_final_tests.log",
+    "junit": "docs/audit/module1_production_final_tests.junit.xml",
+    "per_testclass": [
+      {
+        "testclass": "tests.test_lreca_api",
+        "file": "backend/tests/test_lreca_api.py",
+        "passed": 56
+      },
+      {
+        "testclass": "tests.test_lreca_integration",
+        "file": "backend/tests/test_lreca_integration.py",
+        "passed": 20
+      },
+      {
+        "testclass": "tests.test_lreca_portability",
+        "file": "backend/tests/test_lreca_portability.py",
+        "passed": 7
+      },
+      {
+        "testclass": "tests.test_lreca_process",
+        "file": "backend/tests/test_lreca_process.py",
+        "passed": 24
+      },
+      {
+        "testclass": "tests.test_module0",
+        "file": "backend/tests/test_module0.py",
+        "passed": 18
+      }
+    ]
+  },
+  "distinct_final_passed": 125,
+  "distinct_final_failed": 0,
+  "distinct_final_skipped": 0
+}

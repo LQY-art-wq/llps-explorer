@@ -1,0 +1,26 @@
+# Sanitized exported log: workstation paths replaced with environment references.
+# Original bytes retained privately: .audit/module1_private_evidence/docs/audit/lreca_benchmark_stdout.log
+cpu length=50 mode=global_only mean_wall_ms=5.313
+cpu length=50 mode=global_attribution_kde mean_wall_ms=89.593
+cpu length=100 mode=global_only mean_wall_ms=15.468
+cpu length=100 mode=global_attribution_kde mean_wall_ms=112.136
+cpu length=500 mode=global_only mean_wall_ms=37.764
+cpu length=500 mode=global_attribution_kde mean_wall_ms=410.552
+cpu length=1000 mode=global_only mean_wall_ms=86.853
+cpu length=1000 mode=global_attribution_kde mean_wall_ms=1085.733
+cpu length=2000 mode=global_only mean_wall_ms=150.881
+cpu length=2000 mode=global_attribution_kde mean_wall_ms=3650.193
+cuda length=50 mode=global_only mean_wall_ms=5.727
+cuda length=50 mode=global_attribution_kde mean_wall_ms=81.656
+cuda length=100 mode=global_only mean_wall_ms=5.369
+cuda length=100 mode=global_attribution_kde mean_wall_ms=96.766
+cuda length=500 mode=global_only mean_wall_ms=17.475
+cuda length=500 mode=global_attribution_kde mean_wall_ms=363.562
+cuda length=1000 mode=global_only mean_wall_ms=32.103
+cuda length=1000 mode=global_attribution_kde mean_wall_ms=1038.957
+cuda length=2000 mode=global_only mean_wall_ms=64.025
+cuda length=2000 mode=global_attribution_kde mean_wall_ms=3676.974
+{
+  "status": "success",
+  "report": "${PROJECT_ROOT}\\docs\\audit\\lreca_performance.json"
+}

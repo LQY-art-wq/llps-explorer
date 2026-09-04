@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "method_id": "dismeta",
+  "audit_date": "2026-09-03",
+  "scientific_identity": "Huang / Acton / Montelione DisMeta; intrinsically disordered region annotation",
+  "integration_mode": "unknown",
+  "mode": "F",
+  "final_decision": "INTEGRATION_BLOCKED",
+  "automatic_available": false,
+  "manual_import_supported": false,
+  "no_sequence_submitted": true,
+  "no_email_sent": true,
+  "no_protection_interaction": true,
+  "evidence_capture": {
+    "artifact": ".audit/module4/scientific/primary_web_observations.json",
+    "kind": "web_tool_parsed_or_indexed_text_not_original_http_response",
+    "observed_at": "2026-09-03T11:49:34.753Z",
+    "bytes": 34756,
+    "sha256": "5cb0ae70bf9d5ddab5b104c257f338a04b4d66ec761a0a0223883923f25da7de",
+    "raw_official_http_sha256": null,
+    "official_result_fixture": false
+  },
+  "sources": [
+    {
+      "id": "original_manuscript",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4115584/",
+      "doi": "10.1007/978-1-62703-691-7_1",
+      "pmid": "24203321",
+      "publication_year": 2014,
+      "access": "web_search_indexed_full_text_with_methods_and_figure_captions",
+      "indexed_age_reported": "last month",
+      "direct_open": "browser_verification_page; not interacted with",
+      "anchors": [
+        "Introduction",
+        "Materials 2.1",
+        "Methods 3.1-3.5",
+        "Figures 1-7",
+        "Conclusion"
+      ],
+      "original_bytes_sha256": null
+    },
+    {
+      "id": "publisher",
+      "url": "https://link.springer.com/protocol/10.1007/978-1-62703-691-7_1",
+      "access": "web_open_public_preview",
+      "anchors": [
+        "Abstract",
+        "About this protocol"
+      ],
+      "first_online": "2013-10-12",
+      "original_bytes_sha256": null
+    },
+    {
+      "id": "official_form",
+      "url": "https://montelionelab.chem.rpi.edu/dismeta/",
+      "access": "web_open_parsed_page",
+      "anchors": [
+        "disorder predictor list",
+        "default setup statement",
+        "input form"
+      ],
+      "predictors_currently_listed": [
+        "DISEMBL",
+        "DISOPRED2",
+        "GlobPlot2",
+        "VSL2"
+      ],
+      "additional_sequence_tools_currently_listed": [
+        "coils",
+        "SignalP",
+        "TMHMM",
+        "SEG",
+        "PSIPred"
+      ],
+      "job_execution_verified": false,
+      "original_bytes_sha256": null
+    },
+    {
+      "id": "official_software",
+      "url": "https://montelionelab.chem.rpi.edu/index.php/our-software-2/",
+      "access": "web_open_parsed_page",
+      "anchors": [
+        "Dismeta - Disorder prediction meta-server"
+      ],
+      "confirmed_output_presentation": "per-residue consensus plot and individual predictor results",
+      "original_bytes_sha256": null
+    },
+    {
+      "id": "official_references",
+      "url": "https://montelionelab.chem.rpi.edu/dismeta/references.html",
+      "access": "web_open_parsed_page",
+      "anchors": [
+        "Huang / Acton / Montelione citation"
+      ],
+      "original_bytes_sha256": null
+    },
+    {
+      "id": "author_publications",
+      "url": "https://montelionelab.chem.rpi.edu/publications/index.htm",
+      "access": "web_open_index; one direct HTTPS GET timed out during TLS handshake",
+      "anchors": [
+        "entry 298"
+      ],
+      "direct_get_observation": ".audit/module4/scientific/author_publications_observation.json",
+      "original_bytes_sha256": null
+    }
+  ],
+  "historical_predictors": {
+    "source_id": "original_manuscript",
+    "anchor": "Materials 2.1; Figure 1",
+    "names": [
+      "DISEMBL",
+      "DISOPRED2",
+      "DISPro",
+      "FoldIndex",
+      "GlobPlot2",
+      "IUPred",
+      "RONN",
+      "VSL2"
+    ],
+    "naming_note": "Materials prints VL2; Figure 1 uses VSL2.",
+    "current_components_not_inferred": true,
+    "exact_component_versions": null
+  },
+  "native_output_contract": {
+    "historical_report_figures_present": true,
+    "current_successful_job_observed": false,
+    "verified_current_raw_export_count": 0,
+    "verified_file_extensions": [],
+    "export_schema": null,
+    "native_region_list": null,
+    "consensus_formula": null,
+    "consensus_threshold": null,
+    "threshold_operator": null,
+    "denominator": null,
+    "failed_component_handling": null,
+    "minimum_region_length": null,
+    "adjacency_merge_rule": null,
+    "overlap_merge_rule": null,
+    "numeric_residue_scores_verified": false,
+    "numeric_residue_score_range": null,
+    "native_machine_coordinate_origin": null,
+    "native_machine_coordinate_end_rule": null,
+    "llps_score_provided_by_evidence": false,
+    "llps_label_provided_by_evidence": false
+  },
+  "publicly_documented_examples": {
+    "source_id": "original_manuscript",
+    "anchors": {
+      "ER541": "Figure 2",
+      "SyR11": "Figure 3",
+      "ER553": "Figure 4",
+      "WR33": "Figure 5",
+      "HR4626": "Figure 6",
+      "PgR37": "Figure 7"
+    },
+    "kind": "historical_report_figures_and_captions",
+    "usable_as_current_raw_parser_fixture": false,
+    "digitized_or_synthetic_prediction_data_created": false
+  },
+  "local_deployment": {
+    "official_cli_confirmed": false,
+    "official_downloadable_dismeta_implementation_confirmed": false,
+    "pinned_installable_release": null,
+    "dismeta_software_license": null,
+    "linux_docker_runtime_verified": false,
+    "server_side_component_installation_is_not_a_local_distribution": true
+  },
+  "interpretation_constraints": [
+    "Do not replace DisMeta with another predictor.",
+    "Do not relabel SignalP, TMHMM, or SEG regions as native disorder consensus.",
+    "Do not reconstruct exact regions from approximate published figure captions.",
+    "Do not invent a threshold, denominator, coordinate conversion, or residue score.",
+    "A public form or historical paper does not prove current job completion or supported automation.",
+    "Contract-only normalized DTO tests are not scientific regression fixtures."
+  ]
+}

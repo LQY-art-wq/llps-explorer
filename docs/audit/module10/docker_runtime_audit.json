@@ -1,0 +1,13 @@
+{
+  "observed_at_utc": "2026-09-04T05:26:59.1846481Z",
+  "host_platform": "windows",
+  "docker_cli_available": false,
+  "docker_common_installation_found": false,
+  "docker_service_found": false,
+  "docker_process_found": false,
+  "alternative_container_cli_found": false,
+  "linux_containers_confirmed": false,
+  "docker_daemon_confirmed": false,
+  "docker_compose_confirmed": false,
+  "status": "DOCKER_RUNTIME_UNAVAILABLE"
+}

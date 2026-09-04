@@ -1,0 +1,151 @@
+..............................................................F......... [  8%]
+........................................................................ [ 17%]
+........................................................................ [ 26%]
+........................................................................ [ 35%]
+........................................................................ [ 44%]
+........................................................................ [ 53%]
+........................................................................ [ 61%]
+................................F....................................... [ 70%]
+........................................................................ [ 79%]
+........................................................................ [ 88%]
+........................................................................ [ 97%]
+.....................                                                    [100%]
+================================== FAILURES ===================================
+___ test_reference_is_pinned_for_accepted_job_even_if_import_store_expires ____
+
+    def test_reference_is_pinned_for_accepted_job_even_if_import_store_expires():
+        async def scenario():
+            service, store, _, _ = await service_fixture()
+            record = store.put(imported_fixture())
+            await service._semaphore.acquire()
+            # Occupy all slots so the accepted job remains queued until after import removal.
+            for _ in range(3):
+                await service._semaphore.acquire()
+            job = await service.submit(
+                AnalysisRequest(
+                    sequence=SEQUENCE,
+                    selected_methods=["fuzdrop"],
+                    external_results={"fuzdrop": {"result_id": record.result_id}},
+                )
+            )
+            store.close()
+            service._semaphore.release()
+            try:
+                await asyncio.sleep(0.02)
+                result = service.get(job.job_id)
+                assert result.status == "success"
+                assert result.methods["fuzdrop"].result.sequence_sha256 == record.sequence_sha256
+            finally:
+                await service.close()
+    
+>       asyncio.run(scenario())
+
+backend\tests\test_analysis_jobs.py:172: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:195: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+..\..\..\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:118: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:691: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    async def scenario():
+        service, store, _, _ = await service_fixture()
+        record = store.put(imported_fixture())
+        await service._semaphore.acquire()
+        # Occupy all slots so the accepted job remains queued until after import removal.
+        for _ in range(3):
+            await service._semaphore.acquire()
+        job = await service.submit(
+            AnalysisRequest(
+                sequence=SEQUENCE,
+                selected_methods=["fuzdrop"],
+                external_results={"fuzdrop": {"result_id": record.result_id}},
+            )
+        )
+        store.close()
+        service._semaphore.release()
+        try:
+            await asyncio.sleep(0.02)
+            result = service.get(job.job_id)
+>           assert result.status == "success"
+E           AssertionError: assert 'running' == 'success'
+E             
+E             - success
+E             + running
+
+backend\tests\test_analysis_jobs.py:167: AssertionError
+------------------------------ Captured log call ------------------------------
+INFO     uvicorn.error.analysis.orchestrator:orchestrator.py:161 analysis_method job_id=analysis_Bgs9-JRXIgOdQkWtPKusAsZWzLEV4NWH method=fuzdrop status=success runtime_ms=0.000 sequence_length=20 sequence_sha256=5a52efc76a4a4ceb3c992ff17426b3545634646080bb6acec132c47c278c9846
+_ test_success_and_health_publish_only_safe_identity_from_private_worker_metadata _
+
+pipe_fixture = {'backend': WindowsPath('C:/Users/lqy/Documents/ChatGPT/�������ҳ��/.audit/module10_pytest_full/test_success_and_health_pub...089-0.9802.pt', 'threshold': 0.6}, 'process': <function pipe_fixture.<locals>.make_process at 0x000001F740250680>, ...}
+caplog = <_pytest.logging.LogCaptureFixture object at 0x000001F740421610>
+
+    def test_success_and_health_publish_only_safe_identity_from_private_worker_metadata(
+        pipe_fixture, caplog
+    ):
+        caplog.set_level(logging.INFO, logger="uvicorn.error.lreca")
+        adapter = pipe_fixture["adapter"]()
+        with TestClient(create_app(lreca_adapter=adapter)) as client:
+            for response in (
+                client.get("/api/v1/methods/lreca/health"),
+                client.post(
+                    "/api/v1/methods/lreca/analyze",
+                    json={"sequence": "ACDE", "include_attribution": False},
+                ),
+            ):
+                assert response.status_code == 200
+                assert_http_has_no_private_paths(response, pipe_fixture)
+                assert set(response.json()["metadata"]) == {
+                    "repository",
+                    "commit",
+                    "model_variant",
+                    "dataset5_mapping_status",
+                    "checkpoint",
+                    "checkpoint_sha256",
+                    "checkpoint_size_bytes",
+                }
+            # Private state is retained for logging/operation, separate from the HTTP DTO.
+            assert adapter._metadata.checkpoint_path == str(pipe_fixture["checkpoint"])
+            assert adapter._metadata.runtime["executable"] == str(Path(sys.executable).resolve())
+>       assert str(pipe_fixture["checkpoint"]) in caplog.text
+E       assert 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\.audit\\module10_pytest_full\\test_success_and_health_publis0\\human_1_RCNN_ECA_parallel_089-0.9802.pt' in 'INFO     alembic.runtime.migration:migration.py:211 Context impl SQLiteImpl.\nINFO     alembic.runtime.migration:migr...\nINFO     httpx:_client.py:1025 HTTP Request: POST http://testserver/api/v1/methods/lreca/analyze "HTTP/1.1 200 OK"\n'
+E        +  where 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\.audit\\module10_pytest_full\\test_success_and_health_publis0\\human_1_RCNN_ECA_parallel_089-0.9802.pt' = str(WindowsPath('C:/Users/lqy/Documents/ChatGPT/�������ҳ��/.audit/module10_pytest_full/test_success_and_health_publis0/human_1_RCNN_ECA_parallel_089-0.9802.pt'))
+E        +  and   'INFO     alembic.runtime.migration:migration.py:211 Context impl SQLiteImpl.\nINFO     alembic.runtime.migration:migr...\nINFO     httpx:_client.py:1025 HTTP Request: POST http://testserver/api/v1/methods/lreca/analyze "HTTP/1.1 200 OK"\n' = <_pytest.logging.LogCaptureFixture object at 0x000001F740421610>.text
+
+backend\tests\test_lreca_process.py:426: AssertionError
+------------------------------ Captured log call ------------------------------
+INFO     alembic.runtime.migration:migration.py:211 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:214 Will assume non-transactional DDL.
+INFO     uvicorn.error.lreca:lreca.py:111 LRECA loaded checkpoint=human_1_RCNN_ECA_parallel_089-0.9802.pt sha256=aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc size_bytes=2395318 repository_commit=0b4b48ab7870529a34028c6e30dfba42eddbf215 device=cpu
+INFO     llps.http:observability.py:129 HTTP request completed
+INFO     httpx:_client.py:1025 HTTP Request: GET http://testserver/api/v1/methods/lreca/health "HTTP/1.1 200 OK"
+INFO     llps.http:observability.py:129 HTTP request completed
+INFO     httpx:_client.py:1025 HTTP Request: POST http://testserver/api/v1/methods/lreca/analyze "HTTP/1.1 200 OK"
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\starlette\testclient.py:53
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:469
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\_pytest\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\Users\lqy\Documents\ChatGPT\�������ҳ��\backend\.pytest_cache\v\cache\nodeids: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\backend\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+.venv\Lib\site-packages\_pytest\cacheprovider.py:423
+  C:\Users\lqy\Documents\ChatGPT\�������ҳ��\.venv\Lib\site-packages\_pytest\cacheprovider.py:423: PytestCacheWarning: could not create cache path C:\Users\lqy\Documents\ChatGPT\�������ҳ��\backend\.pytest_cache\v\cache\lastfailed: [WinError 5] �ܾ����ʡ�: 'C:\\Users\\lqy\\Documents\\ChatGPT\\�������ҳ��\\backend\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/lastfailed", self.lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED backend\tests\test_analysis_jobs.py::test_reference_is_pinned_for_accepted_job_even_if_import_store_expires
+FAILED backend\tests\test_lreca_process.py::test_success_and_health_publish_only_safe_identity_from_private_worker_metadata
+2 failed, 811 passed, 4 warnings in 102.22s (0:01:42)

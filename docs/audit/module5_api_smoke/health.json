@@ -1,0 +1,9 @@
+{
+  "http_status": 200,
+  "body": {
+    "status": "ok",
+    "version": "0.5.0",
+    "module": 5,
+    "analysis_enabled": true
+  }
+}

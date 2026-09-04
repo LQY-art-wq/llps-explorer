@@ -1,0 +1,189 @@
+{
+  "started_at_utc": "2026-09-03T12:35:59.148868+00:00",
+  "command": [
+    "${PROJECT_ROOT}/.venv/Scripts/python.exe",
+    "scripts/smoke_module5.py"
+  ],
+  "backend_python": "3.12.13",
+  "observed_platform": "Windows-11-10.0.26200-SP0",
+  "transport": "actual Uvicorn TCP listener / httpx / loopback only",
+  "http_client_trust_env": false,
+  "official_remote_submissions_sent_by_script": 0,
+  "status": "success",
+  "data_provenance": {
+    "sequence_kind": "real sequence reused from the official LRECA human baseline",
+    "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+    "sequence_length": 248,
+    "sequence_fixture": "backend/tests/fixtures/seg/cases.json#human_positive_real_sequence",
+    "lreca_and_seg": "real local model and official executable inference",
+    "fuzdrop": "FuzDrop pLLPS, pDP, Sbind and regions in this smoke run are synthetic official-format inputs only, not official predictions, biological validation or calibration data.",
+    "dismeta": "blocked boundary; no prediction or substitute"
+  },
+  "cases": {
+    "a_real_lreca_seg": {
+      "job_id": "analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "success",
+      "method_statuses": {
+        "lreca": "success",
+        "seg": "success"
+      },
+      "client_wall_ms": 1078.5373999970034,
+      "observed_snapshots": 11,
+      "final_response": "a_real_lreca_seg_final.json"
+    },
+    "b_weighted_without_import": {
+      "job_id": "analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "partial_success",
+      "method_statuses": {
+        "lreca": "success",
+        "fuzdrop": "external_result_required"
+      },
+      "client_wall_ms": 721.9636000008904,
+      "observed_snapshots": 7,
+      "final_response": "b_weighted_without_import_final.json"
+    },
+    "c_real_plus_synthetic_weighted": {
+      "job_id": "analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "success",
+      "method_statuses": {
+        "lreca": "success",
+        "fuzdrop": "success",
+        "seg": "success"
+      },
+      "client_wall_ms": 1409.9538999980723,
+      "observed_snapshots": 3,
+      "final_response": "c_real_plus_synthetic_weighted_final.json"
+    },
+    "d_dismeta_only": {
+      "job_id": "analysis_d06iI9iZWV3EfXcHlBfLp7CYR0_JPFIF",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "unavailable",
+      "method_statuses": {
+        "dismeta": "unavailable"
+      },
+      "client_wall_ms": 26.887299998634262,
+      "observed_snapshots": 2,
+      "final_response": "d_dismeta_only_final.json"
+    },
+    "all_four_without_import": {
+      "job_id": "analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "partial_success",
+      "method_statuses": {
+        "lreca": "success",
+        "fuzdrop": "external_result_required",
+        "seg": "success",
+        "dismeta": "unavailable"
+      },
+      "client_wall_ms": 766.8033000009018,
+      "observed_snapshots": 6,
+      "final_response": "all_four_without_import_final.json"
+    },
+    "all_four_with_import": {
+      "job_id": "analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "partial_success",
+      "method_statuses": {
+        "lreca": "success",
+        "fuzdrop": "success",
+        "seg": "success",
+        "dismeta": "unavailable"
+      },
+      "client_wall_ms": 1639.5692999976745,
+      "observed_snapshots": 3,
+      "final_response": "all_four_with_import_final.json"
+    },
+    "import_reused_independent": {
+      "job_id": "analysis_BZf4WO6GVyaFwTLkEjtMRGqVBZAukeAe",
+      "admission_http_status": 202,
+      "final_http_status": 200,
+      "status": "success",
+      "method_statuses": {
+        "fuzdrop": "success"
+      },
+      "client_wall_ms": 781.3091999996686,
+      "observed_snapshots": 2,
+      "final_response": "import_reused_independent_final.json"
+    }
+  },
+  "checks": {
+    "methods_routing": "passed",
+    "sequence_mismatch": 422,
+    "missing_import": 404,
+    "reference_reuse": "passed",
+    "native_scientific_fields_preserved": "passed"
+  },
+  "real_lreca": {
+    "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+    "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+    "model_variant": "human_specific",
+    "dataset5_mapping_status": "unconfirmed",
+    "raw_score": 0.9999921321868896,
+    "label": "P",
+    "device": "cuda:0",
+    "runtime_ms": 500.8715000003576,
+    "attribution_count": 248,
+    "kde_count": 248
+  },
+  "real_seg": {
+    "version": "2.17.0",
+    "application_version": "1.0.0",
+    "regions": [
+      {
+        "start": 72,
+        "end": 85,
+        "semantic_type": "region_annotation",
+        "length": 14
+      },
+      {
+        "start": 89,
+        "end": 119,
+        "semantic_type": "region_annotation",
+        "length": 31
+      },
+      {
+        "start": 196,
+        "end": 247,
+        "semantic_type": "region_annotation",
+        "length": 52
+      }
+    ],
+    "coverage": 0.3911290322580645,
+    "region_count": 3,
+    "longest_region": 52,
+    "runtime_ms": 53.19980000058422,
+    "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c"
+  },
+  "weighted_formula_check": {
+    "lreca_score": 0.9999921321868896,
+    "fuzdrop_score": 0.68,
+    "fuzdrop_score_kind": "synthetic_format_only",
+    "weights": {
+      "lreca": 0.6,
+      "fuzdrop": 0.4
+    },
+    "expected_score": 0.8719952793121338,
+    "observed_score": 0.8719952793121338,
+    "absolute_tolerance": 1e-12,
+    "native_explainability_and_regions_preserved": true
+  },
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-03T12:36:12.036605+00:00",
+  "logs_contain_full_test_sequences": false,
+  "method_lifecycle_logs_observed": true,
+  "raw_server_log": {
+    "private_path": ".audit/module5/api_smoke_20260903T123559147865Z.log",
+    "sha256": "28452213a843c72fbc796e2789c12f8b7091db1eb7c4b1870995d9ab1c255ca4",
+    "bytes": 10587
+  }
+}

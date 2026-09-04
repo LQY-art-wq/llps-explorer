@@ -1,0 +1,23 @@
+{
+  "snapshot_files": 192,
+  "changed_files": 48,
+  "counts": {
+    "A": 34,
+    "M": 14,
+    "D": 0
+  },
+  "protected_prior_files_checked": 178,
+  "protected_files_unchanged": true,
+  "lreca_scientific_files_unchanged": true,
+  "fuzdrop_implementation_fixtures_tests_unchanged": true,
+  "seg_runtime_fixtures_and_scientific_tests_unchanged": true,
+  "seg_catalog_assertion_only_change_verified": true,
+  "fuzdrop_service_audit_section_bytes_unchanged": true,
+  "frontend_orchestrator_unchanged": true,
+  "old_module_reports_and_audits_unchanged": true,
+  "git_index_modified": false,
+  "new_public_files_have_no_windows_absolute_paths": true,
+  "no_binary_artifacts_in_first_party_source_list": true,
+  "whitespace_check": "passed",
+  "exact_diff": ".audit/module4_exact.diff"
+}

@@ -1,0 +1,236 @@
+- link "Skip to analysis results":
+  - /url: "#workspace-main"
+- banner:
+  - link "LLPS Explorer analysis workspace":
+    - /url: "#workspace-main"
+    - strong: LLPS Explorer
+    - generic: Sequence-based Phase Separation Prediction & Interpretation
+  - navigation "Main navigation":
+    - link "Analysis":
+      - /url: "#workspace-main"
+    - button "Examples"
+    - button "Documentation"
+    - button "About"
+  - button "History":
+    - generic: History
+  - button "Switch to dark theme":
+- complementary "Analysis setup":
+  - heading "Analysis setup" [level=2]
+  - region "Input":
+    - heading "Input" [level=3]
+    - generic: Single protein
+    - text: Sequence name
+    - generic: optional
+    - textbox "Sequence name optional":
+      - /placeholder: e.g. Protein of interest
+      - text: human_positive_line_1
+    - text: Protein sequence
+    - generic: FASTA or raw
+    - textbox "Protein sequence FASTA or raw":
+      - /placeholder: ">Protein_name\nPaste your amino-acid sequence here"
+      - text: ">human_positive_line_1 MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT"
+    - button "Paste example":
+      - text: Paste example
+    - button "Clear"
+    - generic "Sequence validation statistics":
+      - text: Length
+      - strong: 248 aa
+      - text: Valid residues
+      - strong: "248"
+      - text: Input type
+      - strong: FASTA
+    - paragraph:
+      - text: Sequence is valid
+  - region "Automatic analysis":
+    - heading "Automatic analysis" [level=3]
+    - button "Refresh method availability":
+    - checkbox "LRECA Human-specific model Automatic" [checked]
+    - generic: LRECA
+    - generic: Human-specific model
+    - generic: Automatic
+    - checkbox "SEG / LCR Low-complexity regions Automatic" [checked]
+    - generic: SEG / LCR
+    - generic: Low-complexity regions
+    - generic: Automatic
+  - region "External result":
+    - heading "External result" [level=3]
+    - strong: FuzDrop
+    - generic: Import required
+    - paragraph: Official prediction service
+    - paragraph: Not imported
+    - button "Import FuzDrop result":
+      - text: Import FuzDrop result
+    - link "Open official FuzDrop":
+      - /url: https://fuzdrop.bio.unipd.it/predictor
+      - text: Open official FuzDrop
+  - region "Unavailable":
+    - heading "Unavailable" [level=3]
+    - strong: DisMeta / IDR
+    - generic: Unavailable
+    - paragraph: Intrinsically disordered regions
+    - paragraph: Integration currently unavailable.
+    - button "Analysis unavailable" [disabled]
+  - region "Prediction mode":
+    - heading "Prediction mode" [level=3]
+    - group "Prediction mode":
+      - generic: Prediction mode
+      - radio "Independent" [checked]
+      - text: Independent
+      - radio "Weighted" [disabled]
+      - text: Weighted
+    - paragraph: Import a valid FuzDrop result for this sequence to enable weighted mode.
+  - button "Run analysis":
+    - text: Run analysis
+  - paragraph: Methods run independently. Results retain their provenance.
+- main:
+  - generic: Workspace / Analysis
+  - heading "Analysis workspace" [level=1]
+  - paragraph: Explore sequence-based predictions, evidence, and annotations.
+  - generic: Service connected
+  - generic: RESULTS
+  - strong: human_positive_line_1
+  - generic: Completed
+  - tablist "Analysis result sections":
+    - tab "Overview" [selected]
+    - tab "Feature Viewer"
+    - tab "Sequence Viewer"
+    - tab "LRECA"
+    - tab "FuzDrop"
+    - tab "Annotations"
+    - tab "Tables"
+    - tab "Download"
+  - tabpanel "Overview":
+    - paragraph: SUBMITTED PROTEIN
+    - heading "Protein Information" [level=2]
+    - generic: Independent
+    - term: Sequence name
+    - definition: human_positive_line_1
+    - term: Length
+    - definition: 248 aa
+    - term: Valid residues
+    - definition: 248 / 248
+    - term: Input type
+    - definition: FASTA
+    - term: Analysis time
+    - definition:
+      - time: Sep 3, 2026, 09:18 PM GMT+8
+    - term: Job ID
+    - definition: analysis_JudSoFFg8_5GoHWD12DMxi-WfM2xaUtN
+    - region "Prediction Summary":
+      - heading "Prediction Summary" [level=2]
+      - generic: Global prediction sources
+      - heading "LRECA" [level=3]
+      - paragraph: Human-specific model
+      - generic: Completed
+      - generic: "1.000"
+      - paragraph: P · Positive
+      - paragraph: Threshold > 0.50
+      - paragraph: Uncalibrated model score
+      - heading "FuzDrop" [level=3]
+      - paragraph: Imported official result
+      - generic: Not selected
+      - generic: —
+      - paragraph: Global pLLPS
+      - paragraph: No FuzDrop result is included in this analysis.
+      - button "Import result"
+      - link "Open Official FuzDrop":
+        - /url: https://fuzdrop.bio.unipd.it/predictor
+        - text: Open Official FuzDrop
+        - generic: ↗
+    - heading "Analysis Status" [level=2]
+    - generic: Completed
+    - list:
+      - strong: LRECA
+      - generic: Completed
+      - strong: SEG
+      - generic: Completed
+    - region "Annotation Summary":
+      - heading "Annotation Summary" [level=2]
+      - generic: Independent sequence features
+      - heading "Low-complexity Regions" [level=3]
+      - paragraph: SEG · sequence annotation
+      - generic: Completed
+      - generic: LCR coverage
+      - strong: 39.11%
+      - generic: Region count
+      - strong: "3"
+      - generic: Longest region
+      - strong: 52 aa
+      - heading "Intrinsically Disordered Regions" [level=3]
+      - paragraph: DisMeta · IDR annotation
+      - generic: Unavailable
+      - paragraph: DisMeta integration is currently unavailable.
+    - region "Protein Feature Viewer":
+      - paragraph: SEQUENCE FEATURES
+      - heading "Protein Feature Viewer" [level=2]
+      - generic: Preview
+      - paragraph: Interactive tracks will be available in a later release.
+      - paragraph: 4 data tracks are available in this result. Explore their values in the method tabs and tables.
+      - list:
+        - generic: LRECA residue attribution
+        - generic: 248 values
+        - generic: LRECA KDE density
+        - generic: 248 values
+        - generic: LRECA critical regions
+        - generic: 5 regions
+        - generic: FuzDrop pDP
+        - generic: Not available
+        - generic: FuzDrop predicted regions
+        - generic: Not available
+        - generic: SEG low-complexity regions
+        - generic: 3 regions
+      - paragraph: Residue attribution, residue propensity, KDE density, and region annotations remain separate.
+    - region "Protein Sequence Viewer":
+      - paragraph: RESIDUE DETAIL
+      - heading "Protein Sequence Viewer" [level=2]
+      - generic: Preview
+      - paragraph: Interactive tracks will be available in a later release.
+      - paragraph:
+        - text: "The submitted sequence is available:"
+        - strong: 248 residues
+        - text: .
+      - paragraph: MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYD…
+      - paragraph: Positions use 1-based inclusive coordinates.
+  - generic: LLPS Explorer · Sequence-first scientific analysis
+  - generic: "Coordinates: 1-based, inclusive"
+- dialog "Import FuzDrop result":
+  - generic: Manual import
+  - heading "Import FuzDrop result" [level=2]
+  - button "Close FuzDrop import": Close
+  - paragraph: Paste or upload exports from the official FuzDrop service. The source is your declaration; it is not independently verified. No sequence is submitted to that service here.
+  - strong: Bound to your current sequence · 248 residues
+  - paragraph: Use exports for this exact sequence and residue order. Editing the sequence invalidates its imported result. The server validates the supplied scores and coordinates.
+  - button "Copy Sequence"
+  - link "Open Official FuzDrop":
+    - /url: https://fuzdrop.bio.unipd.it/predictor
+    - text: Open Official FuzDrop
+    - generic: ↗
+  - status
+  - generic: Global pLLPS optional
+  - textbox "Global pLLPS optional":
+    - /placeholder: 0 to 1; leave blank if unavailable
+    - text: "0.68"
+  - generic: Residue scores TSV optional
+  - textbox "Residue scores TSV optional":
+    - /placeholder: "Paste the official tab-separated export\nColumns: position · residue · pDP · Sbind"
+    - text: position residue pDP Sbind 1 A 0.1 0.25 2 S 0.2 0.50 3 G 0.3 0.75 4 G 0.4 1.00 5 G 0.5 1.25 6 V 0.6 1.50 7 I 0.7 0.00 8 R 0.8 0.25 9 G 0.9 0.50 10 P 1.0 0.75 11 A 0.0 1.00 12 G 0.1 1.25 13 N 0.2 1.50 14 N 0.3 0.00 15 D 0.4 0.25 16 C 0.5 0.50 17 R 0.6 0.75 18 I 0.7 1.00 19 Y 0.8 1.25 20 V 0.9 1.50 21 G 1.0 0.00 22 N 0.0 0.25 23 L 0.1 0.50 24 P 0.2 0.75 25 P 0.3 1.00 26 D 0.4 1.25 27 I 0.5 1.50 28 R 0.6 0.00 29 T 0.7 0.25 30 K 0.8 0.50 31 D 0.9 0.75 32 I 1.0 1.00 33 E 0.0 1.25 34 D 0.1 1.50 35 V 0.2 0.00 36 F 0.3 0.25 37 Y 0.4 0.50 38 K 0.5 0.75 39 Y 0.6 1.00 40 G 0.7 1.25 41 A 0.8 1.50 42 I 0.9 0.00 43 R 1.0 0.25 44 D 0.0 0.50 45 I 0.1 0.75 46 D 0.2 1.00 47 L 0.3 1.25 48 K 0.4 1.50 49 N 0.5 0.00 50 R 0.6 0.25 51 R 0.7 0.50 52 G 0.8 0.75 53 G 0.9 1.00 54 P 1.0 1.25 55 P 0.0 1.50 56 F 0.1 0.00 57 A 0.2 0.25 58 F 0.3 0.50 59 V 0.4 0.75 60 E 0.5 1.00 61 F 0.6 1.25 62 E 0.7 1.50 63 D 0.8 0.00 64 P 0.9 0.25 65 R 1.0 0.50 66 D 0.0 0.75 67 A 0.1 1.00 68 E 0.2 1.25 69 D 0.3 1.50 70 A 0.4 0.00 71 V 0.5 0.25 72 Y 0.6 0.50 73 G 0.7 0.75 74 R 0.8 1.00 75 D 0.9 1.25 76 G 1.0 1.50 77 Y 0.0 0.00 78 D 0.1 0.25 79 Y 0.2 0.50 80 D 0.3 0.75 81 G 0.4 1.00 82 Y 0.5 1.25 83 R 0.6 1.50 84 L 0.7 0.00 85 R 0.8 0.25 86 V 0.9 0.50 87 E 1.0 0.75 88 F 0.0 1.00 89 P 0.1 1.25 90 R 0.2 1.50 91 S 0.3 0.00 92 G 0.4 0.25 93 R 0.5 0.50 94 G 0.6 0.75 95 T 0.7 1.00 96 G 0.8 1.25 97 R 0.9 1.50 98 G 1.0 0.00 99 G 0.0 0.25 100 G 0.1 0.50 101 G 0.2 0.75 102 G 0.3 1.00 103 G 0.4 1.25 104 G 0.5 1.50 105 G 0.6 0.00 106 G 0.7 0.25 107 A 0.8 0.50 108 P 0.9 0.75 109 R 1.0 1.00 110 G 0.0 1.25 111 R 0.1 1.50 112 Y 0.2 0.00 113 G 0.3 0.25 114 P 0.4 0.50 115 P 0.5 0.75 116 S 0.6 1.00 117 R 0.7 1.25 118 R 0.8 1.50 119 S 0.9 0.00 120 E 1.0 0.25 121 N 0.0 0.50 122 R 0.1 0.75 123 V 0.2 1.00 124 V 0.3 1.25 125 V 0.4 1.50 126 S 0.5 0.00 127 G 0.6 0.25 128 L 0.7 0.50 129 P 0.8 0.75 130 P 0.9 1.00 131 S 1.0 1.25 132 G 0.0 1.50 133 S 0.1 0.00 134 W 0.2 0.25 135 Q 0.3 0.50 136 D 0.4 0.75 137 L 0.5 1.00 138 K 0.6 1.25 139 D 0.7 1.50 140 H 0.8 0.00 141 M 0.9 0.25 142 R 1.0 0.50 143 E 0.0 0.75 144 A 0.1 1.00 145 G 0.2 1.25 146 D 0.3 1.50 147 V 0.4 0.00 148 C 0.5 0.25 149 Y 0.6 0.50 150 A 0.7 0.75 151 D 0.8 1.00 152 V 0.9 1.25 153 Y 1.0 1.50 154 R 0.0 0.00 155 D 0.1 0.25 156 G 0.2 0.50 157 T 0.3 0.75 158 G 0.4 1.00 159 V 0.5 1.25 160 V 0.6 1.50 161 E 0.7 0.00 162 F 0.8 0.25 163 V 0.9 0.50 164 R 1.0 0.75 165 K 0.0 1.00 166 E 0.1 1.25 167 D 0.2 1.50 168 M 0.3 0.00 169 T 0.4 0.25 170 Y 0.5 0.50 171 A 0.6 0.75 172 V 0.7 1.00 173 R 0.8 1.25 174 K 0.9 1.50 175 L 1.0 0.00 176 D 0.0 0.25 177 N 0.1 0.50 178 T 0.2 0.75 179 K 0.3 1.00 180 F 0.4 1.25 181 R 0.5 1.50 182 S 0.6 0.00 183 H 0.7 0.25 184 E 0.8 0.50 185 G 0.9 0.75 186 E 1.0 1.00 187 T 0.0 1.25 188 A 0.1 1.50 189 Y 0.2 0.00 190 I 0.3 0.25 191 R 0.4 0.50 192 V 0.5 0.75 193 K 0.6 1.00 194 V 0.7 1.25 195 D 0.8 1.50 196 G 0.9 0.00 197 P 1.0 0.25 198 R 0.0 0.50 199 S 0.1 0.75 200 P 0.2 1.00 201 S 0.3 1.25 202 Y 0.4 1.50 203 G 0.5 0.00 204 R 0.6 0.25 205 S 0.7 0.50 206 R 0.8 0.75 207 S 0.9 1.00 208 R 1.0 1.25 209 S 0.0 1.50 210 R 0.1 0.00 211 S 0.2 0.25 212 R 0.3 0.50 213 S 0.4 0.75 214 R 0.5 1.00 215 S 0.6 1.25 216 R 0.7 1.50 217 S 0.8 0.00 218 R 0.9 0.25 219 S 1.0 0.50 220 N 0.0 0.75 221 S 0.1 1.00 222 R 0.2 1.25 223 S 0.3 1.50 224 R 0.4 0.00 225 S 0.5 0.25 226 Y 0.6 0.50 227 S 0.7 0.75 228 P 0.8 1.00 229 R 0.9 1.25 230 R 1.0 1.50 231 S 0.0 0.00 232 R 0.1 0.25 233 G 0.2 0.50 234 S 0.3 0.75 235 P 0.4 1.00 236 R 0.5 1.25 237 Y 0.6 1.50 238 S 0.7 0.00 239 P 0.8 0.25 240 R 0.9 0.50 241 H 1.0 0.75 242 S 0.0 1.00 243 R 0.1 1.25 244 S 0.2 1.50 245 R 0.3 0.00 246 S 0.4 0.25 247 R 0.5 0.50 248 T 0.6 0.75
+  - generic: Or choose a UTF-8 TSV file
+  - button "Or choose a UTF-8 TSV file"
+  - status: Original headers and rows are preserved.
+  - generic: Regions TSV optional
+  - textbox "Regions TSV optional":
+    - /placeholder: "Paste the official tab-separated export\nColumns: type · start · end"
+  - generic: Or choose a UTF-8 TSV file
+  - button "Or choose a UTF-8 TSV file"
+  - status: Original headers and rows are preserved.
+  - paragraph: "Provide at least one value or export. Local limit: 5 MiB total text. The server may apply a lower limit."
+  - checkbox "I declare that these values and exports come from the official FuzDrop service." [checked]
+  - text: I declare that these values and exports come from the official FuzDrop service.
+  - checkbox "I confirm that coordinates use 1-based inclusive positions for this sequence." [checked]
+  - text: I confirm that coordinates use 1-based inclusive positions for this sequence.
+  - alert:
+    - strong: FUZDROP_SEQUENCE_MISMATCH
+    - paragraph: The imported FuzDrop result does not match the current sequence.
+  - button "Cancel"
+  - button "Validate & Import"
+- alert

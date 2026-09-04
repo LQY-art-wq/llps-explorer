@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "scope": "Host Git probe of the Dockerfile sparse-source construction; this is not a Docker build or final image-layer scan.",
+  "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "expected_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "working_tree_clean_before_remote_removal": true,
+  "working_tree_clean_after_remote_removal": true,
+  "working_files": [
+    "Data/neg_dataset/neg_word_list_human.txt",
+    "Data/pos_dataset/pos_word_list_human.txt",
+    "Demo/code_for_model_testing/RCNN_ECA_3_human_test.py",
+    "Demo/code_for_model_testing/RCNN_ECA_personal_test.py",
+    "Demo/code_for_model_testing/RCNN_ECA_saliency/LCRs_process/split_LCRs_segment_forsingle.py",
+    "Demo/code_for_model_testing/RCNN_ECA_saliency/saliency_function/verify/RCNN_ECA_saliency_verify_gradCAM_fortest.py"
+  ],
+  "expected_working_files": [
+    "Data/neg_dataset/neg_word_list_human.txt",
+    "Data/pos_dataset/pos_word_list_human.txt",
+    "Demo/code_for_model_testing/RCNN_ECA_3_human_test.py",
+    "Demo/code_for_model_testing/RCNN_ECA_personal_test.py",
+    "Demo/code_for_model_testing/RCNN_ECA_saliency/LCRs_process/split_LCRs_segment_forsingle.py",
+    "Demo/code_for_model_testing/RCNN_ECA_saliency/saliency_function/verify/RCNN_ECA_saliency_verify_gradCAM_fortest.py"
+  ],
+  "upstream_weight_paths_in_tree": [
+    "Demo/saliency_model/mydata_1507_RCNN_ECA_089-0.9930.pt",
+    "Demo/trained_model/human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "Demo/trained_model/model_LLPS_0.pt",
+    "Demo/trained_model/model_R_3.pt",
+    "Demo/trained_model/model_high_2.pt",
+    "Demo/trained_model/model_mydata_1.pt",
+    "Demo/trained_model/mydata_1507_RCNN_ECA_089-0.9930.pt"
+  ],
+  "weight_blob_objects_present_after_sparse_fetch": [],
+  "fetch_filter_requested": "blob:none",
+  "fetch_stderr": "From https://github.com/ai-phasepro/LRECA\n * branch            0b4b48ab7870529a34028c6e30dfba42eddbf215 -> FETCH_HEAD"
+}

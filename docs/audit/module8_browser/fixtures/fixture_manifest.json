@@ -1,0 +1,132 @@
+{
+  "manifest_version": 1,
+  "module": 8,
+  "scope": "Seven browser fixture payloads: five preserved inputs, a preliminary D submitted-field reproduction and the E 0.42 input. Excludes README.md and this manifest.",
+  "hash_algorithm": "SHA-256",
+  "hash_basis": "Original file bytes; no newline, BOM or format normalization.",
+  "sequence": {
+    "file": "human_positive_line_1.fasta",
+    "kind": "real_lreca_human_baseline_input",
+    "length": 248,
+    "sha256_canonical_sequence": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+    "residue_243": "R",
+    "source": "external/lreca/Demo/test_dataset/pos_dataset/pos_word_list_human_test.txt:1 (repository-relative)",
+    "use": "Actual amino-acid input for real local LRECA and SEG browser analyses.",
+    "boundary": "The FASTA contains no predictions, inferred regions or experimental validation."
+  },
+  "fuzdrop_boundary": {
+    "synthetic_test_only": true,
+    "official_prediction": false,
+    "official_origin_verified": false,
+    "biological_evidence": false,
+    "notice": "All FuzDrop pLLPS, pDP, Sbind values and regions are synthetic. They test local import, display and interaction only.",
+    "source_declaration": "The literal official_fuzdrop_export exercises the required request contract; it does not authenticate these synthetic fixtures.",
+    "coordinates": "The one_based_inclusive declaration is test input, not new evidence about official native coordinates.",
+    "not_validated": [
+      "Official FuzDrop service access or responses",
+      "Prediction accuracy or biological activity",
+      "Experimental validation",
+      "Score calibration"
+    ]
+  },
+  "files": [
+    {
+      "file": "human_positive_line_1.fasta",
+      "bytes": 272,
+      "sha256": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575",
+      "synthetic": false,
+      "purpose": "Real 248-residue LRECA Human baseline sequence used as browser input for local LRECA and SEG.",
+      "boundary": "Input sequence only; no prediction values or native regions are stored in the FASTA."
+    },
+    {
+      "file": "synthetic_fuzdrop_import_248aa.json",
+      "bytes": 5175,
+      "sha256": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492",
+      "synthetic": true,
+      "purpose": "Full local import request with synthetic pLLPS 0.68, 248 pDP/Sbind rows and three synthetic regions on the real 248-residue sequence. This unchanged payload is specified for final Module 8 D acceptance with both TSV final LF characters retained.",
+      "boundary": "Request fixture only; not an official prediction or biological evidence. No import result ID or model response is fabricated."
+    },
+    {
+      "file": "synthetic_fuzdrop_scores_248aa.tsv",
+      "bytes": 3639,
+      "sha256": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+      "synthetic": true,
+      "purpose": "Standalone copy of the full request's synthetic residue TSV for upload, pDP coloring and residue-position checks.",
+      "boundary": "Every pDP and Sbind value is artificial. pDP is propensity, not attribution; Sbind is not a probability."
+    },
+    {
+      "file": "synthetic_fuzdrop_regions_248aa.tsv",
+      "bytes": 104,
+      "sha256": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964",
+      "synthetic": true,
+      "purpose": "Three artificial regions, including overlap, for supplied-boundary display and cross-linked selection checks.",
+      "boundary": "Regions are synthetic supplied input; they are neither official output nor reconstructed from pDP."
+    },
+    {
+      "file": "synthetic_fuzdrop_global_only_248aa.json",
+      "bytes": 383,
+      "sha256": "18e79fba0e1b0d4765a1775be3f42ea8b53e8dd8464e6be34f975b96478905ac",
+      "synthetic": true,
+      "purpose": "Local import request with synthetic global pLLPS 0.68 and no scores_tsv or regions_tsv fields.",
+      "boundary": "Tests absent residue/region data and disabled coloring. Global pLLPS must never fill residue scores or generate regions."
+    },
+    {
+      "file": "synthetic_fuzdrop_browser_import_248aa.json",
+      "bytes": 5173,
+      "sha256": "49fa8c15ff73443504ffbe362c2baee832485169d3d45e96e6de93954c19fa53",
+      "synthetic": true,
+      "purpose": "Preliminary Module 8 browser scenario D submitted-field reproduction: synthetic pLLPS 0.68, scores_tsv with its single final LF removed (3638 characters), and unchanged regions_tsv retaining its final LF.",
+      "boundary": "Preliminary input only, not the final D acceptance payload. Synthetic test-only, not an official prediction or raw HTTP capture. All numeric values and regions match the preserved full fixture."
+    },
+    {
+      "file": "synthetic_fuzdrop_global_only_042_248aa.json",
+      "bytes": 383,
+      "sha256": "07864170fdf4f47f5990b06f7b78999417e54e350013eb64002ac2194fb2e2c7",
+      "synthetic": true,
+      "purpose": "Module 8 browser scenario E input: manually entered synthetic global pLLPS 0.42 with both TSV fields absent; also specified for final E acceptance.",
+      "boundary": "Synthetic test-only input, not an official prediction. The preserved 0.68 global-only fixture was not the actual input for scenario E."
+    }
+  ],
+  "browser_scenario_inputs": {
+    "D_preliminary": {
+      "file": "synthetic_fuzdrop_browser_import_248aa.json",
+      "pLLPS": 0.68,
+      "scores_tsv_character_count": 3638,
+      "scores_tsv_final_newline": false,
+      "regions_tsv_character_count": 104,
+      "regions_tsv_final_newline": true,
+      "difference_from_preserved_full_fixture": "Only the final LF in scores_tsv is removed."
+    },
+    "D_final": {
+      "file": "synthetic_fuzdrop_import_248aa.json",
+      "pLLPS": 0.68,
+      "scores_tsv_character_count": 3639,
+      "scores_tsv_final_newline": true,
+      "regions_tsv_character_count": 104,
+      "regions_tsv_final_newline": true,
+      "boundary": "Specified final acceptance input under the explicit Synthetic test data profile. Completion is recorded by final browser evidence, not this manifest."
+    },
+    "E_final": {
+      "file": "synthetic_fuzdrop_global_only_042_248aa.json",
+      "pLLPS": 0.42,
+      "scores_tsv": "omitted",
+      "regions_tsv": "omitted",
+      "difference_from_preserved_global_only_fixture": "Only pLLPS changes from 0.68 to the actual manually entered 0.42.",
+      "boundary": "Specified final acceptance input under the explicit Synthetic test data profile. Completion is recorded by final browser evidence, not this manifest."
+    }
+  },
+  "consistency_checks": {
+    "payload_file_count": 7,
+    "original_five_payloads_byte_identical_to_module7_fixtures": true,
+    "all_four_json_sequences_match_fasta": true,
+    "fasta_matches_fixed_upstream_human_positive_first_line": true,
+    "embedded_scores_tsv_equals_standalone_tsv": true,
+    "embedded_regions_tsv_equals_standalone_tsv": true,
+    "score_rows": 248,
+    "region_rows": 3,
+    "both_global_only_payloads_omit_both_tsv_fields": true,
+    "D_preliminary_only_removes_single_final_scores_lf": true,
+    "E_only_changes_global_pLLPS_to_042": true
+  },
+  "documentation_action": "Preserved the original five payloads and added submitted-field reproductions for scenarios D and E. No prediction, scientific inference or external request was performed."
+}

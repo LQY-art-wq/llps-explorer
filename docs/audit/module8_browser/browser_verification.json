@@ -1,0 +1,293 @@
+{
+  "environment": {
+    "backend": "Existing real local FastAPI service",
+    "normal_frontend": "Next.js production start, normal profile",
+    "test_frontend": "The same production build with explicit FEATURE_VIEWER_TEST_MODE=1",
+    "browser": "Chrome and the in-app browser through Computer Use",
+    "coordinate_system": "1-based inclusive"
+  },
+  "scientific_scope": "A–C use real local LRECA/SEG outputs. D/E use real local LRECA/SEG outputs plus explicitly synthetic, locally validated FuzDrop import data. No official FuzDrop prediction was claimed and no DisMeta substitute was used.",
+  "scenarios": {
+    "A_real_lreca_only": {
+      "job_id": "analysis_weuutCzUV9VDTKQbqxskHAQ41fY73QlE",
+      "sequence_length": 248,
+      "rows": 5,
+      "prediction": "1.000 P",
+      "default_color_mode": "lreca-attribution",
+      "position_1": "M",
+      "position_243": "R",
+      "position_248": "T",
+      "fuzdrop": "Not imported",
+      "seg": "Not run",
+      "dismeta": "Unavailable",
+      "passed": true,
+      "profile": "test",
+      "feature_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical"
+      ],
+      "synthetic_badge_visible": true
+    },
+    "B_real_lreca_seg": {
+      "job_id": "analysis_xgzixt4X1YvRaX6FX1GoBGprZjMcHGwE",
+      "sequence_length": 248,
+      "prediction": "1.000 P",
+      "seg_regions": [
+        "72–85",
+        "89–119",
+        "196–247"
+      ],
+      "seg_coverage_percent": 39.11,
+      "seg_longest_region": 52,
+      "position_243": "R",
+      "passed": true,
+      "profile": "normal",
+      "feature_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "seg-regions"
+      ],
+      "synthetic_badge_visible": false
+    },
+    "C_real_seg_only": {
+      "job_id": "analysis_NOlw-8xHObxh2Zgs8hbuzWxVF6BMIQz9",
+      "sequence_length": 248,
+      "rows": 5,
+      "default_color_mode": "seg-regions",
+      "lreca_modes": "disabled — Not run",
+      "seg_mode": "enabled",
+      "fuzdrop_modes": "disabled — Not imported",
+      "dismeta_mode": "disabled — Unavailable",
+      "passed": true,
+      "profile": "test",
+      "feature_track_ids": [
+        "seg-regions"
+      ],
+      "synthetic_badge_visible": true
+    },
+    "D_fuzdrop_full_synthetic_import": {
+      "job_id": "analysis_-GuUfgG-Fs66lsFqz9r6kt3WJs4StncQ",
+      "sequence_length": 248,
+      "test_only_synthetic_fuzdrop": true,
+      "validated_import": true,
+      "pLLPS": 0.68,
+      "pdp_rows": 248,
+      "native_region_count": 3,
+      "propensity_mode_enabled": true,
+      "region_mode_enabled": true,
+      "position_43": {
+        "aa": "R",
+        "pDP": 1.0,
+        "fuzdrop_region": "Yes"
+      },
+      "position_243": {
+        "aa": "R",
+        "pDP": 0.1,
+        "fuzdrop_region": "No",
+        "lreca_attribution": 0.661,
+        "kde_density": 0.915,
+        "lreca_region": "Candidate hotspot 234–247",
+        "seg_lcr": "Low-complexity region 196–247"
+      },
+      "passed": true,
+      "profile": "test",
+      "feature_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "fuzdrop-propensity",
+        "fuzdrop-regions",
+        "seg-regions"
+      ],
+      "synthetic_badge_visible": true
+    },
+    "E_fuzdrop_global_only_synthetic_import": {
+      "job_id": "analysis_oN1wotSFZlnShUNCgK8mJAZg4fFbTAME",
+      "sequence_length": 248,
+      "test_only_synthetic_fuzdrop": true,
+      "pLLPS": 0.42,
+      "propensity_mode": "disabled — N/A",
+      "propensity_help": "FuzDrop residue-level data were not included in the imported result.",
+      "region_mode": "disabled — N/A",
+      "global_score_repeated_per_residue": false,
+      "passed": true,
+      "profile": "test",
+      "feature_track_ids": [
+        "lreca-attribution",
+        "lreca-kde",
+        "lreca-critical",
+        "seg-regions"
+      ],
+      "synthetic_badge_visible": true
+    },
+    "F_dismeta_blocked": {
+      "mode": "disabled — Unavailable",
+      "help": "DisMeta integration is currently unavailable.",
+      "ui_explicitly_avoids_no_idr_claim": true,
+      "replacement_or_mock_used": false,
+      "passed": true
+    },
+    "G_100_aa": {
+      "rows": 2,
+      "initial_render_ms": 2.7,
+      "passed": true
+    },
+    "H_500_aa": {
+      "rows": 10,
+      "initial_render_ms": 5.2,
+      "passed": true
+    },
+    "extra_1000_aa": {
+      "rows": 20,
+      "initial_render_ms": 11.7,
+      "passed": true
+    },
+    "I_2000_aa": {
+      "rows": 40,
+      "initial_render_ms": 27.5,
+      "passed": true
+    },
+    "J_5000_aa": {
+      "rows": 100,
+      "initial_render_ms": 42.7,
+      "cold_initial_render_ms": 68.4,
+      "passed": true
+    }
+  },
+  "checks": {
+    "actual_amino_acid_letters_rendered": true,
+    "fixed_50_residues_per_row": true,
+    "row_start_labels_are_1_based": true,
+    "ten_residue_ticks_do_not_cover_letters": true,
+    "monospace_residue_cells": true,
+    "position_1_exact": true,
+    "position_N_exact": true,
+    "position_243_exact": true,
+    "A_real_lreca_only_passed": true,
+    "B_real_lreca_seg_passed": true,
+    "C_real_seg_only_passed": true,
+    "D_full_fuzdrop_import_passed": true,
+    "E_global_only_fuzdrop_passed": true,
+    "F_dismeta_blocked_passed": true,
+    "lreca_attribution_uses_native_values": true,
+    "lreca_attribution_no_frontend_minmax": true,
+    "lreca_primary_and_candidate_styles_are_distinct": true,
+    "fuzdrop_uses_propensity_terminology": true,
+    "fuzdrop_propensity_requires_actual_imported_residue_data": true,
+    "fuzdrop_region_requires_actual_imported_regions": true,
+    "fuzdrop_global_score_not_filled_across_residues": true,
+    "seg_membership_uses_native_backend_regions": true,
+    "dismeta_option_disabled": true,
+    "dismeta_unavailable_not_no_idr": true,
+    "only_one_color_mode_active": true,
+    "selected_residue_visible_over_base_color": true,
+    "selected_region_visible_over_base_color": true,
+    "tooltip_rows_precomputed_by_mapper": true,
+    "tooltip_distinguishes_no_na_unavailable_not_imported": true,
+    "feature_to_sequence_residue_passed": true,
+    "sequence_to_feature_residue_passed": true,
+    "feature_to_sequence_region_passed": true,
+    "sequence_to_feature_region_passed": true,
+    "top_residue_links_both_viewers": true,
+    "lreca_region_table_links_both_viewers": true,
+    "seg_region_table_links_both_viewers": true,
+    "fuzdrop_region_table_links_both_viewers": true,
+    "ordinary_click_does_not_force_tab_switch": true,
+    "explicit_view_action_switches_tab": true,
+    "new_analysis_resets_selection": true,
+    "new_analysis_resets_focus_target": true,
+    "new_analysis_selects_data_appropriate_color": true,
+    "copy_full_sequence_exact_248": true,
+    "copy_selected_region_89_119_exact_31": true,
+    "copy_selected_region_content_exact": true,
+    "copy_residue_label_exact_G106": true,
+    "position_search_243_passed": true,
+    "keyboard_left_right_one_residue": true,
+    "keyboard_up_down_50_residues": true,
+    "keyboard_home_end_row_bounds": true,
+    "keyboard_clamps_at_1_and_N": true,
+    "keyboard_enter_selects": true,
+    "sequence_area_has_single_keyboard_stop": true,
+    "visual_grid_is_hidden_from_screen_reader": true,
+    "selection_details_are_aria_live": true,
+    "screen_reader_does_not_receive_5000_individual_letters": true,
+    "100_500_1000_2000_5000_rendered": true,
+    "5000_scroll_passed": true,
+    "5000_hover_passed": true,
+    "5000_selection_passed": true,
+    "5000_color_switch_passed": true,
+    "malformed_optional_pdp_isolated_without_crash": true,
+    "responsive_1440_passed": true,
+    "responsive_1280_passed": true,
+    "responsive_1024_passed": true,
+    "page_has_no_horizontal_overflow": true,
+    "normal_profile_test_route_404": true,
+    "test_profile_route_200_and_marked_synthetic": true,
+    "production_workspace_has_no_prefilled_synthetic_data": true,
+    "final_position_243_details_show_all_available_methods": true,
+    "final_visual_review_clear_and_scientifically_readable": true
+  },
+  "copy_selected_region": {
+    "region": "89–119",
+    "expected_length": 31,
+    "clipboard_length": 31,
+    "clipboard_text": "PRSGRGTGRGGGGGGGGGAPRGRYGPPSRRS",
+    "off_by_one_error": false
+  },
+  "keyboard_observation": {
+    "go_243": 243,
+    "right": 244,
+    "down_clamped": 248,
+    "right_at_N": 248,
+    "home": 201,
+    "end": 248,
+    "up_50": 198,
+    "left_at_1": 1
+  },
+  "visual_review": "At 1440 and 1024 widths the fixed sequence rows, 10-residue ticks, selected outline and evidence details remained legible. The actual canonical position 243 is R, not the illustrative Y243 used in the specification.",
+  "related_evidence": [
+    "docs/audit/module8_browser/crosslink_verification.json",
+    "docs/audit/module8_browser/performance.json",
+    "docs/audit/module8_browser/responsive.json",
+    "docs/audit/module8_browser/route_guards.json",
+    "docs/audit/module8_browser/api/regression_verification.json"
+  ],
+  "check_count": 71,
+  "passed_count": 71,
+  "failed_checks": [],
+  "status": "passed",
+  "recorded_local_date": "2026-09-04",
+  "timezone": "Asia/Shanghai",
+  "failed_count": 0,
+  "module7_browser_regression": "module7_regression_verification.json",
+  "final_display": {
+    "job_id": "analysis_sxzzqxs-dUcQiz-umFLpbTD1MvYrrFhU",
+    "profile": "normal",
+    "browser": "Codex in-app browser",
+    "real_methods": [
+      "lreca",
+      "seg"
+    ],
+    "synthetic_data": false,
+    "selected_residue": {
+      "position": 243,
+      "aa": "R"
+    },
+    "fuzdrop": "Not imported",
+    "dismeta": "Unavailable",
+    "rows": 5,
+    "row_starts": [
+      1,
+      51,
+      101,
+      151,
+      201
+    ],
+    "viewport_screenshot_inspected": [
+      1440,
+      900
+    ]
+  }
+}

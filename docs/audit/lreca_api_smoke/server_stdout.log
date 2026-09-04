@@ -1,0 +1,16 @@
+# Sanitized exported log: workstation paths replaced with environment references.
+# Original bytes retained privately: .audit/module1_private_evidence/docs/audit/lreca_api_smoke/server_stdout.log.bff19a479014fc454544f05667d81f5863591514bcfe5c495fba1d80bcf3dff4
+INFO:     Started server process [42528]
+INFO:     Waiting for application startup.
+INFO:     LRECA loaded checkpoint=human_1_RCNN_ECA_parallel_089-0.9802.pt configured_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt absolute_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt sha256=aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc size_bytes=2395318 repository_commit=0b4b48ab7870529a34028c6e30dfba42eddbf215 device=cuda:0
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:64009 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64020 - "GET /api/v1/health HTTP/1.1" 200
+INFO:     127.0.0.1:64020 - "GET /api/v1/methods/lreca/health HTTP/1.1" 200
+INFO:     127.0.0.1:64020 - "POST /api/v1/methods/lreca/analyze HTTP/1.1" 200
+INFO:     127.0.0.1:64020 - "POST /api/v1/methods/lreca/analyze HTTP/1.1" 200
+INFO:     127.0.0.1:64020 - "POST /api/v1/methods/lreca/analyze HTTP/1.1" 422
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42528]

@@ -1,0 +1,53 @@
+{
+  "started_at_utc": "2026-09-03T11:25:23.836793+00:00",
+  "finished_at_utc": "2026-09-03T11:26:15.125449+00:00",
+  "command": "python -m pytest backend/tests -q --junitxml=.audit/module3_full_tests.junit.xml",
+  "exit_code": 0,
+  "raw_log": ".audit/module3_full_tests.log",
+  "portable_log": "docs/audit/module3_full_tests.log",
+  "real_fuzdrop_submission_requests": 0,
+  "note": "FuzDrop tests deny external HTTP transports and use synthetic format data; existing LRECA tests run local real inference; SEG integration tests execute the official local binary.",
+  "passed": 389,
+  "warnings": 2,
+  "pytest_duration_seconds": 50.32,
+  "tests": 389,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_groups": {
+    "test_fuzdrop_api": 30,
+    "test_fuzdrop_import": 87,
+    "test_lreca_api": 56,
+    "test_lreca_integration": 20,
+    "test_lreca_portability": 7,
+    "test_lreca_process": 24,
+    "test_module0": 16,
+    "test_seg_api": 49,
+    "test_seg_integration": 13,
+    "test_seg_parser": 67,
+    "test_seg_process": 20
+  },
+  "initial_full_suite_before_final_isolation_fixes": {
+    "passed": 379,
+    "skipped": 0,
+    "warnings": 2,
+    "seconds": 63.94,
+    "raw_log": ".audit/module3_initial_full_tests.log"
+  },
+  "evidence_sha256": {
+    ".audit/module3_full_tests.log": "fd3d4f73077389de5e5d27418ecfbd51239be5c63c6af438124e270ba4fbe288",
+    ".audit/module3_full_tests.junit.xml": "e4f260fe2470d2a1cf045ffdd2fc2bbc4e894c636378f37df163e72fbb022d25",
+    "docs/audit/module3_full_tests.log": "6f767bea5c1d77e9bb8fb3f040adcaea4dc7a0af9ddfc0129d8c52876d7e7e06",
+    "docs/audit/module3_full_tests.junit.xml": "93ebf57060bfcbbcee0349300bfab69c114cb3d5da43f0c1f0eb15023cb2f6e9"
+  },
+  "portable_export_redactions": [
+    "internal absolute paths",
+    "hostname",
+    "synthetic Windows path ids in unchanged older LRECA tests"
+  ],
+  "lint": {
+    "command": "python -m ruff check --config backend/pyproject.toml backend scripts",
+    "status": "passed"
+  },
+  "compile_import_check": "passed"
+}

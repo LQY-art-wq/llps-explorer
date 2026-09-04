@@ -1,0 +1,205 @@
+- link "Skip to analysis results":
+  - /url: "#workspace-main"
+- banner:
+  - link "LLPS Explorer analysis workspace":
+    - /url: "#workspace-main"
+    - strong: LLPS Explorer
+    - generic: Sequence-based Phase Separation Prediction & Interpretation
+  - navigation "Main navigation":
+    - link "Analysis":
+      - /url: "#workspace-main"
+    - button "Examples"
+    - button "Documentation"
+    - button "About"
+  - button "History":
+    - generic: History
+  - button "Switch to dark theme":
+- complementary "Analysis setup":
+  - heading "Analysis setup" [level=2]
+  - region "Input":
+    - heading "Input" [level=3]
+    - generic: Single protein
+    - text: Sequence name
+    - generic: optional
+    - textbox "Sequence name optional":
+      - /placeholder: e.g. Protein of interest
+      - text: human_positive_line_1
+    - text: Protein sequence
+    - generic: FASTA or raw
+    - textbox "Protein sequence FASTA or raw":
+      - /placeholder: ">Protein_name\nPaste your amino-acid sequence here"
+      - text: ">human_positive_line_1 MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT"
+    - button "Paste example":
+      - text: Paste example
+    - button "Clear"
+    - generic "Sequence validation statistics":
+      - text: Length
+      - strong: 248 aa
+      - text: Valid residues
+      - strong: "248"
+      - text: Input type
+      - strong: FASTA
+    - paragraph:
+      - text: Sequence is valid
+  - region "Automatic analysis":
+    - heading "Automatic analysis" [level=3]
+    - button "Refresh method availability":
+    - checkbox "LRECA Human-specific model Automatic" [checked]
+    - generic: LRECA
+    - generic: Human-specific model
+    - generic: Automatic
+    - checkbox "SEG / LCR Low-complexity regions Automatic" [checked]
+    - generic: SEG / LCR
+    - generic: Low-complexity regions
+    - generic: Automatic
+  - region "External result":
+    - heading "External result" [level=3]
+    - strong: FuzDrop
+    - generic: Import required
+    - paragraph: Official prediction service
+    - paragraph: Not imported
+    - button "Import FuzDrop result":
+      - text: Import FuzDrop result
+    - link "Open official FuzDrop":
+      - /url: https://fuzdrop.bio.unipd.it/predictor
+      - text: Open official FuzDrop
+  - region "Unavailable":
+    - heading "Unavailable" [level=3]
+    - strong: DisMeta / IDR
+    - generic: Unavailable
+    - paragraph: Intrinsically disordered regions
+    - paragraph: Integration currently unavailable.
+    - button "Analysis unavailable" [disabled]
+  - region "Prediction mode":
+    - heading "Prediction mode" [level=3]
+    - group "Prediction mode":
+      - generic: Prediction mode
+      - radio "Independent" [checked]
+      - text: Independent
+      - radio "Weighted" [disabled]
+      - text: Weighted
+    - paragraph: Import a valid FuzDrop result for this sequence to enable weighted mode.
+  - button "Run analysis":
+    - text: Run analysis
+  - paragraph: Methods run independently. Results retain their provenance.
+- main:
+  - generic: Workspace / Analysis
+  - heading "Analysis workspace" [level=1]
+  - paragraph: Explore sequence-based predictions, evidence, and annotations.
+  - generic: Service connected
+  - generic: RESULTS
+  - strong: human_positive_line_1
+  - generic: Completed
+  - tablist "Analysis result sections":
+    - tab "Overview" [selected]
+    - tab "Feature Viewer"
+    - tab "Sequence Viewer"
+    - tab "LRECA"
+    - tab "FuzDrop"
+    - tab "Annotations"
+    - tab "Tables"
+    - tab "Download"
+  - tabpanel "Overview":
+    - paragraph: SUBMITTED PROTEIN
+    - heading "Protein Information" [level=2]
+    - generic: Independent
+    - term: Sequence name
+    - definition: human_positive_line_1
+    - term: Length
+    - definition: 248 aa
+    - term: Valid residues
+    - definition: 248 / 248
+    - term: Input type
+    - definition: FASTA
+    - term: Analysis time
+    - definition:
+      - time: Sep 3, 2026, 09:48 PM GMT+8
+    - term: Job ID
+    - definition: analysis_tRYo-7oQ700mgapMo14TEjGzMW7F4paU
+    - region "Prediction Summary":
+      - heading "Prediction Summary" [level=2]
+      - generic: Global prediction sources
+      - heading "LRECA" [level=3]
+      - paragraph: Human-specific model
+      - generic: Completed
+      - generic: "1.000"
+      - paragraph: P · Positive
+      - paragraph: Threshold > 0.50
+      - paragraph: Uncalibrated model score
+      - heading "FuzDrop" [level=3]
+      - paragraph: Imported official result
+      - generic: Not selected
+      - generic: —
+      - paragraph: Global pLLPS
+      - paragraph: No FuzDrop result is included in this analysis.
+      - button "Import result"
+      - link "Open Official FuzDrop":
+        - /url: https://fuzdrop.bio.unipd.it/predictor
+        - text: Open Official FuzDrop
+        - generic: ↗
+      - heading "Sequence Information" [level=3]
+      - paragraph: Submitted sequence
+      - generic: Input
+      - generic: Length (aa)
+      - strong: "248"
+      - generic: Valid residues
+      - strong: "248"
+      - generic: Input type
+      - strong: FASTA
+    - heading "Analysis Status" [level=2]
+    - generic: Completed
+    - list:
+      - strong: LRECA
+      - generic: Completed
+      - strong: SEG
+      - generic: Completed
+    - region "Annotation Summary":
+      - heading "Annotation Summary" [level=2]
+      - generic: Independent sequence features
+      - heading "Low-complexity Regions" [level=3]
+      - paragraph: SEG · sequence annotation
+      - generic: Completed
+      - generic: LCR coverage
+      - strong: 39.11%
+      - generic: Region count
+      - strong: "3"
+      - generic: Longest region
+      - strong: 52 aa
+      - heading "Intrinsically Disordered Regions" [level=3]
+      - paragraph: DisMeta · IDR annotation
+      - generic: Unavailable
+      - paragraph: DisMeta integration is currently unavailable.
+    - region "Protein Feature Viewer":
+      - paragraph: SEQUENCE FEATURES
+      - heading "Protein Feature Viewer" [level=2]
+      - generic: Preview
+      - paragraph: Interactive tracks will be available in a later release.
+      - paragraph: 4 data tracks are available in this result. Explore their values in the method tabs and tables.
+      - list:
+        - generic: LRECA residue attribution
+        - generic: 248 values
+        - generic: LRECA KDE density
+        - generic: 248 values
+        - generic: LRECA critical regions
+        - generic: 5 regions
+        - generic: FuzDrop pDP
+        - generic: Not available
+        - generic: FuzDrop predicted regions
+        - generic: Not available
+        - generic: SEG low-complexity regions
+        - generic: 3 regions
+      - paragraph: Residue attribution, residue propensity, KDE density, and region annotations remain separate.
+    - region "Protein Sequence Viewer":
+      - paragraph: RESIDUE DETAIL
+      - heading "Protein Sequence Viewer" [level=2]
+      - generic: Preview
+      - paragraph: Interactive tracks will be available in a later release.
+      - paragraph:
+        - text: "The submitted sequence is available:"
+        - strong: 248 residues
+        - text: .
+      - paragraph: MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYD…
+      - paragraph: Positions use 1-based inclusive coordinates.
+  - generic: LLPS Explorer · Sequence-first scientific analysis
+  - generic: "Coordinates: 1-based, inclusive"
+- alert

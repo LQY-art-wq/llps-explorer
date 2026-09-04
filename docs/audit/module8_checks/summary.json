@@ -1,0 +1,72 @@
+{
+  "started_at": "2026-09-03T17:07:01.161087+00:00",
+  "platform": "Windows",
+  "python": "3.13.9",
+  "node": "v24.19.0",
+  "checks": [
+    {
+      "name": "unit",
+      "exit_code": 0,
+      "duration_seconds": 1.565,
+      "command": [
+        "pnpm",
+        "test"
+      ],
+      "cwd": "frontend",
+      "log": "unit.log"
+    },
+    {
+      "name": "lint",
+      "exit_code": 0,
+      "duration_seconds": 63.649,
+      "command": [
+        "pnpm",
+        "lint"
+      ],
+      "cwd": "frontend",
+      "log": "lint.log"
+    },
+    {
+      "name": "typecheck",
+      "exit_code": 0,
+      "duration_seconds": 11.039,
+      "command": [
+        "pnpm",
+        "typecheck"
+      ],
+      "cwd": "frontend",
+      "log": "typecheck.log"
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "duration_seconds": 16.84,
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "cwd": "frontend",
+      "log": "build.log"
+    },
+    {
+      "name": "peer_dependencies",
+      "exit_code": 0,
+      "duration_seconds": 0.605,
+      "command": [
+        "pnpm",
+        "peers",
+        "check"
+      ],
+      "cwd": "frontend",
+      "log": "peer_dependencies.log"
+    }
+  ],
+  "unit_counts": {
+    "tests": 300,
+    "pass": 300,
+    "fail": 0,
+    "skipped": 0
+  },
+  "finished_at": "2026-09-03T17:08:34.986938+00:00",
+  "success": true
+}

@@ -1,0 +1,108 @@
+- link "Skip to analysis results":
+  - /url: "#workspace-main"
+- banner:
+  - link "LLPS Explorer analysis workspace":
+    - /url: "#workspace-main"
+    - strong: LLPS Explorer
+    - generic: Sequence-based Phase Separation Prediction & Interpretation
+  - navigation "Main navigation":
+    - link "Analysis":
+      - /url: "#workspace-main"
+    - button "Examples"
+    - button "Documentation"
+    - button "About"
+  - button "History":
+    - generic: History
+  - button "Switch to dark theme":
+- complementary "Analysis setup":
+  - heading "Analysis setup" [level=2]
+  - region "Input":
+    - heading "Input" [level=3]
+    - generic: Single protein
+    - text: Sequence name
+    - generic: optional
+    - textbox "Sequence name optional":
+      - /placeholder: e.g. Protein of interest
+    - text: Protein sequence
+    - generic: FASTA or raw
+    - textbox "Protein sequence FASTA or raw" [active]:
+      - /placeholder: ">Protein_name\nPaste your amino-acid sequence here"
+      - text: MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQXLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT
+    - button "Paste example":
+      - text: Paste example
+    - button "Clear"
+    - generic "Sequence validation statistics":
+      - text: Length
+      - strong: 248 aa
+      - text: Valid residues
+      - strong: "247"
+      - text: Input type
+      - strong: Raw
+    - paragraph: Unsupported residue X at position 136.
+  - region "Automatic analysis":
+    - heading "Automatic analysis" [level=3]
+    - button "Refresh method availability":
+    - checkbox "LRECA Human-specific model Automatic" [checked]
+    - generic: LRECA
+    - generic: Human-specific model
+    - generic: Automatic
+    - checkbox "SEG / LCR Low-complexity regions Automatic" [checked]
+    - generic: SEG / LCR
+    - generic: Low-complexity regions
+    - generic: Automatic
+  - region "External result":
+    - heading "External result" [level=3]
+    - strong: FuzDrop
+    - generic: Import required
+    - paragraph: Official prediction service
+    - paragraph: Not imported
+    - button "Import FuzDrop result" [disabled]:
+      - text: Import FuzDrop result
+    - link "Open official FuzDrop":
+      - /url: https://fuzdrop.bio.unipd.it/predictor
+      - text: Open official FuzDrop
+  - region "Unavailable":
+    - heading "Unavailable" [level=3]
+    - strong: DisMeta / IDR
+    - generic: Unavailable
+    - paragraph: Intrinsically disordered regions
+    - paragraph: Integration currently unavailable.
+    - button "Analysis unavailable" [disabled]
+  - region "Prediction mode":
+    - heading "Prediction mode" [level=3]
+    - group "Prediction mode":
+      - generic: Prediction mode
+      - radio "Independent" [checked]
+      - text: Independent
+      - radio "Weighted" [disabled]
+      - text: Weighted
+    - paragraph: Import a valid FuzDrop result for this sequence to enable weighted mode.
+  - button "Run analysis" [disabled]:
+    - text: Run analysis
+  - paragraph: Unsupported residue X at position 136.
+- main:
+  - generic: Workspace / Analysis
+  - heading "Analysis workspace" [level=1]
+  - paragraph: Explore sequence-based predictions, evidence, and annotations.
+  - generic: Service connected
+  - generic: RESULTS
+  - tablist "Analysis result sections":
+    - tab "Overview"
+    - tab "Feature Viewer"
+    - tab "Sequence Viewer"
+    - tab "LRECA"
+    - tab "FuzDrop" [selected]
+    - tab "Annotations"
+    - tab "Tables"
+    - tab "Download"
+  - tabpanel "FuzDrop":
+    - heading "No FuzDrop result imported" [level=3]
+    - paragraph: Import an official result to inspect its supplied scores and regions.
+    - button "Import result"
+    - link "Open Official FuzDrop":
+      - /url: https://fuzdrop.bio.unipd.it/predictor
+      - text: Open Official FuzDrop
+      - generic: ↗
+  - generic: LLPS Explorer · Sequence-first scientific analysis
+  - generic: "Coordinates: 1-based, inclusive"
+- alert

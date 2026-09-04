@@ -1,0 +1,16 @@
+* text=auto eol=lf
+# Preserve exact official SEG stdout bytes, including Windows CRLF fixtures.
+backend/tests/fixtures/seg/*.txt -text whitespace=cr-at-eol
+# The official help output ends with a blank line; preserve that source byte sequence.
+backend/tests/fixtures/seg/help.txt whitespace=cr-at-eol,-blank-at-eof
+# This frozen SEG source manifest is byte-hashed with its original CRLF endings.
+external/seg-source.json -text -whitespace
+# Historical audit outputs preserve the exact bytes produced by their tools.
+docs/audit/** -whitespace
+# These two trailing spaces are intentional Markdown hard line breaks.
+docs/module10_report.md whitespace=-blank-at-eol,-blank-at-eof
+*.png binary
+*.jpg binary
+*.pt binary
+*.pth binary
+*.xlsx binary

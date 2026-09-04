@@ -1,0 +1,555 @@
+{
+  "schema_version": "1.0",
+  "module": 10,
+  "generated_at_utc": "2026-09-04T06:25:53.5756763Z",
+  "status_vocabulary": {
+    "passed": "The described check actually ran in its named verification domain and met its assertions.",
+    "blocked": "The check was attempted or is a prerequisite, but an environmental blocker prevented the required result.",
+    "not_run": "The check did not run; source or host evidence must not be substituted for it."
+  },
+  "overall": {
+    "status": "blocked",
+    "deployment_classification": "DEPLOYMENT_BLOCKED",
+    "primary_blocker": "DOCKER_RUNTIME_UNAVAILABLE",
+    "reason": "The Module 10 hard success condition requires a real local Linux Docker stack. Docker and Compose were unavailable, so no container build, start, Linux scientific execution, or production-like end-to-end acceptance occurred.",
+    "claims_not_supported": [
+      "PRODUCTION_DEPLOYMENT_READY",
+      "PRODUCTION_READY_WITH_UNVERIFIED_ITEMS",
+      "Docker Compose validated by Docker",
+      "Linux container scientific regression passed",
+      "Public HTTPS tested"
+    ]
+  },
+  "environment": {
+    "host_platform": "windows",
+    "docker_runtime": "DOCKER_RUNTIME_UNAVAILABLE",
+    "docker_cli_available": false,
+    "docker_compose_confirmed": false,
+    "docker_daemon_confirmed": false,
+    "linux_containers_confirmed": false,
+    "public_server_available": false,
+    "public_dns_available": false,
+    "public_https_tested": false
+  },
+  "summary_counts": {
+    "passed": 15,
+    "blocked": 1,
+    "not_run": 26
+  },
+  "host_and_static_verifications": [
+    {
+      "id": "docker_runtime_availability",
+      "status": "blocked",
+      "verification_domain": "windows_host_environment_audit",
+      "attempted": true,
+      "finding": "DOCKER_RUNTIME_UNAVAILABLE",
+      "details": {
+        "docker_cli_available": false,
+        "docker_common_installation_found": false,
+        "docker_service_found": false,
+        "docker_process_found": false,
+        "alternative_container_cli_found": false,
+        "docker_daemon_confirmed": false,
+        "docker_compose_confirmed": false,
+        "linux_containers_confirmed": false
+      },
+      "evidence_paths": [
+        "docs/audit/module10/docker_runtime_audit.json",
+        "docs/audit/module10/docker_commands_attempt.log"
+      ]
+    },
+    {
+      "id": "backend_full_host_regression",
+      "status": "passed",
+      "verification_domain": "windows_host_python",
+      "container_runtime_used": false,
+      "counts": {
+        "tests": 816,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "time_seconds": 63.98
+      },
+      "notes": [
+        "The final full host suite supersedes the retained earlier 811-pass and 2-failure attempt.",
+        "This is not a Linux or container test."
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/backend_full_final.log",
+        "docs/audit/module10/backend_full_final.junit.xml",
+        "docs/audit/module10/backend_full.log",
+        "docs/audit/module10/backend_full.junit.xml"
+      ]
+    },
+    {
+      "id": "backend_module10_host_tests",
+      "status": "passed",
+      "verification_domain": "windows_host_python",
+      "container_runtime_used": false,
+      "counts": {
+        "tests": 35,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "time_seconds": 1.951
+      },
+      "does_not_prove": [
+        "Docker networking",
+        "Linux subprocess compatibility",
+        "real Redis or RQ recovery"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/backend_module10_final.log",
+        "docs/audit/module10/backend_module10_final.junit.xml"
+      ]
+    },
+    {
+      "id": "module8_scientific_api_regression_recheck",
+      "status": "passed",
+      "verification_domain": "offline_saved_artifact_regression",
+      "container_runtime_used": false,
+      "counts": {
+        "checks": 263,
+        "passed": 263,
+        "failed": 0
+      },
+      "execution": {
+        "transport": "Offline reads of saved JSON, TSV, FASTA, and frozen file bytes only.",
+        "submitted_new_jobs": 0,
+        "http_requests": 0,
+        "model_inference_runs": 0,
+        "modified_input_files": 0
+      },
+      "note": "Exact saved scientific and API artifact comparisons passed; this is not Module 10 Linux scientific regression.",
+      "evidence_paths": [
+        "docs/audit/module10/module8_api_regression.json",
+        "docs/audit/module10/module8_api_regression.log"
+      ]
+    },
+    {
+      "id": "frontend_host_tests",
+      "status": "passed",
+      "verification_domain": "windows_host_node",
+      "container_runtime_used": false,
+      "counts": {
+        "tests": 324,
+        "passed": 324,
+        "failed": 0,
+        "skipped": 0
+      },
+      "evidence_paths": [
+        "docs/audit/module10/frontend_tests_final.log"
+      ]
+    },
+    {
+      "id": "frontend_host_production_build",
+      "status": "passed",
+      "verification_domain": "windows_host_node",
+      "container_runtime_used": false,
+      "scope": "Next.js optimized host production build; the build log includes a successful TypeScript phase.",
+      "environment_note": "The host build loaded frontend .env.local; it is not a Docker image build or container runtime.",
+      "evidence_paths": [
+        "docs/audit/module10/frontend_build_final.log"
+      ]
+    },
+    {
+      "id": "frontend_direct_typecheck_command",
+      "status": "passed",
+      "verification_domain": "windows_host_node",
+      "attempted": true,
+      "container_runtime_used": false,
+      "scope": "The direct next typegen && tsc --noEmit command completed successfully and generated route types.",
+      "note": "This is a Windows host typecheck, not a Docker image build or Linux container check.",
+      "evidence_paths": [
+        "docs/audit/module10/frontend_typecheck_final.log"
+      ]
+    },
+    {
+      "id": "frontend_host_install_and_lint",
+      "status": "passed",
+      "verification_domain": "windows_host_node",
+      "container_runtime_used": false,
+      "scope": "Frozen-lockfile install with supply-chain policy check, followed by ESLint with zero allowed warnings.",
+      "evidence_paths": [
+        "docs/audit/module10/frontend_install_final.log",
+        "docs/audit/module10/frontend_lint_final.log"
+      ]
+    },
+    {
+      "id": "backend_host_quality_gates",
+      "status": "passed",
+      "verification_domain": "windows_host_python",
+      "container_runtime_used": false,
+      "checks": {
+        "ruff": true,
+        "compileall": true,
+        "pip_check": true,
+        "wheel_build": true
+      },
+      "evidence_paths": [
+        "docs/audit/module10/backend_lint_final.log",
+        "docs/audit/module10/compileall_final.log",
+        "docs/audit/module10/pip_check_final.log",
+        "docs/audit/module10/backend_wheel_final.log"
+      ]
+    },
+    {
+      "id": "deployment_asset_static_validation",
+      "status": "passed",
+      "verification_domain": "daemon_free_source_inspection",
+      "container_runtime_used": false,
+      "counts": {
+        "checks": 93,
+        "passed": 93,
+        "failed": 0
+      },
+      "declared_runtime_claim": "not_performed_by_this_static_check",
+      "does_not_prove": [
+        "docker compose config",
+        "image build",
+        "container startup"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/deployment_static_final.log",
+        "scripts/verify_deployment_static.py"
+      ]
+    },
+    {
+      "id": "lreca_sparse_source_host_probe",
+      "status": "passed",
+      "verification_domain": "host_git_sparse_source_probe",
+      "container_runtime_used": false,
+      "scope": "Host Git probe of the LRECA Dockerfile sparse-source construction; the expected pinned source files were materialized without upstream weight blobs.",
+      "details": {
+        "fetch_filter_requested": "blob:none",
+        "working_file_count": 6,
+        "upstream_weight_path_count": 7,
+        "weight_blob_objects_present_after_sparse_fetch": [],
+        "working_tree_clean_before_remote_removal": true,
+        "working_tree_clean_after_remote_removal": true
+      },
+      "does_not_prove": [
+        "Docker build success",
+        "final Docker image-layer contents",
+        "Linux container startup"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/lreca_sparse_source_probe.json",
+        "docker/lreca/Dockerfile"
+      ]
+    },
+    {
+      "id": "compose_yaml_syntax_and_selected_invariants",
+      "status": "passed",
+      "verification_domain": "host_pyyaml_parse",
+      "container_runtime_used": false,
+      "parser": "PyYAML 6.0.3",
+      "scope": "YAML syntax and selected topology invariants only; not Docker Compose schema or daemon validation.",
+      "services": [
+        "backend",
+        "frontend",
+        "lreca",
+        "migrate",
+        "postgres",
+        "redis",
+        "reverse-proxy",
+        "worker"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/compose_yaml_parse.json",
+        "compose.yaml"
+      ]
+    },
+    {
+      "id": "frontend_bundle_privacy_scan",
+      "status": "passed",
+      "verification_domain": "host_built_browser_assets",
+      "container_runtime_used": false,
+      "asset_count": 14,
+      "total_bytes": 840196,
+      "standalone_server_exists": true,
+      "forbidden_findings": [],
+      "does_not_prove": [
+        "privacy of an unbuilt Docker image layer",
+        "runtime reverse-proxy responses"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/frontend_bundle_privacy.json",
+        "docs/audit/module10/frontend_build_final.log"
+      ]
+    },
+    {
+      "id": "saved_response_privacy_regression",
+      "status": "passed",
+      "verification_domain": "offline_saved_api_artifacts",
+      "container_runtime_used": false,
+      "scope": "Saved Module 8 response and health artifacts had zero forbidden absolute-path or internal-endpoint findings.",
+      "does_not_prove": [
+        "Docker HTTP response privacy",
+        "Caddy runtime privacy"
+      ],
+      "evidence_paths": [
+        "docs/audit/module10/module8_api_regression.json"
+      ]
+    },
+    {
+      "id": "scope_and_frozen_science_snapshot",
+      "status": "passed",
+      "verification_domain": "sha256_baseline_snapshot",
+      "container_runtime_used": false,
+      "summary": {
+        "added": 65,
+        "modified": 25,
+        "deleted": 0,
+        "total_changed": 90,
+        "frozen_science_files_reviewed": 43,
+        "frozen_science_violations": 0,
+        "unexpected_changes": 0
+      },
+      "snapshot_limit": "Final scope refresh after the Module 10 implementation, reports, commands, and evidence were written; generated scope outputs are handled explicitly by the audit to avoid self-hash recursion.",
+      "evidence_paths": [
+        "docs/audit/module10/scope_review.json",
+        "docs/module10_changed_files.txt"
+      ]
+    }
+  ],
+  "docker_linux_and_public_verifications": [
+    {
+      "id": "docker_compose_schema_validation",
+      "status": "not_run",
+      "component": "Docker Compose",
+      "required_check": "docker compose config",
+      "reason": "Docker CLI and Compose unavailable.",
+      "note": "PyYAML parsing passed, but is not Docker Compose schema validation.",
+      "evidence_paths": ["docs/audit/module10/docker_commands_attempt.log", "docs/audit/module10/docker_runtime_audit.json", "docs/audit/module10/compose_yaml_parse.json"]
+    },
+    {
+      "id": "docker_image_build",
+      "status": "not_run",
+      "component": "all images",
+      "required_check": "docker compose build; record image names, sizes, duration, warnings, and build probes",
+      "reason": "Docker runtime unavailable.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docker/backend/Dockerfile", "docker/worker/Dockerfile", "docker/lreca/Dockerfile", "docker/frontend/Dockerfile"]
+    },
+    {
+      "id": "docker_stack_start_and_health",
+      "status": "not_run",
+      "component": "full stack",
+      "required_check": "docker compose up -d; migrate exits 0 and all long-running services become healthy",
+      "reason": "No images or containers could be created.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml"]
+    },
+    {
+      "id": "postgres_runtime_migration_persistence",
+      "status": "not_run",
+      "component": "PostgreSQL and Alembic",
+      "required_check": "fresh PostgreSQL, alembic upgrade head, real job persistence, restart, and named-volume survival",
+      "reason": "PostgreSQL container not started.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml", "backend/alembic.ini"]
+    },
+    {
+      "id": "redis_runtime_and_restart",
+      "status": "not_run",
+      "component": "Redis",
+      "required_check": "authenticated PING, AOF queue operation, restart, completed-result survival, and queued/running recovery",
+      "reason": "Redis container not started.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml"]
+    },
+    {
+      "id": "rq_real_async_execution",
+      "status": "not_run",
+      "component": "Redis, RQ, and analysis worker",
+      "required_check": "HTTP persists queued job, enqueues only job_id, and worker claims and persists a terminal result",
+      "reason": "No Redis or worker container.",
+      "note": "Host unit tests passed; they are not real Redis or RQ integration.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "backend/app/services/analysis_queue.py", "backend/app/worker.py"]
+    },
+    {
+      "id": "worker_restart_recovery_and_idempotency",
+      "status": "not_run",
+      "component": "analysis worker",
+      "required_check": "kill or restart during queued and running states; finite retry, requeue, or interrupted outcome; no duplicate result or permanent running row",
+      "reason": "No worker container or real RQ job.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "backend/app/worker.py", "backend/app/services/persistent_repositories.py"]
+    },
+    {
+      "id": "lreca_linux_service_startup_identity_and_single_load",
+      "status": "not_run",
+      "component": "LRECA service",
+      "required_check": "live during startup; mounted checkpoint SHA256; one model load; ready after load; wrong hash stays live and unready; safe metadata",
+      "reason": "LRECA Linux image and container were not built or started.",
+      "note": "Host wrapper tests passed; this is not container startup evidence.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docker/lreca/Dockerfile", "backend/lreca_service/main.py"]
+    },
+    {
+      "id": "lreca_linux_cpu_inference_and_scientific_regression",
+      "status": "not_run",
+      "component": "LRECA CPU",
+      "required_check": "real Human checkpoint global prediction, Grad-CAM, KDE, one-based regions, and frozen tolerance comparison in Linux",
+      "reason": "LRECA Linux container unavailable.",
+      "note": "Windows Module 1 CPU and CUDA evidence applies only to that host.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/lreca_baseline.md", "docs/lreca_explainability.md"]
+    },
+    {
+      "id": "lreca_service_restart",
+      "status": "not_run",
+      "component": "LRECA service",
+      "required_check": "restart; observe live, temporary unready, checkpoint verification, one load, ready, and a new analysis",
+      "reason": "LRECA container not started.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml"]
+    },
+    {
+      "id": "seg_linux_build_runtime_and_regression",
+      "status": "not_run",
+      "component": "NCBI segmasker in worker",
+      "required_check": "build fixed 2.17.0+ Linux artifact, run version and a real sequence, and compare Module 3 frozen intervals",
+      "reason": "Worker Linux image was not built.",
+      "note": "Dockerfile version and sequence gates plus Windows SEG tests are not Linux execution evidence.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docker/worker/Dockerfile", "external/seg-source.json", "docs/seg_runtime.md"]
+    },
+    {
+      "id": "caddy_local_http_reverse_proxy",
+      "status": "not_run",
+      "component": "Caddy",
+      "required_check": "use only http://localhost; route / to frontend and /api to backend; keep internal services unreachable",
+      "reason": "Caddy container not started.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docker/caddy/Caddyfile", "compose.yaml"]
+    },
+    {
+      "id": "caddy_runtime_security_and_cache_headers",
+      "status": "not_run",
+      "component": "Caddy and browser",
+      "required_check": "observe CSP, frame/referrer/content-type headers, private no-store API responses, and a clean browser console",
+      "reason": "No reverse-proxy runtime.",
+      "note": "Static Caddyfile checks passed; headers were not observed over Docker HTTP.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docker/caddy/Caddyfile", "docs/audit/module10/deployment_static_final.log"]
+    },
+    {
+      "id": "local_production_end_to_end",
+      "status": "not_run",
+      "component": "full product",
+      "required_check": "real sequence via Caddy to persisted queue, worker, LRECA and SEG, PostgreSQL, polling, summary, viewers, history, exports, and delete",
+      "reason": "Full Docker stack unavailable.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/deployment.md"]
+    },
+    {
+      "id": "fuzdrop_manual_import_docker_e2e",
+      "status": "not_run",
+      "component": "FuzDrop manual import",
+      "required_check": "synthetic integration fixture import, persistence, job reference, optional weighted score, and zero automatic official submissions",
+      "reason": "Full Docker stack unavailable.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/fuzdrop_integration.md"]
+    },
+    {
+      "id": "dismeta_blocked_docker_e2e",
+      "status": "not_run",
+      "component": "DisMeta",
+      "required_check": "UI unavailable, API blocked, and no IDR result or track through the deployed stack",
+      "reason": "Full Docker stack unavailable.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/dismeta_integration.md"]
+    },
+    {
+      "id": "history_exports_across_restarts",
+      "status": "not_run",
+      "component": "persistence and exports",
+      "required_check": "history and JSON, CSV, and FASTA remain identical after backend, worker, Redis, and PostgreSQL restarts",
+      "reason": "No persistent Docker stack or created job.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml"]
+    },
+    {
+      "id": "anonymous_ownership_through_caddy",
+      "status": "not_run",
+      "component": "ownership and cookie boundary",
+      "required_check": "session A access; independent session B cannot retrieve, list, export, or delete A's job",
+      "reason": "No Caddy or container browser acceptance stack.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/security.md"]
+    },
+    {
+      "id": "periodic_retention_cleanup_docker_e2e",
+      "status": "not_run",
+      "component": "retention",
+      "required_check": "short test retention removes expired job, history access, and eligible external result on the periodic schedule",
+      "reason": "No PostgreSQL or backend container runtime.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/data_retention.md"]
+    },
+    {
+      "id": "rate_queue_body_and_sequence_limits_docker_e2e",
+      "status": "not_run",
+      "component": "abuse controls",
+      "required_check": "lowered thresholds return structured 429, 503, and 413 while the normal path remains usable",
+      "reason": "No Redis, Caddy, or backend runtime.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/security.md"]
+    },
+    {
+      "id": "graceful_shutdown_and_oom_behavior",
+      "status": "not_run",
+      "component": "worker and LRECA failure handling",
+      "required_check": "compose stop and controlled resource failure leave no permanently running job or permanently down stack",
+      "reason": "No containers to stop or constrain.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "compose.yaml"]
+    },
+    {
+      "id": "postgres_backup_restore_drill",
+      "status": "not_run",
+      "component": "backup and restore",
+      "required_check": "pg_dump, archive validation, isolated restore, migration, owned history, result and export comparison, and privacy retention checks",
+      "reason": "No PostgreSQL container or isolated Docker project.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "scripts/backup_db.sh", "scripts/restore_db.sh", "docs/backup_restore.md"]
+    },
+    {
+      "id": "linux_docker_cpu_performance",
+      "status": "not_run",
+      "component": "LRECA CPU and SEG",
+      "required_check": "100, 500, 1000, and 2000 aa global, full, and SEG measurements plus host-baseline comparison; optional 5000 aa",
+      "reason": "Scientific containers unavailable.",
+      "note": "Referenced Module 1 and 3 benchmarks are Windows host evidence only.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/audit/lreca_performance.json", "docs/audit/seg/performance.json"]
+    },
+    {
+      "id": "gpu_container_passthrough_regression_and_performance",
+      "status": "not_run",
+      "component": "LRECA GPU",
+      "required_check": "NVIDIA Container Toolkit and device grant, CUDA probe, real regression, memory, and performance",
+      "reason": "No Docker runtime; NVIDIA container passthrough could not be assessed.",
+      "result_label": "GPU_DOCKER_NOT_TESTED",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/lreca_runtime.md"]
+    },
+    {
+      "id": "long_sequence_5000aa_docker_e2e",
+      "status": "not_run",
+      "component": "queue, inference, viewer, and export",
+      "required_check": "5000-aa acceptance or documented operational-limit behavior through the deployed stack",
+      "reason": "No Docker stack.",
+      "evidence_paths": ["docs/audit/module10/docker_runtime_audit.json", "docs/module8_report.md"]
+    },
+    {
+      "id": "future_ubuntu_dns_https_firewall",
+      "status": "not_run",
+      "component": "public production edge",
+      "required_check": "real Ubuntu host, DNS A or AAAA, public firewall, Caddy TLS issuance and renewal, Secure cookie, and HTTPS browser test",
+      "reason": "No public server or domain; intentionally outside the local Module 10 execution environment.",
+      "result_label": "PUBLIC_HTTPS_UNVERIFIED",
+      "evidence_paths": ["docker/caddy/Caddyfile.production.example", "docs/deployment.md", "docs/security.md"]
+    },
+    {
+      "id": "final_scope_refresh_after_all_outputs",
+      "status": "passed",
+      "component": "scope audit",
+      "required_check": "rerun SHA256 baseline comparison after documentation and verification_summary.json are final",
+      "reason": "The final SHA256 baseline comparison passed after the Module 10 implementation, documentation, commands, and machine-readable summary were written: 65 added, 25 modified, 0 deleted, 43 frozen scientific files unchanged, 0 unexpected changes, and 0 violations.",
+      "evidence_paths": ["docs/audit/module10/scope_review.json", "docs/module10_changed_files.txt"]
+    }
+  ],
+  "scientific_identity_carried_forward": {
+    "lreca_model_variant": "human_specific",
+    "lreca_repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+    "lreca_checkpoint_filename": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "lreca_checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+    "lreca_dataset5_mapping_status": "unconfirmed",
+    "seg_distribution": "NCBI BLAST+ 2.17.0+",
+    "fuzdrop_mode": "manual_import_only",
+    "dismeta_mode": "integration_blocked",
+    "note": "These identities come from frozen prior-module evidence and source configuration; they do not assert Linux container execution."
+  },
+  "evidence_root": "docs/audit/module10"
+}

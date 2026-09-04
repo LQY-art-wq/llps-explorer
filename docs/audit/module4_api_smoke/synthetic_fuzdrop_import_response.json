@@ -1,0 +1,42 @@
+{
+  "http_status": 200,
+  "body": {
+    "method_id": "fuzdrop",
+    "status": "success",
+    "message": null,
+    "method": "fuzdrop",
+    "mode": "C",
+    "integration_mode": "browser_protected",
+    "semantic_type": "model_prediction",
+    "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+    "sequence_length": 248,
+    "raw_score": 0.2,
+    "calibrated_score": 0.2,
+    "calibration_status": "not_calibrated",
+    "score_semantics": "official_pLLPS",
+    "label": "N",
+    "label_semantics": "P meets the official droplet-driver threshold; N is below that threshold and does not establish absence of condensation.",
+    "threshold": 0.6,
+    "threshold_operator": ">=",
+    "residue_propensity": null,
+    "regions": null,
+    "source": "manual_import_of_official_result",
+    "source_declaration": "official_fuzdrop_export",
+    "origin_verification": "user_declared_not_independently_verified",
+    "coordinate_system": "one_based_inclusive",
+    "coordinate_verification": "user_declared_not_independently_verified",
+    "official_site_url": "https://fuzdrop.bio.unipd.it/predictor",
+    "service_version": null,
+    "retrieved_at": null,
+    "imported_at": "2026-09-03T11:57:09.792750Z",
+    "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+    "raw_tsv_sha256": {},
+    "raw_response_sha256": null,
+    "runtime_ms": 0.1145999995060265,
+    "runtime_scope": "local_import_parsing",
+    "warnings": [
+      "The imported data origin is user-declared and has not been independently verified.",
+      "The coordinate convention is user-declared; no genuine official export was available to independently verify native indexing or endpoint inclusivity."
+    ]
+  }
+}

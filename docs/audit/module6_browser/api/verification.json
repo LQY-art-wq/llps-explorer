@@ -1,0 +1,382 @@
+{
+  "verified_at_utc": "2026-09-03T13:43:37.182182+00:00",
+  "transport": "GET existing jobs through the same-origin frontend proxy",
+  "frontend_base_url": "http://127.0.0.1:3000",
+  "submitted_new_analysis_requests": 0,
+  "official_remote_requests": 0,
+  "sequence_length": 248,
+  "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+  "reference_files": [
+    "backend/tests/fixtures/lreca/global_baseline.json",
+    "backend/tests/fixtures/seg/cases.json",
+    "docs/audit/module6_browser/fixtures/synthetic_fuzdrop_import_248aa.json"
+  ],
+  "checks": {
+    "A_http_200": true,
+    "A_no_private_paths": true,
+    "A_job_identity": true,
+    "A_selected_only": true,
+    "A_success": true,
+    "A_human_identity": true,
+    "A_public_metadata_allowlist": true,
+    "A_sequence": true,
+    "A_positive_mapping": true,
+    "A_baseline_score": true,
+    "A_positive_logit_score": true,
+    "A_not_calibrated": true,
+    "A_attribution_248": true,
+    "A_predicted_class_attribution": true,
+    "A_kde_248": true,
+    "A_critical_regions": true,
+    "A_independent_no_ensemble": true,
+    "B_http_200": true,
+    "B_no_private_paths": true,
+    "B_job_identity": true,
+    "B_selected_only": true,
+    "B_success": true,
+    "B_native_seg_regions": true,
+    "B_seg_identity": true,
+    "B_seg_annotation_only": true,
+    "B_seg_statistics": true,
+    "B_independent_no_ensemble": true,
+    "C_http_200": true,
+    "C_no_private_paths": true,
+    "C_job_identity": true,
+    "C_selected_only": true,
+    "C_success": true,
+    "C_human_identity": true,
+    "C_public_metadata_allowlist": true,
+    "C_sequence": true,
+    "C_positive_mapping": true,
+    "C_baseline_score": true,
+    "C_positive_logit_score": true,
+    "C_not_calibrated": true,
+    "C_attribution_248": true,
+    "C_predicted_class_attribution": true,
+    "C_kde_248": true,
+    "C_critical_regions": true,
+    "C_native_seg_regions": true,
+    "C_seg_identity": true,
+    "C_seg_annotation_only": true,
+    "C_seg_statistics": true,
+    "C_independent_no_ensemble": true,
+    "F_http_200": true,
+    "F_no_private_paths": true,
+    "F_job_identity": true,
+    "F_selected_only": true,
+    "F_success": true,
+    "F_human_identity": true,
+    "F_public_metadata_allowlist": true,
+    "F_sequence": true,
+    "F_positive_mapping": true,
+    "F_baseline_score": true,
+    "F_positive_logit_score": true,
+    "F_not_calibrated": true,
+    "F_attribution_248": true,
+    "F_predicted_class_attribution": true,
+    "F_kde_248": true,
+    "F_critical_regions": true,
+    "methods_http_200": true,
+    "methods_no_private_paths": true,
+    "catalog_modes_and_capabilities": true,
+    "health_http_200": true,
+    "health_no_private_paths": true,
+    "F_imported_synthetic_identity": true,
+    "F_248_synthetic_pDP": true,
+    "F_3_synthetic_regions": true,
+    "F_import_text_hashes": true,
+    "F_backend_ensemble_value": true,
+    "F_backend_ensemble_semantics": true,
+    "F_native_download_full_object_equal": true,
+    "F_native_download_no_private_paths": true,
+    "F_native_download_original_bytes_preserved": true,
+    "verification_contains_no_private_paths": true,
+    "H_http_200": true,
+    "H_no_private_paths": true,
+    "H_job_identity": true,
+    "H_partial_success": true,
+    "H_selected_only": true,
+    "H_independent_no_ensemble": true,
+    "H_lreca_success_retained": true,
+    "H_lreca_human_identity": true,
+    "H_lreca_sequence": true,
+    "H_lreca_public_metadata": true,
+    "H_positive_class_mapping": true,
+    "H_lreca_baseline_score": true,
+    "H_not_calibrated": true,
+    "H_attribution_248": true,
+    "H_kde_248": true,
+    "H_critical_regions_retained": true,
+    "H_seg_explicit_failed": true,
+    "H_seg_scientific_result_null": true,
+    "H_seg_no_fabricated_zero_fields": true,
+    "H_test_exception_not_public": true,
+    "C_final_build_http_200": true,
+    "C_final_build_job_identity": true,
+    "C_final_build_no_private_paths": true,
+    "C_final_build_success": true,
+    "C_final_build_sequence_identity": true,
+    "C_final_build_modes_and_methods": true,
+    "C_final_build_only_job_time_elapsed_differences": true,
+    "C_final_build_lreca_full_scientific_object_equal": true,
+    "C_final_build_seg_full_scientific_object_equal": true,
+    "C_final_build_lreca_248_attribution_and_kde": true,
+    "C_final_build_seg_native_summary": true
+  },
+  "cases": {
+    "A": {
+      "job_id": "analysis_W8l-lBcO6Z_1ny4fL0Kbp9HNtDPNTUKe",
+      "http_status": 200,
+      "status": "success",
+      "prediction_mode": "independent",
+      "selected_methods": [
+        "lreca"
+      ],
+      "lreca": {
+        "raw_score": 0.9999921321868896,
+        "label": "P",
+        "threshold": 0.5,
+        "positive_class_index": 1,
+        "attribution_residues": 248,
+        "kde_values": 248,
+        "critical_region_count": 5,
+        "device": "cuda:0"
+      }
+    },
+    "B": {
+      "job_id": "analysis_EkIcjZMi2a3_0HQUWJUnwBWbJBMlOmJU",
+      "http_status": 200,
+      "status": "success",
+      "prediction_mode": "independent",
+      "selected_methods": [
+        "seg"
+      ],
+      "seg": {
+        "region_count": 3,
+        "coverage": 0.3911290322580645,
+        "longest_region": 52,
+        "regions": [
+          {
+            "start": 72,
+            "end": 85,
+            "semantic_type": "region_annotation",
+            "length": 14
+          },
+          {
+            "start": 89,
+            "end": 119,
+            "semantic_type": "region_annotation",
+            "length": 31
+          },
+          {
+            "start": 196,
+            "end": 247,
+            "semantic_type": "region_annotation",
+            "length": 52
+          }
+        ]
+      }
+    },
+    "C": {
+      "job_id": "analysis_JudSoFFg8_5GoHWD12DMxi-WfM2xaUtN",
+      "http_status": 200,
+      "status": "success",
+      "prediction_mode": "independent",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "lreca": {
+        "raw_score": 0.9999921321868896,
+        "label": "P",
+        "threshold": 0.5,
+        "positive_class_index": 1,
+        "attribution_residues": 248,
+        "kde_values": 248,
+        "critical_region_count": 5,
+        "device": "cuda:0"
+      },
+      "seg": {
+        "region_count": 3,
+        "coverage": 0.3911290322580645,
+        "longest_region": 52,
+        "regions": [
+          {
+            "start": 72,
+            "end": 85,
+            "semantic_type": "region_annotation",
+            "length": 14
+          },
+          {
+            "start": 89,
+            "end": 119,
+            "semantic_type": "region_annotation",
+            "length": 31
+          },
+          {
+            "start": 196,
+            "end": 247,
+            "semantic_type": "region_annotation",
+            "length": 52
+          }
+        ]
+      }
+    },
+    "F": {
+      "job_id": "analysis_Uodx6jZdPTwux5xqQzibn7JftE95jypS",
+      "http_status": 200,
+      "status": "success",
+      "prediction_mode": "weighted",
+      "selected_methods": [
+        "lreca",
+        "fuzdrop"
+      ],
+      "lreca": {
+        "raw_score": 0.9999921321868896,
+        "label": "P",
+        "threshold": 0.5,
+        "positive_class_index": 1,
+        "attribution_residues": 248,
+        "kde_values": 248,
+        "critical_region_count": 5,
+        "device": "cuda:0"
+      },
+      "fuzdrop": {
+        "raw_score": 0.68,
+        "residue_rows": 248,
+        "region_rows": 3,
+        "scientific_prediction": false,
+        "notice": "Synthetic official-format test values; user-declared origin is not independently verified."
+      },
+      "ensemble": {
+        "backend_score": 0.8719952793121338,
+        "verification_formula": "0.6 * LRECA calibrated_score + 0.4 * FuzDrop calibrated_score",
+        "verified_value": 0.8719952793121338,
+        "label": "P",
+        "threshold": 0.5,
+        "calibration_status": "not_calibrated",
+        "interpretation_status": "experimental_weighted_score"
+      }
+    },
+    "H": {
+      "job_id": "analysis_HEsw-VBCJjw4ssQ-6uxvvdk_22vR5_mW",
+      "frontend_base_url": "http://127.0.0.1:3001",
+      "http_status": 200,
+      "status": "partial_success",
+      "prediction_mode": "independent",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "backend_kind": "Explicit test-only SEG analyze failure injection; not a production failure.",
+      "test_entrypoint": "scripts/module6_test_backend.py --fail-seg",
+      "lreca": {
+        "status": "success",
+        "raw_score": 0.9999921321868896,
+        "label": "P",
+        "attribution_residues": 248,
+        "kde_values": 248,
+        "device": "cuda:0",
+        "real_inference": true
+      },
+      "seg": {
+        "status": "failed",
+        "error_code": "METHOD_EXECUTION_FAILED",
+        "result": null,
+        "failure_is_injected": true,
+        "fabricated_scientific_zero_fields": false
+      },
+      "verified_at_utc": "2026-09-03T13:46:19.641435+00:00"
+    },
+    "C_final_build": {
+      "job_id": "analysis_tRYo-7oQ700mgapMo14TEjGzMW7F4paU",
+      "frontend_base_url": "http://127.0.0.1:3000",
+      "http_status": 200,
+      "status": "success",
+      "prediction_mode": "independent",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "comparison_reference": "C_job.json",
+      "scientific_comparison": "Exact deep equality of every native result field except runtime_ms and timings_ms; all top-level differences restricted to job identity and timestamps.",
+      "allowed_changed_fields": [
+        "created_at",
+        "expires_at",
+        "job_id",
+        "methods.lreca.result.kde.runtime_ms",
+        "methods.lreca.result.runtime_ms",
+        "methods.lreca.result.timings_ms.attribution_ms",
+        "methods.lreca.result.timings_ms.global_ms",
+        "methods.lreca.result.timings_ms.kde_ms",
+        "methods.lreca.runtime_ms",
+        "methods.seg.result.runtime_ms",
+        "methods.seg.runtime_ms",
+        "updated_at"
+      ],
+      "unexpected_scientific_differences": [],
+      "sequence_length": 248,
+      "attribution_residues": 248,
+      "kde_values": 248,
+      "seg_region_count": 3,
+      "seg_coverage": 0.3911290322580645,
+      "seg_longest_region": 52,
+      "verification_method": "GET of the job created by the root browser check on the final frontend build.",
+      "ui_sequence_information_observation": {
+        "source": "root browser observation; input type is not supplied by the job API",
+        "length": 248,
+        "valid_residues": 248,
+        "input_type": "FASTA"
+      },
+      "verified_at_utc": "2026-09-03T13:49:49.176790+00:00"
+    }
+  },
+  "files": {
+    "A_job.json": {
+      "size_bytes": 31845,
+      "sha256": "1df145c4ac7728c2f1106c33153d01000617de39492b2283053472c3e940c75e"
+    },
+    "B_job.json": {
+      "size_bytes": 1461,
+      "sha256": "e5bdb94cebf7f64d2592e65d0b0ff8ba6cd62cd453c4c3ab5cb5268d9d1d6ec6"
+    },
+    "C_job.json": {
+      "size_bytes": 32862,
+      "sha256": "53644d4497726a5eea7b608ee506718fe07f8b582d5c0a6cc4d975964a1cce45"
+    },
+    "F_job.json": {
+      "size_bytes": 70813,
+      "sha256": "61f32fc626edc30e20c16569e226b689ba63fe1bc03067b5a873096396383882"
+    },
+    "methods.json": {
+      "size_bytes": 2149,
+      "sha256": "8ce5586bb560713486764de5e4c3fb2430a32628a023fff03f601d2dbbcf35b7"
+    },
+    "health.json": {
+      "size_bytes": 68,
+      "sha256": "d480dc80275581d97f72818e680a040290196e2da75f57fc2e41a5573bf035e6"
+    },
+    "F_download.json": {
+      "size_bytes": 127055,
+      "sha256": "c088a62c232bb6a05f3a67e5e781f495aad8d8ee96378466126f6429f678ff5d"
+    },
+    "H_job.json": {
+      "size_bytes": 32089,
+      "sha256": "e19988bef0fe34accd168bdf7527b161c94753d34ebff4871bda2cb73643a536"
+    },
+    "C_final_build_job.json": {
+      "size_bytes": 32864,
+      "sha256": "696757148697e1566a5385dcd3b9bbb53d8ca022514eb52a1e97c24ea0784f84"
+    }
+  },
+  "download": {
+    "source_filename": "llps-analysis_Uodx6jZdPTwux5xqQzibn7JftE95jypS.json",
+    "evidence_method": "Read the exact native browser download file; no download-event receipt was observed.",
+    "audit_copy": "F_download.json",
+    "copy_preserves_original_bytes": true,
+    "complete_json_object_equals_job_GET": true
+  },
+  "status": "passed",
+  "check_count": 110,
+  "last_extended_at_utc": "2026-09-03T13:49:49.177790+00:00"
+}

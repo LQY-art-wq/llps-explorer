@@ -1,0 +1,77 @@
+# Sanitized exported log; original bytes retained at .audit/module5/api_smoke_20260903T123559147865Z.log
+INFO:     Started server process [6868]
+INFO:     Waiting for application startup.
+INFO:     LRECA loaded checkpoint=human_1_RCNN_ECA_parallel_089-0.9802.pt configured_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt absolute_path=${PROJECT_ROOT}\external\lreca\Demo\trained_model\human_1_RCNN_ECA_parallel_089-0.9802.pt sha256=aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc size_bytes=2395318 repository_commit=0b4b48ab7870529a34028c6e30dfba42eddbf215 device=cuda:0
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:49729 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49734 - "GET /api/v1/health HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/methods HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur method=lreca status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur method=seg status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur method=seg status=success runtime_ms=53.681 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur method=lreca status=success runtime_ms=520.324 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_YokqegmpcsH0mJu_N0oRzRTmcQTvTcur HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk method=lreca status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk method=fuzdrop status=external_result_required runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk method=lreca status=success runtime_ms=246.831 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_6prGEM2lUqUUlp8Cz26Jj4y49XxtKHWk HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/methods/fuzdrop/import HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU method=lreca status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU method=fuzdrop status=success runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU method=seg status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU method=seg status=success runtime_ms=196.724 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU method=lreca status=success runtime_ms=270.172 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_d06iI9iZWV3EfXcHlBfLp7CYR0_JPFIF method=dismeta status=unavailable runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_d06iI9iZWV3EfXcHlBfLp7CYR0_JPFIF HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=lreca status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=fuzdrop status=external_result_required runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=seg status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=dismeta status=unavailable runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=seg status=success runtime_ms=45.853 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX method=lreca status=success runtime_ms=241.311 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_TeeK7N7rCI7AhnqVZrxzfMm6LNlzzlrX HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=lreca status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=fuzdrop status=success runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=seg status=running runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=dismeta status=unavailable runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f HTTP/1.1" 200
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=seg status=success runtime_ms=234.180 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     analysis_method job_id=analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f method=lreca status=success runtime_ms=309.844 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_ez5K1OZ1yNrA6BhuW5VUBNj4Bi4MPp6f HTTP/1.1" 200
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 202
+INFO:     analysis_method job_id=analysis_BZf4WO6GVyaFwTLkEjtMRGqVBZAukeAe method=fuzdrop status=success runtime_ms=0.000 sequence_length=248 sequence_sha256=75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf
+INFO:     127.0.0.1:49734 - "GET /api/v1/analysis/analysis_BZf4WO6GVyaFwTLkEjtMRGqVBZAukeAe HTTP/1.1" 200
+WARNING:  Analysis request unavailable (AnalysisServiceError; EXTERNAL_RESULT_SEQUENCE_MISMATCH).
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 422
+WARNING:  Analysis request unavailable (AnalysisServiceError; EXTERNAL_RESULT_NOT_FOUND).
+INFO:     127.0.0.1:49734 - "POST /api/v1/analysis HTTP/1.1" 404
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6868]

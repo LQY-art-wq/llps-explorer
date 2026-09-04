@@ -1,0 +1,51 @@
+{
+  "method_id": "lreca",
+  "status": "success",
+  "message": null,
+  "method": "lreca",
+  "semantic_type": "model_prediction",
+  "model_variant": "human_specific",
+  "dataset5_mapping_status": "unconfirmed",
+  "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+  "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+  "metadata": {
+    "repository": "https://github.com/ai-phasepro/LRECA",
+    "commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+    "model_variant": "human_specific",
+    "dataset5_mapping_status": "unconfirmed",
+    "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+    "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+    "checkpoint_size_bytes": 2395318
+  },
+  "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT",
+  "sequence_length": 248,
+  "raw_score": 0.9999921321868896,
+  "calibrated_score": 0.9999921321868896,
+  "calibration_status": "not_calibrated",
+  "score_semantics": "uncalibrated_positive_class_softmax",
+  "positive_class_index": 1,
+  "threshold": 0.5,
+  "threshold_operator": ">",
+  "logits": [
+    -7.07127571105957,
+    4.683431148529053
+  ],
+  "label": "P",
+  "device": "cuda:0",
+  "runtime_ms": 17.582899999979418,
+  "attribution_status": "not_requested",
+  "attribution_reason": null,
+  "attribution_semantic_type": "model_attribution",
+  "attribution_normalization": "official_absolute_maximum_diverging_scale",
+  "attribution_target_class_index": null,
+  "attribution_target_label": null,
+  "residue_attribution": null,
+  "top_residues": null,
+  "kde": null,
+  "critical_regions": null,
+  "warnings": [],
+  "timings_ms": {
+    "global_ms": 17.520199999125907
+  }
+}

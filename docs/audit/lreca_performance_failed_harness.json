@@ -1,0 +1,1631 @@
+{
+  "started_at_utc": "2026-09-03T08:56:38.339826+00:00",
+  "status": "failed",
+  "backend_python": "3.12.13",
+  "backend_python_executable": "${PROJECT_ROOT}/.venv/Scripts/python.exe",
+  "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+  "lengths": [
+    50,
+    100,
+    500,
+    1000,
+    2000
+  ],
+  "warmup_requests_per_case": 1,
+  "measured_requests_per_case": 3,
+  "cases": [
+    {
+      "device": "cpu",
+      "length": 50,
+      "mode": "global_only",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          7.004999999480788,
+          5.479499999637483,
+          5.950900000243564
+        ],
+        "mean": 6.1451333331206115,
+        "min": 5.479499999637483,
+        "max": 7.004999999480788
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          4.854900000282214,
+          4.650999999284977,
+          5.03489999937301
+        ],
+        "mean": 4.8469333329800675,
+        "min": 4.650999999284977,
+        "max": 5.03489999937301
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 4.824800000278628
+        },
+        {
+          "global_ms": 4.6159000012266915
+        },
+        {
+          "global_ms": 5.006399998819688
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "global_ms": 4.815700000108336
+      },
+      "scores": [
+        0.00017845447291620076,
+        0.00017845447291620076,
+        0.00017845447291620076
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 1,
+        "attribution_count": 0,
+        "kde_count": 0,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 411906048,
+        "peak_rss_bytes": 411906048,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 4,
+        "attribution_count": 0,
+        "kde_count": 0,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 411906048,
+        "peak_rss_bytes": 411906048,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 411906048,
+      "rss_after_bytes": 411906048,
+      "process_lifetime_peak_rss_bytes": 411906048,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 50,
+      "mode": "global_attribution_kde",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          99.19450000052166,
+          92.51649999896472,
+          93.00640000037674
+        ],
+        "mean": 94.90579999995437,
+        "min": 92.51649999896472,
+        "max": 99.19450000052166
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          97.54890000112937,
+          91.09650000027614,
+          91.7091999999684
+        ],
+        "mean": 93.4515333337913,
+        "min": 91.09650000027614,
+        "max": 97.54890000112937
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 4.742699999042088,
+          "attribution_ms": 10.383400000137044,
+          "kde_ms": 81.48629999959667
+        },
+        {
+          "global_ms": 5.370799999582232,
+          "attribution_ms": 11.251399999309797,
+          "kde_ms": 73.48300000012387
+        },
+        {
+          "global_ms": 5.963800000245101,
+          "attribution_ms": 13.68929999989632,
+          "kde_ms": 71.09630000013567
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "attribution_ms": 11.774699999781054,
+        "global_ms": 5.35909999962314,
+        "kde_ms": 75.35519999995206
+      },
+      "scores": [
+        0.00017845447291620076,
+        0.00017845447291620076,
+        0.00017845447291620076
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 5,
+        "attribution_count": 1,
+        "kde_count": 1,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 415178752,
+        "peak_rss_bytes": 415178752,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 8,
+        "attribution_count": 4,
+        "kde_count": 4,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 415322112,
+        "peak_rss_bytes": 415322112,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 415178752,
+      "rss_after_bytes": 415322112,
+      "process_lifetime_peak_rss_bytes": 415322112,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 100,
+      "mode": "global_only",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          9.197100000164937,
+          9.826399998928537,
+          9.36830000136979
+        ],
+        "mean": 9.463933333487754,
+        "min": 9.197100000164937,
+        "max": 9.826399998928537
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          8.32079999963753,
+          8.877999998730957,
+          8.205300000554416
+        ],
+        "mean": 8.4680333329743,
+        "min": 8.205300000554416,
+        "max": 8.877999998730957
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 8.287200000268058
+        },
+        {
+          "global_ms": 8.840399999826332
+        },
+        {
+          "global_ms": 8.169099999577156
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "global_ms": 8.432233333223849
+      },
+      "scores": [
+        0.00021184375509619713,
+        0.00021184375509619713,
+        0.00021184375509619713
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 9,
+        "attribution_count": 4,
+        "kde_count": 4,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 416677888,
+        "peak_rss_bytes": 416677888,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 12,
+        "attribution_count": 4,
+        "kde_count": 4,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 416698368,
+        "peak_rss_bytes": 416698368,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 416677888,
+      "rss_after_bytes": 416698368,
+      "process_lifetime_peak_rss_bytes": 416698368,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 100,
+      "mode": "global_attribution_kde",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          106.64120000001276,
+          124.08230000073672,
+          100.9806000001845
+        ],
+        "mean": 110.56803333364466,
+        "min": 100.9806000001845,
+        "max": 124.08230000073672
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          104.64710000087507,
+          122.39059999956226,
+          99.44700000050943
+        ],
+        "mean": 108.82823333364892,
+        "min": 99.44700000050943,
+        "max": 122.39059999956226
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 8.623600000646547,
+          "attribution_ms": 19.526000000041677,
+          "kde_ms": 74.19239999944693
+        },
+        {
+          "global_ms": 9.302299999035313,
+          "attribution_ms": 20.62599999953818,
+          "kde_ms": 90.5044999999518
+        },
+        {
+          "global_ms": 8.85999999991327,
+          "attribution_ms": 19.035600000279373,
+          "kde_ms": 69.97159999991709
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "attribution_ms": 19.729199999953078,
+        "global_ms": 8.928633333198377,
+        "kde_ms": 78.22283333310527
+      },
+      "scores": [
+        0.00021184375509619713,
+        0.00021184375509619713,
+        0.00021184375509619713
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 13,
+        "attribution_count": 5,
+        "kde_count": 5,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 419328000,
+        "peak_rss_bytes": 419471360,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 16,
+        "attribution_count": 8,
+        "kde_count": 8,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 419934208,
+        "peak_rss_bytes": 419934208,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 419328000,
+      "rss_after_bytes": 419934208,
+      "process_lifetime_peak_rss_bytes": 419934208,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 500,
+      "mode": "global_only",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          35.255700000561774,
+          35.40109999994456,
+          37.24599999986822
+        ],
+        "mean": 35.967600000124854,
+        "min": 35.255700000561774,
+        "max": 37.24599999986822
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          34.48720000051253,
+          34.48819999903208,
+          36.36220000043977
+        ],
+        "mean": 35.11253333332812,
+        "min": 34.48720000051253,
+        "max": 36.36220000043977
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 34.430199999405886
+        },
+        {
+          "global_ms": 34.437399999660556
+        },
+        {
+          "global_ms": 36.30900000098336
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "global_ms": 35.058866666683265
+      },
+      "scores": [
+        0.00021196980378590524,
+        0.00021196980378590524,
+        0.00021196980378590524
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 17,
+        "attribution_count": 8,
+        "kde_count": 8,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 426541056,
+        "peak_rss_bytes": 426541056,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 20,
+        "attribution_count": 8,
+        "kde_count": 8,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 426541056,
+        "peak_rss_bytes": 426541056,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 426541056,
+      "rss_after_bytes": 426541056,
+      "process_lifetime_peak_rss_bytes": 426541056,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 500,
+      "mode": "global_attribution_kde",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          393.23010000043723,
+          380.9983999999531,
+          431.2398999991274
+        ],
+        "mean": 401.8227999998392,
+        "min": 380.9983999999531,
+        "max": 431.2398999991274
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          389.1401000000769,
+          377.3779999992257,
+          427.2164000012708
+        ],
+        "mean": 397.91150000019115,
+        "min": 377.3779999992257,
+        "max": 427.2164000012708
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 36.72829999959504,
+          "attribution_ms": 86.07389999997395,
+          "kde_ms": 256.18220000069414
+        },
+        {
+          "global_ms": 39.64489999998477,
+          "attribution_ms": 85.00679999997374,
+          "kde_ms": 243.048499998622
+        },
+        {
+          "global_ms": 39.9595999988378,
+          "attribution_ms": 95.34100000018952,
+          "kde_ms": 278.793699999369
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "attribution_ms": 88.80723333337907,
+        "global_ms": 38.777599999472535,
+        "kde_ms": 259.34146666622837
+      },
+      "scores": [
+        0.00021196980378590524,
+        0.00021196980378590524,
+        0.00021196980378590524
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 21,
+        "attribution_count": 9,
+        "kde_count": 9,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 431620096,
+        "peak_rss_bytes": 449388544,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 24,
+        "attribution_count": 12,
+        "kde_count": 12,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 431353856,
+        "peak_rss_bytes": 449388544,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 431620096,
+      "rss_after_bytes": 431353856,
+      "process_lifetime_peak_rss_bytes": 449388544,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 1000,
+      "mode": "global_only",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          86.83010000095237,
+          122.83489999936137,
+          77.45319999958156
+        ],
+        "mean": 95.70606666663177,
+        "min": 77.45319999958156,
+        "max": 122.83489999936137
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          85.82980000028329,
+          121.75620000016352,
+          76.50930000090739
+        ],
+        "mean": 94.69843333378473,
+        "min": 76.50930000090739,
+        "max": 121.75620000016352
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 85.74250000128814
+        },
+        {
+          "global_ms": 121.64689999917755
+        },
+        {
+          "global_ms": 76.42520000081277
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "global_ms": 94.60486666709282
+      },
+      "scores": [
+        0.00021198639296926558,
+        0.00021198639296926558,
+        0.00021198639296926558
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 25,
+        "attribution_count": 12,
+        "kde_count": 12,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 435953664,
+        "peak_rss_bytes": 449388544,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 28,
+        "attribution_count": 12,
+        "kde_count": 12,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 435945472,
+        "peak_rss_bytes": 449388544,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 435953664,
+      "rss_after_bytes": 435945472,
+      "process_lifetime_peak_rss_bytes": 449388544,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 1000,
+      "mode": "global_attribution_kde",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          1061.851899999965,
+          1072.7802000001248,
+          1084.8888000000443
+        ],
+        "mean": 1073.1736333333781,
+        "min": 1061.851899999965,
+        "max": 1084.8888000000443
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          1055.8863999995083,
+          1066.3623999989795,
+          1078.9907999987918
+        ],
+        "mean": 1067.07986666576,
+        "min": 1055.8863999995083,
+        "max": 1078.9907999987918
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 68.9977000001818,
+          "attribution_ms": 173.79360000086308,
+          "kde_ms": 791.1816999985604
+        },
+        {
+          "global_ms": 69.55070000003616,
+          "attribution_ms": 176.25849999967613,
+          "kde_ms": 797.5073999987217
+        },
+        {
+          "global_ms": 75.26529999995546,
+          "attribution_ms": 174.51460000120278,
+          "kde_ms": 807.2587999995449
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "attribution_ms": 174.85556666724733,
+        "global_ms": 71.27123333339114,
+        "kde_ms": 798.6492999989423
+      },
+      "scores": [
+        0.00021198639296926558,
+        0.00021198639296926558,
+        0.00021198639296926558
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 29,
+        "attribution_count": 13,
+        "kde_count": 13,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 442822656,
+        "peak_rss_bytes": 481914880,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 32,
+        "attribution_count": 16,
+        "kde_count": 16,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 449687552,
+        "peak_rss_bytes": 483221504,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 442822656,
+      "rss_after_bytes": 449687552,
+      "process_lifetime_peak_rss_bytes": 483221504,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 2000,
+      "mode": "global_only",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          139.16430000062974,
+          152.41360000072746,
+          188.84450000041397
+        ],
+        "mean": 160.1408000005904,
+        "min": 139.16430000062974,
+        "max": 188.84450000041397
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          138.06490000024496,
+          151.0560999995505,
+          187.0828999999503
+        ],
+        "mean": 158.73463333324858,
+        "min": 138.06490000024496,
+        "max": 187.0828999999503
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 137.93269999951008
+        },
+        {
+          "global_ms": 150.92029999868828
+        },
+        {
+          "global_ms": 186.90760000026785
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "global_ms": 158.5868666661554
+      },
+      "scores": [
+        0.00021199487673584372,
+        0.00021199487673584372,
+        0.00021199487673584372
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 33,
+        "attribution_count": 16,
+        "kde_count": 16,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 460075008,
+        "peak_rss_bytes": 483221504,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 36,
+        "attribution_count": 16,
+        "kde_count": 16,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 457220096,
+        "peak_rss_bytes": 483221504,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 460075008,
+      "rss_after_bytes": 457220096,
+      "process_lifetime_peak_rss_bytes": 483221504,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    },
+    {
+      "device": "cpu",
+      "length": 2000,
+      "mode": "global_attribution_kde",
+      "input_kind": "synthetic canonical-AA repeated pattern",
+      "pattern": "ACDEFGHIKLMNPQRSTVWY",
+      "warmup_requests": 1,
+      "measured_requests": 3,
+      "end_to_end_wall_ms": {
+        "samples": [
+          3490.502699998615,
+          3493.3282999991206,
+          3519.7970000008354
+        ],
+        "mean": 3501.209333332857,
+        "min": 3490.502699998615,
+        "max": 3519.7970000008354
+      },
+      "worker_runtime_ms": {
+        "samples": [
+          3479.6055000006163,
+          3482.0999999992637,
+          3508.657200000016
+        ],
+        "mean": 3490.1208999999653,
+        "min": 3479.6055000006163,
+        "max": 3508.657200000016
+      },
+      "stage_runtime_ms": [
+        {
+          "global_ms": 141.3816999993287,
+          "attribution_ms": 342.3502000005101,
+          "kde_ms": 2941.8050999993284
+        },
+        {
+          "global_ms": 147.29149999948277,
+          "attribution_ms": 340.9126999995351,
+          "kde_ms": 2952.1272000001773
+        },
+        {
+          "global_ms": 157.75749999920663,
+          "attribution_ms": 360.9986999999819,
+          "kde_ms": 2943.976799999291
+        }
+      ],
+      "stage_mean_runtime_ms": {
+        "attribution_ms": 348.08720000000903,
+        "global_ms": 148.8102333326727,
+        "kde_ms": 2945.969699999599
+      },
+      "scores": [
+        0.00021199487673584372,
+        0.00021199487673584372,
+        0.00021199487673584372
+      ],
+      "statuses": [
+        "success",
+        "success",
+        "success"
+      ],
+      "diagnostics_before": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 37,
+        "attribution_count": 17,
+        "kde_count": 17,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 478375936,
+        "peak_rss_bytes": 551632896,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "diagnostics_after": {
+        "loaded": true,
+        "device": "cpu",
+        "load_count": 1,
+        "prediction_count": 40,
+        "attribution_count": 20,
+        "kde_count": 20,
+        "hook_counts": {
+          "forward": 0,
+          "forward_pre": 0,
+          "backward": 0
+        },
+        "hook_count": 0,
+        "forward_hook_count": 0,
+        "backward_hook_count": 0,
+        "vocabulary": {
+          "m": 1,
+          "v": 2,
+          "k": 3,
+          "e": 4,
+          "t": 5,
+          "y": 6,
+          "d": 7,
+          "l": 8,
+          "g": 9,
+          "p": 10,
+          "n": 11,
+          "a": 12,
+          "q": 13,
+          "r": 14,
+          "h": 15,
+          "f": 16,
+          "i": 17,
+          "s": 18,
+          "c": 19,
+          "w": 20
+        },
+        "parameter_grad_count": 0,
+        "rss_bytes": 492474368,
+        "peak_rss_bytes": 553230336,
+        "pid": 41820,
+        "cuda_available": true,
+        "torch_threads": 4,
+        "cuda_allocated_bytes": null,
+        "cuda_reserved_bytes": null,
+        "cuda_peak_allocated_bytes": null
+      },
+      "rss_before_bytes": 478375936,
+      "rss_after_bytes": 492474368,
+      "process_lifetime_peak_rss_bytes": 553230336,
+      "cuda_lifetime_peak_allocated_bytes": null,
+      "memory_measurement_note": "RSS is the scientific worker's process memory. Peak fields, if available, are cumulative since worker startup, not isolated per-request peaks. CUDA allocated/reserved memory are reported separately in diagnostics."
+    }
+  ],
+  "lifecycle": [],
+  "devices": {
+    "cpu": {
+      "loaded": true,
+      "device": "cpu",
+      "load_count": 1,
+      "prediction_count": 0,
+      "attribution_count": 0,
+      "kde_count": 0,
+      "hook_counts": {
+        "forward": 0,
+        "forward_pre": 0,
+        "backward": 0
+      },
+      "hook_count": 0,
+      "forward_hook_count": 0,
+      "backward_hook_count": 0,
+      "vocabulary": {
+        "m": 1,
+        "v": 2,
+        "k": 3,
+        "e": 4,
+        "t": 5,
+        "y": 6,
+        "d": 7,
+        "l": 8,
+        "g": 9,
+        "p": 10,
+        "n": 11,
+        "a": 12,
+        "q": 13,
+        "r": 14,
+        "h": 15,
+        "f": 16,
+        "i": 17,
+        "s": 18,
+        "c": 19,
+        "w": 20
+      },
+      "parameter_grad_count": 0,
+      "rss_bytes": 397889536,
+      "peak_rss_bytes": 397889536,
+      "pid": 41820,
+      "cuda_available": true,
+      "torch_threads": 4,
+      "cuda_allocated_bytes": null,
+      "cuda_reserved_bytes": null,
+      "cuda_peak_allocated_bytes": null
+    }
+  },
+  "error": "TypeError: unsupported operand type(s) for -: 'NoneType' and 'NoneType'",
+  "finished_at_utc": "2026-09-03T08:57:09.969213+00:00"
+}

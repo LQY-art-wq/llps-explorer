@@ -1,0 +1,22 @@
+{
+  "job_id": "analysis_BZf4WO6GVyaFwTLkEjtMRGqVBZAukeAe",
+  "observation_type": "actual HTTP snapshots",
+  "observations": [
+    {
+      "elapsed_ms": 34.02999999889289,
+      "http_status": 202,
+      "job_status": "queued",
+      "methods": {
+        "fuzdrop": "queued"
+      }
+    },
+    {
+      "elapsed_ms": 277.2198999991815,
+      "http_status": 200,
+      "job_status": "success",
+      "methods": {
+        "fuzdrop": "success"
+      }
+    }
+  ]
+}

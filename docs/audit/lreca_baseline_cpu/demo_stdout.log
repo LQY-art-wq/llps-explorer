@@ -1,0 +1,9 @@
+# Sanitized exported log: workstation paths replaced with environment references.
+# Original bytes retained privately: .audit/module1_private_evidence/docs/audit/lreca_baseline_cpu/demo_stdout.log
+${PROJECT_ROOT}\external\lreca\Demo\code_for_model_testing
+device=cpu
+test_pos=120 test_neg=120 predictions=240
+     acc  sen      spe      auc
+0.995833  1.0 0.991667 0.999167
+roc_csv=${PROJECT_ROOT}\docs\audit\lreca_baseline_cpu\rcnn_ECA_human_test_roc_1.csv
+result_csv=${PROJECT_ROOT}\docs\audit\lreca_baseline_cpu\result.csv

@@ -1,0 +1,34 @@
+{
+  "started_at_utc": "2026-09-03T10:53:06.021033+00:00",
+  "transport": "actual Uvicorn TCP listener / httpx / loopback only",
+  "status": "success",
+  "backend_python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+  "fuzdrop_fixture_provenance": "synthetic_format_fixture_not_official_prediction",
+  "real_fuzdrop_prediction_executed": false,
+  "fuzdrop_submission_requests_sent": 0,
+  "checks": {
+    "liveness": 200,
+    "methods_directory": 200,
+    "fuzdrop_unavailable_health": 503,
+    "fuzdrop_unavailable_analyze": 503,
+    "synthetic_manual_import": 200,
+    "invalid_manual_coordinates": 422,
+    "lreca_real_prediction_gradcam_kde": 200
+  },
+  "lreca": {
+    "device": "cuda:0",
+    "sequence_length": 248,
+    "raw_score": 0.9999921321868896,
+    "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+    "primary_region": {
+      "start": 81,
+      "end": 127,
+      "score": 36.15997596307393,
+      "is_primary": true,
+      "semantic_type": "derived_hotspot",
+      "length": 47
+    }
+  },
+  "server_stopped": true,
+  "finished_at_utc": "2026-09-03T10:53:12.447822+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "http_status": 200,
+  "body": {
+    "job_id": "analysis_d06iI9iZWV3EfXcHlBfLp7CYR0_JPFIF",
+    "created_at": "2026-09-03T12:36:07.993911Z",
+    "updated_at": "2026-09-03T12:36:07.996529Z",
+    "expires_at": "2026-09-03T13:36:07.996529Z",
+    "status": "unavailable",
+    "sequence": {
+      "name": null,
+      "length": 248,
+      "sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf"
+    },
+    "selected_methods": [
+      "dismeta"
+    ],
+    "prediction_mode": "independent",
+    "weights": null,
+    "methods": {
+      "dismeta": {
+        "method": "dismeta",
+        "status": "unavailable",
+        "integration_mode": "integration_blocked",
+        "runtime_ms": 0.0,
+        "result": null,
+        "error": null,
+        "reason": "integration_contract_unverified",
+        "warnings": [
+          "The selected method's integration is blocked."
+        ]
+      }
+    },
+    "ensemble": null,
+    "warnings": []
+  }
+}

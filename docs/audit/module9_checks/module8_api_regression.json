@@ -1,0 +1,2587 @@
+{
+  "verified_at_utc": "2026-09-04T03:54:31.689254+00:00",
+  "status": "passed",
+  "check_count": 263,
+  "passed_count": 263,
+  "failed_count": 0,
+  "failed_checks": [],
+  "checks": {
+    "canonical_baseline_is_248_standard_residues": true,
+    "canonical_baseline_sha256_matches_sequence": true,
+    "canonical_baseline_matches_frozen_manifest": true,
+    "module8_fasta_matches_canonical_sequence": true,
+    "module7_verification_is_144_of_144_passed": true,
+    "module7_verification_bytes_match_frozen_manifest": true,
+    "module7_A_reference_matches_frozen_manifest": true,
+    "module7_A_reference_matches_verified_response_hash": true,
+    "module7_A_reference_job_identity_matches_verified_record": true,
+    "module7_B_reference_matches_frozen_manifest": true,
+    "module7_B_reference_matches_verified_response_hash": true,
+    "module7_B_reference_job_identity_matches_verified_record": true,
+    "module7_C_reference_matches_frozen_manifest": true,
+    "module7_C_reference_matches_verified_response_hash": true,
+    "module7_C_reference_job_identity_matches_verified_record": true,
+    "module7_D_reference_matches_frozen_manifest": true,
+    "module7_D_reference_matches_verified_response_hash": true,
+    "module7_D_reference_job_identity_matches_verified_record": true,
+    "module7_E_reference_matches_frozen_manifest": true,
+    "module7_E_reference_matches_verified_response_hash": true,
+    "module7_E_reference_job_identity_matches_verified_record": true,
+    "frozen_backend_manifest_is_nonempty": true,
+    "all_frozen_backend_files_exist": true,
+    "all_frozen_backend_file_bytes_are_unchanged": true,
+    "exactly_five_expected_saved_cases": true,
+    "five_distinct_new_job_ids": true,
+    "A_saved_response_bytes_recorded": true,
+    "A_saved_response_HTTP_200": true,
+    "A_job_id_matches_browser": true,
+    "A_job_success": true,
+    "A_exact_method_combination": true,
+    "A_canonical_sequence_identity": true,
+    "A_independent_without_ensemble": true,
+    "A_lreca_execution_and_native_success": true,
+    "A_lreca_native_sequence_length": true,
+    "A_lreca_full_canonical_sequence": true,
+    "A_lreca_exact_scientific_object_matches_module7_A": true,
+    "A_lreca_identity_matches_pinned_human_baseline": true,
+    "A_lreca_safe_seven_field_metadata": true,
+    "A_lreca_raw_score_matches_baseline": true,
+    "A_lreca_uncalibrated_identity_mapping": true,
+    "A_lreca_positive_class_mapping": true,
+    "A_lreca_raw_score_matches_positive_logit_softmax": true,
+    "A_lreca_attribution_248_aligned_values": true,
+    "A_lreca_attribution_target": true,
+    "A_lreca_KDE_248_finite_native_values": true,
+    "A_lreca_native_regions_and_primary_flags": true,
+    "A_lreca_terminal_residue_omission_preserved": true,
+    "A_lreca_device_safe": true,
+    "A_privacy_no_absolute_path_tokens": true,
+    "A_privacy_no_internal_urls_or_endpoints": true,
+    "A_privacy_no_unapproved_urls": true,
+    "B_saved_response_bytes_recorded": true,
+    "B_saved_response_HTTP_200": true,
+    "B_job_id_matches_browser": true,
+    "B_job_success": true,
+    "B_exact_method_combination": true,
+    "B_canonical_sequence_identity": true,
+    "B_independent_without_ensemble": true,
+    "B_lreca_execution_and_native_success": true,
+    "B_lreca_native_sequence_length": true,
+    "B_lreca_full_canonical_sequence": true,
+    "B_lreca_exact_scientific_object_matches_module7_C": true,
+    "B_lreca_identity_matches_pinned_human_baseline": true,
+    "B_lreca_safe_seven_field_metadata": true,
+    "B_lreca_raw_score_matches_baseline": true,
+    "B_lreca_uncalibrated_identity_mapping": true,
+    "B_lreca_positive_class_mapping": true,
+    "B_lreca_raw_score_matches_positive_logit_softmax": true,
+    "B_lreca_attribution_248_aligned_values": true,
+    "B_lreca_attribution_target": true,
+    "B_lreca_KDE_248_finite_native_values": true,
+    "B_lreca_native_regions_and_primary_flags": true,
+    "B_lreca_terminal_residue_omission_preserved": true,
+    "B_lreca_device_safe": true,
+    "B_seg_execution_and_native_success": true,
+    "B_seg_native_sequence_length": true,
+    "B_seg_sequence_sha256": true,
+    "B_seg_exact_scientific_object_matches_module7_C": true,
+    "B_SEG_native_boundaries": true,
+    "B_SEG_identity_and_parameters": true,
+    "B_SEG_annotation_only": true,
+    "B_SEG_statistics": true,
+    "B_privacy_no_absolute_path_tokens": true,
+    "B_privacy_no_internal_urls_or_endpoints": true,
+    "B_privacy_no_unapproved_urls": true,
+    "C_saved_response_bytes_recorded": true,
+    "C_saved_response_HTTP_200": true,
+    "C_job_id_matches_browser": true,
+    "C_job_success": true,
+    "C_exact_method_combination": true,
+    "C_canonical_sequence_identity": true,
+    "C_independent_without_ensemble": true,
+    "C_seg_execution_and_native_success": true,
+    "C_seg_native_sequence_length": true,
+    "C_seg_sequence_sha256": true,
+    "C_seg_exact_scientific_object_matches_module7_B": true,
+    "C_SEG_native_boundaries": true,
+    "C_SEG_identity_and_parameters": true,
+    "C_SEG_annotation_only": true,
+    "C_SEG_statistics": true,
+    "C_privacy_no_absolute_path_tokens": true,
+    "C_privacy_no_internal_urls_or_endpoints": true,
+    "C_privacy_no_unapproved_urls": true,
+    "D_saved_response_bytes_recorded": true,
+    "D_saved_response_HTTP_200": true,
+    "D_job_id_matches_browser": true,
+    "D_job_success": true,
+    "D_exact_method_combination": true,
+    "D_canonical_sequence_identity": true,
+    "D_independent_without_ensemble": true,
+    "D_lreca_execution_and_native_success": true,
+    "D_lreca_native_sequence_length": true,
+    "D_lreca_full_canonical_sequence": true,
+    "D_lreca_exact_scientific_object_matches_module7_C": true,
+    "D_lreca_identity_matches_pinned_human_baseline": true,
+    "D_lreca_safe_seven_field_metadata": true,
+    "D_lreca_raw_score_matches_baseline": true,
+    "D_lreca_uncalibrated_identity_mapping": true,
+    "D_lreca_positive_class_mapping": true,
+    "D_lreca_raw_score_matches_positive_logit_softmax": true,
+    "D_lreca_attribution_248_aligned_values": true,
+    "D_lreca_attribution_target": true,
+    "D_lreca_KDE_248_finite_native_values": true,
+    "D_lreca_native_regions_and_primary_flags": true,
+    "D_lreca_terminal_residue_omission_preserved": true,
+    "D_lreca_device_safe": true,
+    "D_seg_execution_and_native_success": true,
+    "D_seg_native_sequence_length": true,
+    "D_seg_sequence_sha256": true,
+    "D_seg_exact_scientific_object_matches_module7_C": true,
+    "D_SEG_native_boundaries": true,
+    "D_SEG_identity_and_parameters": true,
+    "D_SEG_annotation_only": true,
+    "D_SEG_statistics": true,
+    "D_fuzdrop_execution_and_native_success": true,
+    "D_fuzdrop_native_sequence_length": true,
+    "D_fuzdrop_full_canonical_sequence": true,
+    "D_fuzdrop_sequence_sha256": true,
+    "D_privacy_no_absolute_path_tokens": true,
+    "D_privacy_no_internal_urls_or_endpoints": true,
+    "D_privacy_no_unapproved_urls": true,
+    "E_saved_response_bytes_recorded": true,
+    "E_saved_response_HTTP_200": true,
+    "E_job_id_matches_browser": true,
+    "E_job_success": true,
+    "E_exact_method_combination": true,
+    "E_canonical_sequence_identity": true,
+    "E_independent_without_ensemble": true,
+    "E_lreca_execution_and_native_success": true,
+    "E_lreca_native_sequence_length": true,
+    "E_lreca_full_canonical_sequence": true,
+    "E_lreca_exact_scientific_object_matches_module7_C": true,
+    "E_lreca_identity_matches_pinned_human_baseline": true,
+    "E_lreca_safe_seven_field_metadata": true,
+    "E_lreca_raw_score_matches_baseline": true,
+    "E_lreca_uncalibrated_identity_mapping": true,
+    "E_lreca_positive_class_mapping": true,
+    "E_lreca_raw_score_matches_positive_logit_softmax": true,
+    "E_lreca_attribution_248_aligned_values": true,
+    "E_lreca_attribution_target": true,
+    "E_lreca_KDE_248_finite_native_values": true,
+    "E_lreca_native_regions_and_primary_flags": true,
+    "E_lreca_terminal_residue_omission_preserved": true,
+    "E_lreca_device_safe": true,
+    "E_seg_execution_and_native_success": true,
+    "E_seg_native_sequence_length": true,
+    "E_seg_sequence_sha256": true,
+    "E_seg_exact_scientific_object_matches_module7_C": true,
+    "E_SEG_native_boundaries": true,
+    "E_SEG_identity_and_parameters": true,
+    "E_SEG_annotation_only": true,
+    "E_SEG_statistics": true,
+    "E_fuzdrop_execution_and_native_success": true,
+    "E_fuzdrop_native_sequence_length": true,
+    "E_fuzdrop_full_canonical_sequence": true,
+    "E_fuzdrop_sequence_sha256": true,
+    "E_privacy_no_absolute_path_tokens": true,
+    "E_privacy_no_internal_urls_or_endpoints": true,
+    "E_privacy_no_unapproved_urls": true,
+    "health_privacy_no_absolute_path_tokens": true,
+    "health_privacy_no_internal_urls_or_endpoints": true,
+    "health_privacy_no_unapproved_urls": true,
+    "synthetic_fuzdrop_fixture_sequence_identity": true,
+    "synthetic_scores_tsv_bytes_match_import_payload": true,
+    "synthetic_regions_tsv_bytes_match_import_payload": true,
+    "synthetic_scores_fixture_exact_export_header": true,
+    "synthetic_scores_fixture_complete_248_positions_and_amino_acids": true,
+    "synthetic_scores_fixture_values_valid": true,
+    "synthetic_regions_fixture_exact_export_header": true,
+    "synthetic_regions_fixture_has_three_valid_inclusive_regions": true,
+    "D_full_248_pDP_Sbind_rows_exactly_match_synthetic_fixture": true,
+    "D_three_native_order_types_bounds_and_overlap_exactly_match_synthetic_fixture": true,
+    "D_both_raw_TSV_hashes_exactly_match_synthetic_fixture_bytes": true,
+    "D_global_pLLPS_exactly_matches_synthetic_fixture": true,
+    "D_global_score_is_finite_probability": true,
+    "D_uncalibrated_global_mapping_is_preserved": true,
+    "D_native_global_threshold_and_label": true,
+    "D_manual_origin_is_not_independently_verified": true,
+    "D_coordinate_declaration_and_local_runtime_preserved": true,
+    "D_mode_C_and_unknown_service_identity": true,
+    "E_global_score_is_finite_probability": true,
+    "E_uncalibrated_global_mapping_is_preserved": true,
+    "E_native_global_threshold_and_label": true,
+    "E_manual_origin_is_not_independently_verified": true,
+    "E_coordinate_declaration_and_local_runtime_preserved": true,
+    "E_mode_C_and_unknown_service_identity": true,
+    "E_global_pLLPS_exactly_matches_actual_042_synthetic_fixture": true,
+    "E_actual_fixture_supplies_no_TSV_fields": true,
+    "E_residue_propensity_is_explicit_null": true,
+    "E_regions_are_explicit_null": true,
+    "E_raw_TSV_hashes_are_empty": true,
+    "D_full_FuzDrop_science_matches_input_fixture_and_frozen_reference": true,
+    "D_explicit_browser_synthetic_test_badge": true,
+    "E_full_FuzDrop_science_matches_input_fixture_and_frozen_reference": true,
+    "E_explicit_browser_synthetic_test_badge": true,
+    "D_native_position45_pDP_matches_fixture": true,
+    "D_native_position45_two_inclusive_overlapping_regions": true,
+    "production_mapper_node_execution_succeeded": true,
+    "A_mapper_exact_expected_tracks": true,
+    "A_mapper_no_validation_issues": true,
+    "A_mapper_248_canonical_sequence": true,
+    "A_mapper_no_IDR_track": true,
+    "A_mapper_all_continuous_arrays_length_248": true,
+    "A_mapper_all_values_and_regions_match_native_outputs": true,
+    "A_browser_tracks_match_mapper": true,
+    "B_mapper_exact_expected_tracks": true,
+    "B_mapper_no_validation_issues": true,
+    "B_mapper_248_canonical_sequence": true,
+    "B_mapper_no_IDR_track": true,
+    "B_mapper_all_continuous_arrays_length_248": true,
+    "B_mapper_all_values_and_regions_match_native_outputs": true,
+    "B_browser_tracks_match_mapper": true,
+    "C_mapper_exact_expected_tracks": true,
+    "C_mapper_no_validation_issues": true,
+    "C_mapper_248_canonical_sequence": true,
+    "C_mapper_no_IDR_track": true,
+    "C_mapper_all_continuous_arrays_length_248": true,
+    "C_mapper_all_values_and_regions_match_native_outputs": true,
+    "C_browser_tracks_match_mapper": true,
+    "D_mapper_exact_expected_tracks": true,
+    "D_mapper_no_validation_issues": true,
+    "D_mapper_248_canonical_sequence": true,
+    "D_mapper_no_IDR_track": true,
+    "D_mapper_all_continuous_arrays_length_248": true,
+    "D_mapper_all_values_and_regions_match_native_outputs": true,
+    "D_browser_tracks_match_mapper": true,
+    "E_mapper_exact_expected_tracks": true,
+    "E_mapper_no_validation_issues": true,
+    "E_mapper_248_canonical_sequence": true,
+    "E_mapper_no_IDR_track": true,
+    "E_mapper_all_continuous_arrays_length_248": true,
+    "E_mapper_all_values_and_regions_match_native_outputs": true,
+    "E_browser_tracks_match_mapper": true,
+    "D_mapper_tooltip_45_native_pDP": true,
+    "D_mapper_tooltip_45_two_inclusive_overlapping_regions": true,
+    "E_mapper_global_only_no_FuzDrop_tracks": true,
+    "E_mapper_global_only_NA_not_falsezero": true,
+    "E_mapper_SEG_No_remains_distinct": true,
+    "privacy_detector_self_test": true,
+    "all_read_input_bytes_unchanged_during_audit": true,
+    "generated_report_has_no_private_paths_or_internal_urls": true,
+    "baseline_144_semantics_equivalently_covered_by_current_checks": true
+  },
+  "execution": {
+    "transport": "Offline reads of saved JSON/TSV/FASTA and frozen file bytes only.",
+    "submitted_new_jobs": 0,
+    "http_requests": 0,
+    "model_inference_runs": 0,
+    "modified_input_files": 0,
+    "written_output": "docs/audit/module9_checks/module8_api_regression.json",
+    "command": "python .audit/module9_api_verify.py"
+  },
+  "response_capture": {
+    "captured_at_utc": "2026-09-03T16:49:50.632078+00:00",
+    "transport": "Read-only GET of five existing browser-created jobs through their local frontend profiles. No job submission.",
+    "http_requests": 5,
+    "submitted_new_jobs": 0,
+    "formatted_snapshots_preserve_original_JSON_values": true
+  },
+  "comparison": {
+    "method": "Exact deep JSON equality of complete LRECA/SEG native result objects; JSON numeric forms such as 1 and 1.0 represent the same number, while booleans and strings remain distinct.",
+    "excluded_field_names": [
+      "runtime_ms",
+      "timings_ms"
+    ],
+    "numeric_tolerance": 0,
+    "case_reference_mapping": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "C",
+      "E": "C"
+    },
+    "case_mapping_note": "Module 8 B=LRECA+SEG corresponds to Module 7 C; Module 8 C=SEG-only corresponds to Module 7 B. D/E local outputs also use the Module 7 C combined-method reference."
+  },
+  "sequence": {
+    "length": 248,
+    "sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+    "source": "backend/tests/fixtures/lreca/global_baseline.json"
+  },
+  "cases": {
+    "A": {
+      "file": "docs/audit/module8_browser/api/case_a_lreca_only.json",
+      "job_id": "analysis_weuutCzUV9VDTKQbqxskHAQ41fY73QlE",
+      "http_status": 200,
+      "frontend_profile": "test",
+      "raw_response_sha256": "826ecd89c3196c56853806a4306f24f9d4f41f09f7e74ae16cd73ce558547a1a",
+      "status": "success",
+      "selected_methods": [
+        "lreca"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "reference": "docs/audit/module7_browser/api/A_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      }
+    },
+    "B": {
+      "file": "docs/audit/module8_browser/api/case_b_lreca_seg.json",
+      "job_id": "analysis_xgzixt4X1YvRaX6FX1GoBGprZjMcHGwE",
+      "http_status": 200,
+      "frontend_profile": "normal",
+      "raw_response_sha256": "1dda8b1a7010e1fafab90e0ca01455d6118284f4e690318bbbaf85ee10273829",
+      "status": "success",
+      "selected_methods": [
+        "lreca",
+        "seg"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        },
+        "seg": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      }
+    },
+    "C": {
+      "file": "docs/audit/module8_browser/api/case_c_seg_only.json",
+      "job_id": "analysis_NOlw-8xHObxh2Zgs8hbuzWxVF6BMIQz9",
+      "http_status": 200,
+      "frontend_profile": "test",
+      "raw_response_sha256": "430819937319d99c0b701b01bb0e9e0f13685990cc1dcdf62123927a44e73bb0",
+      "status": "success",
+      "selected_methods": [
+        "seg"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "seg": {
+          "reference": "docs/audit/module7_browser/api/B_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      }
+    },
+    "D": {
+      "file": "docs/audit/module8_browser/api/case_d_fuzdrop_full.json",
+      "job_id": "analysis_-GuUfgG-Fs66lsFqz9r6kt3WJs4StncQ",
+      "http_status": 200,
+      "frontend_profile": "test",
+      "raw_response_sha256": "668dd2492a800393ffae059fffa5d1c799d60d5762c2b538b5ce0167b9bdb051",
+      "status": "success",
+      "selected_methods": [
+        "lreca",
+        "seg",
+        "fuzdrop"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        },
+        "seg": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      },
+      "fuzdrop": {
+        "data_kind": "Explicitly synthetic test-only FuzDrop input; not a scientific prediction or genuine official export.",
+        "raw_score": 0.68,
+        "label": "P",
+        "residue_count": 248,
+        "region_count": 3,
+        "raw_tsv_sha256": {
+          "scores_tsv": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+          "regions_tsv": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964"
+        },
+        "full_object_comparison": {
+          "reference": "docs/audit/module7_browser/api/D_job.json",
+          "excluded_fields": [
+            "runtime_ms",
+            "imported_at"
+          ],
+          "input_specific_changes": [],
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      }
+    },
+    "E": {
+      "file": "docs/audit/module8_browser/api/case_e_fuzdrop_global_only.json",
+      "job_id": "analysis_oN1wotSFZlnShUNCgK8mJAZg4fFbTAME",
+      "http_status": 200,
+      "frontend_profile": "test",
+      "raw_response_sha256": "1dd5e58ef657d6b5e122041ef4402c403644bb3af3590e1481a822c40e814d60",
+      "status": "success",
+      "selected_methods": [
+        "lreca",
+        "seg",
+        "fuzdrop"
+      ],
+      "sequence_length": 248,
+      "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+      "scientific_comparison": {
+        "lreca": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        },
+        "seg": {
+          "reference": "docs/audit/module7_browser/api/C_job.json",
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      },
+      "privacy_violation_counts": {
+        "absolute_path_tokens": 0,
+        "internal_urls_or_endpoints": 0,
+        "unapproved_urls": 0
+      },
+      "fuzdrop": {
+        "data_kind": "Explicitly synthetic test-only FuzDrop input; not a scientific prediction or genuine official export.",
+        "raw_score": 0.42,
+        "label": "N",
+        "residue_count": null,
+        "region_count": null,
+        "raw_tsv_sha256": {},
+        "actual_input_fixture": "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_042_248aa.json",
+        "global_value_provenance": "The browser run explicitly entered only synthetic pLLPS=0.42 and no TSV. This matches the actual 0.42 fixture; the earlier optional 0.68 prepared fixture was not the E input.",
+        "full_object_comparison": {
+          "reference": "docs/audit/module7_browser/api/E_job.json",
+          "excluded_fields": [
+            "runtime_ms",
+            "imported_at"
+          ],
+          "input_specific_changes": [
+            "raw_score",
+            "calibrated_score",
+            "label"
+          ],
+          "exact_equal": true,
+          "difference_count": 0,
+          "difference_field_locations": []
+        }
+      }
+    }
+  },
+  "module7_preservation": {
+    "verification_file": "docs/audit/module7_browser/api/real_result_verification.json",
+    "sha256": "190f6b488bb19fc77262950ccb354d6617b0b0f8a3b27e507a117b5b67308fb6",
+    "frozen_sha256": "190f6b488bb19fc77262950ccb354d6617b0b0f8a3b27e507a117b5b67308fb6",
+    "historical_check_count": 144,
+    "historical_passed_count": 144,
+    "historical_assertion_code_reexecuted": false,
+    "reference_response_files": [
+      "docs/audit/module7_browser/api/A_job.json",
+      "docs/audit/module7_browser/api/B_job.json",
+      "docs/audit/module7_browser/api/C_job.json",
+      "docs/audit/module7_browser/api/D_job.json",
+      "docs/audit/module7_browser/api/E_job.json"
+    ]
+  },
+  "backend_freeze": {
+    "manifest": ".audit/module9_baseline_files.json",
+    "frozen_file_count": 10,
+    "unchanged_file_count": 10,
+    "missing_file_count": 0,
+    "changed_file_count": 0,
+    "missing_files": [],
+    "changed_files": []
+  },
+  "privacy_scan_scope": "All decoded keys/string values in five saved job responses and the saved health response; Windows drive/UNC/file URLs, Unix absolute-path tokens, local/private IP endpoints, and any URL outside the explicit official HTTPS hostname allowlist are rejected. Offending values are never exported.",
+  "input_files": {
+    ".audit/module8_api_verify.py": {
+      "sha256": "90992a85df92f7820d9871cdbf0b2ab71828c9e722f99fc5cad2139b12afeee9",
+      "size_bytes": 43100
+    },
+    ".audit/module9_baseline_files.json": {
+      "sha256": "afc84472f68cd0f71e05c41a52fa68f36ada93ffe03e30b8267baa3a15cacf54",
+      "size_bytes": 55746
+    },
+    "docs/audit/module7_browser/api/real_result_verification.json": {
+      "sha256": "190f6b488bb19fc77262950ccb354d6617b0b0f8a3b27e507a117b5b67308fb6",
+      "size_bytes": 35574
+    },
+    "backend/tests/fixtures/lreca/global_baseline.json": {
+      "sha256": "59b1cb559ce0d4a3f9e9b0f1a8ac8fb7dd48809fb0f3bdc4da6a1c395c4010eb",
+      "size_bytes": 7575
+    },
+    "docs/audit/module8_browser/browser_verification.json": {
+      "sha256": "046a55da1472fbd2df1d9c84776bb5becd733179d66564b4bd52308aa40085fa",
+      "size_bytes": 9794
+    },
+    ".audit/module8_api_capture.json": {
+      "sha256": "1f7422be0049762114403acbdce70170b32631720e4e45088fa6cd289673da5d",
+      "size_bytes": 3132
+    },
+    "docs/audit/module8_browser/fixtures/human_positive_line_1.fasta": {
+      "sha256": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575",
+      "size_bytes": 272
+    },
+    "docs/audit/module7_browser/api/A_job.json": {
+      "sha256": "1133f15c7b7f91a32bd0a4fe7b5583cf6a2fbba0c4869517043a8a5ef5e446a9",
+      "size_bytes": 31844
+    },
+    "docs/audit/module7_browser/api/B_job.json": {
+      "sha256": "a07cae1a4298731c2123f6c16d7ca1cdf2f739e9c102da9195a9eb5157da264c",
+      "size_bytes": 1461
+    },
+    "docs/audit/module7_browser/api/C_job.json": {
+      "sha256": "b84f80d6bee84ce9b6e601d16080d845aa47a65f62ea6aff6af81ae9a69b145f",
+      "size_bytes": 32862
+    },
+    "docs/audit/module7_browser/api/D_job.json": {
+      "sha256": "f5d1ca81a3792ba0e52354a0cb483d9825f7e7a77a681308b6d72fc28d5dff7a",
+      "size_bytes": 71500
+    },
+    "docs/audit/module7_browser/api/E_job.json": {
+      "sha256": "edbe604ad3a28104da2b0f7ca44041c61ab1e16b90a5cd4c19669a7fbfbe271f",
+      "size_bytes": 34687
+    },
+    "docs/audit/module8_browser/api/case_a_lreca_only.json": {
+      "sha256": "91e841be4be454e0f27aaaa7677c96d6080890766e42316091a061d7f44c57b5",
+      "size_bytes": 57402
+    },
+    "docs/audit/module8_browser/api/case_b_lreca_seg.json": {
+      "sha256": "1b4762fc959db158305eca883fddc2e673185b04707ef04f6f5952c2a2597ef2",
+      "size_bytes": 58986
+    },
+    "docs/audit/module8_browser/api/case_c_seg_only.json": {
+      "sha256": "ff8f3e0ada6350db5f22b876ad2efc74fbb2fc8a90ba6f9c7c851c0d583499b3",
+      "size_bytes": 2131
+    },
+    "docs/audit/module8_browser/api/case_d_fuzdrop_full.json": {
+      "sha256": "9bed3455d42b01721de2743463faf32f4e2a56127975d2de4673af820e43556e",
+      "size_bytes": 128210
+    },
+    "docs/audit/module8_browser/api/case_e_fuzdrop_global_only.json": {
+      "sha256": "caaf6c8c897487931543578a14ab70e03669645240ebc9c4eff35deee3346039",
+      "size_bytes": 61269
+    },
+    ".audit/module8_api_final_raw/case_a_lreca_only.json": {
+      "sha256": "826ecd89c3196c56853806a4306f24f9d4f41f09f7e74ae16cd73ce558547a1a",
+      "size_bytes": 31847
+    },
+    ".audit/module8_api_final_raw/case_b_lreca_seg.json": {
+      "sha256": "1dda8b1a7010e1fafab90e0ca01455d6118284f4e690318bbbaf85ee10273829",
+      "size_bytes": 32840
+    },
+    ".audit/module8_api_final_raw/case_c_seg_only.json": {
+      "sha256": "430819937319d99c0b701b01bb0e9e0f13685990cc1dcdf62123927a44e73bb0",
+      "size_bytes": 1463
+    },
+    ".audit/module8_api_final_raw/case_d_fuzdrop_full.json": {
+      "sha256": "668dd2492a800393ffae059fffa5d1c799d60d5762c2b538b5ce0167b9bdb051",
+      "size_bytes": 71477
+    },
+    ".audit/module8_api_final_raw/case_e_fuzdrop_global_only.json": {
+      "sha256": "1dd5e58ef657d6b5e122041ef4402c403644bb3af3590e1481a822c40e814d60",
+      "size_bytes": 34665
+    },
+    "docs/audit/module8_browser/api/health.json": {
+      "sha256": "4fd976e0bd0bc476c0d79a85d2dbbdb780d98012e2b4726a74ea7dc211d4a427",
+      "size_bytes": 92
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_import_248aa.json": {
+      "sha256": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492",
+      "size_bytes": 5175
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_global_only_042_248aa.json": {
+      "sha256": "07864170fdf4f47f5990b06f7b78999417e54e350013eb64002ac2194fb2e2c7",
+      "size_bytes": 383
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv": {
+      "sha256": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+      "size_bytes": 3639
+    },
+    "docs/audit/module8_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv": {
+      "sha256": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964",
+      "size_bytes": 104
+    },
+    "frontend/src/lib/feature-viewer-model.ts": {
+      "sha256": "12c77a4f206167685ec4a7aebf142e0d8707299e0a5bba57ee3cac958e560ff2",
+      "size_bytes": 15658
+    },
+    "frontend/src/lib/viewer-data.ts": {
+      "sha256": "126c020ed71ef713b9da997cd1ed071394060b181928b1d6780daebe14964515",
+      "size_bytes": 7580
+    },
+    "frontend/src/lib/contracts.ts": {
+      "sha256": "4e45030ead5ac3c902dd43e394dd21f243fd54ae29b9d269be758cc243fe6823",
+      "size_bytes": 9352
+    }
+  },
+  "mapper_verification": {
+    "implementation": "frontend/src/lib/feature-viewer-model.ts",
+    "execution": {
+      "exit_code": 0,
+      "error": null
+    },
+    "scope": "The production pure mapper is executed in Node over each saved current job and the paired canonical input; no network or scientific model runs.",
+    "cases": {
+      "A": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        },
+        "browser_track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical"
+        ]
+      },
+      "B": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        },
+        "browser_track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ]
+      },
+      "C": {
+        "track_ids": [
+          "seg-regions"
+        ],
+        "continuous_lengths": {},
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_selected",
+              "text": "Not selected"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_imported",
+              "text": "Not imported"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        },
+        "browser_track_ids": [
+          "seg-regions"
+        ]
+      },
+      "D": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "fuzdrop-propensity",
+          "fuzdrop-regions",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248,
+          "fuzdrop-propensity": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": 0.1,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "fuzdrop-regions:0:30-45",
+                  "method": "fuzdrop",
+                  "start": 30,
+                  "end": 45,
+                  "length": 16,
+                  "semanticType": "region_prediction",
+                  "type": "droplet_promoting_region",
+                  "label": "Droplet-promoting region"
+                },
+                {
+                  "id": "fuzdrop-regions:1:45-60",
+                  "method": "fuzdrop",
+                  "start": 45,
+                  "end": 60,
+                  "length": 16,
+                  "semanticType": "region_prediction",
+                  "type": "droplet_promoting_region",
+                  "label": "Droplet-promoting region"
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        },
+        "browser_track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "fuzdrop-propensity",
+          "fuzdrop-regions",
+          "seg-regions"
+        ]
+      },
+      "E": {
+        "track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ],
+        "continuous_lengths": {
+          "lreca-attribution": 248,
+          "lreca-kde": 248
+        },
+        "issues": [],
+        "tooltip_45": {
+          "position": 45,
+          "aa": "I",
+          "rows": [
+            {
+              "id": "lreca-attribution",
+              "method": "lreca",
+              "label": "LRECA Residue Attribution",
+              "value": 0.6299945116043091,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-kde",
+              "method": "lreca",
+              "label": "LRECA KDE Contribution Density",
+              "value": 0.4756930935595931,
+              "regions": [],
+              "status": "value",
+              "text": null
+            },
+            {
+              "id": "lreca-critical",
+              "method": "lreca",
+              "label": "LRECA Critical Regions",
+              "value": null,
+              "regions": [
+                {
+                  "id": "lreca-critical:0:1-80",
+                  "method": "lreca",
+                  "start": 1,
+                  "end": 80,
+                  "length": 80,
+                  "semanticType": "derived_hotspot",
+                  "type": "critical_region",
+                  "label": "Candidate hotspot",
+                  "score": 31.911564381413704,
+                  "isPrimary": false
+                }
+              ],
+              "status": "yes",
+              "text": "Yes"
+            },
+            {
+              "id": "fuzdrop-propensity",
+              "method": "fuzdrop",
+              "label": "FuzDrop Residue Propensity",
+              "value": null,
+              "regions": [],
+              "status": "not_provided",
+              "text": "N/A"
+            },
+            {
+              "id": "fuzdrop-regions",
+              "method": "fuzdrop",
+              "label": "FuzDrop Predicted Regions",
+              "value": null,
+              "regions": [],
+              "status": "not_provided",
+              "text": "N/A"
+            },
+            {
+              "id": "seg-regions",
+              "method": "seg",
+              "label": "Low-complexity Regions — SEG",
+              "value": null,
+              "regions": [],
+              "status": "no",
+              "text": "No"
+            },
+            {
+              "id": "dismeta-regions",
+              "method": "dismeta",
+              "label": "IDR — DisMeta",
+              "value": null,
+              "regions": [],
+              "status": "unavailable",
+              "text": "Unavailable"
+            }
+          ]
+        },
+        "browser_track_ids": [
+          "lreca-attribution",
+          "lreca-kde",
+          "lreca-critical",
+          "seg-regions"
+        ]
+      }
+    }
+  },
+  "generated_report_privacy_violation_counts": {
+    "absolute_path_tokens": 0,
+    "internal_urls_or_endpoints": 0,
+    "unapproved_urls": 0
+  },
+  "baseline_144_coverage": {
+    "baseline_assertion_count": 144,
+    "equivalently_covered_count": 144,
+    "historical_only_count": 0,
+    "historical_only_not_reverified": [],
+    "current_failed_count": 0,
+    "current_failed_baseline_keys": [],
+    "old_assertion_code_reexecuted": false,
+    "mapping": {
+      "A_GET_response_saved": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_saved_response_bytes_recorded",
+          "A_saved_response_HTTP_200",
+          "A_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_job_id_matches_browser": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.A_real_lreca_only"
+      },
+      "A_success": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_job_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_selected_methods_only": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_normalized_248_sequence_identity": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_canonical_sequence_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_independent_no_ensemble": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_independent_without_ensemble"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_browser_tracks_match_native_outputs": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_browser_tracks_match_mapper",
+          "A_mapper_all_values_and_regions_match_native_outputs",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.A_real_lreca_only"
+      },
+      "A_no_private_paths_or_internal_urls": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_privacy_no_absolute_path_tokens",
+          "A_privacy_no_internal_urls_or_endpoints",
+          "A_privacy_no_unapproved_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_no_fuzdrop_or_dismeta_results": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_execution_success": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_full_scientific_object_exactly_matches_module6": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_exact_scientific_object_matches_module7_A",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "A_lreca_identity_matches_pinned_human_baseline": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_identity_matches_pinned_human_baseline"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_safe_seven_field_metadata": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_safe_seven_field_metadata"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_canonical_sequence": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_full_canonical_sequence"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_raw_score_matches_baseline": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_raw_score_matches_baseline"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_uncalibrated_identity_mapping": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_uncalibrated_identity_mapping"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_positive_class_mapping": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_positive_class_mapping"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_raw_score_matches_positive_logit_softmax": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_raw_score_matches_positive_logit_softmax"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_attribution_248_aligned_values": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_attribution_248_aligned_values"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_attribution_matches_module6_exactly": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_exact_scientific_object_matches_module7_A",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "A_lreca_attribution_target": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_attribution_target"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_KDE_248_finite_native_values": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_KDE_248_finite_native_values"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_KDE_matches_module6_exactly": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_exact_scientific_object_matches_module7_A",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "A_lreca_native_regions_and_primary_flags": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_native_regions_and_primary_flags"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_terminal_residue_omission_preserved": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_terminal_residue_omission_preserved"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_lreca_device_safe": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_lreca_device_safe"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_GET_response_saved": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_saved_response_bytes_recorded",
+          "C_saved_response_HTTP_200",
+          "C_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_job_id_matches_browser": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.C_real_seg_only"
+      },
+      "B_success": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_job_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_selected_methods_only": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_normalized_248_sequence_identity": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_canonical_sequence_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_independent_no_ensemble": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_independent_without_ensemble"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_browser_tracks_match_native_outputs": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_browser_tracks_match_mapper",
+          "C_mapper_all_values_and_regions_match_native_outputs",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.C_real_seg_only"
+      },
+      "B_no_private_paths_or_internal_urls": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_privacy_no_absolute_path_tokens",
+          "C_privacy_no_internal_urls_or_endpoints",
+          "C_privacy_no_unapproved_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_no_fuzdrop_or_dismeta_results": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_seg_execution_success": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_seg_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_seg_full_scientific_object_exactly_matches_module6": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_seg_exact_scientific_object_matches_module7_B",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "B_SEG_native_boundaries": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_SEG_native_boundaries"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_SEG_identity_and_parameters": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_SEG_identity_and_parameters"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_SEG_annotation_only": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_SEG_annotation_only"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_SEG_statistics": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_SEG_statistics"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_SEG_sequence_identity": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_seg_sequence_sha256",
+          "C_seg_native_sequence_length"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_GET_response_saved": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_saved_response_bytes_recorded",
+          "B_saved_response_HTTP_200",
+          "B_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_job_id_matches_browser": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.B_real_lreca_seg"
+      },
+      "C_success": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_job_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_selected_methods_only": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_normalized_248_sequence_identity": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_canonical_sequence_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_independent_no_ensemble": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_independent_without_ensemble"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_browser_tracks_match_native_outputs": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_browser_tracks_match_mapper",
+          "B_mapper_all_values_and_regions_match_native_outputs",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.B_real_lreca_seg"
+      },
+      "C_no_private_paths_or_internal_urls": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_privacy_no_absolute_path_tokens",
+          "B_privacy_no_internal_urls_or_endpoints",
+          "B_privacy_no_unapproved_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_no_fuzdrop_or_dismeta_results": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_execution_success": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_full_scientific_object_exactly_matches_module6": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "C_lreca_identity_matches_pinned_human_baseline": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_identity_matches_pinned_human_baseline"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_safe_seven_field_metadata": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_safe_seven_field_metadata"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_canonical_sequence": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_full_canonical_sequence"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_raw_score_matches_baseline": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_raw_score_matches_baseline"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_uncalibrated_identity_mapping": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_uncalibrated_identity_mapping"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_positive_class_mapping": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_positive_class_mapping"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_raw_score_matches_positive_logit_softmax": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_raw_score_matches_positive_logit_softmax"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_attribution_248_aligned_values": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_attribution_248_aligned_values"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_attribution_matches_module6_exactly": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "C_lreca_attribution_target": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_attribution_target"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_KDE_248_finite_native_values": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_KDE_248_finite_native_values"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_KDE_matches_module6_exactly": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "C_lreca_native_regions_and_primary_flags": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_native_regions_and_primary_flags"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_terminal_residue_omission_preserved": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_terminal_residue_omission_preserved"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_lreca_device_safe": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_lreca_device_safe"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_seg_execution_success": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_seg_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_seg_full_scientific_object_exactly_matches_module6": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_seg_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "C_SEG_native_boundaries": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_SEG_native_boundaries"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_SEG_identity_and_parameters": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_SEG_identity_and_parameters"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_SEG_annotation_only": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_SEG_annotation_only"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_SEG_statistics": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_SEG_statistics"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_SEG_sequence_identity": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_seg_sequence_sha256",
+          "B_seg_native_sequence_length"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "verification_no_private_paths_or_internal_urls": {
+        "current_case": null,
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "generated_report_has_no_private_paths_or_internal_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_mapper_exact_expected_tracks": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_mapper_exact_expected_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_mapper_no_validation_issues": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_mapper_no_validation_issues",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_mapper_248_canonical_sequence": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_mapper_248_canonical_sequence",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_mapper_no_IDR_track": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_mapper_no_IDR_track",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "A_mapper_all_continuous_arrays_length_248": {
+        "current_case": "A",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "A_mapper_all_continuous_arrays_length_248",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_mapper_exact_expected_tracks": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_mapper_exact_expected_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_mapper_no_validation_issues": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_mapper_no_validation_issues",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_mapper_248_canonical_sequence": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_mapper_248_canonical_sequence",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_mapper_no_IDR_track": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_mapper_no_IDR_track",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "B_mapper_all_continuous_arrays_length_248": {
+        "current_case": "C",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "C_mapper_all_continuous_arrays_length_248",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_mapper_exact_expected_tracks": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_mapper_exact_expected_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_mapper_no_validation_issues": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_mapper_no_validation_issues",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_mapper_248_canonical_sequence": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_mapper_248_canonical_sequence",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_mapper_no_IDR_track": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_mapper_no_IDR_track",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "C_mapper_all_continuous_arrays_length_248": {
+        "current_case": "B",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "B_mapper_all_continuous_arrays_length_248",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_exact_expected_tracks": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_exact_expected_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_no_validation_issues": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_no_validation_issues",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_248_canonical_sequence": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_248_canonical_sequence",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_no_IDR_track": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_no_IDR_track",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_all_continuous_arrays_length_248": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_all_continuous_arrays_length_248",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_tooltip_45_native_pDP": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_tooltip_45_native_pDP",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_mapper_tooltip_45_two_inclusive_overlapping_regions": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_mapper_tooltip_45_two_inclusive_overlapping_regions",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_exact_expected_tracks": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_exact_expected_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_no_validation_issues": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_no_validation_issues",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_248_canonical_sequence": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_248_canonical_sequence",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_no_IDR_track": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_no_IDR_track",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_all_continuous_arrays_length_248": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_all_continuous_arrays_length_248",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_global_only_no_FuzDrop_tracks": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_global_only_no_FuzDrop_tracks",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_global_only_NA_not_falsezero": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_global_only_NA_not_falsezero",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_mapper_SEG_No_remains_distinct": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_mapper_SEG_No_remains_distinct",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "path_detector_accepts_official_HTTPS_and_rejects_local_paths": {
+        "current_case": null,
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "privacy_detector_self_test"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_GET_response_saved": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_saved_response_bytes_recorded",
+          "D_saved_response_HTTP_200",
+          "D_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_job_id_matches_browser": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.D_fuzdrop_full_synthetic_import"
+      },
+      "D_success": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_job_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_selected_methods_only": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_248_sequence_identity": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_canonical_sequence_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_independent_no_ensemble": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_independent_without_ensemble"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_no_private_paths_or_internal_urls": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_privacy_no_absolute_path_tokens",
+          "D_privacy_no_internal_urls_or_endpoints",
+          "D_privacy_no_unapproved_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_explicit_browser_synthetic_test_badge": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_explicit_browser_synthetic_test_badge"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.D_fuzdrop_full_synthetic_import"
+      },
+      "D_validated_manual_import_semantics": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_manual_origin_is_not_independently_verified",
+          "D_coordinate_declaration_and_local_runtime_preserved",
+          "D_mode_C_and_unknown_service_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_synthetic_pLLPS_068_uncalibrated": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_uncalibrated_global_mapping_is_preserved",
+          "D_native_global_threshold_and_label",
+          "D_global_pLLPS_exactly_matches_synthetic_fixture"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_FuzDrop_method_success": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_fuzdrop_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_lreca_full_scientific_object_exactly_matches_module6_C": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_lreca_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "D_seg_full_scientific_object_exactly_matches_module6_C": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_seg_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "D_browser_tracks_match_mapper": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_browser_tracks_match_mapper",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.D_fuzdrop_full_synthetic_import"
+      },
+      "D_248_native_pDP_rows": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_full_248_pDP_Sbind_rows_exactly_match_synthetic_fixture"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_residue_and_region_arrays_match_Module6_synthetic_fixture": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_full_248_pDP_Sbind_rows_exactly_match_synthetic_fixture",
+          "D_three_native_order_types_bounds_and_overlap_exactly_match_synthetic_fixture",
+          "D_full_FuzDrop_science_matches_input_fixture_and_frozen_reference"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_raw_import_hashes_match_frozen_fixture": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_both_raw_TSV_hashes_exactly_match_synthetic_fixture_bytes",
+          "D_full_FuzDrop_science_matches_input_fixture_and_frozen_reference"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_full_FuzDrop_science_matches_Module6_synthetic_import": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_full_FuzDrop_science_matches_input_fixture_and_frozen_reference"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_native_position45_pDP_01": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_native_position45_pDP_matches_fixture"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "D_native_position45_two_overlapping_regions": {
+        "current_case": "D",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "D_native_position45_two_inclusive_overlapping_regions"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_GET_response_saved": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_saved_response_bytes_recorded",
+          "E_saved_response_HTTP_200",
+          "E_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_job_id_matches_browser": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_job_id_matches_browser"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.E_fuzdrop_global_only_synthetic_import"
+      },
+      "E_success": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_job_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_selected_methods_only": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_exact_method_combination"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_248_sequence_identity": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_canonical_sequence_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_independent_no_ensemble": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_independent_without_ensemble"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_no_private_paths_or_internal_urls": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_privacy_no_absolute_path_tokens",
+          "E_privacy_no_internal_urls_or_endpoints",
+          "E_privacy_no_unapproved_urls"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_explicit_browser_synthetic_test_badge": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_explicit_browser_synthetic_test_badge"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.E_fuzdrop_global_only_synthetic_import"
+      },
+      "E_validated_manual_import_semantics": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_manual_origin_is_not_independently_verified",
+          "E_coordinate_declaration_and_local_runtime_preserved",
+          "E_mode_C_and_unknown_service_identity"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_synthetic_pLLPS_068_uncalibrated": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_uncalibrated_global_mapping_is_preserved",
+          "E_native_global_threshold_and_label",
+          "E_global_pLLPS_exactly_matches_actual_042_synthetic_fixture"
+        ],
+        "missing_current_assertions": [],
+        "note": "Equivalent input-dependent assertion: this Module 8 browser input is synthetic pLLPS=0.42/N, replacing the historical 0.68/P input; no historical value is reused as a prediction."
+      },
+      "E_FuzDrop_method_success": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_fuzdrop_execution_and_native_success"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_lreca_full_scientific_object_exactly_matches_module6_C": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_lreca_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "E_seg_full_scientific_object_exactly_matches_module6_C": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_seg_exact_scientific_object_matches_module7_C",
+          "module7_verification_bytes_match_frozen_manifest"
+        ],
+        "missing_current_assertions": [],
+        "note": "Complete current native result equals the frozen Module 7 result after removing only runtime_ms/timings_ms; the unchanged Module 7 evidence anchors its Module 6 comparison."
+      },
+      "E_browser_tracks_match_mapper": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_browser_tracks_match_mapper",
+          "production_mapper_node_execution_succeeded"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning.",
+        "browser_evidence": "docs/audit/module8_browser/browser_verification.json#scenarios.E_fuzdrop_global_only_synthetic_import"
+      },
+      "E_global_only_no_residue_or_region_arrays": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_residue_propensity_is_explicit_null",
+          "E_regions_are_explicit_null"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_global_only_no_TSV_hashes": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_raw_TSV_hashes_are_empty"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      },
+      "E_full_FuzDrop_science_matches_global_only_fixture": {
+        "current_case": "E",
+        "status": "covered_by_current_checks",
+        "current_assertion_groups": [
+          "E_full_FuzDrop_science_matches_input_fixture_and_frozen_reference",
+          "E_global_pLLPS_exactly_matches_actual_042_synthetic_fixture"
+        ],
+        "missing_current_assertions": [],
+        "note": "The original assertion code was not rerun; linked current computations cover its meaning."
+      }
+    }
+  },
+  "not_reverified_count": 0,
+  "not_reverified_checks": []
+}

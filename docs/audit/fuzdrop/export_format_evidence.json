@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "audit_at": "2026-09-03T10:34:56.535794+00:00",
+  "scope": "Official FuzDrop frontend export-format audit only; no prediction was submitted.",
+  "evidence_kind": "official_frontend_static_export_code",
+  "real_export_obtained": false,
+  "real_response_obtained": false,
+  "source": {
+    "url": "https://fuzdrop.bio.unipd.it/main-es2015.7255cef9dd5f54e0fbb1.js",
+    "observed_at": "2026-09-03T10:32:23.340411+00:00",
+    "status": 200,
+    "final_url": "https://fuzdrop.bio.unipd.it/main-es2015.7255cef9dd5f54e0fbb1.js",
+    "content_type": "application/javascript",
+    "bytes": 4448622,
+    "cache": ".audit/module2/http/3702e184d9526892.txt",
+    "sha256": "4fc6d31326fd0cadf530e50b5f6cdc59d2fa447ef8abaeac079244d07b508124"
+  },
+  "source_coordinates": {
+    "encoding": "UTF-8",
+    "line_count": 1,
+    "offset_unit": "Unicode code points in decoded source",
+    "start_inclusive": true,
+    "end_exclusive": true
+  },
+  "scores_tsv": {
+    "header": [
+      "position",
+      "residue",
+      "pDP",
+      "Sbind"
+    ],
+    "separator": "TAB",
+    "record_separator": "LF",
+    "encoding": "UTF-8",
+    "body_source_fields": [
+      "position",
+      "aa",
+      "pDP",
+      "Shae"
+    ],
+    "row_selection": "Rows whose position is not null, preserving result-array order.",
+    "value_serialization": "Optional toString() calls; no explicit numeric rounding in the exporter.",
+    "delivery": "A browser-created data:text/plain;charset=utf-8 URI, not a downloadable static server file.",
+    "filename_without_accession": "FuzDrop.tsv",
+    "filename_with_accession": "FuzDrop-<UniProtACC>.tsv",
+    "global_pLLPS_included": false,
+    "anchors": {
+      "method": {
+        "line_1based": 1,
+        "character_start_0based": 4315942,
+        "character_end_exclusive_0based": 4315959,
+        "literal": "downloadScores(){"
+      },
+      "header": {
+        "line_1based": 1,
+        "character_start_0based": 4316183,
+        "character_end_exclusive_0based": 4316216,
+        "literal": "[\"position\\tresidue\\tpDP\\tSbind\"]"
+      },
+      "row_filter": {
+        "line_1based": 1,
+        "character_start_0based": 4316244,
+        "character_end_exclusive_0based": 4316279,
+        "literal": "result.filter(t=>null!==t.position)"
+      }
+    },
+    "missing_numeric_serialization": "The optional toString() expression returns undefined for null or undefined numeric fields; concatenation with TAB strings serializes the literal text undefined. This is source-code evidence, not an observed real export."
+  },
+  "regions_tsv": {
+    "header": [
+      "type",
+      "start",
+      "end"
+    ],
+    "separator": "TAB",
+    "record_separator": "LF",
+    "encoding": "UTF-8",
+    "type_mapping": [
+      {
+        "exported_type": "Droplet-promoting region",
+        "source_array": "detectedRegionsDPR"
+      },
+      {
+        "exported_type": "Aggregation hot-spot",
+        "source_array": "detectedRegionsHotspot"
+      }
+    ],
+    "row_order": "All native DPR records, then all native aggregation-hotspot records; array order retained.",
+    "coordinate_transformation": "None in exporter.",
+    "region_length_filter": "None in exporter.",
+    "region_score_included": false,
+    "global_pLLPS_included": false,
+    "sequence_included": false,
+    "empty_arrays_representation": "Header only.",
+    "filename_without_accession": "FuzDrop - predicted regions.tsv",
+    "filename_with_accession": "FuzDrop - predicted regions-<UniProtACC>.tsv",
+    "anchors": {
+      "method": {
+        "line_1based": 1,
+        "character_start_0based": 4316746,
+        "character_end_exclusive_0based": 4316764,
+        "literal": "downloadRegions(){"
+      },
+      "header": {
+        "line_1based": 1,
+        "character_start_0based": 4316988,
+        "character_end_exclusive_0based": 4317008,
+        "literal": "[\"type\\tstart\\tend\"]"
+      },
+      "dpr_label": {
+        "line_1based": 1,
+        "character_start_0based": 4317078,
+        "character_end_exclusive_0based": 4317104,
+        "literal": "Droplet-promoting region\\t"
+      },
+      "hotspot_label": {
+        "line_1based": 1,
+        "character_start_0based": 4317283,
+        "character_end_exclusive_0based": 4317305,
+        "literal": "Aggregation hot-spot\\t"
+      }
+    }
+  },
+  "global_pLLPS": {
+    "observed_location": "The frontend result-page template interpolates the pLLPS service field.",
+    "actual_numeric_value_observed": false,
+    "included_in_either_prediction_tsv": false,
+    "verified_separate_machine_export": false,
+    "manual_import_consequence": "Only a separately user-copied visible global value can be accepted as user-supplied provenance. It must never be derived from residue pDP.",
+    "anchor": {
+      "line_1based": 1,
+      "character_start_0based": 4324643,
+      "character_end_exclusive_0based": 4324678,
+      "literal": "Io(\" = \",e.fuzpredService.pLLPS,\"\")"
+    }
+  },
+  "coordinate_evidence": {
+    "native_coordinate_basis_independently_verified": false,
+    "real_numeric_export_available_for_verification": false,
+    "observations": [
+      "The score exporter preserves native position values without arithmetic.",
+      "The region exporter preserves native start/end values without arithmetic.",
+      "The pDP plot uses native residue positions unchanged.",
+      "The structure viewer passes native start/end unchanged as author-residue-number bounds."
+    ],
+    "interpretation": "Structure-viewer mapping is suggestive of biological residue numbering but does not independently establish TSV indexing or endpoint inclusivity.",
+    "anchors": {
+      "plot_positions": {
+        "line_1based": 1,
+        "character_start_0based": 4285902,
+        "character_end_exclusive_0based": 4285947,
+        "literal": "this.fuzpredService.result.map(t=>t.position)"
+      },
+      "structure_viewer_bounds": {
+        "line_1based": 1,
+        "character_start_0based": 4302226,
+        "character_end_exclusive_0based": 4302289,
+        "literal": "start_auth_residue_number:t.start,end_auth_residue_number:t.end"
+      }
+    }
+  },
+  "native_regions_versus_graph": {
+    "dpr_graph_filter": "end - start >= 10",
+    "aggregation_hotspot_graph_filter": "end - start >= 5",
+    "export_has_these_filters": false,
+    "consequence": "Preserve imported native region records. Do not infer the complete exported region set from visible plot bars, or apply these display filters to imported regions.",
+    "anchors": {
+      "dpr_graph_filter": {
+        "line_1based": 1,
+        "character_start_0based": 4286763,
+        "character_end_exclusive_0based": 4286810,
+        "literal": "detectedRegionsDPR.filter(t=>t.end-t.start>=10)"
+      },
+      "hotspot_graph_filter": {
+        "line_1based": 1,
+        "character_start_0based": 4287076,
+        "character_end_exclusive_0based": 4287126,
+        "literal": "detectedRegionsHotspot.filter(t=>t.end-t.start>=5)"
+      }
+    }
+  },
+  "public_example_audit": {
+    "displayed_examples": [
+      {
+        "protein": "p53",
+        "accession": "P04637"
+      },
+      {
+        "protein": "RAF1",
+        "accession": "P04049"
+      }
+    ],
+    "button_action": "Sets the accession input field; does not load a precomputed result.",
+    "results_route": "/predictor/results",
+    "results_state": "Result fields are held in frontend service state.",
+    "linked_real_tsv_or_prediction_response_found": false,
+    "search_scope": [
+      "The current predictor HTML and its explicitly referenced main bundle.",
+      "Official-domain web searches for result/example/export TSV pages."
+    ],
+    "limitation": "No exhaustive absence claim is made. No guessed result URLs or private endpoints were requested.",
+    "anchors": {
+      "example_action": {
+        "line_1based": 1,
+        "character_start_0based": 4405551,
+        "character_end_exclusive_0based": 4405602,
+        "literal": "addExample(t){this.formData.get(\"acc\").setValue(t)}"
+      },
+      "p53_button": {
+        "line_1based": 1,
+        "character_start_0based": 4407462,
+        "character_end_exclusive_0based": 4407484,
+        "literal": "e.addExample(\"P04637\")"
+      },
+      "raf1_button": {
+        "line_1based": 1,
+        "character_start_0based": 4407587,
+        "character_end_exclusive_0based": 4407609,
+        "literal": "e.addExample(\"P04049\")"
+      },
+      "route": {
+        "line_1based": 1,
+        "character_start_0based": 4428856,
+        "character_end_exclusive_0based": 4428949,
+        "literal": "path:\"predictor\",component:pP,children:[{path:\"\",component:fP},{path:\"results\",component:_M}]"
+      }
+    }
+  },
+  "manual_import_validation_recommendations": {
+    "status": "Proposed defensive contract, separate from verified official-format facts.",
+    "provenance": "User-provided official-format TSV; successful parsing does not authenticate the origin or claim a new official prediction.",
+    "coordinates": "Require an explicit one_based_inclusive declaration; do not auto-detect or silently shift coordinates. Retain that this is a user declaration, not an independently verified official convention.",
+    "scores": "Require the exact four official columns. Validate contiguous unique integer positions 1..N and full residue-by-residue agreement with the supplied canonical sequence. Require nonmissing pDP values to be finite and in [0,1]. Preserve empty numeric cells and official literal undefined as null; reject NaN/Infinity and unsupported numeric tokens. Require nonmissing Sbind to be nonnegative and finite, without an undocumented upper bound.",
+    "regions": "Require the exact three official columns and the two documented native labels only. Validate integer bounds 1 <= start <= end <= N under the declared coordinate convention. Preserve native values, types, and order without length filters or reconstruction.",
+    "global": "An optional separately copied pLLPS value must be finite and in [0,1], with explicit user-supplied provenance. Missing pLLPS remains null.",
+    "absence": "A missing regions file means not supplied (null); a supplied valid header-only regions file means an explicitly empty native list. Never substitute fabricated scores or regions.",
+    "transport": "UTF-8 text, optional UTF-8 BOM and LF/CRLF normalization may be accepted by the local importer; this is parser tolerance, not a claim about additional official export dialects.",
+    "safety": "No prediction request, CAPTCHA interaction, hidden endpoint probe, or local FuzDrop download is needed for this contract."
+  },
+  "sample_policy": "No prediction-score sample has been generated or represented as real. Any future parser fixtures must explicitly label synthetic data and retain this absence of a genuine exported sample."
+}

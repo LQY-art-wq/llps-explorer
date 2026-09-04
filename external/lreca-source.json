@@ -1,0 +1,34 @@
+{
+  "audited_on": "2026-09-03",
+  "LRECA_REPO": "https://github.com/ai-phasepro/LRECA",
+  "LRECA_COMMIT": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "LRECA_CHECKPOINT": "Demo/trained_model/human_1_RCNN_ECA_parallel_089-0.9802.pt",
+  "LRECA_CHECKPOINT_SHA256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+  "LRECA_MODEL_VARIANT": "human_specific",
+  "dataset5_mapping_status": "unconfirmed",
+  "checkpoint_size_bytes": 2395318,
+  "selection_status": "unique_human_candidate_explicitly_selected_by_upstream_demo",
+  "paper_dataset_number_status": "No explicit dataset5 mapping found at the pinned commit; runtime variant must remain human_specific",
+  "identity_evidence": [
+    "README.md:18-24 maps the Human dataset to its training and demonstration scripts",
+    "Demo/code_for_model_testing/RCNN_ECA_3_human_test.py:24-34 maps Human data, matching 512-dimensional architecture and the selected checkpoint",
+    "Demo/code_for_model_testing/RCNN_ECA_3_human_test.py:128-139 validates checkpoint embedding dimensions and strictly loads its state_dict"
+  ],
+  "inference_verified": true,
+  "verified_devices": ["cpu", "cuda"],
+  "inference_baseline": "docs/lreca_baseline.md",
+  "runtime_verification": "docs/lreca_runtime.md",
+  "explainability_verification": "docs/lreca_explainability.md",
+  "local_checkout": "external/lreca",
+  "entrypoint": "Demo/code_for_model_testing/RCNN_ECA_3_human_test.py",
+  "model_source": "Demo/code_for_model_testing/RCNN_ECA_personal_test.py",
+  "source_license": "MIT; LICENSE.md has unfilled copyright placeholders",
+  "upstream_runtime": {
+    "python": "3.8.18",
+    "pytorch": "2.1.1+cu118",
+    "numpy": "1.23.0"
+  },
+  "scope": "Module 1: unchanged original Human demo, real CPU/CUDA inference, Grad-CAM, KDE and API verified",
+  "vocabulary_audit": "docs/audit/lreca_human_vocabulary.json",
+  "checkpoint_inventory": "docs/audit/lreca_checkpoints.json"
+}

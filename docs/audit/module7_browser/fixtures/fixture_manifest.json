@@ -1,0 +1,31 @@
+{
+  "fixture_kind": "synthetic_official_format_only",
+  "scientific_prediction": false,
+  "official_origin_verified": false,
+  "notice": "Synthetic test data: all FuzDrop pLLPS, pDP, Sbind and regions are deliberately synthetic. Only the 248-aa sequence and supported import syntax come from existing evidence. These materials are not official predictions, scientific validation or calibration data.",
+  "sequence_source": "backend/tests/fixtures/lreca/global_baseline.json#cases[id=human_positive_line_1]",
+  "sequence_length": 248,
+  "sequence_sha256": "75078f3a53de34edd93133af165bd3d5246d26dddb31ce2037c8b11ac97791bf",
+  "synthetic_pLLPS": 0.68,
+  "coordinates": "one_based_inclusive test declaration; no new official-coordinate evidence",
+  "copied_from": {
+    "human_positive_line_1.fasta": "docs/audit/module6_browser/fixtures/human_positive_line_1.fasta",
+    "synthetic_fuzdrop_scores_248aa.tsv": "docs/audit/module6_browser/fixtures/synthetic_fuzdrop_scores_248aa.tsv",
+    "synthetic_fuzdrop_regions_248aa.tsv": "docs/audit/module6_browser/fixtures/synthetic_fuzdrop_regions_248aa.tsv",
+    "synthetic_fuzdrop_import_248aa.json": "docs/audit/module6_browser/fixtures/synthetic_fuzdrop_import_248aa.json"
+  },
+  "global_only_payload": {
+    "file": "synthetic_fuzdrop_global_only_248aa.json",
+    "scores_tsv": "omitted; expected absent residue data, never synthesized by the UI",
+    "regions_tsv": "omitted; expected absent region data, never reconstructed by the UI",
+    "result_id": "not supplied; the real local import endpoint must issue it"
+  },
+  "generation_verification": "Existing materials copied byte-for-byte; global-only payload retains the same sequence, declarations and synthetic pLLPS and omits both TSV fields. No HTTP request or scientific inference was performed to prepare these files.",
+  "file_sha256": {
+    "human_positive_line_1.fasta": "a2507edfe9421b4a4ac9d705e9df31824fdcd7e12cc53b344167a66bd67d7575",
+    "synthetic_fuzdrop_scores_248aa.tsv": "62a72a108ac591cf93bcf06aa2736657c7b093f0aecd2b1d6604efda95ec8bc8",
+    "synthetic_fuzdrop_regions_248aa.tsv": "5b0832ee4dd7b44125e52ba44d9668e2e9b5293e9fadab87a667dc6d7092a964",
+    "synthetic_fuzdrop_import_248aa.json": "c563362fa78c56dc5b748125a18d96aad7efa4a36ce620014988ea3e9072c492",
+    "synthetic_fuzdrop_global_only_248aa.json": "18e79fba0e1b0d4765a1775be3f42ea8b53e8dd8464e6be34f975b96478905ac"
+  }
+}

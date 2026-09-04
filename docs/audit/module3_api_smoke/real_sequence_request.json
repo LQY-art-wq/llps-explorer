@@ -1,0 +1,8 @@
+{
+  "fixture_kind": "real_sequence_from_existing_official_human_baseline",
+  "sequence_source": "backend/tests/fixtures/lreca/global_baseline.json / cases[0]",
+  "note": "A SEG annotation does not predict LLPS or validate the LRECA classification.",
+  "request_body": {
+    "sequence": "MSGGGVIRGPAGNNDCRIYVGNLPPDIRTKDIEDVFYKYGAIRDIDLKNRRGGPPFAFVEFEDPRDAEDAVYGRDGYDYDGYRLRVEFPRSGRGTGRGGGGGGGGGAPRGRYGPPSRRSENRVVVSGLPPSGSWQDLKDHMREAGDVCYADVYRDGTGVVEFVRKEDMTYAVRKLDNTKFRSHEGETAYIRVKVDGPRSPSYGRSRSRSRSRSRSRSRSNSRSRSYSPRRSRGSPRYSPRHSRSRSRT"
+  }
+}

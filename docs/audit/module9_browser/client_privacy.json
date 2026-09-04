@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-09-04T03:54:30.930508+00:00",
+  "artifact": "frontend/.next/static/**/*.js",
+  "javascript_assets_checked": 14,
+  "bytes_checked": 839252,
+  "checks": {
+    "actual_local_paths_absent_from_browser_js": true,
+    "backend_url_setting_absent_from_browser_js": true,
+    "normal_backend_target_absent_from_browser_js": true,
+    "fixture_backend_target_absent_from_browser_js": true,
+    "example_container_backend_target_absent_from_browser_js": true,
+    "analysis_session_header_absent_from_browser_js": true
+  },
+  "passed": true,
+  "scope": "Final production client JavaScript only. The actual source paths and internal targets are not copied into this report."
+}

@@ -1,0 +1,9 @@
+{
+  "http_status": 404,
+  "body": {
+    "detail": {
+      "code": "EXTERNAL_RESULT_NOT_FOUND",
+      "message": "The imported result was not found or has expired."
+    }
+  }
+}

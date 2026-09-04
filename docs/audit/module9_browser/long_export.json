@@ -1,0 +1,40 @@
+{
+  "module": 9,
+  "recorded_at_utc": "2026-09-04T03:41:55Z",
+  "status": "passed",
+  "job_id": "analysis_5KAS3rgp5Y1HdMsPq_g6AFzk044jLWnJ",
+  "sequence_length": 5000,
+  "selected_methods": [
+    "seg"
+  ],
+  "job_status": "success",
+  "seg": {
+    "status": "success",
+    "region_count": 1,
+    "coverage": 1.0,
+    "longest_region_length": 5000
+  },
+  "residues_csv": {
+    "button_request_http_status": 200,
+    "data_rows": 5000,
+    "column_count": 10,
+    "position_coordinates": "one_based_contiguous",
+    "first_position": 1,
+    "first_amino_acid": "A",
+    "last_position": 5000,
+    "last_amino_acid": "A"
+  },
+  "browser_responsiveness": {
+    "download_click_to_response_ms": 423,
+    "download_button_remained_enabled": true,
+    "workspace_remained_interactive": true,
+    "overview_navigation_after_download_passed": true
+  },
+  "privacy": {
+    "full_sequence_recorded": false,
+    "anonymous_session_token_recorded": false,
+    "owner_hash_recorded": false,
+    "download_path_recorded": false,
+    "server_absolute_path_recorded": false
+  }
+}

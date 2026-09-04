@@ -1,0 +1,11 @@
+{
+  "fixture_provenance": "synthetic_format_fixture_not_official_prediction",
+  "note": "Declaration exercises the import contract; these data were invented for testing.",
+  "request_body": {
+    "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEF",
+    "source_declaration": "official_fuzdrop_export",
+    "coordinate_system": "one_based_inclusive",
+    "scores_tsv": "position\tresidue\tpDP\tSbind\n1\tA\t0\t2.5\n2\tC\t0.6\t2.5\n3\tD\t1\t2.5\n4\tE\t0\t2.5\n5\tF\t0.6\t2.5\n6\tG\t1\t2.5\n7\tH\t0\t2.5\n8\tI\t0.6\t2.5\n9\tK\t1\t2.5\n10\tL\t0\t2.5\n11\tM\t0.6\t2.5\n12\tN\t1\t2.5\n13\tP\t0\t2.5\n14\tQ\t0.6\t2.5\n15\tR\t1\t2.5\n16\tS\t0\t2.5\n17\tT\t0.6\t2.5\n18\tV\t1\t2.5\n19\tW\t0\t2.5\n20\tY\t0.6\t2.5\n21\tA\t1\t2.5\n22\tC\t0\t2.5\n23\tD\t0.6\t2.5\n24\tE\t1\t2.5\n25\tF\t0\t2.5\n26\tG\t0.6\t2.5\n27\tH\t1\t2.5\n28\tI\t0\t2.5\n29\tK\t0.6\t2.5\n30\tL\t1\t2.5\n31\tM\t0\t2.5\n32\tN\t0.6\t2.5\n33\tP\t1\t2.5\n34\tQ\t0\t2.5\n35\tR\t0.6\t2.5\n36\tS\t1\t2.5\n37\tT\t0\t2.5\n38\tV\t0.6\t2.5\n39\tW\t1\t2.5\n40\tY\t0\t2.5\n41\tA\t0.6\t2.5\n42\tC\t1\t2.5\n43\tD\t0\t2.5\n44\tE\t0.6\t2.5\n45\tF\t1\t2.5\n",
+    "regions_tsv": "type\tstart\tend\nDroplet-promoting region\t1\t1\nDroplet-promoting region\t1\t1\nAggregation hot-spot\t45\t45\n"
+  }
+}

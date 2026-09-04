@@ -1,0 +1,22 @@
+{
+  "http_status": 200,
+  "body": {
+    "method_id": "seg",
+    "status": "ready",
+    "message": "SEG low-complexity region annotation is available.",
+    "available": true,
+    "reason": null,
+    "implementation": "NCBI segmasker",
+    "version": "2.17.0",
+    "application_version": "1.0.0",
+    "executable_sha256": "82f56232e2acf9a4ad3cd84efc6abd7387c1781f3b2f6727b9b1f12158c2381c",
+    "parameters": {
+      "window": 12,
+      "locut": 2.2,
+      "hicut": 2.5,
+      "input_format": "fasta",
+      "output_format": "interval",
+      "parse_seqids": false
+    }
+  }
+}

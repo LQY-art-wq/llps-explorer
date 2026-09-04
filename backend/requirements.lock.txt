@@ -1,0 +1,44 @@
+# Resolved on Windows x64 / Python 3.12.13 through Module 9, 2026-09-04.
+# Includes development/build tools. Install the local package separately with:
+# python -m pip install --no-deps --no-build-isolation -e ./backend
+annotated-doc==0.0.5
+annotated-types==0.8.0
+alembic==1.16.5
+anyio==4.15.0
+certifi==2026.7.22
+click==8.5.0
+colorama==0.4.6
+croniter==6.2.4
+fastapi==0.141.1
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.19
+iniconfig==2.3.0
+greenlet==3.5.5
+Mako==1.4.1
+MarkupSafe==3.0.3
+packaging==26.3
+pip==25.0.1
+pluggy==1.6.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+pydantic_core==2.46.5
+Pygments==2.21.0
+psycopg==3.2.10
+psycopg-binary==3.2.10 ; platform_system == "Windows"
+pytest==9.1.1
+python-dotenv==1.2.3
+python-dateutil==2.9.0.post0
+redis==7.1.1
+rq==2.12.0
+ruff==0.16.5
+setuptools==84.0.0
+six==1.17.0
+starlette==1.6.0
+SQLAlchemy==2.0.43
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+tzdata==2025.2 ; platform_system == "Windows"
+uvicorn==0.52.4
+wheel==0.48.0

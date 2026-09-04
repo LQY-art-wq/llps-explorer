@@ -1,0 +1,33 @@
+# Sanitized exported log: workstation paths replaced with environment references.
+# Original bytes retained privately: .audit/module1_private_evidence/docs/audit/lreca_integration_stdout.log
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- ${PROJECT_ROOT}\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: ${PROJECT_ROOT}\backend
+configfile: pyproject.toml
+plugins: anyio-4.15.0
+collecting ... collected 20 items
+
+backend\tests\test_lreca_integration.py::test_real_checkpoint_identity_and_official_vocabulary PASSED [  5%]
+backend\tests\test_lreca_integration.py::test_real_global_prediction_matches_original_official_demo[human_positive_line_1] PASSED [ 10%]
+backend\tests\test_lreca_integration.py::test_real_global_prediction_matches_original_official_demo[human_negative_line_1] PASSED [ 15%]
+backend\tests\test_lreca_integration.py::test_repeated_global_scores_are_deterministic_and_uncalibrated PASSED [ 20%]
+backend\tests\test_lreca_integration.py::test_attribution_positions_amino_acids_and_top_residues PASSED [ 25%]
+backend\tests\test_lreca_integration.py::test_negative_prediction_explains_its_actual_argmax_class PASSED [ 30%]
+backend\tests\test_lreca_integration.py::test_real_kde_values_and_inclusive_coordinates PASSED [ 35%]
+backend\tests\test_lreca_integration.py::test_human_adapted_official_attribution_normalization_and_kde_regression PASSED [ 40%]
+backend\tests\test_lreca_integration.py::test_actual_supported_lengths_including_explainability[50] PASSED [ 45%]
+backend\tests\test_lreca_integration.py::test_actual_supported_lengths_including_explainability[100] PASSED [ 50%]
+backend\tests\test_lreca_integration.py::test_actual_supported_lengths_including_explainability[500] PASSED [ 55%]
+backend\tests\test_lreca_integration.py::test_actual_supported_lengths_including_explainability[1000] PASSED [ 60%]
+backend\tests\test_lreca_integration.py::test_actual_supported_lengths_including_explainability[2000] PASSED [ 65%]
+backend\tests\test_lreca_integration.py::test_short_sequences_keep_real_global_attribution_and_explicit_kde_limit[1] PASSED [ 70%]
+backend\tests\test_lreca_integration.py::test_short_sequences_keep_real_global_attribution_and_explicit_kde_limit[49] PASSED [ 75%]
+backend\tests\test_lreca_integration.py::test_model_is_loaded_once_across_load_and_analysis_calls PASSED [ 80%]
+backend\tests\test_lreca_integration.py::test_configured_threshold_top_count_and_kde_prominence PASSED [ 85%]
+backend\tests\test_lreca_integration.py::test_one_hundred_real_attributions_do_not_accumulate_hooks_or_memory PASSED [ 90%]
+backend\tests\test_lreca_integration.py::test_repeated_global_predictions_do_not_show_obvious_memory_growth PASSED [ 95%]
+backend\tests\test_lreca_integration.py::test_cuda_real_inference_and_explainability PASSED [100%]
+
+- generated xml file: ${PROJECT_ROOT}\docs\audit\lreca_integration.junit.xml -
+============================= 20 passed in 42.21s =============================

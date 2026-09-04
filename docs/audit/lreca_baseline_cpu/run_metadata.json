@@ -1,0 +1,69 @@
+{
+  "started_at_utc": "2026-09-03T08:43:52.036502+00:00",
+  "repository": "https://github.com/ai-phasepro/LRECA",
+  "repository_commit": "0b4b48ab7870529a34028c6e30dfba42eddbf215",
+  "model_variant": "human_specific",
+  "dataset5_mapping_status": "unconfirmed",
+  "checkpoint": "human_1_RCNN_ECA_parallel_089-0.9802.pt",
+  "checkpoint_path": "${PROJECT_ROOT}/external/lreca/Demo/trained_model/human_1_RCNN_ECA_parallel_089-0.9802.pt",
+  "checkpoint_sha256": "aa625942a726d24c15022f9486d0fc26e91ee0435ad554a8cd259825d8d7bbcc",
+  "checkpoint_size_bytes": 2395318,
+  "official_command": [
+    "${PROJECT_ROOT}/.lreca-venv/Scripts/python.exe",
+    "${PROJECT_ROOT}/external/lreca/Demo/code_for_model_testing/RCNN_ECA_3_human_test.py",
+    "--device",
+    "cpu",
+    "--batch-size",
+    "32",
+    "--output-dir",
+    "${PROJECT_ROOT}/docs/audit/lreca_baseline_cpu"
+  ],
+  "official_cwd": "${PROJECT_ROOT}/external/lreca/Demo",
+  "inputs": {
+    "train_positive": {
+      "path": "${PROJECT_ROOT}/external/lreca/Data/pos_dataset/pos_word_list_human.txt",
+      "sha256": "1e3beca27c80a5fc59c41bbb5cc40f429a0619bd3dcc6172a42dbe85cd90ad32",
+      "sequence_count": 980
+    },
+    "train_negative": {
+      "path": "${PROJECT_ROOT}/external/lreca/Data/neg_dataset/neg_word_list_human.txt",
+      "sha256": "e793a6eaa512e42ab72dd236cdaf13d20e14c3971def800b3aabc261193da1ea",
+      "sequence_count": 980
+    },
+    "test_positive": {
+      "path": "${PROJECT_ROOT}/external/lreca/Demo/test_dataset/pos_dataset/pos_word_list_human_test.txt",
+      "sha256": "0fefb299e2ae8cbbd3cddc1e39955f4255b902b6168acd325c22e45c2c3a70e3",
+      "sequence_count": 120
+    },
+    "test_negative": {
+      "path": "${PROJECT_ROOT}/external/lreca/Demo/test_dataset/neg_dataset/neg_word_list_human_test.txt",
+      "sha256": "0739c49b4acfd17193ec9694f87cccaf831a752d6f11c903459fc3c46cef6c79",
+      "sequence_count": 120
+    }
+  },
+  "official_returncode": 0,
+  "official_wall_seconds": 12.235493800000768,
+  "supplemental_command": [
+    "${PROJECT_ROOT}/.lreca-venv/Scripts/python.exe",
+    "${PROJECT_ROOT}/scripts/run_lreca_baseline.py",
+    "--supplement",
+    "${PROJECT_ROOT}/docs/audit/lreca_baseline_cpu"
+  ],
+  "runtime": {
+    "python": "3.10.19",
+    "python_executable": "${PROJECT_ROOT}/.lreca-venv/Scripts/python.exe",
+    "pytorch": "2.1.1+cu118",
+    "numpy": "1.23.0",
+    "scipy": "1.10.1",
+    "scikit_learn": "1.3.2",
+    "pandas": "2.0.3",
+    "device": "cpu",
+    "cuda_available": true,
+    "torch_cuda_build": "11.8",
+    "cpu_threads": 4,
+    "interop_threads": 8,
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "finished_at_utc": "2026-09-03T08:44:11.084579+00:00",
+  "upstream_unchanged": true
+}

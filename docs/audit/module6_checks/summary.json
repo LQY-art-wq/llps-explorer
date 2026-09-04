@@ -1,0 +1,103 @@
+{
+  "started_at": "2026-09-03T13:46:55.580735+00:00",
+  "platform": "Windows",
+  "python": "3.12.13",
+  "node": "v24.19.0",
+  "checks": [
+    {
+      "name": "unit",
+      "exit_code": 0,
+      "duration_seconds": 2.292,
+      "command": [
+        "pnpm",
+        "test"
+      ],
+      "cwd": "frontend",
+      "log": "unit.log"
+    },
+    {
+      "name": "lint",
+      "exit_code": 0,
+      "duration_seconds": 20.248,
+      "command": [
+        "pnpm",
+        "lint"
+      ],
+      "cwd": "frontend",
+      "log": "lint.log"
+    },
+    {
+      "name": "typecheck",
+      "exit_code": 0,
+      "duration_seconds": 5.457,
+      "command": [
+        "pnpm",
+        "typecheck"
+      ],
+      "cwd": "frontend",
+      "log": "typecheck.log"
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "duration_seconds": 17.186,
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "cwd": "frontend",
+      "log": "build.log"
+    },
+    {
+      "name": "peer_dependencies",
+      "exit_code": 0,
+      "duration_seconds": 0.904,
+      "command": [
+        "pnpm",
+        "peers",
+        "check"
+      ],
+      "cwd": "frontend",
+      "log": "peer_dependencies.log"
+    },
+    {
+      "name": "test_fixture",
+      "exit_code": 0,
+      "duration_seconds": 2.54,
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "backend/tests/test_module6_test_backend.py",
+        "-q"
+      ],
+      "cwd": ".",
+      "log": "test_fixture.log"
+    },
+    {
+      "name": "python_lint",
+      "exit_code": 0,
+      "duration_seconds": 0.883,
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "--config",
+        "backend/pyproject.toml",
+        "scripts/module6_test_backend.py",
+        "backend/tests/test_module6_test_backend.py"
+      ],
+      "cwd": ".",
+      "log": "python_lint.log"
+    }
+  ],
+  "unit_counts": {
+    "tests": 123,
+    "pass": 123,
+    "fail": 0,
+    "skipped": 0
+  },
+  "finished_at": "2026-09-03T13:47:45.251889+00:00",
+  "success": true
+}

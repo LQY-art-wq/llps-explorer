@@ -1,0 +1,96 @@
+# Local runtimes, dependencies and generated output
+.venv/
+.lreca-venv/
+.lreca-env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+coverage.xml
+lcov.info
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+# Next.js dev may generate local AI-agent guidance files.
+frontend/AGENTS.md
+frontend/CLAUDE.md
+*.tsbuildinfo
+node_modules/
+.pnpm-store/
+.tools/
+.audit/
+build/
+dist/
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+# Historical validation logs are intentional repository evidence.
+!docs/audit/**/*.log
+
+# Environment files may contain credentials; commit examples only.
+.env
+.env.*
+!.env.example
+frontend/.env.local
+backend/.env
+
+# Keep upstream code and checkpoints separate from first-party source.
+external/lreca/
+
+# Model artifacts must stay outside this repository, regardless of their folder.
+models/
+checkpoints/
+*.pt
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+backend/data/
+*.pth
+*.ckpt
+*.safetensors
+*.weights
+*.onnx
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.bin
+
+# Deployment state and privacy-sensitive operational artifacts
+backups/
+exports/
+postgres-data/
+redis-data/
+appendonlydir/
+*.rdb
+*.aof
+uploads/
+user-data/
+runtime-data/
+secrets/
+certs/
+*.dump
+*.sql.gz
+*.key
+*.pem
+*.p12
+*.pfx
+acme.json
+
+# OS / editor files
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+.vs/
+*.suo
+*.user

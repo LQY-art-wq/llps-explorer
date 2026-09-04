@@ -1,0 +1,117 @@
+{
+  "audit_at": "2026-09-03T10:39:01.250794+00:00",
+  "scope": "Read-only inspection of official public pages, their explicitly linked frontend bundle, and primary publications. Completed before Module 2 production implementation.",
+  "integration_mode": "browser_protected",
+  "automatic_access_available": false,
+  "reason": "official_service_requires_browser_verification",
+  "documented_api": "not_confirmed",
+  "supported_programmatic_http_service": "not_confirmed",
+  "public_client_post_observed": {
+    "method": "POST",
+    "url": "https://fuzpred.bio.unipd.it/api/submit_protein",
+    "payload_keys": [
+      "protein",
+      "captcha"
+    ],
+    "content_type": "application/json as used by the official Angular client",
+    "source_kind": "static official client observation, not an executable integration contract",
+    "request_executed": false,
+    "response_format": "The client expects JSON; no live response was obtained in this audit."
+  },
+  "captcha": {
+    "type": "reCAPTCHA v3",
+    "required_by_current_ui_flow": true,
+    "token_requested_or_reused": false
+  },
+  "authentication": {
+    "browser_cookie_or_session_requirement": "not_confirmed",
+    "read_only_get_set_cookie_observed": false,
+    "interpretation": "Anonymous page/script GET behavior does not establish that the protected POST is sessionless or unauthenticated.",
+    "api_key_contract": "not_confirmed; no key setting or invented credential flow implemented"
+  },
+  "no_captcha_programmatic_endpoint": "not_confirmed in the checked official resources",
+  "batch_access": {
+    "remote_batch_or_api_application_contract": "not_confirmed",
+    "general_author_contact": "https://fuxreiterlab.github.io/contact.html",
+    "contact_sent": false,
+    "local_batch_program_note": "The 2026 publication describes separate local software. It is not a remote API and is outside the user-requested architecture."
+  },
+  "form_and_examples": {
+    "submission_binding": "Angular submit handler; no separate documented HTML form action contract",
+    "examples": "P04637 (p53) and P04049 (RAF1) fill the accession input; they do not provide public completed result downloads.",
+    "browser_flow": "Both accession and sequence submission branches run under the CAPTCHA subscription."
+  },
+  "rate_limit": "No official numerical quota or SLA confirmed. No load test or protected-endpoint probe was performed.",
+  "manual_import_format_evidence": "docs/audit/fuzdrop/export_format_evidence.json",
+  "real_export_obtained": false,
+  "real_fuzdrop_prediction_executed": false,
+  "submission_requests_sent": 0,
+  "source_bundle": {
+    "method": "GET",
+    "url": "https://fuzdrop.bio.unipd.it/main-es2015.7255cef9dd5f54e0fbb1.js",
+    "observed_at": "2026-09-03T10:32:23.340411+00:00",
+    "status": 200,
+    "final_url": "https://fuzdrop.bio.unipd.it/main-es2015.7255cef9dd5f54e0fbb1.js",
+    "content_type": "application/javascript",
+    "set_cookie_present": false,
+    "retry_after": null,
+    "bytes": 4448622,
+    "cache": ".audit/module2/http/3702e184d9526892.txt",
+    "sha256": "4fc6d31326fd0cadf530e50b5f6cdc59d2fa447ef8abaeac079244d07b508124"
+  },
+  "source_anchor_unit": "0-based Unicode code points after UTF-8 decoding; end exclusive",
+  "source_anchors": {
+    "captcha_before_submission": {
+      "character_start_0based": 4403444,
+      "character_end_exclusive_0based": 4403470,
+      "literal": "recaptchaV3Service.execute"
+    },
+    "submission_method": {
+      "character_start_0based": 4272739,
+      "character_end_exclusive_0based": 4272781,
+      "literal": "postSubmitProtein(t){return this.http.post"
+    },
+    "submission_payload": {
+      "character_start_0based": 4403859,
+      "character_end_exclusive_0based": 4403932,
+      "literal": "postSubmitProtein({protein:this.formData.get(\"protein\").value,captcha:t})"
+    },
+    "example_only_fills_accession": {
+      "character_start_0based": 4405551,
+      "character_end_exclusive_0based": 4405602,
+      "literal": "addExample(t){this.formData.get(\"acc\").setValue(t)}"
+    },
+    "help_route": {
+      "character_start_0based": 4428952,
+      "character_end_exclusive_0based": 4428963,
+      "literal": "path:\"help\""
+    },
+    "tutorial_route": {
+      "character_start_0based": 4428979,
+      "character_end_exclusive_0based": 4428994,
+      "literal": "path:\"tutorial\""
+    }
+  },
+  "official_resources_checked": [
+    "https://fuzdrop.bio.unipd.it/predictor",
+    "https://fuzdrop.bio.unipd.it/help",
+    "https://fuzdrop.bio.unipd.it/tutorial",
+    "https://fuxreiterlab.github.io/contact.html",
+    "https://fuxreiterlab.github.io/servers_fuzdrop.html",
+    "https://fuxreiterlab.github.io/servers_programs.html",
+    "https://academic.oup.com/nar/article/50/W1/W337/6591523",
+    "https://www.nature.com/articles/s41596-025-01267-0",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41596-025-01267-0/MediaObjects/41596_2025_1267_MOESM1_ESM.pdf"
+  ],
+  "search_queries": [
+    "site:fuzdrop.bio.unipd.it API programmatic batch documentation",
+    "\"FuzDrop\" \"API\" \"captcha\"",
+    "site:fuxreiterlab.github.io FuzDrop contact batch server"
+  ],
+  "limitations": [
+    "The conclusion is absence of a confirmed supported contract in the inspected official material, not proof that every possible authorized API is nonexistent.",
+    "Help/tutorial are SPA shells; the relevant rendered-template and export evidence was read in their explicitly linked public frontend bundle.",
+    "The 2026 subscription protocol was not represented as a fully read paper; public code availability and reporting summary were inspected.",
+    "Native coordinate origin was not validated on a live export. The manual contract requires an explicit user declaration and validates every sequence position and region bound."
+  ]
+}

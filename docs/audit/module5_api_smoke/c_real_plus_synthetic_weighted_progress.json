@@ -1,0 +1,36 @@
+{
+  "job_id": "analysis_kaj3YQL1FABNUOhoHnyDsSR3vd6EE2yU",
+  "observation_type": "actual HTTP snapshots",
+  "observations": [
+    {
+      "elapsed_ms": 59.183800000027986,
+      "http_status": 202,
+      "job_status": "queued",
+      "methods": {
+        "lreca": "queued",
+        "fuzdrop": "queued",
+        "seg": "queued"
+      }
+    },
+    {
+      "elapsed_ms": 306.75909999990836,
+      "http_status": 200,
+      "job_status": "running",
+      "methods": {
+        "lreca": "running",
+        "fuzdrop": "success",
+        "seg": "running"
+      }
+    },
+    {
+      "elapsed_ms": 721.039699998073,
+      "http_status": 200,
+      "job_status": "success",
+      "methods": {
+        "lreca": "success",
+        "fuzdrop": "success",
+        "seg": "success"
+      }
+    }
+  ]
+}
